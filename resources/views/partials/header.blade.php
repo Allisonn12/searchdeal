@@ -126,7 +126,7 @@
     >
       <a href="{{ route('index') }}" class="navbar-brand d-flex align-items-center">
         <h1 class="m-0">
-          <i class="fa-solid fa-magnifying-glass-location"></i>Search A Deal
+          <i class="fa-solid fa-magnifying-glass-location"></i>Testing
         </h1>
       </a>
       <button
