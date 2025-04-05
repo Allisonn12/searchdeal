@@ -12,108 +12,12 @@
         </div>
     @endif
 
-    <style>
-    
-        .page-header {
-            background: url(img/images/18.png) center center no-repeat;
-            background-size: cover;
-            height: 19rem;
-            width: 100%;
-            position: relative;
-            text-align: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-          }
-    
-         
-    .page-header .overlay-color {
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.7); 
-        z-index: 1;
-    }
-    
-    .page-header .main,
-    .page-header .breadcrumb {
-        position: relative;
-        z-index: 2;
-        color: white;
-    }
-    .break-image{
-        width: 80% !important;
-        margin: 0 auto;
-    }
-    .break-image img{
-        width: 100%;
-        padding-bottom: 50px;
-        border-radius: 5px;
-    }
-    
-    .breadcrumb{
-        justify-content: center;
-        align-content: center;
-    }
-    .display-6{
-        font-size: 48px;
-    }
-    .subtitle p{
-        font-size: 36px;
-    }
-    .main{
-        padding: 0 30px;
-        width: 65% !important;
-    }
-    h3{
-        font-size: 34px;
-    }
-    
-    .hlabi-form{
-        width: 80%; 
-        margin: 0 auto
-    }
-    .hlabi-body{
-        width: 80%;
-        margin: 0 auto;
-        font-size: 18px !important;
-    }
-    
-    @media screen and (max-width: 676px){
-    
-    .display-6 {
-        font-size: 28px;
-    }
-    .subtitle p{
-        font-size: 18px;
-    }
-    .main{
-        /*padding: 0 30px;*/
-        width: 100% !important;
-    }
-    h3{
-        font-size: 16px;
-    }
-    #form *{
-        width: 100% !important;
-    }
-    .hlabi-body{
-        font-size: 14px !important;
-    }
-    .hlabi-form{
-        width: 100%; 
-        margin: 0 auto
-    }
-}
-    </style>
-
 
     <!-- Page Header Start -->
     <div
       class="container-fluid page-header py-5 mb-5 wow fadeIn"
       data-wow-delay="0.1s"
+      style="background: url(img/images/18.png) center center no-repeat; background-size: cover;"
     >
         <div class="overlay-color">
       <div class="container py-5">
