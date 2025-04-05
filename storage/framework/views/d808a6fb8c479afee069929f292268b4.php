@@ -147,7 +147,7 @@
             </div>
 
               
-              <div class="col-lg-12 wow fadeIn" data-wow-delay="0.5s">
+              <div class="col-lg-12 wow fadeIn hlabi-form" data-wow-delay="0.5s">
                 <div class="bg-light rounded p-5">
                   <h4 class="mb-4 text-center">CLICK BELOW FOR IMMEDIATE RELIEF</h4>
                   <form action="<?php echo e(route('life.submit')); ?>" method="post">
