@@ -38,7 +38,9 @@ class CarInsureController extends Controller
                     'status' => $resp,
                 ]);
                 // return redirect()->back()->with('success', "Success! {$responseBody['response']}");
-                return view('success');
+                // return view('success');
+                return redirect()->route('success');
+
 
             }else{
                 $resp = json_encode($responseBody['response']);

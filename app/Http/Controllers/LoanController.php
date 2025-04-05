@@ -33,7 +33,9 @@ class LoanController extends Controller
                     'status' => $resp, 
                 ]);
                 // return redirect()->back()->with('success', "Success! Your form has been submitted. One of our friendly consultants will be in touch soon.");
-                        return view('success');
+                        // return view('success');
+                return redirect()->route('success');
+
 
             }else{
                 $resp = json_encode($responseBody['response']);

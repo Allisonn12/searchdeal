@@ -9,6 +9,7 @@ use App\Http\Controllers\TrackerController;
 use App\Http\Controllers\LoanController;
 use App\Http\Controllers\MedicalController;
 use App\Http\Controllers\LifeController;
+use App\Http\Controllers\SuccessController;
 
 // Route::get('/', function () {
 //     return view('');
@@ -42,4 +43,5 @@ Route::post('/wl-loans', [LoanController::class, 'store'])->name('loan.submit');
 Route::get('/medical-insurance', [MedicalController::class, 'index'])->name('medical');
 Route::post('/medical-insurance', [MedicalController::class, 'store'])->name('medical.submit');
 
-// Route::get('/life-insurance', [SearchADealConroller::class, 'lifeCover'])->name('life-cover');
+
+Route::get('/success', [SuccessController::class, 'index']);
