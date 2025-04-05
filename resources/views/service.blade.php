@@ -3,6 +3,7 @@
     <div
       class="container-fluid page-header py-5 mb-5 wow fadeIn"
       data-wow-delay="0.1s"
+      style="background-image: url(img/images/contact.jpg); background-size: cover;"
     >
       <div class="container py-5">
         <h1 class="display-4 animated slideInDown mb-4">What We Offer</h1>

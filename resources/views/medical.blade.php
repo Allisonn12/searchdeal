@@ -17,7 +17,7 @@
     <div
       class="container-fluid page-header py-5 mb-5 wow fadeIn"
       data-wow-delay="0.1s"
-      style="background: url(img/home/medicalaid/1.jpg) center center no-repeat; backeground-size: cover;"
+      style="background: url(img/home/medicalaid/1.jpg) center center no-repeat;"
     >
         <div class="overlay-color">
           <div class="container py-5">

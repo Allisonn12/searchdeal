@@ -56,7 +56,7 @@
                         </div>
                     </div>
                     <div class="break-image">
-                        <img src="img/images/42.jpg" alt="">
+                        <img src="img/images/27.png" alt="">
                     </div>
                     <div class="row">
                         <p>
