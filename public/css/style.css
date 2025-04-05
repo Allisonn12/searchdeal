@@ -274,7 +274,7 @@
 /* ======================================================================================================================================== */
 
 .page-header {
-    background: url(img/images/31.png) center center no-repeat;
+    /* background: url(img/images/31.png) center center no-repeat; */
     background-size: cover;
     height: 19rem;
     width: 100%;
