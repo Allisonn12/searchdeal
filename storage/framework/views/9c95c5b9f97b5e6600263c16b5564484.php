@@ -160,6 +160,7 @@
           <a href="<?php echo e(route('motor')); ?>" class="nav-item nav-link  <?php echo e(Route::is('motor') ? 'active' : ''); ?>">Motor Warrenty</a>
           <a href="<?php echo e(route('loans')); ?>" class="nav-item nav-link  <?php echo e(Route::is('loans') ? 'active' : ''); ?>">Loans</a>
           <a href="<?php echo e(route('contact')); ?>" class="nav-item nav-link <?php echo e(Route::is('contact') ? 'active' : ''); ?>">Contact Us</a>
+          <a href="<?php echo e(route('success')); ?>" class="nav-item nav-link">success</a>
         </div>
       </div>
       <a href="<?php echo e(route('service')); ?>" class="btn btn-primary px-3 d-none d-lg-block <?php echo e(Route::is('service') ? 'active' : ''); ?>">Get A Quote</a>
