@@ -18,4 +18,7 @@ class SearchADealConroller extends Controller
         return view('contact');
     }
 
+    public function success(){
+        return view('success');
+    }
 }

@@ -10,16 +10,16 @@ use App\Http\Controllers\LoanController;
 use App\Http\Controllers\MedicalController;
 use App\Http\Controllers\LifeController;
 use App\Http\Controllers\SuccessController;
+use App\Http\Controllers\ContactController;
 
-// Route::get('/', function () {
-//     return view('');
-// });
+
 Route::get('/', [SearchADealConroller::class, 'index'])->name('index');
-
 Route::get('/service', [SearchADealConroller::class, 'service'])->name('service');
-Route::get('/contact', [SearchADealConroller::class, 'contact'])->name('contact');
+Route::get('/success', [SearchADealConroller::class, 'success'])->name('success');
 
-// Insurance Pages
+Route::get('/contact', [SearchADealConroller::class, 'contact'])->name('contact');
+Route::post('/contact', [ContactController::class, 'send'])->name('contact.send');
+
 Route::get('/car-insurance', [CarInsureController::class, 'index'])->name('car-insurance');
 Route::post('/car-insurance', [CarInsureController::class, 'store'])->name('car.insure.submit');
 
@@ -32,16 +32,11 @@ Route::post('/debt-white-list', [DebtController::class, 'store'])->name('debt.su
 Route::get('/car-tracker', [TrackerController::class, 'index'])->name('tracker');
 Route::post('/car-tracker', [TrackerController::class, 'store'])->name('tracker.submit');
 
-
 Route::get('/life-insurance', [LifeController::class, 'index'])->name('life');
 Route::post('/life-insurance', [LifeController::class, 'store'])->name('life.submit');
-
 
 Route::get('/wl-loans', [LoanController::class, 'index'])->name('loans');
 Route::post('/wl-loans', [LoanController::class, 'store'])->name('loan.submit');
 
 Route::get('/medical-insurance', [MedicalController::class, 'index'])->name('medical');
 Route::post('/medical-insurance', [MedicalController::class, 'store'])->name('medical.submit');
-
-
-Route::get('/success', [SuccessController::class, 'index']);

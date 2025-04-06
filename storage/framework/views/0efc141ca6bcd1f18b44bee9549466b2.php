@@ -77,4 +77,4 @@ flex-direction: column;
 
 
 
-<?php echo $__env->make('partials.footer', array_diff_key(get_defined_vars(), ['__data' => 1, '__path' => 1]))->render(); ?><?php /**PATH /home/hlabi/Desktop/work/_public_html/resources/views/success.blade.php ENDPATH**/ ?>
+<?php echo $__env->make('partials.footer', array_diff_key(get_defined_vars(), ['__data' => 1, '__path' => 1]))->render(); ?><?php /**PATH /home/hlabi/Desktop/work/searchadeal/resources/views/success.blade.php ENDPATH**/ ?>

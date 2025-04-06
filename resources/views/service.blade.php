@@ -43,7 +43,7 @@
               <p class="mb-4">
                 Secure your loved ones’ future with comprehensive a cover that supports them when they need it most
               </p>
-              <a class="btn btn-light px-3" style="cursor: not-allowed; disabled" href="#">Coming Soon</a>
+              <a class="btn btn-light px-3" href="{{ route('life') }}">Read More</a>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">

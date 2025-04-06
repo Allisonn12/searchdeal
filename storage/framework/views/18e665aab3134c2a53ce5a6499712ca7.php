@@ -1,4 +1,18 @@
 <?php echo $__env->make('partials.header', array_diff_key(get_defined_vars(), ['__data' => 1, '__path' => 1]))->render(); ?>
+<?php if(session('success')): ?>
+<div class="alert alert-success" role="alert">
+    <?php echo e(session('success')); ?>
+
+</div>
+<?php endif; ?>
+
+<?php if(session('error')): ?>
+<div class="alert alert-danger" role="alert">
+    <?php echo e(session('error')); ?>
+
+</div>
+<?php endif; ?>
+
     <!-- Carousel Start -->
     <div class="container-fluid p-0 mb-5 wow fadeIn" data-wow-delay="0.1s">
       <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
@@ -286,7 +300,7 @@
               <p class="mb-4">
                 Secure your loved ones’ future with comprehensive a cover that supports them when they need it most.
               </p>
-              <a class="btn btn-light px-3" style="cursor: not-allowed; disabled">Coming Soon</a>
+              <a class="btn btn-light px-3" href="<?php echo e(route('life')); ?>">Read More</a>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
@@ -411,7 +425,8 @@
           </div>
           <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
             <div class="bg-white rounded p-5">
-              <form>
+              <form action="<?php echo e(route('contact.send')); ?>" method="POST">
+                <?php echo csrf_field(); ?>
                 <div class="row g-3">
                   <div class="col-sm-6">
                     <div class="form-floating">
@@ -420,6 +435,7 @@
                         class="form-control"
                         id="gname"
                         placeholder="Full Names"
+                        name="name"
                       />
                       <label for="gname">Full Names</label>
                     </div>
@@ -431,6 +447,7 @@
                         class="form-control"
                         id="gmail"
                         placeholder="Email Address"
+                        name="email"
                       />
                       <label for="gmail">Email Address</label>
                     </div>
@@ -442,6 +459,7 @@
                         class="form-control"
                         id="cname"
                         placeholder="Phone Number"
+                        name="phone"
                       />
                       <label for="cname">Phone Number</label>
                     </div>
@@ -453,6 +471,7 @@
                         placeholder="Leave a message here"
                         id="message"
                         style="height: 80px"
+                        name="message"
                       ></textarea>
                       <label for="message">Message</label>
                     </div>
