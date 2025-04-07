@@ -9,7 +9,8 @@
 <body>
     <h2>New Message from {{ $data['name'] }}</h2>
     <p>Email: {{ $data['email'] }}</p>
-    <p>Message:</p>
-    <p>{{ $data['message'] }}</p>
+    <p>Subject: {{ $data['subject'] ?? '' }}</p>
+    <p>Phone Number: {{ $data['phone'] ?? '' }}</p>
+    <p><b>Message</b>: {{ $data['message'] }}</p>
 </body>
 </html>

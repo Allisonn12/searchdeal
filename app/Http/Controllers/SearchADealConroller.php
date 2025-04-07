@@ -21,4 +21,12 @@ class SearchADealConroller extends Controller
     public function success(){
         return view('success');
     }
+
+    public function terms(){
+        return view('terms-and-condition');
+    }
+
+    public function policy(){
+        return view('private-policy');
+    }
 }

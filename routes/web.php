@@ -16,6 +16,8 @@ use App\Http\Controllers\ContactController;
 Route::get('/', [SearchADealConroller::class, 'index'])->name('index');
 Route::get('/service', [SearchADealConroller::class, 'service'])->name('service');
 Route::get('/success', [SearchADealConroller::class, 'success'])->name('success');
+Route::get('/terms-and-conditions', [SearchADealConroller::class, 'terms'])->name('terms');
+Route::get('/private-policy', [SearchADealConroller::class, 'policy'])->name('policy');
 
 Route::get('/contact', [SearchADealConroller::class, 'contact'])->name('contact');
 Route::post('/contact', [ContactController::class, 'send'])->name('contact.send');
@@ -40,3 +42,17 @@ Route::post('/wl-loans', [LoanController::class, 'store'])->name('loan.submit');
 
 Route::get('/medical-insurance', [MedicalController::class, 'index'])->name('medical');
 Route::post('/medical-insurance', [MedicalController::class, 'store'])->name('medical.submit');
+
+// Cookies
+/**
+ * Accepts and stores a cookie consent.
+ *
+ * This function is a route handler for the '/cookie-accept' endpoint. It sets a cookie named 'cookie_consent'
+ * with a value of 'true' and an expiration time of 1 year. The function returns a response with the text 'OK'
+ * and the newly set cookie.
+ *
+ * @return \Illuminate\Http\Response The response with the 'OK' text and the 'cookie_consent' cookie.
+ */
+// Route::post('/cookie-accept', function () {
+//     return response('OK')->cookie('cookie_consent', true, 60 * 24 * 365); // 1 year
+// })->name('cookie.accept');
