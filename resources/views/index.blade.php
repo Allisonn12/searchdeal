@@ -100,9 +100,9 @@
                 <div
                   class="d-flex flex-column justify-content-center text-center bg-primary rounded h-100 p-3"
                 >
-                  <h1 class="text-white mb-0">25</h1>
-                  <h2 class="text-white">Years</h2>
-                  <h5 class="text-white mb-0">Experience</h5>
+                  <h1 class="text-white mb-0">Find</h1>
+                  <h2 class="text-white">The Best</h2>
+                  <h5 class="text-white mb-0">Deals</h5>
                 </div>
               </div>
             </div>

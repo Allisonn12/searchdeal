@@ -1,4 +1,6 @@
 
+
+
     <!-- Footer Start -->
     <div
       class="container-fluid bg-dark footer mt-5 pt-5 wow fadeIn"
@@ -37,24 +39,15 @@
             <!--<a class="btn btn-link" href="">About Us</a>-->
             <a class="btn btn-link" href="<?php echo e(route('contact')); ?>">Contact Us</a>
             <a class="btn btn-link" href="<?php echo e(route('service')); ?>">Our Services</a>
-            <a class="btn btn-link" href="">Terms & Condition</a>
+            <a class="btn btn-link" href="<?php echo e(route('terms')); ?>">Terms & Condition</a>
+            <a class="btn btn-link" href="<?php echo e(route('policy')); ?>">Private Policy</a>
           </div>
           <div class="col-lg-3 col-md-6">
-            <h5 class="text-light mb-4">Newsletter</h5>
-            <p>Signup for our Newsletter and get updated with new offers</p>
-            <div class="position-relative mx-auto" style="max-width: 400px">
-              <input
-                class="form-control bg-transparent w-100 py-3 ps-4 pe-5"
-                type="text"
-                placeholder="Your email"
-              />
-              <button
-                type="button"
-                class="btn btn-secondary py-2 position-absolute top-0 end-0 mt-2 me-2"
-              >
-                SignUp
-              </button>
-            </div>
+            <h5 class="text-light mb-4">Important</h5>
+            <p>Please note: This website contains affiliate links and is partnered with leading 
+              brands to bring you the best deals. By clicking on links, you consent 
+              to sharing your details with our partners</p>
+            
           </div>
         </div>
       </div>
