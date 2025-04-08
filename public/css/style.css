@@ -188,7 +188,7 @@
 }
 
 .page-header {
-    background: url(../img/images/contact.jpg) center center no-repeat;
+    background: url("{{ assets('img/images/contact.jpg') }}") center center no-repeat;
     background-size: cover;
 }
 .breadcrumb{
@@ -209,7 +209,21 @@
 .page-header .breadcrumb-item.active {
     color: var(--primary);
 }
-
+.js-cookie-consent {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 2147483645;
+    box-sizing: border-box;
+    width: 100%;
+  
+    background-color: #F1F6F4;
+}
+.cookie-inner {     
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 32px 0;
+  }
 .main{
     width: 80%;
     margin: 0 auto;
@@ -254,7 +268,7 @@
 }
 
 .container.facts .facts-text {
-    background: linear-gradient(rgba(1, 95, 201, .9), rgba(1, 95, 201, .9)), url(../img/images/contact.jpg) center right no-repeat;
+    background: linear-gradient(rgba(1, 95, 201, .9), rgba(1, 95, 201, .9)), url("{{ assets('img/images/contact.jpg') }}") center right no-repeat;
     background-size: cover;
 }
 
@@ -403,7 +417,7 @@ margin: 0 auto
 
 /*** Appointment ***/
 .appointment {
-    background: linear-gradient(rgba(1, 95, 201, .9), rgba(1, 95, 201, .9)), url(../img/images/contact.jpg) center center no-repeat;
+    background: linear-gradient(rgba(1, 95, 201, .9), rgba(1, 95, 201, .9)), url("{{ assets('img/images/contact.jpg') }}") center center no-repeat;
     background-size: cover;
 }
 
