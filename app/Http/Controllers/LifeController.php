@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\LifeModel;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Redirect;
 
 class LifeController extends Controller
 {
@@ -27,8 +28,8 @@ class LifeController extends Controller
                     'email' => $data['email'], 
                     'status' => $resp, 
                 ]);
-                // return redirect()->back()->with('success', "Success! Your form has been submitted. One of our friendly consultants will be in touch soon.");
-                        return view('success');
+                return redirect()->route('success');
+                        // return view('success');
 
             }else{
                 $resp = json_encode($responseBody['response']);

@@ -1,8 +1,20 @@
 @include('partials.header')
+@if(session('success'))
+<div class="alert alert-success" role="alert">
+    {{ session('success') }}
+</div>
+@endif
+
+@if(session('error'))
+<div class="alert alert-danger" role="alert">
+    {{ session('error') }}
+</div>
+@endif
     <!-- Page Header Start -->
     <div
       class="container-fluid page-header py-5 mb-5 wow fadeIn"
       data-wow-delay="0.1s"
+      style="background-image: url(img/images/contact.jpg); background-size: cover;"
     >
       <!--style="background: url(img/images/41.jpg) center center no-repeat !important; background-size: cover; width:100%"-->
       <div class="container py-5">
@@ -27,7 +39,8 @@
             <h1 class="display-6 mb-5">
               Have a question? <br>Let's get in touch
             </h1>           
-            <form>
+            <form action="{{ route('contact.send') }}" method="POST">
+              @csrf
               <div class="row g-3">
                 <div class="col-md-6">
                   <div class="form-floating">
@@ -36,6 +49,7 @@
                       class="form-control"
                       id="name"
                       placeholder="Your Name"
+                      name="name"
                     />
                     <label for="name">Your Name</label>
                   </div>
@@ -47,6 +61,8 @@
                       class="form-control"
                       id="email"
                       placeholder="Your Email"
+                      name="email"
+
                     />
                     <label for="email">Your Email</label>
                   </div>
@@ -58,6 +74,8 @@
                       class="form-control"
                       id="subject"
                       placeholder="Subject"
+                      name="subject"
+
                     />
                     <label for="subject">Subject</label>
                   </div>
@@ -69,6 +87,8 @@
                       placeholder="Leave a message here"
                       id="message"
                       style="height: 100px"
+                      name="message"
+
                     ></textarea>
                     <label for="message">Message</label>
                   </div>

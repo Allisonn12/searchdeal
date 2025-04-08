@@ -1,4 +1,16 @@
 @include('partials.header')
+@if(session('success'))
+<div class="alert alert-success" role="alert">
+    {{ session('success') }}
+</div>
+@endif
+
+@if(session('error'))
+<div class="alert alert-danger" role="alert">
+    {{ session('error') }}
+</div>
+@endif
+
     <!-- Carousel Start -->
     <div class="container-fluid p-0 mb-5 wow fadeIn" data-wow-delay="0.1s">
       <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
@@ -88,9 +100,9 @@
                 <div
                   class="d-flex flex-column justify-content-center text-center bg-primary rounded h-100 p-3"
                 >
-                  <h1 class="text-white mb-0">25</h1>
-                  <h2 class="text-white">Years</h2>
-                  <h5 class="text-white mb-0">Experience</h5>
+                  <h1 class="text-white mb-0">Find</h1>
+                  <h2 class="text-white">The Best</h2>
+                  <h5 class="text-white mb-0">Deals</h5>
                 </div>
               </div>
             </div>
@@ -286,7 +298,7 @@
               <p class="mb-4">
                 Secure your loved ones’ future with comprehensive a cover that supports them when they need it most.
               </p>
-              <a class="btn btn-light px-3" style="cursor: not-allowed; disabled">Coming Soon</a>
+              <a class="btn btn-light px-3" href="{{ route('life') }}">Read More</a>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
@@ -411,7 +423,8 @@
           </div>
           <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
             <div class="bg-white rounded p-5">
-              <form>
+              <form action="{{ route('contact.send') }}" method="POST">
+                @csrf
                 <div class="row g-3">
                   <div class="col-sm-6">
                     <div class="form-floating">
@@ -420,6 +433,7 @@
                         class="form-control"
                         id="gname"
                         placeholder="Full Names"
+                        name="name"
                       />
                       <label for="gname">Full Names</label>
                     </div>
@@ -431,6 +445,7 @@
                         class="form-control"
                         id="gmail"
                         placeholder="Email Address"
+                        name="email"
                       />
                       <label for="gmail">Email Address</label>
                     </div>
@@ -442,6 +457,7 @@
                         class="form-control"
                         id="cname"
                         placeholder="Phone Number"
+                        name="phone"
                       />
                       <label for="cname">Phone Number</label>
                     </div>
@@ -453,6 +469,7 @@
                         placeholder="Leave a message here"
                         id="message"
                         style="height: 80px"
+                        name="message"
                       ></textarea>
                       <label for="message">Message</label>
                     </div>

@@ -160,6 +160,7 @@
           <a href="{{ route('motor') }}" class="nav-item nav-link  {{ Route::is('motor') ? 'active' : '' }}">Motor Warrenty</a>
           <a href="{{ route('loans') }}" class="nav-item nav-link  {{ Route::is('loans') ? 'active' : '' }}">Loans</a>
           <a href="{{ route('contact') }}" class="nav-item nav-link {{ Route::is('contact') ? 'active' : '' }}">Contact Us</a>
+          <a href="{{ route('success') }}" class="nav-item nav-link"></a>
         </div>
       </div>
       <a href="{{ route('service') }}" class="btn btn-primary px-3 d-none d-lg-block {{ Route::is('service') ? 'active' : '' }}">Get A Quote</a>

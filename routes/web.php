@@ -9,16 +9,19 @@ use App\Http\Controllers\TrackerController;
 use App\Http\Controllers\LoanController;
 use App\Http\Controllers\MedicalController;
 use App\Http\Controllers\LifeController;
+use App\Http\Controllers\SuccessController;
+use App\Http\Controllers\ContactController;
 
-// Route::get('/', function () {
-//     return view('');
-// });
+
 Route::get('/', [SearchADealConroller::class, 'index'])->name('index');
-
 Route::get('/service', [SearchADealConroller::class, 'service'])->name('service');
-Route::get('/contact', [SearchADealConroller::class, 'contact'])->name('contact');
+Route::get('/success', [SearchADealConroller::class, 'success'])->name('success');
+Route::get('/terms-and-conditions', [SearchADealConroller::class, 'terms'])->name('terms');
+Route::get('/private-policy', [SearchADealConroller::class, 'policy'])->name('policy');
 
-// Insurance Pages
+Route::get('/contact', [SearchADealConroller::class, 'contact'])->name('contact');
+Route::post('/contact', [ContactController::class, 'send'])->name('contact.send');
+
 Route::get('/car-insurance', [CarInsureController::class, 'index'])->name('car-insurance');
 Route::post('/car-insurance', [CarInsureController::class, 'store'])->name('car.insure.submit');
 
@@ -31,10 +34,8 @@ Route::post('/debt-white-list', [DebtController::class, 'store'])->name('debt.su
 Route::get('/car-tracker', [TrackerController::class, 'index'])->name('tracker');
 Route::post('/car-tracker', [TrackerController::class, 'store'])->name('tracker.submit');
 
-
 Route::get('/life-insurance', [LifeController::class, 'index'])->name('life');
 Route::post('/life-insurance', [LifeController::class, 'store'])->name('life.submit');
-
 
 Route::get('/wl-loans', [LoanController::class, 'index'])->name('loans');
 Route::post('/wl-loans', [LoanController::class, 'store'])->name('loan.submit');
@@ -42,4 +43,16 @@ Route::post('/wl-loans', [LoanController::class, 'store'])->name('loan.submit');
 Route::get('/medical-insurance', [MedicalController::class, 'index'])->name('medical');
 Route::post('/medical-insurance', [MedicalController::class, 'store'])->name('medical.submit');
 
-// Route::get('/life-insurance', [SearchADealConroller::class, 'lifeCover'])->name('life-cover');
+// Cookies
+/**
+ * Accepts and stores a cookie consent.
+ *
+ * This function is a route handler for the '/cookie-accept' endpoint. It sets a cookie named 'cookie_consent'
+ * with a value of 'true' and an expiration time of 1 year. The function returns a response with the text 'OK'
+ * and the newly set cookie.
+ *
+ * @return \Illuminate\Http\Response The response with the 'OK' text and the 'cookie_consent' cookie.
+ */
+// Route::post('/cookie-accept', function () {
+//     return response('OK')->cookie('cookie_consent', true, 60 * 24 * 365); // 1 year
+// })->name('cookie.accept');

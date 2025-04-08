@@ -12,108 +12,12 @@
         </div>
     @endif
 
-    <style>
-    
-        .page-header {
-            background: url(img/images/18.png) center center no-repeat;
-            background-size: cover;
-            height: 19rem;
-            width: 100%;
-            position: relative;
-            text-align: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-          }
-    
-         
-    .page-header .overlay-color {
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.7); 
-        z-index: 1;
-    }
-    
-    .page-header .main,
-    .page-header .breadcrumb {
-        position: relative;
-        z-index: 2;
-        color: white;
-    }
-    .break-image{
-        width: 80% !important;
-        margin: 0 auto;
-    }
-    .break-image img{
-        width: 100%;
-        padding-bottom: 50px;
-        border-radius: 5px;
-    }
-    
-    .breadcrumb{
-        justify-content: center;
-        align-content: center;
-    }
-    .display-6{
-        font-size: 48px;
-    }
-    .subtitle p{
-        font-size: 36px;
-    }
-    .main{
-        padding: 0 30px;
-        width: 65% !important;
-    }
-    h3{
-        font-size: 34px;
-    }
-    
-    .hlabi-form{
-        width: 80%; 
-        margin: 0 auto
-    }
-    .hlabi-body{
-        width: 80%;
-        margin: 0 auto;
-        font-size: 18px !important;
-    }
-    
-    @media screen and (max-width: 676px){
-    
-    .display-6 {
-        font-size: 28px;
-    }
-    .subtitle p{
-        font-size: 18px;
-    }
-    .main{
-        /*padding: 0 30px;*/
-        width: 100% !important;
-    }
-    h3{
-        font-size: 16px;
-    }
-    #form *{
-        width: 100% !important;
-    }
-    .hlabi-body{
-        font-size: 14px !important;
-    }
-    .hlabi-form{
-        width: 100%; 
-        margin: 0 auto
-    }
-}
-    </style>
-
 
     <!-- Page Header Start -->
     <div
       class="container-fluid page-header py-5 mb-5 wow fadeIn"
       data-wow-delay="0.1s"
+      style="background: url(img/images/18.png) center center no-repeat; background-size: cover;"
     >
         <div class="overlay-color">
       <div class="container py-5">
@@ -509,33 +413,12 @@
                           <label for="cage">Vehicle Make</label>
                         </div>
                       </div>
-                      {{-- <div class="col-sm-6">
-                        <div class="form-floating">
-                          <select name="language" class="form-select" id="cage">
-                            <option selected></option>
-                            <option value="English">English</option>
-                            <option value="SePedi">SePedi</option>
-                            <option value="Afrikaans">Afrikaans</option>
-                            <option value="SeSotho">SeSotho</option>
-                            <option value="IsiNdebele">IsiNdebele</option>
-                            <option value="SiSwazi">SiSwazi</option>
-                            <option value="XiTsonga">XiTsonga</option>
-                            <option value="SeTswana">SeTswana</option>
-                            <option value="Tshivenda">Tshivenda</option>
-                            <option value="IsiXhosa">IsiXhosa</option>
-                            <option value="IsiZulu">IsiZulu</option>
-                            <option value="Other">Other</option>
-                          </select>
-                          <label for="cage">Prefered
-                            Language *</label>
-                        </div>
-                      </div> --}}
                       <div class="col-sm-12">
                         <input id="checkbox-1" required name="acceptterms" value="true"
                                 aria-describedby="checkbox-1" type="checkbox"
                                 class="bg-gray-50 border-gray-300 focus:ring-3 focus:ring-blue-300 h-4 w-4 rounded">
                             <label for="checkbox-1" class="text-sm ml-3 font-medium text-gray-900">I agree to the <a
-                                    href="#" class="text-blue-600 hover:underline">terms and conditions</a></label>
+                                    href="{{ route('terms') }}" class="text-blue-600 hover:underline">terms and conditions</a></label>
                       </div>
                       <div class="col-12">
                         <button class="btn btn-primary py-3 px-5" type="submit">

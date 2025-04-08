@@ -17,7 +17,7 @@
     <div
       class="container-fluid page-header py-5 mb-5 wow fadeIn"
       data-wow-delay="0.1s"
-      style="background: url(img/images/31.png) center center no-repeat;"
+      style="background: url(img/images/31.png) center center no-repeat; background-size: cover;"
     >
         <div class="overlay-color">
           <div class="container py-5">
@@ -56,7 +56,7 @@
                         </div>
                     </div>
                     <div class="break-image">
-                        <img src="img/images/42.jpg" alt="">
+                        <img src="img/images/27.png" alt="">
                     </div>
                     <div class="row">
                         <p>
@@ -145,7 +145,7 @@
             </div>
 
               
-              <div class="col-lg-12 wow fadeIn" data-wow-delay="0.5s">
+              <div class="col-lg-12 wow fadeIn hlabi-form" data-wow-delay="0.5s">
                 <div class="bg-light rounded p-5">
                   <h4 class="mb-4 text-center">CLICK BELOW FOR IMMEDIATE RELIEF</h4>
                   <form action="{{ route('life.submit') }}" method="post">
@@ -213,7 +213,7 @@
                                 aria-describedby="checkbox-1" type="checkbox"
                                 class="bg-gray-50 border-gray-300 focus:ring-3 focus:ring-blue-300 h-4 w-4 rounded">
                             <label for="checkbox-1" class="text-sm ml-3 font-medium text-gray-900">I agree to the <a
-                                    href="#" class="text-blue-600 hover:underline">terms and conditions</a></label>
+                                    href="{{ route('terms') }}" class="text-blue-600 hover:underline">terms and conditions</a></label>
                       </div>
                       <div class="col-12">
                         <button class="btn btn-primary py-3 px-5" type="submit">
