@@ -1,5 +1,5 @@
 
-
+    <?php echo $__env->make('cookie-consent::index', array_diff_key(get_defined_vars(), ['__data' => 1, '__path' => 1]))->render(); ?>
 
     <!-- Footer Start -->
     <div

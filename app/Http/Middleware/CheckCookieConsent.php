@@ -15,10 +15,10 @@ class CheckCookieConsent
      */
     public function handle(Request $request, Closure $next): Response
     {
-        if (!$request->cookies->has('cookie_consent')) {
-            // Redirect to the cookie consent page
-            // return redirect()->route('cookie_consent');
-        }
+        // if (!$request->cookies->has('cookie_consent')) {
+        //     // Redirect to the cookie consent page
+        //     // return redirect()->route('cookie_consent');
+        // }
     
         return $next($request);
     }

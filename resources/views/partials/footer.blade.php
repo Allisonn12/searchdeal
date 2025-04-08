@@ -1,6 +1,6 @@
 
+    @include('cookie-consent::index')
 
-{{-- @include('cookie-consent') --}}
     <!-- Footer Start -->
     <div
       class="container-fluid bg-dark footer mt-5 pt-5 wow fadeIn"
