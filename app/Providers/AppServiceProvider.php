@@ -21,8 +21,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        Route::middlewareGroup('web', [
-            CheckCookieConsent::class,
-        ]);
+        // Route::middlewareGroup('web', [
+        //     CheckCookieConsent::class,
+        // ]);
     }
 }

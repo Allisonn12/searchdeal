@@ -1,4 +1,4 @@
-@include('partials.header')
+{{-- @include('partials.header')
 
 
 @if(!request()->cookie('cookie_consent'))
@@ -24,4 +24,4 @@
 @endif
 
 
-@include('partials.footer')
+@include('partials.footer') --}}
