@@ -1,6 +1,6 @@
 <?php
 
 return [
-    'message' => 'We use cookies to personalise content and ads, to provide social media features and to analyse our traffic. We also share information about your use of our site with our social media, advertising and analytics partners who may combine it with other information that you’ve provided to them or that they’ve collected from your use of their services. You consent to our cookies if you continue to use our website.',
+    'message' => 'Please note: This website contains affiliate links and is partnered with leading brands to bring you the best deals. By clicking on the "Allow cookies" button, you consent to sharing your details with our partners.',
     'agree' => 'Allow cookies',
 ];
