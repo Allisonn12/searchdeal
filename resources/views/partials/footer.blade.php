@@ -80,5 +80,23 @@
 
     <!-- Template Javascript -->
     <script src="{{ asset('js/main.js') }}"></script>
+    <style>
+
+.js-cookie-consent {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 2147483645;
+    box-sizing: border-box;
+    width: 100%;
+
+    background-color: #f1f6f4;
+}
+.cookie-inner {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 32px 0;
+}
+    </style>
   </body>
 </html>
