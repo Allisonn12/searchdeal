@@ -29,7 +29,7 @@
                     <p class="fs-5 text-body mb-5">
                       We do the searching, so you do not need to
                     </p>
-                    <a href="" class="btn btn-primary py-3 px-5"
+                    <a href="<?php echo e(route('service')); ?>" class="btn btn-primary py-3 px-5"
                       >More Details</a
                     >
                   </div>
@@ -49,7 +49,7 @@
                     <p class="fs-5 text-body mb-5">
                       Do not spend time looking for the right deal, trust us to make your life easy!
                     </p>
-                    <a href="" class="btn btn-primary py-3 px-5"
+                    <a href="<?php echo e(route('service')); ?>" class="btn btn-primary py-3 px-5"
                       >More Details</a
                     >
                   </div>
