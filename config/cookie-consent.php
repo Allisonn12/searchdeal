@@ -18,3 +18,4 @@ return [
      */
     'cookie_lifetime' => 365 * 20,
 ];
+ 
