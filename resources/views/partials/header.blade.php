@@ -24,8 +24,8 @@
     <meta charset="utf-8" />
     <title>Search A Deal</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta content="" name="keywords" />
-    <meta content="" name="description" />
+    <meta content="insurance, cheap insurance, best insurance, compare insurance, affordable insurance, insurance deals, insurance discount" name="keywords" />
+    <meta content="SearchADeal helps you find the best insurance deals! Compare quotes for car, medical, life and many more insurances from top providers. Save money with affordable rates and exclusive discounts—get your free quote today!" name="description" />
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon" />
     <!-- Google Web Fonts -->
