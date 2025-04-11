@@ -23,7 +23,9 @@ Route::get('/contact', [SearchADealConroller::class, 'contact'])->name('contact'
 Route::post('/contact', [ContactController::class, 'send'])->name('contact.send');
 
 Route::get('/car-insurance', [CarInsureController::class, 'index'])->name('car-insurance');
+Route::get('/car-insure', [CarInsureController::class, 'landing'])->name('car-insure');
 Route::post('/car-insurance', [CarInsureController::class, 'store'])->name('car.insure.submit');
+Route::post('/car-insure', [CarInsureController::class, 'store'])->name('car.insure.submit');
 
 Route::get('/motor-warrenty', [MotorController::class, 'index'])->name('motor');
 Route::post('/motor-warrenty', [MotorController::class, 'store'])->name('motor.insure.submit');

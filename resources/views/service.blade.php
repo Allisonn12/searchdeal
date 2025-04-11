@@ -146,6 +146,28 @@
               <a class="btn btn-light px-3" href="{{ route('car-insurance') }}">Read More</a>
             </div>
           </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="service-item rounded h-100 p-5">
+              <div class="d-flex align-items-center mb-4">
+                <div class="service-icon flex-shrink-0 bg-primary rounded-end me-4">
+                  <img class="img-fluid" src="img/icon/icon-09-light.png" alt="" />
+                </div>
+                <h4 class="mb-0">Pay Day Loans</h4>
+              </div>
+              <p class="mb-4">
+                Get quick financial support when you need it most with our hassle-free payday loans.
+              </p>
+              <a class="btn btn-light px-3" href="{{ route('loans') }}">Read More</a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+            
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+            
+          </div>
+          
         </div>
       </div>
     </div>
