@@ -225,12 +225,9 @@
                             required
                             name="idnumber"
                           />
-                          <label for="gmail">13 Digit ID Number </label>
+                          <label for="gmail">13 Digit ID Number * </label>
                         </div>
                       </div>
-
-
-                      
                       <div class="col-sm-12">
                         <label for="loanamount" class="form-label">How much would you like to loan?</label>
                         <input
@@ -257,7 +254,7 @@
                       </div>
                       <div class="col-12">
                         <button class="btn btn-primary py-3 px-5" type="submit">
-                          Get Car Insurance
+                          Get Loan
                         </button>
                       </div>
                     </div>
