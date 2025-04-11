@@ -223,7 +223,7 @@
                             required
                             name="idnumber"
                           />
-                          <label for="gmail">13 Digit ID Number </label>
+                          <label for="gmail">13 Digit ID Number * </label>
                         </div>
                       </div>
                       <div class="col-sm-12">
