@@ -226,20 +226,20 @@
                           <label for="gmail">13 Digit ID Number </label>
                         </div>
                       </div>
-
-
                       <div class="col-sm-12">
-                        <div class="form-floating">
-                          <input
-                            type="text"
-                            class="form-control"
-                            id="gmail"
-                            placeholder="Loan Amount"
-                            required
-                            name="loanamount"
-                          />
-                          <label for="gmail">How much would you like to loan? e.g 1 000.00 </label>
-                        </div>
+                        <label for="loanamount" class="form-label">How much would you like to loan?</label>
+                        <input
+                          type="range"
+                          class="form-range"
+                          min="1000"
+                          max="9000"
+                          step="500"
+                          id="loanamount"
+                          name="loanamount"
+                          value="1000"
+                          oninput="loanOutput.value = 'R ' + Number(this.value).toLocaleString()"
+                        >
+                        <output id="loanOutput" class="form-text d-block mt-1">R 1 000.00</output>
                       </div>
 
 
@@ -252,7 +252,7 @@
                       </div>
                       <div class="col-12">
                         <button class="btn btn-primary py-3 px-5" type="submit">
-                          Get Car Insurance
+                          Get Loan
                         </button>
                       </div>
                     </div>
