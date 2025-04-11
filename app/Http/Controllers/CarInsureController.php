@@ -13,6 +13,10 @@ class CarInsureController extends Controller
         return view('car-insurance');
     }
 
+    public function landing(){
+        return view('car-insure');
+    }
+
     public function store(Request $request)
     {
             $data = $request->all();
