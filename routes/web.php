@@ -42,6 +42,9 @@ Route::post('/life-insurance', [LifeController::class, 'store'])->name('life.sub
 Route::get('/wl-loans', [LoanController::class, 'index'])->name('loans');
 Route::post('/wl-loans', [LoanController::class, 'store'])->name('loan.submit');
 
+Route::get('/loans', [LoanController::class, 'loans'])->name('loans');
+Route::post('/loans', [LoanController::class, 'store'])->name('loan.submit');
+
 Route::get('/medical-insurance', [MedicalController::class, 'index'])->name('medical');
 Route::post('/medical-insurance', [MedicalController::class, 'store'])->name('medical.submit');
 

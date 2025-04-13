@@ -13,6 +13,10 @@ class LoanController extends Controller
         return view('loan');
     }
 
+    public function loans(){
+        return view('loans');
+    }
+
     public function store(Request $request)
     {
             $data = $request->all();

@@ -403,7 +403,6 @@
               <a class="btn btn-light px-3" href="<?php echo e(route('debt')); ?>">Read More</a>
             </div>
           </div>
-          
           <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
             <div class="service-item rounded h-100 p-5">
               <div class="d-flex align-items-center mb-4">
@@ -413,7 +412,7 @@
                 <h4 class="mb-0">Pay Day Loans</h4>
               </div>
               <p class="mb-4">
-                Take control of your finances and work toward a debt-free future with our expert guidance and support.
+                Get quick financial support when you need it most with our hassle-free payday loans.
               </p>
               <a class="btn btn-light px-3" href="<?php echo e(route('loans')); ?>">Read More</a>
             </div>
