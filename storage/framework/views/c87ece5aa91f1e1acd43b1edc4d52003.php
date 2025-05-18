@@ -1,1 +1,0 @@
-<?php /**PATH /home/hlabi/Desktop/work/searchadeal/resources/views/cookie-consent.blade.php ENDPATH**/ ?>

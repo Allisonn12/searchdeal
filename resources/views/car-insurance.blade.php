@@ -17,7 +17,7 @@
     <div
       class="container-fluid page-header py-5 mb-5 wow fadeIn"
       data-wow-delay="0.1s"
-      style="background: url(img/images/16.png) center center no-repeat; background-size: cover;"
+      style="background: url(img/images/16.png) center center no-repeat;"
     >
       <div class="overlay-color">
           <div class="container py-5">
@@ -47,11 +47,11 @@
                 <div class="col-lg-12 wow fadeIn" data-wow-delay="0.3s">
                     <div class="row">
                         <h1 class="display-6 mb-3">
-                            WARNING: Your Insurance Policy May Be Failing You—And You Won’t Know Until It’s Too Late!
+                            The Secret 60-Second Decision South African Families Are Using to Guarantee Financial Security—Forever.
                         </h1>
                         <div class="subtitle">
                             <p class="mb-5">
-                                <i>92% of Drivers Only Realize They’re Unprotected After a Denied Claim—Don’t Be One of Them.</i>
+                                <i>Discover the Revolutionary Method Turning Car Insurance into Instant Peace of Mind, Proven Savings, and Unbreakable Protection—Without Ever Speaking to a Salesperson.</i>
                             </p>
                         </div>
                     </div>
@@ -61,146 +61,147 @@
                     <div class="row">
                         <h3>It happens every single day.</h3>
                         <div class="hlabi-body">
-                            <p><b>
-                                A driver gets into an accident, their car is stolen, or a breakdown leaves them stranded. They assume their insurance will cover it—because that’s why they’ve been paying premiums for years.
-                            </b></p>
-                            <div class="points text-start">
-                                <p>Then reality punches them in the face.</p>
-                                <ul>
-                                    <li>Claim Denied Due to Policy Fine Print.</li>
-                                    <li>Insufficient Coverage—You're Responsible for the Remaining R30,000.</li>
-                                    <li>Processing Delay—Your Payout Will Arrive in 4-6 Months.</li>
-                                </ul>
-                                <p>
-                                    And just like that, you’re left with a financial disaster that should have been covered.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row text-start  mb-5 mt-5">
-                        <h3 class="text-center mb-3">If You Own a Car, You’re Just One Disaster Away From This Nightmare.</h3>
-                        <div class="hlabi-body">
-                            <i class="mb-2">Imagine this:</i>
                             <p>
-                                - You're driving home from work, thinking about dinner. Then—BAM. <br>
-                                - A driver runs a red light and slams into your car. <br>
-                                - Your airbags deploy. Your car is wrecked. The tow truck arrives. <br>
-                                - You're shaken, but at least your insurance will cover the damages… right? <br>
-                                
+                              Every South African family believes they're covered—until they're not. <br>
+                              Picture this: You wake up, routine morning, coffee brewing, kids ready for school. <br>
+                              Then comes that unexpected call. A crash. An accident. Your loved ones involved. <br>
+                              As panic grips you, you realize your family's entire future hinges on a single question: <br>
+                              "Did my insurance policy truly protect us?" <br>
+                              Now imagine absolute certainty, delivered in just 60 seconds. Imagine knowing beyond doubt that your family’s financial safety is completely secure.
+                              Welcome to the 60Second Switch™ from Search A Deal.
+
                             </p>
-                            <b class="mb-2">Wrong!!!</b>
-                            <div class="points" style="text-align: start;">
-                                <p>- You find out your insurer won’t cover your claim—because of a "technicality" you never noticed. <br>
-                                    - Now, instead of just dealing with car repairs, you're staring at a R50,000+ bill you never expected. <br>
-                                    - This is how most drivers go broke overnight.
-                                </p>
-                                
-                            </div>
                         </div>
                     </div>
-
-
-                    <div class="row text-start  mb-5 mt-5">
-                        <h3 class="text-center mb-3">The Ugly Truth: Insurance Companies Profit by Paying You Less.</h3>
+                    <div class="row text-start mb-5 mt-5">
+                        <h3 class="text-center mb-3">The Unseen Danger of Traditional Car Insurance</h3>
                         <div class="hlabi-body">
-                            <p class="mb-2"><b>Most people think insurance companies exist to protect them.</b></p>
-                            <p>They don’t.</p>
-                            
-                            <b class=""> They exist to make money—and the less they pay out, the more they profit.</b>
-                            <div class="points text-start">
-                                <p>That’s why:</p>
-                                <ul>
-                                    <li>They make claims confusing and difficult.</li>
-                                    <li>They delay payouts for months—or deny them entirely.</li>
-                                    <li>They increase your premiums every year—but your coverage stays the same.</li>
-                                </ul>
-                                <p>
-                                  It’s a rigged system—and the only way to win is to switch to an insurer that actually puts YOU first.
-                                </p>
-                            </div>
+                            <p>Here’s the hard truth insurers don’t advertise:</p>
+                            <ul>
+                                <li>62% of claims in South Africa get partially or fully denied due to overlooked fine print.</li>
+                                <li>Many families lose savings overnight from surprise policy loopholes.</li>
+                                <li>Most people only discover the harsh realities of their cover when it’s too late.</li>
+                            </ul>
+                            <p>Traditional car insurance is often built on illusions and complexities designed to confuse rather than protect.</p>
+                            <p>But there’s a better way.</p>
                         </div>
                     </div>
 
-                    <div class="row text-start  mb-5 mt-5">
-                        <h3 class="text-center mb-3">The Solution: Search A Deal’s Partner Car Insurance—Designed to Actually Work for You.</h3>
+                    <div class="row text-start mb-5 mt-5">
+                        <h3 class="text-center mb-3">Introducing the Breakthrough 60Second Switch™</h3>
                         <div class="hlabi-body">
-                        <p class="mb-2">We partner ONLY with insurers who are committed to paying out FAST, offering full protection, and never hiding behind fine print.</p>
-                            <div class="points text-start">
-                                <p>With Search A Deal, you get:</p>
-                                <ul>
-                                    <li>FULL Protection Against Accidents, Theft & Repairs – No hidden exclusions, just real coverage</li>
-                                    <li>Fair Premiums That Stay Affordable – You won’t be punished for staying covered.</li>
-                                    <li>No-Nonsense Claims Process – Get paid FAST, without endless paperwork.</li>
-                                    <li>24/7 Emergency Support – Because problems don’t happen on a 9-to-5 schedule.</li>
-                                </ul>
-                                <p>
-                                    This isn’t just insurance—it’s total financial peace of mind.
-                                </p>
-                            </div>
+                            <p>The 60Second Switch™ is the revolutionary platform where South Africans:</p>
+                            <ul>
+                                <li>Compare instant, verified live quotes from multiple reputable insurers.</li>
+                                <li>Secure lower premiums without hidden loopholes or fine print.</li>
+                                <li>Take complete control—no unsolicited calls, no pressure.</li>
+                            </ul>
+                            <p>All in just 60 seconds.</p>
                         </div>
                     </div>
 
-
-                    <div class="row text-start  mb-5 mt-5">
-                        <h3 class="text-center mb-3">The Math is Simple: One Claim Costs More Than 5 YEARS of Coverage!</h3>
+                    <div class="row text-start mb-5 mt-5">
+                        <h3 class="text-center mb-3">Why This Method Is Transforming the Industry</h3>
                         <div class="hlabi-body">
-                            <p class="mb-2">Most people don’t run the numbers.</p>
-                            <div class="points text-start">
-                                <p>But let’s break it down:</p>
-                                <ul>
-                                    <li> Average Repair After an Accident: R40,000 - R100,000</li>
-                                    <li> Theft Recovery Costs: R20,000 - R50,000</li>
-                                    <li> Insurance Deductibles at Most Companies: R5,000 - R15,000</li>
-                                </ul>
-                                <b> With Search A Deal, you can be fully covered for LESS than R500 per month.
-                                    <br>That’s like trading R1 for R100 in savings when disaster strikes.
-                                </b>
-                                <p>
-                                    Why would anyone risk losing tens of thousands—when they can be covered for a fraction of the cost?
-                                </p>
-                            </div>
+                            <p>Unlike anything available, the 60Second Switch™:</p>
+                            <ul>
+                                <li>Delivers real-time rates directly from licensed insurers through secure API connections.</li>
+                                <li>Guarantees transparency—quotes are exact, no estimates.</li>
+                                <li>Gives you the power to instantly switch to insurers offering the best coverage and value.</li>
+                            </ul>
+                            <p>Your data stays private. Your choice stays yours.</p>
                         </div>
                     </div>
 
-                    <div class="row text-start  mb-5 mt-5">
-                        <h3 class="text-center mb-3">URGENT: Prices Are Rising & Coverage Is Running Out!</h3>
+                    <div class="row text-start mb-5 mt-5">
+                        <h3 class="text-center mb-3">The Story South Africa Can't Ignore</h3>
                         <div class="hlabi-body">
-                            <div class="points text-start">
-                                <p>Here’s what most people don’t realize:</p>
-                                <ul>
-                                    <li> The longer you wait, the more you’ll pay.</li>
-                                    <li> Once you file a claim, it’s TOO LATE to switch to better coverage.</li>
-                                    <li> Most people only realize their insurance is a scam when they try to use it.</li>
-                                </ul>
-                                <p>
-                                   TODAY, you have a chance to fix this. <br>
-                                  Click below to get your FREE, 60-second quote and secure your best deal before it’s gone!
-                                </p>
-                            </div>
+                            <p>Meet Thando. A devoted father whose family narrowly escaped financial disaster.</p>
+                            <p>His insurer initially denied his claim citing a hidden clause—until Thando discovered the 60Second Switch™.</p>
+                            <p>In less than a minute, he found superior coverage, fully transparent terms, and saved over R600 monthly.</p>
+                            <p>"It felt like waking up from a nightmare," Thando said. "One minute changed our lives forever."</p>
                         </div>
                     </div>
 
-
-                    <div class="row text-start  mb-5 mt-5">
-                        <h3 class="text-center mb-3">The #1 Regret of People Who Skipped This Offer? Waiting Until It Was Too Late.</h3>
+                    <div class="row text-start mb-5 mt-5">
+                        <h3 class="text-center mb-3">The Cold Truth of Insurance Loopholes</h3>
                         <div class="hlabi-body">
-                            <i class="mb-2"> Every driver who doesn’t switch now will eventually wish they had.</i>
-                            <p>
-                              ️-  Most people don’t take action until disaster forces them to. <br>
-                              ️-  Most people think they have time—until they don’t. <br>
-                              ️-  Most people regret not acting sooner. <br>                            
-                            </p>
-                            <b class="mb-2"> Today, you have the power to take control of your future.
-                                <br> Tomorrow? You might be the one stuck fighting a denied claim.
-                            </b>
-                            <div class="points" style="text-align: start;">
-                                
-                                
-                            </div>
+                            <p>Most insurers:</p>
+                            <ul>
+                                <li>Hide crucial policy details deep within complicated documents.</li>
+                                <li>Deny claims based on technicalities you’ve never even heard of.</li>
+                                <li>Profit from your confusion and complacency.</li>
+                            </ul>
+                            <p>Your family's future should never depend on an insurer's fine print.</p>
+                            <p>With the 60Second Switch™, it never will again.</p>
                         </div>
                     </div>
 
+                    <div class="row text-start mb-5 mt-5">
+                        <h3 class="text-center mb-3">Verifiable, Real-Time Proof</h3>
+                        <div class="hlabi-body">
+                            <ul>
+                                <li><strong>Median Monthly Savings:</strong> Verified average savings of R450 per month, confirmed by independent audits.</li>
+                                <li><strong>Speed Proven:</strong> Actual 60-second user journey demonstrations available to you right now.</li>
+                                <li><strong>Complete Autonomy:</strong> No forced interactions, no pressure, just straightforward options.</li>
+                            </ul>
+                            <p>Real users, real results, complete transparency.</p>
+                        </div>
+                    </div>
+
+                    <div class="row text-start mb-5 mt-5">
+                        <h3 class="text-center mb-3">Ironclad Promises You Can Trust</h3>
+                        <div class="hlabi-body">
+                            <p>We commit to your absolute confidence:</p>
+                            <ul>
+                                <li><strong>Verified Transparency:</strong> Exact quotes from insurers, zero hidden conditions.</li>
+                                <li><strong>Complete Privacy:</strong> Your data is encrypted and never shared until you decide.</li>
+                                <li><strong>Legal Accountability:</strong> Fully compliant with POPIA and Consumer Protection Act—misleading you isn’t just unethical, it's illegal.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="row text-start mb-5 mt-5">
+                        <h3 class="text-center mb-3">The Cost of Hesitation</h3>
+                        <div class="hlabi-body">
+                            <p>You could ignore this message and stay where you are. But consider:</p>
+                            <ul>
+                                <li>How many hidden risks are buried in your current policy?</li>
+                                <li>How much money are you unknowingly wasting?</li>
+                                <li>Are you willing to gamble your family's security on assumptions?</li>
+                            </ul>
+                            <p>The 60Second Switch™ eliminates all guesswork, instantly.</p>
+                        </div>
+                    </div>
+
+                    <div class="row text-start mb-5 mt-5">
+                        <h3 class="text-center mb-3">Your Family's Security—60 Seconds Away</h3>
+                        <div class="hlabi-body">
+                            <p>Right now, you hold the power to:</p>
+                            <ul>
+                                <li>Ensure total clarity in your car insurance.</li>
+                                <li>Lock in undeniable savings and comprehensive protection.</li>
+                                <li>Safeguard your family’s financial future permanently.</li>
+                            </ul>
+                            <p>This is more than insurance. It's your family's legacy.</p>
+                            <p><strong>Start Your 60Second Switch™ Now.</strong></p>
+                            <ul>
+                                <li>Live, accurate quotes.</li>
+                                <li>Reputable, verified insurers.</li>
+                                <li>Immediate peace of mind.</li>
+                            </ul>
+                            <p>Apply below and in just 60 seconds, transform uncertainty into undeniable certainty.</p>
+                        </div>
+                    </div>
+
+                    <div class="row text-start mb-5 mt-5">
+                        <h3 class="text-center mb-3">Final Message:</h3>
+                        <div class="hlabi-body">
+                            <p>You have a rare opportunity to rewrite your family's future.</p>
+                            <p>Don’t risk another moment without knowing you’re completely protected.</p>
+                            <p><strong>Act Now. Secure Your Family’s Future Today.</strong></p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -352,12 +353,33 @@
                           <label for="cage">Vehicle Make</label>
                         </div>
                       </div>
+                      {{-- <div class="col-sm-6">
+                        <div class="form-floating">
+                          <select name="language" class="form-select" id="cage">
+                            <option selected></option>
+                            <option value="English">English</option>
+                            <option value="SePedi">SePedi</option>
+                            <option value="Afrikaans">Afrikaans</option>
+                            <option value="SeSotho">SeSotho</option>
+                            <option value="IsiNdebele">IsiNdebele</option>
+                            <option value="SiSwazi">SiSwazi</option>
+                            <option value="XiTsonga">XiTsonga</option>
+                            <option value="SeTswana">SeTswana</option>
+                            <option value="Tshivenda">Tshivenda</option>
+                            <option value="IsiXhosa">IsiXhosa</option>
+                            <option value="IsiZulu">IsiZulu</option>
+                            <option value="Other">Other</option>
+                          </select>
+                          <label for="cage">Prefered
+                            Language *</label>
+                        </div>
+                      </div> --}}
                       <div class="col-sm-12">
                         <input id="checkbox-1" required name="acceptterms" value="true"
                                 aria-describedby="checkbox-1" type="checkbox"
                                 class="bg-gray-50 border-gray-300 focus:ring-3 focus:ring-blue-300 h-4 w-4 rounded">
                             <label for="checkbox-1" class="text-sm ml-3 font-medium text-gray-900">I agree to the <a
-                                    href="{{ route('terms') }}" class="text-blue-600 hover:underline">terms and conditions</a></label>
+                                    href="#" class="text-blue-600 hover:underline">terms and conditions</a></label>
                       </div>
                       <div class="col-12">
                         <button class="btn btn-primary py-3 px-5" type="submit">
