@@ -21,7 +21,7 @@ class TrackerController extends Controller
             $resp = $responseBody['response'];
             if ($responseBody['code'] == 1) {
                 $resp = json_encode($responseBody['response']);
-                $inser = TrackerModel::createQuietly([
+                TrackerModel::createQuietly([
                     'firstname' => $data['firstname'], 
                     'lastname' => $data['lastname'], 
                     'phone1' => $data['phone1'], 
@@ -33,14 +33,12 @@ class TrackerController extends Controller
                     'offer_id' => $data['offer_id'],
                     'status' => $resp, 
                 ]);
+                return view('car-insurance-success');
                 // return redirect()->back()->with('success', "Success! Your form has been submitted. One of our friendly consultants will be in touch soon.");
-                        // return view('success');
-                return redirect()->route('success');
-
-
+                // return view('success');
             }else{
                 $resp = json_encode($responseBody['response']);
-                $inser = TrackerModel::createQuietly([
+                TrackerModel::createQuietly([
                     'firstname' => $data['firstname'], 
                     'lastname' => $data['lastname'], 
                     'phone1' => $data['phone1'], 
