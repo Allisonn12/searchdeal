@@ -21,6 +21,14 @@ class SearchADealConroller extends Controller
     public function success(){
         return view('success');
     }
+    
+    public function cicslhcf(){
+        return view('cicslhcf');
+    }
+
+    public function carInsuresuccess(){
+        return view('car-insurance-success');
+    }
 
     public function terms(){
         return view('terms-and-condition');
