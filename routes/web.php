@@ -20,9 +20,6 @@ Route::get('/car-insurance-success', [SearchADealConroller::class, 'carInsuresuc
 Route::get('/terms-and-conditions', [SearchADealConroller::class, 'terms'])->name('terms');
 Route::get('/private-policy', [SearchADealConroller::class, 'policy'])->name('policy');
 Route::get('/cicslhcf', [SearchADealConroller::class, 'cicslhcf'])->name('cicslhcf');
-// Route::get('/cicslhcf', function(){
-//     return view('cicslhcf');
-// });
 
 Route::get('/contact', [SearchADealConroller::class, 'contact'])->name('contact');
 Route::post('/contact', [ContactController::class, 'send'])->name('contact.send');
