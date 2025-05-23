@@ -334,7 +334,7 @@
                           <select name="gender" required class="form-select" id="cage">
                             <option selected></option>
                             <option value="Male">Male</option>
-                            <option value="Female">Femail</option>
+                            <option value="Female">Female</option>
                             <option value="Other">I prefer not to say</option>
                           </select>
                           <label for="cage">Gender *</label>
