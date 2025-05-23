@@ -9,7 +9,6 @@ use App\Http\Controllers\TrackerController;
 use App\Http\Controllers\LoanController;
 use App\Http\Controllers\MedicalController;
 use App\Http\Controllers\LifeController;
-use App\Http\Controllers\SuccessController;
 use App\Http\Controllers\ContactController;
 
 
@@ -17,9 +16,12 @@ Route::get('/', [SearchADealConroller::class, 'index'])->name('index');
 Route::get('/service', [SearchADealConroller::class, 'service'])->name('service');
 Route::get('/success', [SearchADealConroller::class, 'success'])->name('success');
 Route::get('/car-insurance-success', [SearchADealConroller::class, 'carInsuresuccess'])->name('car_insure_success');
+Route::get('/car-track-success', [SearchADealConroller::class, 'carTrackerSuccess'])->name('car_track_success');
 Route::get('/terms-and-conditions', [SearchADealConroller::class, 'terms'])->name('terms');
 Route::get('/private-policy', [SearchADealConroller::class, 'policy'])->name('policy');
 Route::get('/cicslhcf', [SearchADealConroller::class, 'cicslhcf'])->name('cicslhcf');
+Route::get('/car-track-up', [SearchADealConroller::class, 'carTrackerup'])->name('car-track-up');
+
 
 Route::get('/contact', [SearchADealConroller::class, 'contact'])->name('contact');
 Route::post('/contact', [ContactController::class, 'send'])->name('contact.send');
