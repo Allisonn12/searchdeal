@@ -19,7 +19,7 @@ Route::get('/car-insurance-success', [SearchADealConroller::class, 'carInsuresuc
 Route::get('/car-track-success', [SearchADealConroller::class, 'carTrackerSuccess'])->name('car_track_success');
 Route::get('/terms-and-conditions', [SearchADealConroller::class, 'terms'])->name('terms');
 Route::get('/private-policy', [SearchADealConroller::class, 'policy'])->name('policy');
-Route::get('/cicslhcf', [SearchADealConroller::class, 'cicslhcf'])->name('cicslhcf');
+Route::get('/car-insure-sales', [SearchADealConroller::class, 'cicslhcf'])->name('cicslhcf');
 Route::get('/car-track-up', [SearchADealConroller::class, 'carTrackerup'])->name('car-track-up');
 
 
@@ -43,7 +43,7 @@ Route::post('/car-tracker', [TrackerController::class, 'store'])->name('tracker.
 Route::get('/life-insurance', [LifeController::class, 'index'])->name('life');
 Route::post('/life-insurance', [LifeController::class, 'store'])->name('life.submit');
 
-Route::get('/wl-loans', [LoanController::class, 'index'])->name('loans');
+Route::get('/wl-loans', [LoanController::class, 'index'])->name('wl-loan');
 Route::post('/wl-loans', [LoanController::class, 'store'])->name('loan.submit');
 
 Route::get('/loans', [LoanController::class, 'loans'])->name('loans');

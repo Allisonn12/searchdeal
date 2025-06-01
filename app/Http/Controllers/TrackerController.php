@@ -33,9 +33,16 @@ class TrackerController extends Controller
                     'offer_id' => $data['offer_id'],
                     'status' => $resp, 
                 ]);
-                return view('car-insurance-success');
+                // return view('car-insurance-success');
                 // return redirect()->back()->with('success', "Success! Your form has been submitted. One of our friendly consultants will be in touch soon.");
                 // return view('success');
+
+                // car_track_landing
+                if ($data['form_source'] === "car_track_upsell") {
+                    return redirect()->route('success');
+                } else if ($data['form_source'] === "car_track_landing") {
+                    return redirect()->route('car_insure_success');
+                }
             }else{
                 $resp = json_encode($responseBody['response']);
                 TrackerModel::createQuietly([
