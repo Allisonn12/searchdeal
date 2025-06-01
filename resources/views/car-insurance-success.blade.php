@@ -3,7 +3,6 @@
 <div class="container-fluid py-5 wow fadeIn" data-wow-delay="0.1s">
     <div class="container">
         <div class="row g-5">
-            {{-- <h4 class="text-danger text-center mb-5" style="font-weight: 800">NEED CAR INSURANCE?</h4> --}}
             <div class="main">
                 <div class="main-content my-5">
                     <div class="col-lg-12 wow fadeIn" data-wow-delay="0.3s">

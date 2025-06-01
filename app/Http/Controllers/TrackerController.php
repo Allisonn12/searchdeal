@@ -18,7 +18,7 @@ class TrackerController extends Controller
             $data = $request->all();
             $responseBody = $this->submitToApi($data);
             $date = date("Y/m/d h:i:sa");
-            // $resp = $responseBody['response'];
+            $resp = $responseBody['response'];
             if ($responseBody['code'] == 1) {
                 $resp = json_encode($responseBody['response']);
                 TrackerModel::createQuietly([
@@ -45,7 +45,6 @@ class TrackerController extends Controller
                 }
             }else{
                 $resp = json_encode($responseBody['response']);
-                // $resp = "Hlabi";
                 TrackerModel::createQuietly([
                     'firstname' => $data['firstname'], 
                     'lastname' => $data['lastname'], 
