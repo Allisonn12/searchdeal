@@ -11,6 +11,7 @@ class LoanController extends Controller
 {
     public function index(){
         return view('loan');
+        // return redirect()->route('loan');
     }
 
     public function loans(){

@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
-use Illuminate\Support\Facades\Validator;
 use App\Models\CarInsureModel;
 
 class CarInsureController extends Controller
@@ -21,7 +20,7 @@ class CarInsureController extends Controller
     {
             $data = $request->all();
             $responseBody = $this->submitToApi($data);
-            
+
             if ($responseBody['code'] == 1) {
                 $resp = json_encode($responseBody['response']);
                 $inser = CarInsureModel::createQuietly([
@@ -41,11 +40,19 @@ class CarInsureController extends Controller
                     'offer_id' => $data['offer_id'],
                     'status' => $resp,
                 ]);
+
                 // return redirect()->back()->with('success', "Success! {$responseBody['response']}");
                 // return view('success');
-                return redirect()->route('success');
+                // return redirect()->route('success');
+                if ($data['form_source'] === "car_insure_landing") {
+                    return redirect()->route('car-track-up');
+                }else if($data['form_source'] === "car_insure_camp"){
+                    return redirect()->route('car-track-up');
+                }else if($data['form_source'] === "car_insure_success"){
+                    return redirect()->route('success');
+                }
 
-
+                
             }else{
                 $resp = json_encode($responseBody['response']);
                 $inser = CarInsureModel::createQuietly([
@@ -89,7 +96,7 @@ class CarInsureController extends Controller
 
         // Use Laravel's HTTP client to send the request
         $response = Http::asForm()->post('https://returnxdigital.leadbyte.co.uk/api/submit.php', $data);
-
+        
         return $response->json();
     }
 
