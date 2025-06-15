@@ -13,14 +13,19 @@ class TrackerController extends Controller
         return view('tracker');
     }
 
+    public function landing(){
+        return view('car-insure');
+    }
+
     public function store(Request $request)
     {
             $data = $request->all();
-            $responseBody = $this->submitToApi($data);
-            $date = date("Y/m/d h:i:sa");
-            $resp = $responseBody['response'];
-            if ($responseBody['code'] == 1) {
-                $resp = json_encode($responseBody['response']);
+            // $responseBody = $this->submitToApi($data);
+            // $date = date("Y/m/d h:i:sa");
+            // $resp = $responseBody['response'];
+            // if ($responseBody['code'] == 1) {
+            //     $resp = json_encode($responseBody['response']);
+                $resp = "Hlabi";
                 TrackerModel::createQuietly([
                     'firstname' => $data['firstname'], 
                     'lastname' => $data['lastname'], 
@@ -37,28 +42,34 @@ class TrackerController extends Controller
                 // return redirect()->back()->with('success', "Success! Your form has been submitted. One of our friendly consultants will be in touch soon.");
                 // return view('success');
 
-                // car_track_landing
-                if ($data['form_source'] === "car_track_upsell") {
-                    return redirect()->route('success');
-                } else if ($data['form_source'] === "car_track_landing") {
+                if ($data['form_source'] === 'car_track_landing') {
                     return redirect()->route('car_insure_success');
+                } else {
+                    if ($data['form_source'] === 'car_track_upsell') {
+                        return redirect()->route('success');
+                    } else {
+                        if ($data['form_source'] === 'car_track_upse') {
+                            return redirect()->route('success');
+                        }
+                    }
                 }
-            }else{
-                $resp = json_encode($responseBody['response']);
-                TrackerModel::createQuietly([
-                    'firstname' => $data['firstname'], 
-                    'lastname' => $data['lastname'], 
-                    'phone1' => $data['phone1'], 
-                    'email' => $data['email'], 
-                    'product' => $data['product'], 
-                    'leadsource' => $data['leadsource'], 
-                    'affiliateshortcode' => $data['affiliateshortcode'],
-                    'channel' => $data['channel'],
-                    'offer_id' => $data['offer_id'],
-                    'status' => $resp,   
-                ]);
-                return redirect()->back()->with('error', "An error occurred while submitting the form. {$responseBody['response']}");
-            }
+                
+            // }else{
+            //     $resp = json_encode($responseBody['response']);
+            //     TrackerModel::createQuietly([
+            //         'firstname' => $data['firstname'], 
+            //         'lastname' => $data['lastname'], 
+            //         'phone1' => $data['phone1'], 
+            //         'email' => $data['email'], 
+            //         'product' => $data['product'], 
+            //         'leadsource' => $data['leadsource'], 
+            //         'affiliateshortcode' => $data['affiliateshortcode'],
+            //         'channel' => $data['channel'],
+            //         'offer_id' => $data['offer_id'],
+            //         'status' => $resp,   
+            //     ]);
+            //     return redirect()->back()->with('error', "An error occurred while submitting the form. {$responseBody['response']}");
+            // }
     }
 
     /**
