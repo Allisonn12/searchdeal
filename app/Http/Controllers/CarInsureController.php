@@ -89,8 +89,6 @@ class CarInsureController extends Controller
                 ]);
                 return redirect()->back()->with('error', "An error occurred while submitting the form. {$responseBody['response']}");
             }
-        
-        // return view('car-insurance');
     }
 
     /**
