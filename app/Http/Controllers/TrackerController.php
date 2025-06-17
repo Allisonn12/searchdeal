@@ -20,12 +20,11 @@ class TrackerController extends Controller
     public function store(Request $request)
     {
             $data = $request->all();
-            // $responseBody = $this->submitToApi($data);
-            // $date = date("Y/m/d h:i:sa");
-            // $resp = $responseBody['response'];
-            // if ($responseBody['code'] == 1) {
-            //     $resp = json_encode($responseBody['response']);
-                $resp = "Hlabi";
+            $responseBody = $this->submitToApi($data);
+            $date = date("Y/m/d h:i:sa");
+            $resp = $responseBody['response'];
+            if ($responseBody['code'] == 1) {
+                $resp = json_encode($responseBody['response']);
                 TrackerModel::createQuietly([
                     'firstname' => $data['firstname'], 
                     'lastname' => $data['lastname'], 
@@ -54,22 +53,22 @@ class TrackerController extends Controller
                     }
                 }
                 
-            // }else{
-            //     $resp = json_encode($responseBody['response']);
-            //     TrackerModel::createQuietly([
-            //         'firstname' => $data['firstname'], 
-            //         'lastname' => $data['lastname'], 
-            //         'phone1' => $data['phone1'], 
-            //         'email' => $data['email'], 
-            //         'product' => $data['product'], 
-            //         'leadsource' => $data['leadsource'], 
-            //         'affiliateshortcode' => $data['affiliateshortcode'],
-            //         'channel' => $data['channel'],
-            //         'offer_id' => $data['offer_id'],
-            //         'status' => $resp,   
-            //     ]);
-            //     return redirect()->back()->with('error', "An error occurred while submitting the form. {$responseBody['response']}");
-            // }
+            }else{
+                $resp = json_encode($responseBody['response']);
+                TrackerModel::createQuietly([
+                    'firstname' => $data['firstname'], 
+                    'lastname' => $data['lastname'], 
+                    'phone1' => $data['phone1'], 
+                    'email' => $data['email'], 
+                    'product' => $data['product'], 
+                    'leadsource' => $data['leadsource'], 
+                    'affiliateshortcode' => $data['affiliateshortcode'],
+                    'channel' => $data['channel'],
+                    'offer_id' => $data['offer_id'],
+                    'status' => $resp,   
+                ]);
+                return redirect()->back()->with('error', "An error occurred while submitting the form. {$responseBody['response']}");
+            }
     }
 
     /**
