@@ -19,11 +19,10 @@ class CarInsureController extends Controller
     public function store(Request $request)
     {
             $data = $request->all();
-            // $responseBody = $this->submitToApi($data);
+            $responseBody = $this->submitToApi($data);
 
-            // if ($responseBody['code'] == 1) {
-            //     $resp = json_encode($responseBody['response']);
-            $resp = "Hlabi";
+            if ($responseBody['code'] == 1) {
+                $resp = json_encode($responseBody['response']);
                 $inser = CarInsureModel::createQuietly([
                     'firstname' => $data['firstname'], 
                     'lastname' => $data['lastname'], 
@@ -69,30 +68,28 @@ class CarInsureController extends Controller
                     }
                 }
                 
-            // }else{
-                // $resp = json_encode($responseBody['response']);
-                // $resp = "Hlabi";
-                // $inser = CarInsureModel::createQuietly([
-                //     'firstname' => $data['firstname'], 
-                //     'lastname' => $data['lastname'], 
-                //     'phone1' => $data['phone1'], 
-                //     'email' => $data['email'], 
-                //     'gender' => $data['gender'], 
-                //     'currentinsurer' => $data['currentinsurer'], 
-                //     'vehiclemake' => $data['vehiclemake'], 
-                //     'language' => $data['language'], 
-                //     'optindate' => $data['optindate'],
-                //     'channel' => $data['channel'],
-                //     'product' => $data['product'],
-                //     'affiliateshortcode' => $data['affiliateshortcode'],
-                //     'Leadsource' => $data['Leadsource'],
-                //     'offer_id' => $data['offer_id'],
-                //     'status' => $resp,
-                // ]);
-                // return redirect()->back()->with('error', "An error occurred while submitting the form. {$responseBody['response']}");
-            // }
-        // }
-
+            }else{
+                $resp = json_encode($responseBody['response']);
+                $inser = CarInsureModel::createQuietly([
+                    'firstname' => $data['firstname'], 
+                    'lastname' => $data['lastname'], 
+                    'phone1' => $data['phone1'], 
+                    'email' => $data['email'], 
+                    'gender' => $data['gender'], 
+                    'currentinsurer' => $data['currentinsurer'], 
+                    'vehiclemake' => $data['vehiclemake'], 
+                    'language' => $data['language'], 
+                    'optindate' => $data['optindate'],
+                    'channel' => $data['channel'],
+                    'product' => $data['product'],
+                    'affiliateshortcode' => $data['affiliateshortcode'],
+                    'Leadsource' => $data['Leadsource'],
+                    'offer_id' => $data['offer_id'],
+                    'status' => $resp,
+                ]);
+                return redirect()->back()->with('error', "An error occurred while submitting the form. {$responseBody['response']}");
+            }
+        
         // return view('car-insurance');
     }
 
