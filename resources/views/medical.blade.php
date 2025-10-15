@@ -263,5 +263,5 @@
         </div>
     </div>
 </div>
-<!-- Car Insurence End -->
+
 @include('partials.footer')
