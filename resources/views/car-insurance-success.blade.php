@@ -7,7 +7,6 @@
                 <div class="main-content my-5">
                     <div class="col-lg-12 wow fadeIn" data-wow-delay="0.3s">
                         <div class="row">
-                            <!-- BEGIN: Updated Post-Insurance Tracker Upsell Copy -->
                             <h1 class="display-6 mb-4">🛑 WAIT, You’re Only Half Protected.</h1>
                             <div class="subtitle">
                                 <p class="mb-4" style="font-size: 24px"><i>You just insured your car… but what if it’s never recovered?</i></p>
