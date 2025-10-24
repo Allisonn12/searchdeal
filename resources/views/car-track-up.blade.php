@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-      <!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=G-WX9J0BVDQC"></script> <script> window.dataLayer = window.dataLayer || []; 
+      <!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=G-WX9J0BVDQC"></script> <script> window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-WX9J0BVDQC'); </script>
-    
+
     <!-- Facebook Pixel Code -->
     <script nonce="4BUkMtdd">
     !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -11,7 +11,7 @@
     n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
     t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
     document,'script','https://connect.facebook.net/en_US/fbevents.js');
-    
+
     fbq('init', '1322182192366880');
     fbq('set','agent','tmgoogletagmanager', '1322182192366880');
     fbq('track', "PageView");
@@ -20,7 +20,7 @@
     src="https://www.facebook.com/tr?id=1322182192366880&ev=PageView&noscript=1"
     /></noscript>
     <!-- End Facebook Pixel Code -->
-    
+
     <meta charset="utf-8" />
     <title>Search A Deal</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
@@ -54,7 +54,7 @@
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
     </style>
-        
+
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -70,7 +70,7 @@
   </head>
 
   <body>
-     
+
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NWN5MH94"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -98,7 +98,7 @@
             {{ session('error') }}
         </div>
     @endif
- 
+
 
 
     <!-- Page Header Start -->
@@ -122,255 +122,134 @@
       </div>
     </div>
     <!-- Page Header End -->
-    
+
 
     <!-- Car Insurence Start -->
     <div class="container-fluid py-5 wow fadeIn" data-wow-delay="0.1s">
       <div class="container">
         <div class="row g-5">
-          
+
           <div class="main">
             <div class="main-content my-5">
 
                 <div class="col-lg-12 wow fadeIn" data-wow-delay="0.3s">
                     <div class="row">
-                        <h1 class="display-6 mb-5">
-                          “They’ve Already Picked Your Car. Is Your Family Ready for What Comes Next?”
+                        <h1 class="display-6 mb-4">
+                          STOP! You’ve Locked Recovery. Now Secure Financial Protection.
                         </h1>
                         <div class="subtitle">
-                            <p class="mb-5">
-                               <i>
-                                    Unlock the Proven Secret South African Families Use to Outsmart 
-                                    Hijackers—Even Under GPS Jamming, Midnight Raids, 
-                                    and Insurer Fine Print
-                                </i>
+                            <p class="mb-4">
+                               <i>Your tracker protects your vehicle physically. But will you be financially safe if the worst still happens?</i>
                             </p>
                         </div>
                     </div>
-                    
-                    <div class="break-image">
-                        <img src="img/images/5.png" alt="">
+                    <div class="break-image mb-4">
+                        <img src="img/images/5.png" alt="Tracker and financial protection" class="img-fluid rounded">
                     </div>
 
-                    <div class="col-lg-12 wow fadeIn" data-wow-delay="0.3s">
-                        <div class="hlabi-body">
-                        <div class="row text-center mb-5">
-                            <div class="mb-3">
-                                <p>
-                                    It happens every 22 minutes.
-                                </p>
-                                <p>
-                                    A driveway goes silent. <br>
-                                    A family wakes to emptiness. <br>
-                                    And suddenly, all the things you believed made you safe—insurance, alarms, standard trackers—collapse. <br>
-                                    Because what the hijackers took wasn’t just a car. <br>
-                                    They took your sense of control, your peace of mind, your family's trust in your ability to protect them. <br>
-                                    One question now haunts you: <br>
-                                    “Why didn’t I see it coming?” <br>
-
-                                </p>
-                            </div>
-                            <h3 class="text-center mb-3">THE UNSEEN TRUTH EVERY SOUTH AFRICAN FAMILY IGNORES</h3>
-                            <div class="hlabi-body">
-                                <p>
-                                    Hijackers don't just steal—they plan. <br>
-                                    They map your daily routes. They note your patterns. They know precisely when and how to strike. <br>
-                                    And your current tracker? <br>
-                                    It’s nothing but a checkbox. A fragile illusion, shattered by a simple R600 jammer bought online. <br>
-                                    Your insurance won’t help. Your premiums mean nothing if your tracker goes offline—even for just one day. <br>
-                                    This isn’t speculation. It’s documented fact. <br>
-                                </p>
-                                <b>INTRODUCING VERIFIED TRACKER CERTAINTY™</b>
-                                <p>
-                                    Search A Deal presents the first South African platform guaranteed to show ONLY trackers tested and 
-                                    proven in live, real-world hijack scenarios—because your family's safety isn't negotiable. <br><br>
-                                    Powered by the revolutionary DualShield™ Reliability Matrix, every tracker shown passes FIVE brutal 
-                                    tests, each verified by insurers and SAPS.
-                                </p>
-                            </div>
+                    <!-- BEGIN: SentinelMatch Upsell Copy -->
+                    <div class="hlabi-body">
+                      <div class="row text-start mb-5">
+                        <div class="col-12">
+                          <p>You have already done the hardest part: securing a tracker for rapid recovery. That’s a smart, proactive move only the savviest vehicle owners make.</p>
+                          <p><b>But here’s the blunt truth most tracker providers won’t tell you:</b> Even the best trackers can’t guarantee the condition your car returns in—or that recovery is always possible. If the worst still happens, <b>insurance is your only financial safety net</b> against a devastating loss.</p>
+                          <p>Your physical protection is in place. Now it’s time to close the loop and secure your financial protection.</p>
                         </div>
-                        <div class="row text-start mb-5 mt-5">
-                            <h3 class="text-center mb-3">THE UNBREAKABLE FIVE-LAYER DUALSHIELD™ RELIABILITY MATRIX:</h3>
-                            <div class="hlabi-body">
-                                <p>
-                                    <b>Layer 1: SAPS-Verified Live Recovery</b> <br>
-                                    Real-world recovery rates. Proven outcomes—not promises. <br><br>
+                      </div>
 
-                                    <b>Layer 2: JamGuard™ Resistance</b> <br>
-                                    Every tracker survives actual GSM/GPS jamming tests. No guesswork allowed. <br><br>
-
-                                    <b>Layer 3: Insurer-Endorsed Redundancy</b> <br>
-                                    Qualify for maximum discounts while securing guaranteed backup protocols. <br><br>
-
-                                    <b>Layer 4: Emergency Response Speed</b> <br>
-                                    Human-operated 24/7 control rooms tested under real midnight emergencies. <br><br>
-
-                                    <b>Layer 5: POPIA-Compliant Data Protection</b> <br>
-                                    Certified privacy protection under South African law. <br><br>
-                                </p>
-                            </div>
-                            <p>Any failure at any layer means immediate removal from our listings—no second chances.</p>
+                      <div class="row text-start mb-5">
+                        <div class="col-12">
+                          <h3 class="text-center mb-3">SentinelMatch: The Perfect Complement to Your Tracker</h3>
+                          <p>No guessing. No comparisons. No extra forms. Our proprietary <b>SentinelMatch</b> system:</p>
+                          <ul>
+                            <li>✅ Automatically matches your tracker choice with the best‑fit insurance provider</li>
+                            <li>✅ Ensures your coverage perfectly complements your recovery plan</li>
+                            <li>✅ Eliminates gaps that could leave you financially exposed</li>
+                          </ul>
+                          <p>Because protection isn’t complete until your <b>finances</b> are secure too.</p>
                         </div>
+                      </div>
 
-                        <div class="row text-start mb-5 mt-5">
-                            <h3 class="text-center mb-3">THE NIGHT THE DUALSHIELD™ PROVED ITS WORTH</h3>
-                            <div class="hlabi-body">
-                                <p>
-                                    <b>2:37 AM, Randburg:</b> <br>
-                                    Hijackers targeted a family’s Polo. Within seconds, they activated GPS jammers. <br>
-                                    But this wasn't just any tracker. <br>
-                                    It automatically switched to unjammable VHF signals. <br>
-                                    Within 34 seconds, a human—not a bot—mobilized SAPS. <br>
-                                    In under an hour, the car was recovered, the insurer notified, excess waived. <br>
-                                    The DualShield™ tracker didn't just track. It fought back. <br>
+                      <div class="row text-start mb-5">
+                        <div class="col-12">
+                          <h3 class="text-center mb-3">Why Act Now?</h3>
+                          <p><b>SentinelMatch uses the data you just submitted for your tracker</b> to instantly align your financial coverage—making this a seamless, one‑time opportunity.</p>
+                          <ul>
+                            <li>No follow-ups</li>
+                            <li>No second chances with this exact data context</li>
+                            <li>Only now. Only here.</li>
+                          </ul>
+                          <p>The longer you wait, the more exposed you remain if recovery fails or damage exceeds expectations.</p>
+                        </div>
+                      </div>
 
-                                </p>
-                            </div>
+                      <div class="row text-start mb-5">
+                        <div class="col-12">
+                          <h3 class="text-center mb-3">The Sentinel Guarantee</h3>
+                          <p>If your matched insurer doesn’t align perfectly with your needs, <b>SentinelMatch immediately rematches—no paperwork, no hassle, no stress.</b></p>
+                          <p>We’re not just offering coverage. We’re completing your protective circle.</p>
                         </div>
-                        <div class="mb-5 text-center">
-                            <p>
-                                <b>YOUR LEGACY OF PROTECTION</b> <br>
-                                Imagine your child never having to ask if they’re safe—because the answer is already proven. <br>
-                                Imagine your partner stepping into the car, knowing you've installed proven, hijacker-resistant certainty. <br>
-                                This isn’t insurance paperwork or a hopeful checkbox. <br>
-                                It’s the ultimate proof of your commitment to their safety. <br>
-                            </p>
-                        </div>
+                      </div>
 
-                        <div class="text-center">
-                            <p>
-                                <b>THE THREE UNBREAKABLE PROMISES:</b> <br>
-                                <div>
-                                    <ol class="text-start">
-                                        <li><b>Verified-Only Guarantee:</b> Only trackers proven in real hijacks reach you.</li>
-                                        <li><b>No Sales Calls Ever:</b> Total privacy, total control.</li>
-                                        <li><b>Legal Compliance Assurance:</b> Fully aligned with South African data privacy and insurer regulations.</li>
-                                    </ol>
-                                </div>
-                            </p>
+                      <div class="row text-start mb-5">
+                        <div class="col-12 text-center">
+                          <h3 class="mb-3">Activate Your Financial Safeguard in One Click</h3>
+                          <p class="mb-4"><b>You’ve protected your car. Now protect your finances.</b></p>
+                          <a href="#form" class="btn btn-primary py-3 px-5 mb-3" style="width:100%" data-cta="sentinel-primary">Yes! Secure My Financial Protection Now</a>
+                          <p class="small text-muted mb-0">(Takes under 60 seconds • No sales calls • Instant aligned match)</p>
                         </div>
-
-                        <div class="row mb-5 mt-5">
-                            <h3 class="text-center mb-3">YOUR DECISION TODAY DEFINES THEIR TOMORROW</h3>
-                            <div class="hlabi-body">
-                                <p>
-                                    Right now, you have a choice: <br>
-                                    Do nothing, and keep hoping your family isn't next. <br>
-                                    Or spend just 90 seconds to install guaranteed, verified certainty. <br>
-                                    Because protection isn't hope—it's proof. <br>
-
-                                </p>
-                            </div>
-                        </div>
-                         <div class="text-center">
-                            <p>
-                                <b>Run Your Verified Tracker Scan Now</b> <br>
-                                In 90 seconds:
-                                <div>
-                                    <ul class="text-start">
-                                        <li>Choose only from trackers proven in real-world hijackings. </li>
-                                        <li> Instantly qualify for maximum insurer discounts. </li>
-                                        <li> Install absolute certainty and peace of mind. </li>
-                                    </ul>
-                                </div>
-                                Your family deserves nothing less. <br>
-                                Tomorrow, if your driveway goes silent, what will you regret more: <br>
-                                The 90 seconds you didn’t take today, or the lifetime of regret? <br>
-                                Be the protector your family already believes you are. <br>
-                            </p>
-                        </div>
-                        <div class="text-center">
-
-                            <b>Apply now to make your family truly unstealable.</b> <br>
-                        </div>
-                        </div>
+                      </div>
+                      <!-- END: SentinelMatch Upsell Copy -->
                     </div>
-                    
                 </div>
             </div>
 
 
-
-              
               <div class="col-lg-12 wow fadeIn hlabi-form" id="form" data-wow-delay="0.5s">
                 <div class="bg-light rounded p-5">
                   <h4 class="mb-4">Request A Quote</h4>
                   <form action="{{ route('tracker.submit') }}" method="post">
                     @csrf
                     <input type="hidden" name="form_source" value="car_track_landing">
+                    <input type="hidden" name="protection_stage" value="sentinel_match" />
 
                     <div class="row g-3">
+                      <!-- ...existing form fields... -->
                       <div class="col-sm-12">
                         <div class="form-floating">
-                          <input
-                            type="text"
-                            class="form-control"
-                            id="gname"
-                            placeholder="First Name"
-                            name="firstname"
-                            required
-                          />
-
+                          <input type="text" class="form-control" id="gname" placeholder="First Name" name="firstname" required />
                           <label for="gname">First Name *</label>
                         </div>
                       </div>
                       <div class="col-sm-12">
                         <div class="form-floating">
-                          <input
-                            type="text"
-                            class="form-control"
-                            id="gname"
-                            placeholder="Last Name"
-                            name="lastname"
-                            required
-                          />
-
-                          <label for="gname">Last Name *</label>
+                          <input type="text" class="form-control" id="lname" placeholder="Last Name" name="lastname" required />
+                          <label for="lname">Last Name *</label>
                         </div>
                       </div>
-                      
                       <div class="col-sm-6">
                         <div class="form-floating">
-                          <input
-                            type="text"
-                            class="form-control"
-                            id="phone_number"
-                            placeholder="Phone Number, format: 0xx-xxx-xxxx"
-                            name="phone1"
-                            required
-                          />
-                          <label for="cname">Phone Number *</label>
+                          <input type="text" class="form-control" id="phone_number" placeholder="Phone Number" name="phone1" required />
+                          <label for="phone_number">Phone Number *</label>
                         </div>
                       </div>
-
                       <div class="col-sm-6">
                         <div class="form-floating">
-                          <input
-                            type="email"
-                            class="form-control"
-                            id="gmail"
-                            placeholder="Gurdian Email"
-                            required
-                            name="email"
-                          />
-                          <label for="gmail">Your Email </label>
+                          <input type="email" class="form-control" id="email" placeholder="Your Email" name="email" required />
+                          <label for="email">Your Email *</label>
                         </div>
                       </div>
                       <div class="col-sm-12">
-                        <input id="checkbox-1" required name="acceptterms" value="true"
-                                aria-describedby="checkbox-1" type="checkbox"
-                                class="bg-gray-50 border-gray-300 focus:ring-3 focus:ring-blue-300 h-4 w-4 rounded">
-                            <label for="checkbox-1" class="text-sm ml-3 font-medium text-gray-900">I agree to the <a
-                                    href="{{ route('terms') }}" class="text-blue-600 hover:underline">terms and conditions</a></label>
+                        <input id="checkbox-1" required name="acceptterms" value="true" type="checkbox" class="bg-gray-50 border-gray-300 focus:ring-3 focus:ring-blue-300 h-4 w-4 rounded" />
+                        <label for="checkbox-1" class="text-sm ml-3 font-medium text-gray-900">I agree to the <a href="{{ route('terms') }}" class="text-blue-600 hover:underline">terms and conditions</a></label>
                       </div>
                       <div class="col-12">
-                        <button class="btn btn-primary py-3 px-5" type="submit">
-                          Get Tracker
-                        </button>
+                        <button class="btn btn-primary py-3 px-5" type="submit" data-cta="sentinel-form-submit">Secure Financial Protection</button>
                       </div>
                     </div>
+                    <!-- ...existing hidden tracking fields... -->
                     <input type="hidden" name="optinurl" value="https://searchadeal.online/" required>
-                    <input type="hidden" name="optindate" value="<?php echo date("d/m/y H:i:s"); ?>" required>
+                    <input type="hidden" name="optindate" value="{{ date('Y-m-d h:i:s') }}" required>
                     <input type="hidden" name="channel" value="JMAff" required>
                     <input type="hidden" name="product" value="Vehicle Tracking" required>
                     <input type="hidden" name="leadsource" value="JMLSSEARCHADEAL9020" required>
@@ -379,9 +258,9 @@
                   </form>
                 </div>
               </div>
-    
-              <p align="center">
-                <a href="{{ route('success') }}" class="btn btn-success py-3 my-5 px-5">I dont need car tracker</a>
+
+              <p align="center" class="mt-4">
+                <a href="{{ route('success') }}" class="btn btn-outline-secondary py-3 my-5 px-5" data-cta="decline-sentinel">Skip – I Accept Financial Risk</a>
               </p>
             </div>
 
@@ -391,10 +270,8 @@
     <!-- Car Insurence End -->
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"
-      ><i class="bi bi-arrow-up"></i
-    ></a>
-    
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
