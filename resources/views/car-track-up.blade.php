@@ -247,7 +247,6 @@
                         <button class="btn btn-primary py-3 px-5" type="submit" data-cta="sentinel-form-submit">Secure Financial Protection</button>
                       </div>
                     </div>
-                    <!-- ...existing hidden tracking fields... -->
                     <input type="hidden" name="optinurl" value="https://searchadeal.online/" required>
                     <input type="hidden" name="optindate" value="{{ date('Y-m-d h:i:s') }}" required>
                     <input type="hidden" name="channel" value="JMAff" required>

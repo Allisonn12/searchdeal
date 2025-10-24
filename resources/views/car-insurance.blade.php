@@ -60,7 +60,6 @@
                         <img src="img/images/16.png" alt="Extended car warranty protection" class="img-fluid rounded">
                     </div>
 
-                    <!-- Section: Warranty Expiring -->
                     <div class="row text-start mb-5 mt-2">
                       <div class="hlabi-body">
                         <h3 class="text-center mb-3">Your Manufacturer's Warranty Is Expiring—Now What?</h3>
