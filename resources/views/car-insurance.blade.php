@@ -48,133 +48,146 @@
                         <!-- BEGIN: Updated Car Insurance Marketing Copy -->
                         <div class="row">
                             <h1 class="display-6 mb-3">
-                                Tired of Overpaying for Car Insurance That Fails You When You Need It Most?
+                                Afraid of Expensive Car Repairs? Here’s the Affordable Solution Vehicle Owners Are Raving About!
                             </h1>
                             <div class="subtitle">
                                 <p class="mb-5">
-                                    <i>Get Affordable, Comprehensive Coverage That Protects You—Without the Hidden Clauses or High Premiums</i>
+                                    <i>Say Goodbye to Costly Repairs—Get Comprehensive, Affordable Car Warranty Coverage Today</i>
                                 </p>
                             </div>
                         </div>
                         <div class="break-image mb-4">
-                            <img src="img/images/16.png" alt="Car insurance protection" class="img-fluid rounded">
-                        </div>
-                        <div class="row text-start mb-5 mt-2">
-                            <div class="hlabi-body">
-                                <h3 class="text-center mb-3">You Deserve Better Car Insurance.</h3>
-                                <p>You work hard, pay your premiums on time, and trust that your insurance will be there when disaster strikes.</p>
-                                <p><b>But what happens when you need to claim?</b></p>
-                                <p>The reality for many vehicle owners is:</p>
-                                <ul>
-                                    <li>Claims are denied due to confusing fine print.</li>
-                                    <li>High premiums that bleed your wallet dry every month.</li>
-                                    <li>Slow payouts that leave you stranded when you need help the most.</li>
-                                </ul>
-                                <p><b>The truth is insurance companies are failing you.</b></p>
-                            </div>
+                            <img src="img/images/16.png" alt="Extended car warranty protection" class="img-fluid rounded">
                         </div>
 
                         <div class="row text-start mb-5 mt-2">
                             <div class="hlabi-body">
-                                <h3 class="text-center mb-3">Is It Not Time You Stopped Paying for Empty Promises?</h3>
-                                <p>You know the drill. You pay and pay, but when it comes time to claim, it feels like the deck is stacked against you.</p>
-                                <p>Denied claims over trivial technicalities, endless paperwork, and customer service designed to frustrate you—a system built so you lose and the insurer wins.</p>
+                                <h3 class="text-center mb-3">Your Manufacturer's Warranty Is Expiring—Now What?</h3>
+                                <p>Owning a car comes with freedom and excitement—but when the manufacturer's warranty runs out, that freedom comes with risk.</p>
+                                <p>Mechanical breakdowns. Electrical failures. Expensive repairs.</p>
+                                <p>As your vehicle ages, even a minor repair can cost you thousands of rands. Without a safety net, those expenses are coming out of your pocket.</p>
+                                <p><b>Do you want to risk that?</b></p>
                             </div>
                         </div>
 
+                        <!-- Section: Massive Bills -->
                         <div class="row text-start mb-5 mt-2">
                             <div class="hlabi-body">
-                                <h3 class="text-center mb-3">What If You Could Have Car Insurance That Delivers When It Counts?</h3>
-                                <p>Imagine having insurance that:</p>
-                                <ul>
-                                    <li>Doesn't bury you in technicalities when you need to claim.</li>
-                                    <li>Pays out quickly and fairly—no waiting or fighting for your money.</li>
-                                    <li>Offers true peace of mind, especially in areas with high crime rates.</li>
-                                </ul>
+                                <h3 class="text-center mb-3">Without Coverage, You Could Be Facing Massive Repair Bills</h3>
+                                <p>Modern cars are packed with sophisticated technology, which means higher repair costs when something goes wrong. Even a minor issue could set you back thousands—before you factor in the inconvenience of being stranded on the road.</p>
+                                <p><b>But what if there was an easy, affordable way to protect yourself from these costs?</b></p>
                             </div>
                         </div>
 
+                        <!-- Section: Introducing -->
                         <div class="row text-start mb-5 mt-2">
                             <div class="hlabi-body">
-                                <h3 class="text-center mb-3">Introducing: Search A Deal Partner Car Insurance</h3>
-                                <p><b>Finally, a plan that works for you, not against you.</b></p>
-                                <p>We've partnered with trusted car insurance providers with one goal: to serve and protect vehicle owners like you with simple, reliable, and affordable coverage.</p>
-                                <p><b>Here is what you get with Search A Deal partners:</b></p>
+                                <h3 class="text-center mb-3">Introducing: Search A Deal Partners Car Warranty</h3>
+                                <p><b>Affordable, reliable, and designed to keep you covered.</b></p>
+                                <p>Our partners have seen firsthand how vehicle owners are burdened by costly repairs after their warranties expire. That’s why they created extended warranty plans that give you peace of mind—<b>without draining your bank account.</b></p>
+                                <p><b>Why choose Search A Deal partners?</b></p>
                                 <ul>
-                                    <li><b>Comprehensive Protection:</b> From accidents to theft, you’re covered—especially in high-risk areas.</li>
-                                    <li><b>No Fine Print Surprises:</b> Transparent terms. No hidden clauses. No nasty claim-time shocks.</li>
-                                    <li><b>Affordable Premiums:</b> Coverage that fits your budget without compromising protection.</li>
+                                    <li><b>Comprehensive Coverage:</b> From engine breakdowns to electrical failures, the high-cost repairs are covered.</li>
+                                    <li><b>Flexible Payment Options:</b> Pay monthly—budget-friendly protection that fits your life.</li>
+                                    <li><b>No-Nonsense Claims Process:</b> Fast, transparent claims without red tape or hidden clauses.</li>
+                                    <li><b>24/7 Roadside Assistance:</b> Wherever you are, help is a call away.</li>
                                 </ul>
                             </div>
                         </div>
 
+                        <!-- Section: Real Reason -->
                         <div class="row text-start mb-5 mt-2">
                             <div class="hlabi-body">
-                                <h3 class="text-center mb-3">Why Vehicle Owners Like You Are Making the Switch</h3>
-                                <p>You’re tired of recycled promises from companies that can’t deliver.</p>
-                                <p><b>Here’s why Search A Deal partners is different:</b></p>
+                                <h3 class="text-center mb-3">The Real Reason You Need Car Warranty Protection</h3>
+                                <p>You might think: <i>"I’ll just deal with repairs as they come."</i> But as your car ages, repair costs increase dramatically.</p>
                                 <ul>
-                                    <li><b>Fast, No-Hassle Claims:</b> Our partners streamline the process—no hoops, no drama.</li>
-                                    <li><b>Fair Payouts:</b> No arbitrary denials. Just honest claim handling.</li>
-                                    <li><b>Tailored for South Africa:</b> Policies that factor in local risk realities like crime and accident zones.</li>
+                                    <li>A simple gearbox repair could cost up to <b>R20,000</b>.</li>
+                                    <li>An engine breakdown? Expect to pay over <b>R50,000</b>.</li>
+                                    <li>Electrical faults? Easily <b>R10,000+</b>.</li>
+                                </ul>
+                                <p><b>Are you ready for that kind of financial hit?</b></p>
+                                <p>With Search A Deal partners, you won’t worry about where the money will come from—no surprises, no panic.</p>
+                            </div>
+                        </div>
+
+                        <!-- Section: Avoid Stress -->
+                        <div class="row text-start mb-5 mt-2">
+                            <div class="hlabi-body">
+                                <h3 class="text-center mb-3">Don’t Get Caught Off Guard—Protect Your Vehicle and Your Wallet</h3>
+                                <p>Every day, vehicle owners are hit with unexpected repair bills that throw their budgets into chaos. With our extended warranty partners, you can avoid the stress and uncertainty.</p>
+                                <p><b>Imagine the relief:</b> Major repairs covered. No scrambling for emergency funds. No high-interest loans just to get back on the road.</p>
+                            </div>
+                        </div>
+
+                        <!-- Section: Why Owners Choose -->
+                        <div class="row text-start mb-5 mt-2">
+                            <div class="hlabi-body">
+                                <h3 class="text-center mb-3">Why Vehicle Owners Like You Are Choosing Search A Deal Partners</h3>
+                                <p>You’re not just buying a warranty—you’re buying <b>peace of mind</b>.</p>
+                                <ul>
+                                    <li><b>Complete Protection:</b> Coverage for high-value components like engine, gearbox & electrical systems.</li>
+                                    <li><b>Affordable Payment Options:</b> Flexible, manageable monthly plans.</li>
+                                    <li><b>Hassle-Free Claims:</b> Straightforward, transparent, and built to work for you.</li>
                                 </ul>
                             </div>
                         </div>
 
+                        <!-- Section: Truth -->
                         <div class="row text-start mb-5 mt-2">
                             <div class="hlabi-body">
-                                <h3 class="text-center mb-3">Your Current Insurance Could Be Failing You</h3>
-                                <p>Have you wondered why insurers drag their feet when it’s time to pay out?</p>
-                                <p>It’s simple: confusion and delay protect their profits. That’s not how insurance should work.</p>
-                                <p><b>With Search A Deal, you’re in control.</b></p>
-                                <p>Coverage is clear. No legal maze. No endless back-and-forth—just honest protection when it matters.</p>
-                            </div>
-                        </div>
-
-                        <div class="row text-start mb-5 mt-2">
-                            <div class="hlabi-body">
-                                <h3 class="text-center mb-3">You’re Not Just a Policy Number—You’re Family</h3>
-                                <p>We don’t see you as a policy—we see you as part of our community.</p>
+                                <h3 class="text-center mb-3">The Truth: Without Extended Warranty, You’re Leaving Yourself Exposed</h3>
+                                <p>Each day your manufacturer’s warranty gets closer to expiring. Once it’s gone, <b>you pay for every repair</b>.</p>
                                 <ul>
-                                    <li>Quick, easy claims that respect your time.</li>
-                                    <li>Dedicated customer support—24/7.</li>
-                                    <li>Affordable premiums aligned with real value.</li>
+                                    <li>Engines fail.</li>
+                                    <li>Electrical systems break down.</li>
+                                    <li>Cars need repairs—it’s inevitable.</li>
                                 </ul>
-                                <p>Our partners have already helped thousands secure real protection—without headaches.</p>
+                                <p>You don’t have to carry that risk. Search A Deal partners make extended warranties accessible and affordable across South Africa.</p>
                             </div>
                         </div>
 
+                        <!-- Section: Protect Today -->
                         <div class="row text-start mb-5 mt-2">
                             <div class="hlabi-body">
-                                <h3 class="text-center mb-3">Don’t Let Your Insurance Fail You When You Need It Most</h3>
-                                <p>Vehicle owners across South Africa face theft, accidents, and unexpected loss. Too many are let down by overpriced, underperforming policies.</p>
-                                <p><b>Why risk it?</b> With Search A Deal, you’ll never be left in the lurch.</p>
-                            </div>
-                        </div>
-
-                        <div class="row text-start mb-5 mt-2">
-                            <div class="hlabi-body">
-                                <h3 class="text-center mb-3">Get the Coverage You Deserve Today</h3>
-                                <p>You’ve worked hard for your vehicle—it’s time to protect it the right way. Don’t settle for overpriced insurance that leaves you exposed.</p>
-                                <p><b>With Search A Deal you get:</b></p>
-                                <ul>
-                                    <li>Complete protection—accident or theft, we’re there.</li>
-                                    <li>No hidden surprises—just straightforward cover.</li>
-                                    <li>Fast claims & fair payouts—get back on the road quickly.</li>
-                                </ul>
+                                <h3 class="text-center mb-3">Protect Your Vehicle Today—Get Your Free Quote Now!</h3>
+                                <p>You’ve worked hard for your vehicle. Now protect your investment with a warranty that’s affordable, reliable, and designed for peace of mind.</p>
+                                <p>Click below to get your free, no-obligation quote and discover how much you can save with a comprehensive car warranty.</p>
                                 <div class="text-center">
-                                    <a href="#form" class="btn btn-primary py-3 px-5 mt-3" style="width:100%">Get Free Quote</a>
+                                    <a href="#form" class="btn btn-primary py-3 px-5 mt-3" style="width:100%">Get Free Warranty Quote</a>
                                 </div>
                             </div>
                         </div>
 
+                        <!-- Section: Act Today -->
                         <div class="row text-start mb-5 mt-2">
                             <div class="hlabi-body">
-                                <h3 class="text-center mb-3">Take Action Now!</h3>
-                                <p>Get your free, no-obligation quote and see how much you can save with Search A Deal. In just a few clicks you could unlock true peace of mind.</p>
-                                <p><b>Why Wait? Get Protected Today!</b></p>
+                                <h3 class="text-center mb-3">Why Wait? Get Covered Now!</h3>
+                                <p><b>Here’s Why You Should Act Today:</b></p>
+                                <ul>
+                                    <li><b>Don’t Wait for a Breakdown:</b> A failure could happen tomorrow—be proactive.</li>
+                                    <li><b>Flexible Payment Plans:</b> Coverage that fits your budget without sacrifice.</li>
+                                    <li><b>24/7 Roadside Assistance:</b> Help whenever and wherever you need it.</li>
+                                </ul>
+                                <p>Every day without protection is a gamble. Avoid being hit with a massive bill when it’s too late.</p>
                                 <div class="text-center">
                                     <a href="#form" class="btn btn-outline-primary py-3 px-5 mt-3" style="width:100%">Protect My Car Now</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Section: Confidence -->
+                        <div class="row text-start mb-5 mt-2">
+                            <div class="hlabi-body">
+                                <h3 class="text-center mb-3">Choose Search A Deal and Drive with Confidence</h3>
+                                <p>You deserve the best protection at an affordable price. Search A Deal partners give you:</p>
+                                <ul>
+                                    <li><b>Comprehensive coverage</b> against major breakdown risks.</li>
+                                    <li><b>Affordable monthly payments</b> that fit your budget.</li>
+                                    <li><b>Roadside assistance</b> to keep you moving when things go wrong.</li>
+                                </ul>
+                                <p><b>Why risk it?</b> Get peace of mind today with a partner-backed car warranty.</p>
+                                <div class="text-center">
+                                    <a href="#form" class="btn btn-success py-3 px-5 mt-3" style="width:100%">Start My Protection</a>
                                 </div>
                             </div>
                         </div>
@@ -362,5 +375,5 @@
         </div>
     </div>
 </div>
-
+<!-- Car Insurence End -->
 @include('partials.footer')
