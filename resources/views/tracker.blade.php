@@ -246,6 +246,17 @@
                                         <label for="gmail">Your Email </label>
                                     </div>
                                 </div>
+                                <div class="col-sm-6">
+                                    <div class="form-floating">
+                                        <select class="form-select" id="cage">
+                                            <option selected>Lowest Price</option>
+                                            <option>Advanced Features</option>
+                                            <option>Best All-Around Value</option>
+                                            <option>Other</option>
+                                        </select>
+                                        <label for="cage">Priority Selector</label>
+                                    </div>
+                                </div>
                                 <div class="col-sm-12">
                                     <input id="checkbox-1" required name="acceptterms" value="true"
                                            aria-describedby="checkbox-1" type="checkbox"
