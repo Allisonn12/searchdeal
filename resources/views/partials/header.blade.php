@@ -149,11 +149,12 @@
               data-bs-toggle="dropdown"
               >Insurance</a
             >
-            <div class="dropdown-menu bg-light border-0 m-0">
-              <a href="{{ route('car-insurance') }}" class="dropdown-item {{ Route::is('car-insurance') ? 'active' : '' }}">Car Insurance</a>
-              {{--<a href="{{ route('medical') }}" class="dropdown-item {{ Route::is('medical') ? 'active' : '' }}">Medical Insurance</a>--}}
-              {{--<a href="{{ route('life') }}" class="dropdown-item {{ Route::is('life') ? 'active' : '' }}">Life Insurance</a>--}}
-            </div>
+            {{--<div class="dropdown-menu bg-light border-0 m-0">--}}
+            {{--  <a href="{{ route('car-insurance') }}" class="dropdown-item {{ Route::is('car-insurance') ? 'active' : '' }}">Car Insurance</a>--}}
+            {{--  <a href="{{ route('medical') }}" class="dropdown-item {{ Route::is('medical') ? 'active' : '' }}">Medical Insurance</a>--}}
+            {{--  <a href="{{ route('life') }}" class="dropdown-item {{ Route::is('life') ? 'active' : '' }}">Life Insurance</a>--}}
+            {{--</div>--}}
+            <a href="{{ route('car-insurance') }}" class="dropdown-item {{ Route::is('car-insurance') ? 'active' : '' }}">Car Insurance</a>
           </div>
           <a href="{{ route('tracker') }}" class="nav-item nav-link  {{ Route::is('tracker') ? 'active' : '' }}">Car Track</a>
           {{--<a href="{{ route('debt') }}" class="nav-item nav-link  {{ Route::is('debt') ? 'active' : '' }}">Debt</a>--}}
