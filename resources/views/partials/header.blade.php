@@ -142,20 +142,20 @@
           <a href="{{ route('index') }}" class="nav-item nav-link {{ Route::is('index') ? 'active' : '' }}">Home</a>
           <!--<a href="#" class="nav-item nav-link">About Us</a>-->
           <a href="{{ route('service') }}" class="nav-item nav-link {{ Route::is('service') ? 'active' : '' }}">Our Services</a>
-          <div class="nav-item dropdown">
-            <a
-              href="#"
-              class="nav-link dropdown-toggle"
-              data-bs-toggle="dropdown"
-              >Insurance</a
-            >
-            {{--<div class="dropdown-menu bg-light border-0 m-0">--}}
-            {{--  <a href="{{ route('car-insurance') }}" class="dropdown-item {{ Route::is('car-insurance') ? 'active' : '' }}">Car Insurance</a>--}}
-            {{--  <a href="{{ route('medical') }}" class="dropdown-item {{ Route::is('medical') ? 'active' : '' }}">Medical Insurance</a>--}}
-            {{--  <a href="{{ route('life') }}" class="dropdown-item {{ Route::is('life') ? 'active' : '' }}">Life Insurance</a>--}}
-            {{--</div>--}}
-            <a href="{{ route('car-insurance') }}" class="dropdown-item {{ Route::is('car-insurance') ? 'active' : '' }}">Car Insurance</a>
-          </div>
+          {{--<div class="nav-item dropdown">--}}
+          {{--  <a--}}
+          {{--    href="#"--}}
+          {{--    class="nav-link dropdown-toggle"--}}
+          {{--    data-bs-toggle="dropdown"--}}
+          {{--    >Insurance</a--}}
+          {{--  >--}}
+          {{--  <div class="dropdown-menu bg-light border-0 m-0">--}}
+          {{--    <a href="{{ route('car-insurance') }}" class="dropdown-item {{ Route::is('car-insurance') ? 'active' : '' }}">Car Insurance</a>--}}
+          {{--    <a href="{{ route('medical') }}" class="dropdown-item {{ Route::is('medical') ? 'active' : '' }}">Medical Insurance</a>--}}
+          {{--    <a href="{{ route('life') }}" class="dropdown-item {{ Route::is('life') ? 'active' : '' }}">Life Insurance</a>--}}
+          {{--  </div>--}}
+          {{--</div>--}}
+          <a href="{{ route('car-insurance') }}" class="nav-item nav-link {{ Route::is('car-insurance') ? 'active' : '' }}">Car Insurance</a>
           <a href="{{ route('tracker') }}" class="nav-item nav-link  {{ Route::is('tracker') ? 'active' : '' }}">Car Track</a>
           {{--<a href="{{ route('debt') }}" class="nav-item nav-link  {{ Route::is('debt') ? 'active' : '' }}">Debt</a>--}}
           {{--<a href="{{ route('motor') }}" class="nav-item nav-link  {{ Route::is('motor') ? 'active' : '' }}">Motor Warrenty</a>--}}
