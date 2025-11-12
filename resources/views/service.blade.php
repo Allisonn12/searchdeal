@@ -25,67 +25,71 @@
             We Provide professional Insurance Services
           </h1>
         </div>
+
+        <div class="alert alert-success" role="alert">
+          Note: We are working tirelessly to add more services to our portfolio. Stay tuned for exciting updates!
+        </div>
         <div class="row g-4 justify-content-center">
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="service-item rounded h-100 p-5">
-              <div class="d-flex align-items-center ms-n5 mb-4">
-                <div
-                  class="service-icon flex-shrink-0 bg-primary rounded-end me-4"
-                >
-                  <img
-                    class="img-fluid"
-                    src="img/icon/icon-10-light.png"
-                    alt=""
-                  />
-                </div>
-                <h4 class="mb-0">Life Insurance</h4>
-              </div>
-              <p class="mb-4">
-                Secure your loved ones’ future with comprehensive a cover that supports them when they need it most
-              </p>
-              <a class="btn btn-light px-3" href="{{ route('life') }}">Read More</a>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-            <div class="service-item rounded h-100 p-5">
-              <div class="d-flex align-items-center ms-n5 mb-4">
-                <div
-                  class="service-icon flex-shrink-0 bg-primary rounded-end me-4"
-                >
-                  <img
-                    class="img-fluid"
-                    src="img/icon/icon-01-light.png"
-                    alt=""
-                  />
-                </div>
-                <h4 class="mb-0">Medical Insurance</h4>
-              </div>
-              <p class="mb-4">
-                Enjoy peace of mind and easy access to quality healthcare with our flexible medical insurance plans.
-              </p>
-              <a class="btn btn-light px-3" href="{{ route('medical') }}">Read More</a>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-            <div class="service-item rounded h-100 p-5">
-              <div class="d-flex align-items-center ms-n5 mb-4">
-                <div
-                  class="service-icon flex-shrink-0 bg-primary rounded-end me-4"
-                >
-                  <img
-                    class="img-fluid"
-                    src="img/icon/icon-05-light.png"
-                    alt=""
-                  />
-                </div>
-                <h4 class="mb-0">Motor Warrenty</h4>
-              </div>
-              <p class="mb-4">
-                Keep your car running smoothly with extended protection against unexpected repairs and breakdowns.
-              </p>
-              <a class="btn btn-light px-3" href="{{ route('motor') }}">Read More</a>
-            </div>
-          </div>
+          {{--<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">--}}
+          {{--  <div class="service-item rounded h-100 p-5">--}}
+          {{--    <div class="d-flex align-items-center ms-n5 mb-4">--}}
+          {{--      <div--}}
+          {{--        class="service-icon flex-shrink-0 bg-primary rounded-end me-4"--}}
+          {{--      >--}}
+          {{--        <img--}}
+          {{--          class="img-fluid"--}}
+          {{--          src="img/icon/icon-10-light.png"--}}
+          {{--          alt=""--}}
+          {{--        />--}}
+          {{--      </div>--}}
+          {{--      <h4 class="mb-0">Life Insurance</h4>--}}
+          {{--    </div>--}}
+          {{--    <p class="mb-4">--}}
+          {{--      Secure your loved ones’ future with comprehensive a cover that supports them when they need it most--}}
+          {{--    </p>--}}
+          {{--    <a class="btn btn-light px-3" href="{{ route('life') }}">Read More</a>--}}
+          {{--  </div>--}}
+          {{--</div>--}}
+          {{--<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">--}}
+          {{--  <div class="service-item rounded h-100 p-5">--}}
+          {{--    <div class="d-flex align-items-center ms-n5 mb-4">--}}
+          {{--      <div--}}
+          {{--        class="service-icon flex-shrink-0 bg-primary rounded-end me-4"--}}
+          {{--      >--}}
+          {{--        <img--}}
+          {{--          class="img-fluid"--}}
+          {{--          src="img/icon/icon-01-light.png"--}}
+          {{--          alt=""--}}
+          {{--        />--}}
+          {{--      </div>--}}
+          {{--      <h4 class="mb-0">Medical Insurance</h4>--}}
+          {{--    </div>--}}
+          {{--    <p class="mb-4">--}}
+          {{--      Enjoy peace of mind and easy access to quality healthcare with our flexible medical insurance plans.--}}
+          {{--    </p>--}}
+          {{--    <a class="btn btn-light px-3" href="{{ route('medical') }}">Read More</a>--}}
+          {{--  </div>--}}
+          {{--</div>--}}
+          {{--<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">--}}
+          {{--  <div class="service-item rounded h-100 p-5">--}}
+          {{--    <div class="d-flex align-items-center ms-n5 mb-4">--}}
+          {{--      <div--}}
+          {{--        class="service-icon flex-shrink-0 bg-primary rounded-end me-4"--}}
+          {{--      >--}}
+          {{--        <img--}}
+          {{--          class="img-fluid"--}}
+          {{--          src="img/icon/icon-05-light.png"--}}
+          {{--          alt=""--}}
+          {{--        />--}}
+          {{--      </div>--}}
+          {{--      <h4 class="mb-0">Motor Warrenty</h4>--}}
+          {{--    </div>--}}
+          {{--    <p class="mb-4">--}}
+          {{--      Keep your car running smoothly with extended protection against unexpected repairs and breakdowns.--}}
+          {{--    </p>--}}
+          {{--    <a class="btn btn-light px-3" href="{{ route('motor') }}">Read More</a>--}}
+          {{--  </div>--}}
+          {{--</div>--}}
           <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
             <div class="service-item rounded h-100 p-5">
               <div class="d-flex align-items-center ms-n5 mb-4">
@@ -106,26 +110,26 @@
               <a class="btn btn-light px-3" href="{{ route('tracker') }}">Read More</a>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-            <div class="service-item rounded h-100 p-5">
-              <div class="d-flex align-items-center ms-n5 mb-4">
-                <div
-                  class="service-icon flex-shrink-0 bg-primary rounded-end me-4"
-                >
-                  <img
-                    class="img-fluid"
-                    src="img/icon/icon-07-light.png"
-                    alt=""
-                  />
-                </div>
-                <h4 class="mb-0">Debt White List</h4>
-              </div>
-              <p class="mb-4">
-                Take control of your finances and work toward a debt-free future with our expert guidance and support.
-              </p>
-              <a class="btn btn-light px-3" href="{{ route('debt') }}">Read More</a>
-            </div>
-          </div>
+          {{--<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">--}}
+          {{--  <div class="service-item rounded h-100 p-5">--}}
+          {{--    <div class="d-flex align-items-center ms-n5 mb-4">--}}
+          {{--      <div--}}
+          {{--        class="service-icon flex-shrink-0 bg-primary rounded-end me-4"--}}
+          {{--      >--}}
+          {{--        <img--}}
+          {{--          class="img-fluid"--}}
+          {{--          src="img/icon/icon-07-light.png"--}}
+          {{--          alt=""--}}
+          {{--        />--}}
+          {{--      </div>--}}
+          {{--      <h4 class="mb-0">Debt White List</h4>--}}
+          {{--    </div>--}}
+          {{--    <p class="mb-4">--}}
+          {{--      Take control of your finances and work toward a debt-free future with our expert guidance and support.--}}
+          {{--    </p>--}}
+          {{--    <a class="btn btn-light px-3" href="{{ route('debt') }}">Read More</a>--}}
+          {{--  </div>--}}
+          {{--</div>--}}
           <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
             <div class="service-item rounded h-100 p-5">
               <div class="d-flex align-items-center ms-n5 mb-4">
@@ -162,12 +166,12 @@
           </div>
 
           <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-            
+
           </div>
           <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-            
+
           </div>
-          
+
         </div>
       </div>
     </div>
