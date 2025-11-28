@@ -113,7 +113,7 @@
                 We're Here To Assist With Getting The Best Deal
               </h1>
               <p class="fs-5 text-primary mb-4">
-                We Search So You Save. Unlock Insider Deals on Insurance, Loans, and More—With ZERO Effort.
+                We Search So You Save. Unlock Insider Deals on Insurance, Loans, and More with ZERO Effort.
               </p>
               <div class="row g-4 mb-4">
                 <div class="col-sm-6">
@@ -138,7 +138,7 @@
                 </div>
               </div>
               <p class="mb-4">
-                You’re Overpaying Right Now. Find the Best Deals in Seconds—Before It’s Too Late.
+                You’re Overpaying Right Now. Find the Best Deals in Seconds. Before it’s too late.
               </p>
             </div>
           </div>
@@ -234,7 +234,7 @@
                       src="img/icon/icon-04-primary.png"
                       alt=""
                     />
-                    <h5 class="mb-0"><b>Step 3</b>: You compare, choose, and save—100% hassle-free.</h5>
+                    <h5 class="mb-0"><b>Step 3</b>: You compare, choose, and save. 100% hassle-free.</h5>
                   </div>
                 </div>
               </div>

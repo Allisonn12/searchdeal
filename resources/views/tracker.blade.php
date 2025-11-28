@@ -74,7 +74,7 @@
                                     <li>Which ones delay installation or never follow through</li>
                                     <li>Which ones simply hand off your details to a dozen sales agents before you even get a quote</li>
                                 </ul>
-                                <p>That’s not protection. That’s bait. And the cost isn’t just financial—it’s emotional. In a high-risk country like South Africa, every hour without protection is a gamble.</p>
+                                <p>That’s not protection. That’s bait. And the cost isn’t just financial; it’s emotional. In a high-risk country like South Africa, every hour without protection is a gamble.</p>
                             </div>
                         </div>
 
@@ -87,7 +87,7 @@
                                 <ul>
                                     <li><b>✅ Discover</b> the ONE best-fit tracker for your needs (price, features, or value)</li>
                                     <li><b>✅ Get matched</b> to a pre-vetted provider with proven recovery rates</li>
-                                    <li><b>✅ Stay in control</b> — your data is only shared after you approve</li>
+                                    <li><b>✅ Stay in control</b>: your data is only shared after you approve</li>
                                 </ul>
                             </div>
                         </div>
@@ -132,7 +132,7 @@
                                 <ul>
                                     <li>The single mom left stranded after trusting a cheap tracker that never worked.</li>
                                     <li>The business owner whose system failed to alert him in time.</li>
-                                    <li>The dad who thought his premium plan included recovery—until it didn’t.</li>
+                                    <li>The dad who thought his premium plan included recovery until it didn’t.</li>
                                 </ul>
                                 <p>They all “had a tracker.” What they didn’t have… was the right one.</p>
                             </div>

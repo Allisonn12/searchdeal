@@ -11,12 +11,12 @@
             {{ session('error') }}
         </div>
     @endif
-  
+
 
     <!-- Page Header Start -->
     <div
       class="container-fluid page-header py-5 mb-5 wow fadeIn"
-      data-wow-delay="0.1s"            
+      data-wow-delay="0.1s"
       style="background: url(img/images/money-growth.jpg) center center no-repeat; background-size: cover;"
     >
         <div class="overlay-color">
@@ -34,13 +34,13 @@
       </div>
     </div>
     <!-- Page Header End -->
-    
+
 
    <!-- Car Insurence Start -->
     <div class="container-fluid py-5 wow fadeIn" data-wow-delay="0.1s">
       <div class="container">
         <div class="row g-5">
-          
+
           <div class="main">
             <div class="main-content my-5">
 
@@ -51,7 +51,7 @@
                         </h1>
                         <div class="subtitle">
                             <p class="mb-5">
-                              <i>The Bills Are Due, Savings Are Gone, and Panic Is Setting In—But It Doesn’t Have to End This Way</i>
+                              <i>The Bills Are Due, Savings Are Gone, and Panic Is Setting In. But It Doesn’t Have to End This Way</i>
                             </p>
                         </div>
                     </div>
@@ -74,12 +74,12 @@
                                   Complete transparency, clear terms, no shocks.</li>
                                 <li> <b>Personalized Repayment Options</b>
                                   Plans built for your life, not against it.</li>
-                                <li> <b>Bad Credit, No Credit—You’re Welcome Here</b>
+                                <li> <b>Bad Credit, No Credit. You’re Welcome Here</b>
                                   Because your past shouldn't trap you in a hopeless present.</li>
                                 <li> <b>Discretion & Respect Guaranteed</b>
                                   Your dignity fully restored, your privacy always protected.</li>
                             </ul>
-                            
+
                         </div>
                         </div>
                     </div>
@@ -108,13 +108,13 @@
 
 
                     <div class="row text-start  mb-5 mt-5">
-                        <h3 class="text-center mb-3">The Clock Is Ticking—Every Moment Counts</h3>
+                        <h3 class="text-center mb-3">The Clock Is Ticking. Every Moment Counts</h3>
                         <div class="hlabi-body">
                             <p class="mb-2"><b>Every second wasted multiplies your stress, increases your debt, and deepens your despair.</b></p>
                             <p>You must act right now.</p>
                             <div class="points text-start">
                                 <p><b>Take Back Control Immediately:</b></p>
-                                
+
                                 <p>
                                   - You deserve better than fear and panic. <br>
                                   - Act decisively and end this nightmare now.
@@ -127,7 +127,7 @@
                 </div>
             </div>
 
-              
+
               <div class="col-lg-12 wow fadeIn" data-wow-delay="0.5s">
                 <div class="bg-light rounded p-5">
                   <h4 class="mb-4 text-center">CLICK BELOW FOR IMMEDIATE RELIEF</h4>
@@ -162,7 +162,7 @@
                           <label for="gname">Last Name *</label>
                         </div>
                       </div>
-                      
+
                       <div class="col-sm-6">
                         <div class="form-floating">
                           <input
@@ -207,7 +207,7 @@
                             <option selected></option>
                             <option value="true">Yes</option>
                             <option value="false">No</option>
-                            
+
                           </select>
                           <label for="cage">Are you currently under Debt Review?</label>
                         </div>
@@ -258,7 +258,7 @@
                     </div>
                     <input type="hidden" name="optinurl" value="https://searchadeal.online/" required>
                     <input type="hidden" name="optindate" value="{{ date('Y-m-d h:i:s') }}" required>
-                
+
                   </form>
                 </div>
               </div>
@@ -270,12 +270,12 @@
                   <div class="hlabi-body text-center">
                       <p class="mb-2">Tomorrow could be too late.</p>
                       <p>Stop your nightmare before it spirals beyond control.</p>
-                      <h4><i>END YOUR PANIC—ACT NOW</i></h4>
+                      <h4><i>END YOUR PANIC. ACT NOW</i></h4>
                       <p><i>Because peace of mind can't wait another second.</i></p>
                   </div>
               </div>
               </div>
-    
+
           </div>
 
         </div>
