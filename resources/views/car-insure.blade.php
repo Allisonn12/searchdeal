@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-      <!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=G-WX9J0BVDQC"></script> <script> window.dataLayer = window.dataLayer || []; 
+      <!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=G-WX9J0BVDQC"></script> <script> window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-WX9J0BVDQC'); </script>
-    
+
     <!-- Facebook Pixel Code -->
     <script nonce="4BUkMtdd">
     !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -11,7 +11,7 @@
     n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
     t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
     document,'script','https://connect.facebook.net/en_US/fbevents.js');
-    
+
     fbq('init', '1322182192366880');
     fbq('set','agent','tmgoogletagmanager', '1322182192366880');
     fbq('track', "PageView");
@@ -20,12 +20,12 @@
     src="https://www.facebook.com/tr?id=1322182192366880&ev=PageView&noscript=1"
     /></noscript>
     <!-- End Facebook Pixel Code -->
-    
+
     <meta charset="utf-8" />
     <title>Search A Deal</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta content="insurance, cheap insurance, best insurance, compare insurance, affordable insurance, insurance deals, insurance discount" name="keywords" />
-    <meta content="SearchADeal helps you find the best insurance deals! Compare quotes for car, medical, life and many more insurances from top providers. Save money with affordable rates and exclusive discounts—get your free quote today!" name="description" />
+    <meta content="SearchADeal helps you find the best insurance deals! Compare quotes for car, medical, life and many more insurances from top providers. Save money with affordable rates and exclusive discounts. Get your free quote today!" name="description" />
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon" />
     <!-- Google Web Fonts -->
@@ -54,7 +54,7 @@
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
     </style>
-        
+
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -70,7 +70,7 @@
   </head>
 
   <body>
-     
+
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NWN5MH94"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -121,24 +121,24 @@
       </div>
     </div>
     <!-- Page Header End -->
-    
+
 
     <!-- Car Insurence Start -->
       <div class="container-fluid py-5 wow fadeIn" data-wow-delay="0.1s">
       <div class="container">
         <div class="row g-5">
-          
+
           <div class="main">
             <div class="main-content my-5">
 
                 <div class="col-lg-12 wow fadeIn" data-wow-delay="0.3s">
                     <div class="row">
                         <h1 class="display-6 mb-3">
-                            WARNING: Your Insurance Policy May Be Failing You—And You Won’t Know Until It’s Too Late!
+  WARNING: Your Insurance Policy May Be Failing You. And You Won’t Know Until It’s Too Late!
                         </h1>
                         <div class="subtitle">
                             <p class="mb-5">
-                                <i>92% of Drivers Only Realize They’re Unprotected After a Denied Claim—Don’t Be One of Them.</i>
+                                <i>92% of Drivers Only Realize They’re Unprotected After a Denied Claim. Don’t Be One of Them.</i>
                             </p>
                         </div>
                     </div>
@@ -149,14 +149,14 @@
                         <h3>It happens every single day.</h3>
                         <div class="hlabi-body">
                             <p><b>
-                                A driver gets into an accident, their car is stolen, or a breakdown leaves them stranded. They assume their insurance will cover it—because that’s why they’ve been paying premiums for years.
+                                A driver gets into an accident, their car is stolen, or a breakdown leaves them stranded. They assume their insurance will cover it, because that’s why they’ve been paying premiums for years.
                             </b></p>
                             <div class="points text-start">
                                 <p>Then reality punches them in the face.</p>
                                 <ul>
                                     <li>Claim Denied Due to Policy Fine Print.</li>
-                                    <li>Insufficient Coverage—You're Responsible for the Remaining R30,000.</li>
-                                    <li>Processing Delay—Your Payout Will Arrive in 4-6 Months.</li>
+                                    <li>Insufficient Coverage. You're Responsible for the Remaining R30,000.</li>
+                                    <li>Processing Delay. Your Payout Will Arrive in 4-6 Months.</li>
                                 </ul>
                                 <p>
                                     And just like that, you’re left with a financial disaster that should have been covered.
@@ -170,19 +170,19 @@
                         <div class="hlabi-body">
                             <i class="mb-2">Imagine this:</i>
                             <p>
-                                - You're driving home from work, thinking about dinner. Then—BAM. <br>
+                                - You're driving home from work, thinking about dinner. Then BAM. <br>
                                 - A driver runs a red light and slams into your car. <br>
                                 - Your airbags deploy. Your car is wrecked. The tow truck arrives. <br>
                                 - You're shaken, but at least your insurance will cover the damages… right? <br>
-                                
+
                             </p>
                             <b class="mb-2">Wrong!!!</b>
                             <div class="points" style="text-align: start;">
-                                <p>- You find out your insurer won’t cover your claim—because of a "technicality" you never noticed. <br>
+                                <p>- You find out your insurer won’t cover your claim, because of a "technicality" you never noticed. <br>
                                     - Now, instead of just dealing with car repairs, you're staring at a R50,000+ bill you never expected. <br>
                                     - This is how most drivers go broke overnight.
                                 </p>
-                                
+
                             </div>
                         </div>
                     </div>
@@ -193,24 +193,24 @@
                         <div class="hlabi-body">
                             <p class="mb-2"><b>Most people think insurance companies exist to protect them.</b></p>
                             <p>They don’t.</p>
-                            
-                            <b class=""> They exist to make money—and the less they pay out, the more they profit.</b>
+
+                            <b class=""> They exist to make money, and the less they pay out, the more they profit.</b>
                             <div class="points text-start">
                                 <p>That’s why:</p>
                                 <ul>
                                     <li>They make claims confusing and difficult.</li>
-                                    <li>They delay payouts for months—or deny them entirely.</li>
-                                    <li>They increase your premiums every year—but your coverage stays the same.</li>
+                                    <li>They delay payouts for months, or deny them entirely.</li>
+                                    <li>They increase your premiums every year, but your coverage stays the same.</li>
                                 </ul>
                                 <p>
-                                  It’s a rigged system—and the only way to win is to switch to an insurer that actually puts YOU first.
+                                  It’s a rigged system, and the only way to win is to switch to an insurer that actually puts YOU first.
                                 </p>
                             </div>
                         </div>
                     </div>
 
                     <div class="row text-start  mb-5 mt-5">
-                        <h3 class="text-center mb-3">The Solution: Search A Deal’s Partner Car Insurance—Designed to Actually Work for You.</h3>
+                        <h3 class="text-center mb-3">The Solution: Search A Deal’s Partner Car Insurance. Designed to Actually Work for You.</h3>
                         <div class="hlabi-body">
                         <p class="mb-2">We partner ONLY with insurers who are committed to paying out FAST, offering full protection, and never hiding behind fine print.</p>
                             <div class="points text-start">
@@ -222,7 +222,7 @@
                                     <li>24/7 Emergency Support – Because problems don’t happen on a 9-to-5 schedule.</li>
                                 </ul>
                                 <p>
-                                    This isn’t just insurance—it’s total financial peace of mind.
+                                    This isn’t just insurance. It’s total financial peace of mind.
                                 </p>
                             </div>
                         </div>
@@ -244,7 +244,7 @@
                                     <br>That’s like trading R1 for R100 in savings when disaster strikes.
                                 </b>
                                 <p>
-                                    Why would anyone risk losing tens of thousands—when they can be covered for a fraction of the cost?
+                                    Why would anyone risk losing tens of thousands, when they can be covered for a fraction of the cost?
                                 </p>
                             </div>
                         </div>
@@ -275,15 +275,15 @@
                             <i class="mb-2"> Every driver who doesn’t switch now will eventually wish they had.</i>
                             <p>
                               ️-  Most people don’t take action until disaster forces them to. <br>
-                              ️-  Most people think they have time—until they don’t. <br>
-                              ️-  Most people regret not acting sooner. <br>                            
+                              ️-  Most people think they have time, until they don’t. <br>
+                              ️-  Most people regret not acting sooner. <br>
                             </p>
                             <b class="mb-2"> Today, you have the power to take control of your future.
                                 <br> Tomorrow? You might be the one stuck fighting a denied claim.
                             </b>
                             <div class="points" style="text-align: start;">
-                                
-                                
+
+
                             </div>
                         </div>
                     </div>
@@ -292,7 +292,7 @@
             </div>
 
 
-              
+
               <div class="col-lg-12 wow fadeIn hlabi-form" data-wow-delay="0.5s">
                 <div class="bg-light rounded p-5">
                   <h4 class="mb-4">Request A Quote</h4>
@@ -329,7 +329,7 @@
                           <label for="gname">Last Name *</label>
                         </div>
                       </div>
-                      
+
                       <div class="col-sm-6">
                         <div class="form-floating">
                           <input
@@ -465,7 +465,7 @@
                   </form>
                 </div>
               </div>
-    
+
           </div>
 
         </div>
@@ -473,13 +473,13 @@
     </div>
     <!-- Car Insurence End -->
 
-    
+
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"
       ><i class="bi bi-arrow-up"></i
     ></a>
-    
+
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>

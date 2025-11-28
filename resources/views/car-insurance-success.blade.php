@@ -24,14 +24,14 @@
                             <div class="hlabi-body">
                                 <h3 class="text-center mb-3">Unlock Your Car’s Perfect Protector (60 Seconds or Less)</h3>
                                 <p><b>No hassle. No confusion. Just real-world protection you can see.</b></p>
-                                <p>Introducing the <b>SentinelMatch Engine</b> — a forensic-grade smart tracker matching system that:</p>
+                                <p>Introducing the <b>SentinelMatch Engine</b>, a forensic-grade smart tracker matching system that:</p>
                                 <ul>
                                     <li>✅ Knows your exact insurer</li>
                                     <li>✅ Knows the protection you actually want (not what marketers push)</li>
                                     <li>✅ Instantly matches you with the best verified, best-fit tracker provider</li>
                                     <li>✅ Delivers real-time recovery power for theft, hijacking & breakdown</li>
                                 </ul>
-                                <p>You won’t waste time comparing, guessing, or re-entering details. <b>The hard work’s already done— in milliseconds.</b></p>
+                                <p>You won’t waste time comparing, guessing, or re-entering details. <b>The hard work’s already done in milliseconds.</b></p>
                             </div>
                         </div>
 
@@ -63,7 +63,7 @@
                                     <li>✅ Identifies why you need a tracker (compliance, peace of mind, fleet, risk zone)</li>
                                     <li>✅ Filters out providers that don’t meet your insurer’s standards</li>
                                     <li>✅ Selects only those with 24/7 recovery, mobile control & transparent support</li>
-                                    <li>✅ Shows you the <b>best one</b>—not twenty—so you’re not overwhelmed or harassed</li>
+                                    <li>✅ Shows you the <b>best one</b>, not twenty, so you’re not overwhelmed or harassed</li>
                                 </ul>
                                 <p><b>No lists. No spam. No uncertainty. Just one result: the right protector for your car.</b></p>
                             </div>
@@ -80,7 +80,7 @@
                         <div class="row text-start mb-5 mt-2">
                             <div class="hlabi-body">
                                 <h3 class="text-center mb-3">The Sentinel Guarantee</h3>
-                                <p>If our matched provider doesn’t fit, we rematch instantly—no forms, no friction.</p>
+                                <p>If our matched provider doesn’t fit, we rematch instantly. No forms, no friction.</p>
                                 <p>You made a brilliant decision moments ago. <b>This is how you finish what you started.</b></p>
                             </div>
                         </div>
@@ -96,7 +96,7 @@
                             <div class="hlabi-body text-center">
                                 <a href="#form" class="btn btn-primary py-3 px-5 mb-3" style="width:100%" data-cta="activate-tracker-match">Activate My Tracker Match</a>
                                 <p class="small text-muted mb-0">One click • No sales calls • Immediate match</p>
-                                <p class="mt-4 mb-0"><b>You’ve protected the paper. Now protect the car.</b><br>Turn vulnerability into control—let’s finish this right.</p>
+                                <p class="mt-4 mb-0"><b>You’ve protected the paper. Now protect the car.</b><br>Turn vulnerability into control. Let’s finish this right.</p>
                             </div>
                         </div>
                         <!-- END: Updated Post-Insurance Tracker Upsell Copy -->

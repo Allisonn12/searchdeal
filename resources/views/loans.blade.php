@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-      <!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=G-WX9J0BVDQC"></script> <script> window.dataLayer = window.dataLayer || []; 
+      <!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=G-WX9J0BVDQC"></script> <script> window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-WX9J0BVDQC'); </script>
-    
+
     <!-- Facebook Pixel Code -->
     <script nonce="4BUkMtdd">
     !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -11,7 +11,7 @@
     n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
     t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
     document,'script','https://connect.facebook.net/en_US/fbevents.js');
-    
+
     fbq('init', '1322182192366880');
     fbq('set','agent','tmgoogletagmanager', '1322182192366880');
     fbq('track', "PageView");
@@ -20,12 +20,12 @@
     src="https://www.facebook.com/tr?id=1322182192366880&ev=PageView&noscript=1"
     /></noscript>
     <!-- End Facebook Pixel Code -->
-    
+
     <meta charset="utf-8" />
     <title>Search A Deal</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta content="insurance, cheap insurance, best insurance, compare insurance, affordable insurance, insurance deals, insurance discount" name="keywords" />
-    <meta content="SearchADeal helps you find the best insurance deals! Compare quotes for car, medical, life and many more insurances from top providers. Save money with affordable rates and exclusive discounts—get your free quote today!" name="description" />
+    <meta content="SearchADeal helps you find the best insurance deals! Compare quotes for car, medical, life and many more insurances from top providers. Save money with affordable rates and exclusive discounts. Get your free quote today!" name="description" />
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon" />
     <!-- Google Web Fonts -->
@@ -54,7 +54,7 @@
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
     </style>
-        
+
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -70,7 +70,7 @@
   </head>
 
   <body>
-     
+
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NWN5MH94"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -97,12 +97,12 @@
             {{ session('error') }}
         </div>
     @endif
-  
+
 
     <!-- Page Header Start -->
     <div
       class="container-fluid page-header py-5 mb-5 wow fadeIn"
-      data-wow-delay="0.1s"            
+      data-wow-delay="0.1s"
       style="background: url(img/images/money-growth.jpg) center center no-repeat; background-size: cover;"
     >
         <div class="overlay-color">
@@ -120,13 +120,13 @@
       </div>
     </div>
     <!-- Page Header End -->
-    
+
 
    <!-- Car Insurence Start -->
     <div class="container-fluid py-5 wow fadeIn" data-wow-delay="0.1s">
       <div class="container">
         <div class="row g-5">
-          
+
           <div class="main">
             <div class="main-content my-5">
 
@@ -137,7 +137,7 @@
                         </h1>
                         <div class="subtitle">
                             <p class="mb-5">
-                              <i>The Bills Are Due, Savings Are Gone, and Panic Is Setting In—But It Doesn’t Have to End This Way</i>
+                              <i>The Bills Are Due, Savings Are Gone, and Panic Is Setting In. But It Doesn’t Have to End This Way</i>
                             </p>
                         </div>
                     </div>
@@ -160,12 +160,12 @@
                                   Complete transparency, clear terms, no shocks.</li>
                                 <li> <b>Personalized Repayment Options</b>
                                   Plans built for your life, not against it.</li>
-                                <li> <b>Bad Credit, No Credit—You’re Welcome Here</b>
+                                <li> <b>Bad Credit, No Credit. You’re Welcome Here</b>
                                   Because your past shouldn't trap you in a hopeless present.</li>
                                 <li> <b>Discretion & Respect Guaranteed</b>
                                   Your dignity fully restored, your privacy always protected.</li>
                             </ul>
-                            
+
                         </div>
                         </div>
                     </div>
@@ -194,13 +194,13 @@
 
 
                     <div class="row text-start  mb-5 mt-5">
-                        <h3 class="text-center mb-3">The Clock Is Ticking—Every Moment Counts</h3>
+                        <h3 class="text-center mb-3">The Clock Is Ticking. Every Moment Counts</h3>
                         <div class="hlabi-body">
                             <p class="mb-2"><b>Every second wasted multiplies your stress, increases your debt, and deepens your despair.</b></p>
                             <p>You must act right now.</p>
                             <div class="points text-start">
                                 <p><b>Take Back Control Immediately:</b></p>
-                                
+
                                 <p>
                                   - You deserve better than fear and panic. <br>
                                   - Act decisively and end this nightmare now.
@@ -213,7 +213,7 @@
                 </div>
             </div>
 
-              
+
               <div class="col-lg-12 wow fadeIn" data-wow-delay="0.5s">
                 <div class="bg-light rounded p-5">
                   <h4 class="mb-4 text-center">CLICK BELOW FOR IMMEDIATE RELIEF</h4>
@@ -248,7 +248,7 @@
                           <label for="gname">Last Name *</label>
                         </div>
                       </div>
-                      
+
                       <div class="col-sm-6">
                         <div class="form-floating">
                           <input
@@ -293,7 +293,7 @@
                             <option selected></option>
                             <option value="true">Yes</option>
                             <option value="false">No</option>
-                            
+
                           </select>
                           <label for="cage">Are you currently under Debt Review?</label>
                         </div>
@@ -344,7 +344,7 @@
                     </div>
                     <input type="hidden" name="optinurl" value="https://searchadeal.online/" required>
                     <input type="hidden" name="optindate" value="{{ date('Y-m-d h:i:s') }}" required>
-                
+
                   </form>
                 </div>
               </div>
@@ -356,24 +356,24 @@
                   <div class="hlabi-body text-center">
                       <p class="mb-2">Tomorrow could be too late.</p>
                       <p>Stop your nightmare before it spirals beyond control.</p>
-                      <h4><i>END YOUR PANIC—ACT NOW</i></h4>
+                      <h4><i>END YOUR PANIC. ACT NOW</i></h4>
                       <p><i>Because peace of mind can't wait another second.</i></p>
                   </div>
               </div>
               </div>
-    
+
           </div>
 
         </div>
       </div>
     </div>
-    
-    
+
+
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"
       ><i class="bi bi-arrow-up"></i
     ></a>
-    
+
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
