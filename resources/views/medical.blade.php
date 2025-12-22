@@ -63,7 +63,7 @@
                         <div class="row text-start mb-5 mt-2">
                             <div class="hlabi-body">
                                 <h3 class="text-center mb-4">Struggling with Rising Healthcare Costs?</h3>
-                                <p>Healthcare in South Africa is expensive—whether it's a routine doctor visit or a medical emergency. With public healthcare struggling to keep up, you know private care is a necessity—but at what cost?</p>
+                                <p>Healthcare in South Africa is expensive, whether it's a routine doctor visit or a medical emergency. With public healthcare struggling to keep up, you know private care is a necessity, but at what cost?</p>
                                 <p>You work hard to provide for yourself and your family. The last thing you need is a surprise medical bill that drains your savings.</p>
                             </div>
                         </div>
@@ -81,7 +81,7 @@
                             <div class="hlabi-body">
                                 <h3 class="text-center mb-4">Introducing Search A Deal's Partner Medical Insurance</h3>
                                 <p><b>Affordable, Comprehensive Coverage Without the Confusion.</b></p>
-                                <p>At Search A Deal, we believe medical insurance should be simple, affordable, and give you peace of mind. That's why we've partnered with medical insurance providers that offer comprehensive coverage—ensuring you get access to quality healthcare without the financial burden of out-of-pocket medical expenses.</p>
+                                <p>At Search A Deal, we believe medical insurance should be simple, affordable, and give you peace of mind. That's why we've partnered with medical insurance providers that offer comprehensive coverage, ensuring you get access to quality healthcare without the financial burden of out-of-pocket medical expenses.</p>
                                 <p>With Search A Deal, you don't have to choose between affordable premiums and good coverage. <b>You get both.</b></p>
                             </div>
                         </div>
@@ -93,7 +93,7 @@
                                 <ul>
                                     <li><b>Affordable Premiums:</b> Coverage without breaking the bank.</li>
                                     <li><b>Comprehensive Coverage:</b> Routine check-ups, emergencies, preventative care, chronic illness management, and hospital stays.</li>
-                                    <li><b>No-Nonsense Claims:</b> Fast, simple process—focus on your health, not paperwork.</li>
+                                    <li><b>No-Nonsense Claims:</b> Fast, simple process; focus on your health, not paperwork.</li>
                                     <li><b>Tailored Plans:</b> Flexible, customizable options for every life stage and health profile.</li>
                                 </ul>
                             </div>
@@ -102,8 +102,8 @@
                         <div class="row text-start mb-5 mt-2">
                             <div class="hlabi-body">
                                 <h3 class="text-center mb-4">Don't Let Medical Bills Drain Your Savings</h3>
-                                <p>You know that healthcare costs in South Africa are rising—and fast. The question is: <b>are you prepared?</b></p>
-                                <p>What if you or a family member faces a medical emergency? Without proper coverage, a hospital stay could cost you tens of thousands of rands—money you may not have.</p>
+                                <p>You know that healthcare costs in South Africa are rising fast. The question is: <b>are you prepared?</b></p>
+                                <p>What if you or a family member faces a medical emergency? Without proper coverage, a hospital stay could cost you tens of thousands of rands, money you may not have.</p>
                             </div>
                         </div>
 
@@ -113,7 +113,7 @@
                                 <p>Nobody plans to get sick, but when it happens, the last thing you should worry about is whether you can afford care.</p>
                                 <p>With Search A Deal, you don't have to choose between your health and your finances. Here's how we make life easier:</p>
                                 <ul>
-                                    <li><b>Transparent Policies:</b> No hidden clauses—know exactly what you're getting.</li>
+                                    <li><b>Transparent Policies:</b> No hidden clauses; know exactly what you're getting.</li>
                                     <li><b>Budget-Friendly Options:</b> From basic protection to comprehensive plans.</li>
                                     <li><b>Access to Private Healthcare:</b> Shorter waits, better facilities, top doctors.</li>
                                 </ul>
@@ -123,7 +123,7 @@
                         <div class="row text-start mb-5 mt-2">
                             <div class="hlabi-body">
                                 <h3 class="text-center mb-4">Why Thousands Are Choosing Search A Deal Partners</h3>
-                                <p>Choosing medical insurance can feel overwhelming—big companies push overpriced plans. Here's why people switch to us:</p>
+                                <p>Choosing medical insurance can feel overwhelming; big companies push overpriced plans. Here's why people switch to us:</p>
                                 <ul>
                                     <li><b>Your Health First:</b> We prioritise your well-being, not just a policy sale.</li>
                                     <li><b>Affordable & Customisable:</b> Plans matched to your budget and needs.</li>
@@ -134,9 +134,9 @@
 
                         <div class="row text-start mb-5 mt-2">
                             <div class="hlabi-body">
-                                <h3 class="text-center mb-4">The Truth: Medical Emergencies Don't Wait—You Need Protection Now</h3>
+                                <h3 class="text-center mb-4">The Truth: Medical Emergencies Don't Wait. You Need Protection Now</h3>
                                 <p>Every day without medical insurance is a gamble. Costs are rising, and one emergency could wipe out your savings.</p>
-                                <p>With Search A Deal partners, you can protect yourself and your family—without high premiums or confusing plans.</p>
+                                <p>With Search A Deal partners, you can protect yourself and your family, without high premiums or confusing plans.</p>
                             </div>
                         </div>
 
@@ -155,7 +155,7 @@
                                 <h3 class="text-center mb-4">Why Wait? Secure Your Health and Finances Today!</h3>
                                 <p><b>Here's Why You Should Act Now:</b></p>
                                 <ul>
-                                    <li><b>Rising Healthcare Costs:</b> Prices increase yearly—lock in affordability now.</li>
+                                    <li><b>Rising Healthcare Costs:</b> Prices increase yearly; lock in affordability now.</li>
                                     <li><b>Comprehensive Coverage:</b> Doctor visits, hospital stays, chronic illness care & more.</li>
                                     <li><b>Flexible, Budget-Friendly Plans:</b> Protection that fits your needs before an emergency forces your hand.</li>
                                 </ul>

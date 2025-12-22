@@ -9,13 +9,13 @@
                         <div class="hlabi-body">
                         <div class="row">
                             <h1 class="display-6 mb-5">
-                                Your Car Insurance is Set—But Are You Ready for the Moment Hijackers Strike?
-                            </h1>
+  Your Car Insurance is Set. But Are You Ready for the Moment Hijackers Strike?
+</h1>
                             <div class="subtitle">
                                 <p class="mb-5" style="font-size: 30px">
                                     <i>
-                                        Congratulations on securing unmatched financial protection with the 
-                                        revolutionary 60Second Switch™! You've safeguarded your family's financial 
+                                        Congratulations on securing unmatched financial protection with the
+                                        revolutionary 60Second Switch™! You've safeguarded your family's financial
                                         future—but there's one critical piece of your safety puzzle missing...
                                     </i>
                                 </p>
@@ -24,9 +24,9 @@
                         <div class="row text-center mb-5">
                             <div class="mb-3">
                                 <p>
-                                    Every 22 minutes, a South African family's sense of security is shattered—not 
-                                    by their insurer, but by criminals who’ve already chosen their car. 
-                                    Your insurance ensures financial recovery, but what about the emotional 
+                                    Every 22 minutes, a South African family's sense of security is shattered, not
+                                    by their insurer, but by criminals who’ve already chosen their car.
+                                    Your insurance ensures financial recovery, but what about the emotional
                                     and physical safety of your family?
 
                                 </p>
@@ -34,15 +34,15 @@
                             <h3 class="text-center mb-3">Introducing Verified Tracker Certainty™</h3>
                             <div class="hlabi-body">
                                 <p>
-                                    The only tracker solution proven in real hijackings, equipped with the 
-                                    revolutionary DualShield™ Reliability Matrix. This isn’t just a 
-                                    tracker—it’s your family's lifeline during a hijack:
+                                    The only tracker solution proven in real hijackings, equipped with the
+                                    revolutionary DualShield™ Reliability Matrix. This isn’t just a
+                                    tracker; it’s your family's lifeline during a hijack:
                                 </p>
                                 <b>INTRODUCING VERIFIED TRACKER CERTAINTY™</b>
                                 <p>
                                    <div>
                                         <ul>
-                                            <li><b>Jam-Proof Protection</b>: Tested against GPS jammers—instantly switches to secure, unjammable frequencies. </li>
+                                            <li><b>Jam-Proof Protection</b>: Tested against GPS jammers, instantly switches to secure, unjammable frequencies. </li>
                                             <li><b>Immediate Emergency Response</b>: Human-led, rapid SAPS deployment within seconds, not hours. </li>
                                             <li><b>Insurer-Approved Security</b>: Qualifies for maximum premium discounts, ensuring your financial and physical safety go hand-in-hand. </li>
                                             <li><b>POPIA Compliant</b>: Your privacy, absolutely secured under South African law. </li>
@@ -50,17 +50,17 @@
                                    </div>
                                 </p>
                                 <p>
-                                    Thousands of South Africans who chose the 60Second Switch™ didn't leave their safety to chance—they added Verified 
+                                    Thousands of South Africans who chose the 60Second Switch™ didn't leave their safety to chance; they added Verified
                                     Tracker Certainty™ immediately. This exclusive upgrade opportunity is available ONLY right here, right now.
                                 </p>
                                 <p>
-                                    For the next few minutes, you can lock in Verified Tracker Certainty™ at a special exclusive price, 
-                                    ensuring your family's complete safety—not just financial recovery, but real-world, verified 
+                                    For the next few minutes, you can lock in Verified Tracker Certainty™ at a special exclusive price,
+                                    ensuring your family's complete safety, not just financial recovery, but real-world, verified
                                     protection from hijacking.
                                 </p>
                                 <h3>Our guarantee:</h3>
                                 <p>
-                                    If your tracker doesn't meet every single promise, you're under no obligation—ever. Absolute certainty, zero risk.
+                                    If your tracker doesn't meet every single promise, you're under no obligation, ever. Absolute certainty, zero risk.
                                 </p>
                                 <p>
                                     “Yes! Activate Verified Tracker Certainty™” <br>
@@ -106,7 +106,7 @@
                           <label for="gname">Last Name *</label>
                         </div>
                       </div>
-                      
+
                       <div class="col-sm-6">
                         <div class="form-floating">
                           <input
@@ -242,7 +242,7 @@
                   </form>
                 </div>
               </div>
-    
+
                         </div>
 
                         </div>

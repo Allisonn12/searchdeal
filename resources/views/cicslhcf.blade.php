@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-      <!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=G-WX9J0BVDQC"></script> <script> window.dataLayer = window.dataLayer || []; 
+      <!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=G-WX9J0BVDQC"></script> <script> window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-WX9J0BVDQC'); </script>
-    
+
     <!-- Facebook Pixel Code -->
     <script nonce="4BUkMtdd">
     !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -11,7 +11,7 @@
     n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
     t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
     document,'script','https://connect.facebook.net/en_US/fbevents.js');
-    
+
     fbq('init', '1322182192366880');
     fbq('set','agent','tmgoogletagmanager', '1322182192366880');
     fbq('track', "PageView");
@@ -20,12 +20,12 @@
     src="https://www.facebook.com/tr?id=1322182192366880&ev=PageView&noscript=1"
     /></noscript>
     <!-- End Facebook Pixel Code -->
-    
+
     <meta charset="utf-8" />
     <title>Search A Deal</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta content="insurance, cheap insurance, best insurance, compare insurance, affordable insurance, insurance deals, insurance discount" name="keywords" />
-    <meta content="SearchADeal helps you find the best insurance deals! Compare quotes for car, medical, life and many more insurances from top providers. Save money with affordable rates and exclusive discounts—get your free quote today!" name="description" />
+    <meta content="SearchADeal helps you find the best insurance deals! Compare quotes for car, medical, life and many more insurances from top providers. Save money with affordable rates and exclusive discounts. Get your free quote today!" name="description" />
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon" />
     <!-- Google Web Fonts -->
@@ -54,7 +54,7 @@
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
     </style>
-        
+
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -70,7 +70,7 @@
   </head>
 
   <body>
-     
+
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NWN5MH94"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -126,7 +126,7 @@
                     <div class="col-lg-12 wow fadeIn" data-wow-delay="0.3s">
                         <div class="row">
                             <h1 class="display-6 mb-5">
-                                The Silent Crisis Every South African Family Faces—And the 60 Seconds That Ends It Forever.
+                                The Silent Crisis Every South African Family Faces. And the 60 Seconds That Ends It Forever.
                             </h1>
                             <div class="subtitle">
                                 <p class="mb-5" style="font-size: 30px">
@@ -139,19 +139,19 @@
                         <div class="row text-start mb-5 mt-5">
                             <div>
                                 <p>
-                                    Every 22 minutes, a South African family faces financial ruin—not from reckless spending, but from something simpler:
+                                    Every 22 minutes, a South African family faces financial ruin, not from reckless spending, but from something simpler:
                                 </p>
                                 <p>
                                     Believing their car insurance policy truly protects them.
                                     <br>
                                     <br>
-                                    It's a quiet crisis no one talks about—until they're left picking up the pieces.
+                                    It's a quiet crisis no one talks about, until they're left picking up the pieces.
                                     <br>
                                     Imagine your own moment of truth: a frantic call, an accident you never saw coming.
                                     <br>
                                     <br>
                                     Now picture knowing, without any doubt, your family's financial future is completely secure.
-                                    Introducing the revolutionary 60Second Switch™—a decision so simple, it changes everything.
+                                    Introducing the revolutionary 60Second Switch™. A decision so simple, it changes everything.
                                     <br>
                                 </p>
                             </div>
@@ -191,14 +191,14 @@
                                     <b>The Proven Method Transforming Thousands of Lives</b>
                                     <br>
                                     <br>
-                                    The 60Second Switch™ is not just different—it’s essential:
+                                    The 60Second Switch™ is not just different; it’s essential:
                                     <div class="points text-start">
                                         <ul class="text-left">
                                             <li>
                                                 <b>Real-Time Accuracy:</b> Direct insurer quotes via secure API connections. No guesswork.
                                             </li>
                                             <li>
-                                                <b>Complete Transparency:</b> Every policy is clearly displayed—zero hidden surprises.
+                                                <b>Complete Transparency:</b> Every policy is clearly displayed. Zero hidden surprises.
                                             </li>
                                             <li>
                                                 <b>Total Privacy Control:</b> Your data remains secure until you decide to proceed.
@@ -213,12 +213,12 @@
                         </div>
                     </div>
                     <div class="row text-start  mb-5 mt-5">
-                        <h3 class="text-center mb-3">When Seconds Matter—A Real-Life Awakening</h3>
+                        <h3 class="text-center mb-3">When Seconds Matter. A Real-Life Awakening</h3>
                         <div class="hlabi-body">
                             <p class="mb-2">
                                 Consider Sipho. A hardworking father blindsided by an insurer’s claim denial after a devastating crash.
                                 <br>
-                                Frantic, he turned to the 60Second Switch™. Within one minute, he found a transparent insurer, saving 
+                                Frantic, he turned to the 60Second Switch™. Within one minute, he found a transparent insurer, saving
                                 thousands and avoiding financial ruin.
                                 <br>
                                 "In those 60 seconds, I reclaimed control," Sipho said. "My family’s future changed forever."
@@ -270,7 +270,7 @@
                                         <b>Guaranteed Privacy:</b> Your data encrypted until YOU act.
                                     </li>
                                     <li>
-                                        <b>Legal Accountability:</b> Fully compliant with POPIA and Consumer Protection Act—your safety, legally secured.
+                                        <b>Legal Accountability:</b> Fully compliant with POPIA and Consumer Protection Act. Your safety, legally secured.
                                     </li>
                                 </ol>
                                 <p>
@@ -291,7 +291,7 @@
                                     Ignoring this reality is risking everything.
                                 </p>
                             </div>
-                            <b class=""> Your Family's Future Secured—Right Now</b>
+                            <b class=""> Your Family's Future Secured. Right Now</b>
                             <div class="points text-start">
                                 <p>In just one minute, you can:</p>
                                 <ul>
@@ -300,7 +300,7 @@
                                     <li> Provide unshakeable financial security to your loved ones.</li>
                                 </ul>
                                 <p>
-                                    This isn’t insurance—it’s peace of mind guaranteed.
+                                    This isn’t insurance. It’s peace of mind guaranteed.
                                 </p>
                             </div>
                             <b class=""> Make Your 60Second Switch™ Now.</b>
@@ -322,7 +322,7 @@
                                     Secure your legacy now.
                                 </p>
                             </div>
-                            <b>Act Now—60 Seconds to Certainty.</b>
+                            <b>Act Now. 60 Seconds to Certainty.</b>
                         </div>
                     </div>
                     <div class="col-lg-12 wow fadeIn hlabi-form" data-wow-delay="0.5s">
@@ -557,7 +557,7 @@
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"
       ><i class="bi bi-arrow-up"></i
     ></a>
-    
+
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -589,4 +589,3 @@
     </style>
   </body>
 </html>
-

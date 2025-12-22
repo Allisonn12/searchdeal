@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-      <!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=G-WX9J0BVDQC"></script> <script> window.dataLayer = window.dataLayer || []; 
+      <!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=G-WX9J0BVDQC"></script> <script> window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-WX9J0BVDQC'); </script>
-    
+
     <!-- Facebook Pixel Code -->
     <script nonce="4BUkMtdd">
     !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -11,7 +11,7 @@
     n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
     t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
     document,'script','https://connect.facebook.net/en_US/fbevents.js');
-    
+
     fbq('init', '1322182192366880');
     fbq('set','agent','tmgoogletagmanager', '1322182192366880');
     fbq('track', "PageView");
@@ -20,7 +20,7 @@
     src="https://www.facebook.com/tr?id=1322182192366880&ev=PageView&noscript=1"
     /></noscript>
     <!-- End Facebook Pixel Code -->
-    
+
     <meta charset="utf-8" />
     <title>Search A Deal</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
@@ -54,7 +54,7 @@
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
     </style>
-        
+
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -70,7 +70,7 @@
   </head>
 
   <body>
-     
+
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NWN5MH94"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -97,22 +97,22 @@
             {{ session('error') }}
         </div>
     @endif
-  
+
 
     <!-- Page Header Start -->
     <div
       class="container-fluid page-header py-5 mb-5 wow fadeIn"
-      data-wow-delay="0.1s"            
+      data-wow-delay="0.1s"
       style="background: url(img/images/money-growth.jpg) center center no-repeat; background-size: cover;"
     >
         <div class="overlay-color">
           <div class="container py-5">
-            <h1 class="display-4 animated slideInDown mb-4 text-white">Short Term Loans</h1>
+            <h1 class="display-4 animated slideInDown mb-4 text-white">Personal Loans</h1>
             <nav aria-label="breadcrumb animated slideInDown">
               <ol class="breadcrumb mb-0">
                 <li class="breadcrumb-item text-white"><a href="#">Home</a></li>
                 <li class="breadcrumb-item text-white active" aria-current="page">
-                    Short Term Loans
+                    Personal Loans
                 </li>
               </ol>
             </nav>
@@ -120,103 +120,203 @@
       </div>
     </div>
     <!-- Page Header End -->
-    
 
-   <!-- Car Insurence Start -->
+
+   <!-- Personal Loans Copy Start -->
     <div class="container-fluid py-5 wow fadeIn" data-wow-delay="0.1s">
       <div class="container">
         <div class="row g-5">
-          
+
           <div class="main">
             <div class="main-content my-5">
 
                 <div class="col-lg-12 wow fadeIn" data-wow-delay="0.3s">
                     <div class="row">
-                        <h1 class="display-6 mb-5">
-                          Your Worst Financial Nightmare Just Came True
+                        <h1 class="display-6 mb-4">
+                          Personal Loans Comparison Platform
                         </h1>
                         <div class="subtitle">
-                            <p class="mb-5">
-                              <i>The Bills Are Due, Savings Are Gone, and Panic Is Setting In—But It Doesn’t Have to End This Way</i>
+                            <p class="mb-4">
+                              <strong>Stop Wasting Time. Find the Right Personal Loan in Minutes.</strong>
                             </p>
-                        </div>
-                    </div>
-                    <div class="break-image">
-                        <img src="img/images/money-growth.jpg" alt="">
-                    </div>
-                    <div class="row">
-                        <h3>
-                          Introducing Search A Deal Partner Instant Short-Term Loans:
-                        </h3>
-                        <div class="hlabi-body">
-                            <div class="points text-start">
-                            <p>Your Immediate Escape Route from Financial Panic</p>
-                            <p>Here's exactly how we instantly stop your financial nightmare:</p>
-                            <ul>
-                                <li> <b>Lightning-Fast Approval & Immediate Cash Transfer</b>
-                                  Money in your hands quicker than you finish this sentence.
-                                  </li>
-                                <li> <b>Zero Hidden Fees, Zero Surprises</b>
-                                  Complete transparency, clear terms, no shocks.</li>
-                                <li> <b>Personalized Repayment Options</b>
-                                  Plans built for your life, not against it.</li>
-                                <li> <b>Bad Credit, No Credit—You’re Welcome Here</b>
-                                  Because your past shouldn't trap you in a hopeless present.</li>
-                                <li> <b>Discretion & Respect Guaranteed</b>
-                                  Your dignity fully restored, your privacy always protected.</li>
-                            </ul>
-                            
-                        </div>
+                            <p>Connect with multiple registered lenders through one simple application. Compare real offers and choose what works for your situation.</p>
                         </div>
                     </div>
 
-                    <div class="row text-start  mb-5 mt-5">
-                        <h3 class="text-center mb-3">Feel the Instant Difference:</h3>
-                        <div class="hlabi-body">
-                            <i class="mb-2"><b>Without Us:</b></i>
-                            <div class="points">
-                              <ul>
-                                <li> Overdue bills → mounting penalties</li>
-                                <li> Anxiety → sleepless nights</li>
-                                <li> Fear → ruined relationships</li>
-                              </ul>
-                            </div>
-                            <i class="mb-2"><b>With Us:</b></i>
-                            <div class="points">
-                              <ul>
-                                <li> Immediate cash → urgent bills handled</li>
-                                <li> Instant relief → stress eliminated</li>
-                                <li> Confidence restored → priceless peace</li>
-                              </ul>
-                            </div>
+                    <div class="row mt-4">
+                        <div class="col-12 col-lg-10">
+                          <ul>
+                            <li>One application connects you to multiple registered lenders</li>
+                            <li>Compare offers from banks, neobanks, and licensed credit providers</li>
+                            <li>No obligation to accept any offer—you stay in control</li>
+                            <li>Free service—we connect you, you decide</li>
+                          </ul>
                         </div>
                     </div>
 
-
-                    <div class="row text-start  mb-5 mt-5">
-                        <h3 class="text-center mb-3">The Clock Is Ticking—Every Moment Counts</h3>
-                        <div class="hlabi-body">
-                            <p class="mb-2"><b>Every second wasted multiplies your stress, increases your debt, and deepens your despair.</b></p>
-                            <p>You must act right now.</p>
-                            <div class="points text-start">
-                                <p><b>Take Back Control Immediately:</b></p>
-                                
-                                <p>
-                                  - You deserve better than fear and panic. <br>
-                                  - Act decisively and end this nightmare now.
-                                </p>
-                            </div>
-                        </div>
+                    <div class="row mt-5">
+                      <h3 class="mb-3">Trusted by South Africans</h3>
+                      <div class="col-12 col-md-6">
+                        <ul>
+                          <li><strong>15+ Registered Lenders</strong></li>
+                          <li><strong>24/7 Application Processing</strong></li>
+                          <li><strong>100% Free to Use</strong></li>
+                        </ul>
+                      </div>
                     </div>
 
+                    <div class="row mt-5">
+                      <h2 class="mb-3">You Shouldn't Have to Visit 10 Banks to Find One Loan</h2>
+                      <p>Applying for personal loans the old way wastes your time and hurts your credit score with multiple applications.</p>
+
+                      <h4 class="mt-4">Hours Wasted Visiting Branches</h4>
+                      <p>Taking time off work to stand in queues at multiple banks only to hear "we'll get back to you" is exhausting and often leads nowhere.</p>
+
+                      <h4 class="mt-3">Multiple Credit Checks Hurt Your Score</h4>
+                      <p>Every loan application creates a credit enquiry on your record. Too many enquiries make you look desperate and can lower your approval chances.</p>
+
+                      <h4 class="mt-3">Endless Rejections Without Explanation</h4>
+                      <p>Most banks reject applications without telling you why. You're left guessing what went wrong and where to try next.</p>
+
+                      <h4 class="mt-3">Confusing Terms and Hidden Fees</h4>
+                      <p>Interest rates, initiation fees, service charges, credit life insurance—every lender structures things differently, making fair comparison nearly impossible.</p>
+
+                      <h4 class="mt-3">Pushy Sales Calls You Never Asked For</h4>
+                      <p>Give your number to one loan site and suddenly you're bombarded with calls from brokers who just want their commission.</p>
+
+                      <h4 class="mt-3">Time Is Running Out</h4>
+                      <p>When you need funds for an emergency, to consolidate debt, or cover essential expenses, you can't afford to wait weeks for approval.</p>
+
+                      <p class="mt-3">You know you need a personal loan. The question isn't whether to borrow—it's where to get the best deal without wasting days of your life.</p>
+                    </div>
+
+                    <div class="row mt-5">
+                      <h2 class="mb-3">How Our Platform Works</h2>
+                      <p>We connect you with multiple registered lenders through one simple process.</p>
+
+                      <h4 class="mt-3">Step 1: Complete One Application</h4>
+                      <p>Fill in your details once. Tell us what you need and provide basic information about your income and expenses.</p>
+
+                      <h4 class="mt-3">Step 2: We Share With Lenders</h4>
+                      <p>Your application goes to our network of registered banks, neobanks, and licensed credit providers who compete for your business.</p>
+
+                      <h4 class="mt-3">Step 3: Receive Multiple Offers</h4>
+                      <p>Get contacted by lenders who are willing to work with your situation. Each will present their terms—interest rate, fees, and repayment schedule.</p>
+
+                      <h4 class="mt-3">Step 4: You Choose What Works</h4>
+                      <p>Compare the offers you receive and select the one that fits your budget. No pressure. No obligation. Your decision entirely.</p>
+                    </div>
+
+                    <div class="row mt-5">
+                      <h2 class="mb-3">Why Thousands Choose Our Platform</h2>
+                      <p>We make the loan comparison process transparent and efficient.</p>
+
+                      <h4 class="mt-3">Save Time and Effort</h4>
+                      <p>One application instead of filling out forms at 5-10 different banks. Submit once and let lenders come to you.</p>
+
+                      <h4 class="mt-3">Protect Your Credit Score</h4>
+                      <p>Our application process minimizes hard credit checks. Lenders can assess your basic profile before running formal credit bureau checks.</p>
+
+                      <h4 class="mt-3">Access More Options</h4>
+                      <p>Connect with major banks like Capitec, FNB, and Standard Bank, plus neobanks and digital lenders you might not know about.</p>
+
+                      <h4 class="mt-3">Transparent Comparisons</h4>
+                      <p>When you receive offers, you'll see the interest rate, fees, and total cost of credit for each, making comparison straightforward.</p>
+
+                      <h4 class="mt-3">No Hidden Obligations</h4>
+                      <p>We don't force you to accept any offer. If nothing works for you, walk away. No strings attached.</p>
+
+                      <h4 class="mt-3">Completely Free Service</h4>
+                      <p>You never pay us. Lenders compensate us for connecting them with potential borrowers, which means our service costs you nothing.</p>
+
+                      <h4 class="mt-3">NCR-Registered Lenders Only</h4>
+                      <p>All lenders in our network are registered with the National Credit Regulator and comply with the National Credit Act.</p>
+
+                      <h4 class="mt-3">Fast Processing</h4>
+                      <p>Applications are processed 24/7. Many lenders can give preliminary feedback within hours, not days.</p>
+                    </div>
+
+                    <div class="row mt-5">
+                      <h2 class="mb-3">Traditional Applications vs. Our Platform</h2>
+
+                      <h4 class="mt-3">Number of Applications Needed</h4>
+                      <ul>
+                        <li>Traditional Way: 5-10 separate applications</li>
+                        <li><strong>Our Platform: Just 1 application</strong></li>
+                      </ul>
+
+                      <h4 class="mt-3">Time to Apply Everywhere</h4>
+                      <ul>
+                        <li>Traditional Way: Days of visiting branches</li>
+                        <li><strong>Our Platform: Minutes to complete</strong></li>
+                      </ul>
+
+                      <h4 class="mt-3">Credit Score Impact</h4>
+                      <ul>
+                        <li>Traditional Way: Multiple hard credit checks</li>
+                        <li><strong>Our Platform: Minimized credit checks</strong></li>
+                      </ul>
+
+                      <h4 class="mt-3">Access to Neobanks & Digital Lenders</h4>
+                      <ul>
+                        <li>Traditional Way: Limited to banks you know</li>
+                        <li><strong>Our Platform: Full network access</strong></li>
+                      </ul>
+
+                      <h4 class="mt-3">Easy Comparison</h4>
+                      <ul>
+                        <li>Traditional Way: Difficult to compare different offers</li>
+                        <li><strong>Our Platform: Side-by-side comparison</strong></li>
+                      </ul>
+                    </div>
+
+                    <div class="row mt-5">
+                      <h2 class="mb-3">Common Questions</h2>
+
+                      <h4 class="mt-3">Are you a lender?</h4>
+                      <p>No. We are not a registered financial services provider and we do not issue loans. We are a comparison platform that connects you with multiple registered lenders in South Africa. Lenders make all credit decisions independently.</p>
+
+                      <h4 class="mt-3">How do you make money if the service is free?</h4>
+                      <p>We receive a referral fee from lenders when we connect them with potential borrowers. This commission is paid by the lender, not by you. It doesn't affect the interest rate or terms you receive.</p>
+
+                      <h4 class="mt-3">Will applying hurt my credit score?</h4>
+                      <p>Submitting your details on our platform generates a soft enquiry or no enquiry initially. If a lender wants to make you an offer, they will request permission to run a full credit check. You control when that happens.</p>
+
+                      <h4 class="mt-3">What if I have bad credit or am blacklisted?</h4>
+                      <p>Our network includes lenders who work with different credit profiles. While we can't guarantee approval, some lenders specialize in near-prime and subprime lending. Being truthful in your application helps match you with appropriate lenders.</p>
+
+                      <h4 class="mt-3">How long does it take to hear back from lenders?</h4>
+                      <p>Some lenders respond within hours, while others may take 24-48 hours to review your application. The fastest responses typically come from digital lenders and neobanks.</p>
+
+                      <h4 class="mt-3">Do I have to accept an offer?</h4>
+                      <p>Absolutely not. You are under no obligation to accept any loan offer. Review all the terms, compare offers, and only proceed if something genuinely works for your situation.</p>
+
+                      <h4 class="mt-3">Are the lenders in your network legitimate?</h4>
+                      <p>Yes. All lenders in our network are registered with the National Credit Regulator (NCR) and comply with the National Credit Act. This ensures consumer protection and fair lending practices.</p>
+
+                      <h4 class="mt-3">What information do I need to apply?</h4>
+                      <p>You'll need your ID number, employment details, income information, bank account details, and basic information about your current expenses and debt obligations.</p>
+
+                      <h4 class="mt-3">Can I apply if I'm under debt review?</h4>
+                      <p>If you are currently under debt review (debt counselling), you cannot legally take on new credit until the process is complete. Being honest about this in your application helps avoid wasting your time.</p>
+
+                      <h4 class="mt-3">What loan amounts can I apply for?</h4>
+                      <p>Lenders in our network offer personal loans ranging from as little as R1,000 to R500,000, depending on your affordability assessment. The amount you're approved for depends on your income, expenses, and credit profile.</p>
+                    </div>
+
+                    <div class="row mt-5">
+                      <h2 class="mb-3">Ready to Compare Your Loan Options?</h2>
+                      <p>One application. Multiple lenders. You decide what works.</p>
+                      <p><strong>Start Your Application Now</strong><br/>Takes 5 minutes. No obligation. Completely free.</p>
+                    </div>
 
                 </div>
             </div>
 
-              
+
               <div class="col-lg-12 wow fadeIn" data-wow-delay="0.5s">
                 <div class="bg-light rounded p-5">
-                  <h4 class="mb-4 text-center">CLICK BELOW FOR IMMEDIATE RELIEF</h4>
+                  <h4 class="mb-4 text-center">Start Your Application Now</h4>
                   <form action="{{ route('loan.submit') }}" method="post">
                     @csrf
                     <div class="row g-3">
@@ -248,7 +348,7 @@
                           <label for="gname">Last Name *</label>
                         </div>
                       </div>
-                      
+
                       <div class="col-sm-6">
                         <div class="form-floating">
                           <input
@@ -293,7 +393,7 @@
                             <option selected></option>
                             <option value="true">Yes</option>
                             <option value="false">No</option>
-                            
+
                           </select>
                           <label for="cage">Are you currently under Debt Review?</label>
                         </div>
@@ -344,7 +444,7 @@
                     </div>
                     <input type="hidden" name="optinurl" value="https://searchadeal.online/" required>
                     <input type="hidden" name="optindate" value="{{ date('Y-m-d h:i:s') }}" required>
-                
+
                   </form>
                 </div>
               </div>
@@ -352,28 +452,35 @@
               <div class="container">
 
                 <div class="row text-start  mb-5 mt-5">
-                  <h3 class="text-center mb-3">Final Urgent Reminder:</h3>
-                  <div class="hlabi-body text-center">
-                      <p class="mb-2">Tomorrow could be too late.</p>
-                      <p>Stop your nightmare before it spirals beyond control.</p>
-                      <h4><i>END YOUR PANIC—ACT NOW</i></h4>
-                      <p><i>Because peace of mind can't wait another second.</i></p>
+                  <h2 class="text-center mb-3">Important Disclosure</h2>
+                  <div class="hlabi-body">
+                      <p><strong>Important Disclosure:</strong> We are not a registered financial services provider and do not issue personal loans. We operate as an affiliate platform that connects consumers with registered lenders and credit providers in South Africa. All lenders in our network are independently registered with the National Credit Regulator (NCR) and comply with the National Credit Act.</p>
+
+                      <p><strong>How It Works:</strong> When you submit an application through our platform, we share your information with multiple lenders in our network. These lenders will independently assess your application according to their own credit criteria. We receive a referral fee from lenders when they successfully originate a loan through our platform. This commission does not affect the interest rate, fees, or terms you receive.</p>
+
+                      <p><strong>No Guarantee of Approval:</strong> Submitting an application does not guarantee loan approval. Each lender makes independent credit decisions based on their own assessment of your creditworthiness, income, expenses, and compliance with the National Credit Act's affordability requirements.</p>
+
+                      <p><strong>Your Rights:</strong> You are under no obligation to accept any loan offer. You have the right to compare offers and choose what works best for your situation. All lenders must provide you with a pre-agreement statement and quotation showing the total cost of credit, interest rate, fees, and repayment terms before you sign any agreement.</p>
+
+                      <p><strong>Responsible Borrowing:</strong> Borrowing money costs money. Before accepting any loan, carefully consider whether you can afford the monthly repayments. Over-indebtedness can have serious consequences for your financial health. If you're struggling with debt, consider speaking with a registered debt counsellor.</p>
+
+                      <p><strong>Privacy:</strong> We handle your personal information in accordance with the Protection of Personal Information Act (POPIA). Your information is only shared with lenders in our network for the purpose of assessing your loan application.</p>
                   </div>
               </div>
               </div>
-    
+
           </div>
 
         </div>
       </div>
     </div>
-    
-    
+
+
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"
       ><i class="bi bi-arrow-up"></i
     ></a>
-    
+
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>

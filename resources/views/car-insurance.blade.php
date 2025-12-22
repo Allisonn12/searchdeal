@@ -52,7 +52,7 @@
                             </h1>
                             <div class="subtitle">
                                 <p class="mb-5">
-                                    <i>Say Goodbye to Costly Repairs—Get Comprehensive, Affordable Car Warranty Coverage Today</i>
+                                    <i>Say Goodbye to Costly Repairs. Get Comprehensive, Affordable Car Warranty Coverage Today</i>
                                 </p>
                             </div>
                         </div>
@@ -62,8 +62,8 @@
 
                         <div class="row text-start mb-5 mt-2">
                             <div class="hlabi-body">
-                                <h3 class="text-center mb-3">Your Manufacturer's Warranty Is Expiring—Now What?</h3>
-                                <p>Owning a car comes with freedom and excitement—but when the manufacturer's warranty runs out, that freedom comes with risk.</p>
+                                <h3 class="text-center mb-3">Your Manufacturer's Warranty Is Expiring. Now What?</h3>
+                                <p>Owning a car comes with freedom and excitement, but when the manufacturer's warranty runs out, that freedom comes with risk.</p>
                                 <p>Mechanical breakdowns. Electrical failures. Expensive repairs.</p>
                                 <p>As your vehicle ages, even a minor repair can cost you thousands of rands. Without a safety net, those expenses are coming out of your pocket.</p>
                                 <p><b>Do you want to risk that?</b></p>
@@ -74,7 +74,7 @@
                         <div class="row text-start mb-5 mt-2">
                             <div class="hlabi-body">
                                 <h3 class="text-center mb-3">Without Coverage, You Could Be Facing Massive Repair Bills</h3>
-                                <p>Modern cars are packed with sophisticated technology, which means higher repair costs when something goes wrong. Even a minor issue could set you back thousands—before you factor in the inconvenience of being stranded on the road.</p>
+                                <p>Modern cars are packed with sophisticated technology, which means higher repair costs when something goes wrong. Even a minor issue could set you back thousands, before you factor in the inconvenience of being stranded on the road.</p>
                                 <p><b>But what if there was an easy, affordable way to protect yourself from these costs?</b></p>
                             </div>
                         </div>
@@ -84,11 +84,11 @@
                             <div class="hlabi-body">
                                 <h3 class="text-center mb-3">Introducing: Search A Deal Partners Car Warranty</h3>
                                 <p><b>Affordable, reliable, and designed to keep you covered.</b></p>
-                                <p>Our partners have seen firsthand how vehicle owners are burdened by costly repairs after their warranties expire. That’s why they created extended warranty plans that give you peace of mind—<b>without draining your bank account.</b></p>
+                                <p>Our partners have seen firsthand how vehicle owners are burdened by costly repairs after their warranties expire. That’s why they created extended warranty plans that give you peace of mind, <b>without draining your bank account.</b></p>
                                 <p><b>Why choose Search A Deal partners?</b></p>
                                 <ul>
                                     <li><b>Comprehensive Coverage:</b> From engine breakdowns to electrical failures, the high-cost repairs are covered.</li>
-                                    <li><b>Flexible Payment Options:</b> Pay monthly—budget-friendly protection that fits your life.</li>
+                                    <li><b>Flexible Payment Options:</b> Pay monthly. Budget-friendly protection that fits your life.</li>
                                     <li><b>No-Nonsense Claims Process:</b> Fast, transparent claims without red tape or hidden clauses.</li>
                                     <li><b>24/7 Roadside Assistance:</b> Wherever you are, help is a call away.</li>
                                 </ul>
@@ -106,14 +106,14 @@
                                     <li>Electrical faults? Easily <b>R10,000+</b>.</li>
                                 </ul>
                                 <p><b>Are you ready for that kind of financial hit?</b></p>
-                                <p>With Search A Deal partners, you won’t worry about where the money will come from—no surprises, no panic.</p>
+                                <p>With Search A Deal partners, you won’t worry about where the money will come from. No surprises, no panic.</p>
                             </div>
                         </div>
 
                         <!-- Section: Avoid Stress -->
                         <div class="row text-start mb-5 mt-2">
                             <div class="hlabi-body">
-                                <h3 class="text-center mb-3">Don’t Get Caught Off Guard—Protect Your Vehicle and Your Wallet</h3>
+                                <h3 class="text-center mb-3">Don’t Get Caught Off Guard. Protect Your Vehicle and Your Wallet</h3>
                                 <p>Every day, vehicle owners are hit with unexpected repair bills that throw their budgets into chaos. With our extended warranty partners, you can avoid the stress and uncertainty.</p>
                                 <p><b>Imagine the relief:</b> Major repairs covered. No scrambling for emergency funds. No high-interest loans just to get back on the road.</p>
                             </div>
@@ -123,7 +123,7 @@
                         <div class="row text-start mb-5 mt-2">
                             <div class="hlabi-body">
                                 <h3 class="text-center mb-3">Why Vehicle Owners Like You Are Choosing Search A Deal Partners</h3>
-                                <p>You’re not just buying a warranty—you’re buying <b>peace of mind</b>.</p>
+                                <p>You’re not just buying a warranty. You’re buying <b>peace of mind</b>.</p>
                                 <ul>
                                     <li><b>Complete Protection:</b> Coverage for high-value components like engine, gearbox & electrical systems.</li>
                                     <li><b>Affordable Payment Options:</b> Flexible, manageable monthly plans.</li>
@@ -140,7 +140,7 @@
                                 <ul>
                                     <li>Engines fail.</li>
                                     <li>Electrical systems break down.</li>
-                                    <li>Cars need repairs—it’s inevitable.</li>
+                                    <li>Cars need repairs. It’s inevitable.</li>
                                 </ul>
                                 <p>You don’t have to carry that risk. Search A Deal partners make extended warranties accessible and affordable across South Africa.</p>
                             </div>
@@ -149,7 +149,7 @@
                         <!-- Section: Protect Today -->
                         <div class="row text-start mb-5 mt-2">
                             <div class="hlabi-body">
-                                <h3 class="text-center mb-3">Protect Your Vehicle Today—Get Your Free Quote Now!</h3>
+                                <h3 class="text-center mb-3">Protect Your Vehicle Today. Get Your Free Quote Now!</h3>
                                 <p>You’ve worked hard for your vehicle. Now protect your investment with a warranty that’s affordable, reliable, and designed for peace of mind.</p>
                                 <p>Click below to get your free, no-obligation quote and discover how much you can save with a comprehensive car warranty.</p>
                                 <div class="text-center">
@@ -164,7 +164,7 @@
                                 <h3 class="text-center mb-3">Why Wait? Get Covered Now!</h3>
                                 <p><b>Here’s Why You Should Act Today:</b></p>
                                 <ul>
-                                    <li><b>Don’t Wait for a Breakdown:</b> A failure could happen tomorrow—be proactive.</li>
+                                    <li><b>Don’t Wait for a Breakdown:</b> A failure could happen tomorrow. Be proactive.</li>
                                     <li><b>Flexible Payment Plans:</b> Coverage that fits your budget without sacrifice.</li>
                                     <li><b>24/7 Roadside Assistance:</b> Help whenever and wherever you need it.</li>
                                 </ul>
