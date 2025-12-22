@@ -1,5 +1,6 @@
 @include('partials.header')
 
+
     @if(session('success'))
         <div class="alert alert-success" role="alert">
             {{ session('success') }}
@@ -388,5 +389,11 @@
         </div>
       </div>
     </div>
-    <!-- Personal Loans Content End -->
+    <!-- Car Insurence End -->
+
+    <style>
+      ul li{
+        list-style: none;
+      }
+    </style>
 @include('partials.footer')
