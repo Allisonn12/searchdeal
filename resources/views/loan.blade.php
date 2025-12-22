@@ -1,4 +1,7 @@
-@if(session('success'))
+@include('partials.header')
+
+
+    @if(session('success'))
         <div class="alert alert-success" role="alert">
             {{ session('success') }}
         </div>
