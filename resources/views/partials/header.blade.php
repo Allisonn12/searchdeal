@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-      <!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=G-WX9J0BVDQC"></script> <script> window.dataLayer = window.dataLayer || []; 
+      <!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=G-WX9J0BVDQC"></script> <script> window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-WX9J0BVDQC'); </script>
-    
+
     <!-- Facebook Pixel Code -->
     <script nonce="4BUkMtdd">
     !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -11,7 +11,7 @@
     n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
     t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
     document,'script','https://connect.facebook.net/en_US/fbevents.js');
-    
+
     fbq('init', '1322182192366880');
     fbq('set','agent','tmgoogletagmanager', '1322182192366880');
     fbq('track', "PageView");
@@ -20,12 +20,12 @@
     src="https://www.facebook.com/tr?id=1322182192366880&ev=PageView&noscript=1"
     /></noscript>
     <!-- End Facebook Pixel Code -->
-    
+
     <meta charset="utf-8" />
     <title>Search A Deal</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta content="insurance, cheap insurance, best insurance, compare insurance, affordable insurance, insurance deals, insurance discount" name="keywords" />
-    <meta content="SearchADeal helps you find the best insurance deals! Compare quotes for car, medical, life and many more insurances from top providers. Save money with affordable rates and exclusive discounts—get your free quote today!" name="description" />
+    <meta content="SearchADeal helps you find the best insurance deals! Compare quotes for car, medical, life and many more insurances from top providers. Save money with affordable rates and exclusive discounts. Get your free quote today!" name="description" />
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon" />
     <!-- Google Web Fonts -->
@@ -54,7 +54,7 @@
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
     </style>
-        
+
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -70,7 +70,7 @@
   </head>
 
   <body>
-     
+
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NWN5MH94"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -142,22 +142,23 @@
           <a href="{{ route('index') }}" class="nav-item nav-link {{ Route::is('index') ? 'active' : '' }}">Home</a>
           <!--<a href="#" class="nav-item nav-link">About Us</a>-->
           <a href="{{ route('service') }}" class="nav-item nav-link {{ Route::is('service') ? 'active' : '' }}">Our Services</a>
-          <div class="nav-item dropdown">
-            <a
-              href="#"
-              class="nav-link dropdown-toggle"
-              data-bs-toggle="dropdown"
-              >Insurance</a
-            >
-            <div class="dropdown-menu bg-light border-0 m-0">
-              <a href="{{ route('car-insurance') }}" class="dropdown-item {{ Route::is('car-insurance') ? 'active' : '' }}">Car Insurance</a>
-              <a href="{{ route('medical') }}" class="dropdown-item {{ Route::is('medical') ? 'active' : '' }}">Medical Insurance</a>
-              <a href="{{ route('life') }}" class="dropdown-item {{ Route::is('life') ? 'active' : '' }}">Life Insurance</a>
-            </div>
-          </div>
+          {{--<div class="nav-item dropdown">--}}
+          {{--  <a--}}
+          {{--    href="#"--}}
+          {{--    class="nav-link dropdown-toggle"--}}
+          {{--    data-bs-toggle="dropdown"--}}
+          {{--    >Insurance</a--}}
+          {{--  >--}}
+          {{--  <div class="dropdown-menu bg-light border-0 m-0">--}}
+          {{--    <a href="{{ route('car-insurance') }}" class="dropdown-item {{ Route::is('car-insurance') ? 'active' : '' }}">Car Insurance</a>--}}
+          {{--    <a href="{{ route('medical') }}" class="dropdown-item {{ Route::is('medical') ? 'active' : '' }}">Medical Insurance</a>--}}
+          {{--    <a href="{{ route('life') }}" class="dropdown-item {{ Route::is('life') ? 'active' : '' }}">Life Insurance</a>--}}
+          {{--  </div>--}}
+          {{--</div>--}}
+          <a href="{{ route('car-insurance') }}" class="nav-item nav-link {{ Route::is('car-insurance') ? 'active' : '' }}">Car Insurance</a>
           <a href="{{ route('tracker') }}" class="nav-item nav-link  {{ Route::is('tracker') ? 'active' : '' }}">Car Track</a>
-          <a href="{{ route('debt') }}" class="nav-item nav-link  {{ Route::is('debt') ? 'active' : '' }}">Debt</a>
-          <a href="{{ route('motor') }}" class="nav-item nav-link  {{ Route::is('motor') ? 'active' : '' }}">Motor Warrenty</a>
+          {{--<a href="{{ route('debt') }}" class="nav-item nav-link  {{ Route::is('debt') ? 'active' : '' }}">Debt</a>--}}
+          {{--<a href="{{ route('motor') }}" class="nav-item nav-link  {{ Route::is('motor') ? 'active' : '' }}">Motor Warrenty</a>--}}
           <a href="{{ route('wl-loan') }}" class="nav-item nav-link  {{ Route::is('wl-loan') ? 'active' : '' }}">Loans</a>
           <a href="{{ route('contact') }}" class="nav-item nav-link {{ Route::is('contact') ? 'active' : '' }}">Contact Us</a>
           <a href="{{ route('success') }}" class="nav-item nav-link"></a>

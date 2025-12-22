@@ -11,8 +11,8 @@
             {{ session('error') }}
         </div>
     @endif
-    
-    
+
+
     <!-- Page Header Start -->
     <div
       class="container-fluid page-header py-5 mb-5 wow fadeIn"
@@ -34,24 +34,24 @@
       </div>
     </div>
     <!-- Page Header End -->
-    
+
 
    <!-- Car Insurence Start -->
     <div class="container-fluid py-5 wow fadeIn" data-wow-delay="0.1s">
       <div class="container">
         <div class="row g-5">
-          
+
           <div class="main">
             <div class="main-content my-5">
 
                 <div class="col-lg-12 wow fadeIn" data-wow-delay="0.3s">
                     <div class="row">
                         <h1 class="display-6 mb-5">
-                            If Tomorrow Never Comes—Will Your Family Survive Financially?
+                            If Tomorrow Never Comes, Will Your Family Survive Financially?
                         </h1>
                         <div class="subtitle">
                             <p class="mb-5">
-                              <i>One Unexpected Moment Could Turn Your Family’s World into Chaos—Unless You Act Now.</i>
+                              <i>One Unexpected Moment Could Turn Your Family’s World into Chaos, Unless You Act Now.</i>
                             </p>
                         </div>
                     </div>
@@ -67,9 +67,9 @@
                         </h3>
                         <div class="hlabi-body">
                             <div class="points text-start">
-                            <p>Imagine this—tomorrow morning, your family wakes up, and you're not there. It’s sudden. Unplanned. Devastating.</p>
-                            <p>Your spouse, your kids—they’re not just mourning your loss. They're staring at a pile of unpaid bills, overdue mortgage payments, looming school fees, and funeral costs soaring over R50,000.</p>
-                            
+                            <p>Imagine this: tomorrow morning, your family wakes up, and you're not there. It’s sudden. Unplanned. Devastating.</p>
+                            <p>Your spouse, your kids: they’re not just mourning your loss. They're staring at a pile of unpaid bills, overdue mortgage payments, looming school fees, and funeral costs soaring over R50,000.</p>
+
                         </div>
                         </div>
                     </div>
@@ -80,26 +80,26 @@
                             <i class="mb-2"><b>Right now, as you read this, you're probably thinking:</b></i>
                             <div class="points">
                               <p>"I'll handle this later. I've got time."</p><br>
-                              <p>But the harsh reality is—so did thousands of other South Africans, until their families learned the hard way that 'later' was never guaranteed.</p>
+                              <p>But the harsh reality is: so did thousands of other South Africans, until their families learned the hard way that 'later' was never guaranteed.</p>
                             </div>
                             <i class="mb-2"><b>But here's the good news:</b></i>
                             <div class="points">
                               <p>You have the power, right now, in less than 60 seconds, to ensure your family never faces that nightmare.</p>
-                              
+
                               <b>Introducing:</b>
                               <p>
-                                <b>Search A Deal’s Partner Life Insurance</b>  
-                                <br> <i>Your Family’s Financial Guardian—Always Ready, Always Reliable.</i>
+                                <b>Search A Deal’s Partner Life Insurance</b>
+                                <br> <i>Your Family’s Financial Guardian: Always Ready, Always Reliable.</i>
                               </p>
                             </div>
                             <div class="points">
                               <p>With Search A Deal, here's exactly what your loved ones will get:</p>
                               <ul>
-                                <li>Instant Tax-Free Lump Sum Payout: No delays, no stress—just immediate financial relief when your family needs it most.</li>
+                                <li>Instant Tax-Free Lump Sum Payout: No delays, no stress, just immediate financial relief when your family needs it most.</li>
                                 <li>48-Hour Emergency Funeral Benefit: Within two days, money’s available to cover immediate funeral expenses, easing your family's emotional burden.</li>
-                                <li>Lifetime Coverage Guarantee: Once you're insured, you're covered—period. Changing jobs, health, or hobbies won't ever jeopardize your policy.</li>
+                                <li>Lifetime Coverage Guarantee: Once you're insured, you're covered. Period. Changing jobs, health, or hobbies won't ever jeopardize your policy.</li>
                                 <li>Affordable Peace of Mind from R150/Month: Comprehensive protection costs less than your daily coffee. Real peace of mind without breaking the bank.</li>
-                                <li>Cashback Wealth Bonus: Your premiums don't just protect—they grow. Every 5 years, you unlock cash rewards, building wealth while securing your family’s future.</li>
+                                <li>Cashback Wealth Bonus: Your premiums don't just protect; they grow. Every 5 years, you unlock cash rewards, building wealth while securing your family’s future.</li>
                               </ul>
                             </div>
                         </div>
@@ -112,7 +112,7 @@
                           <p class="mb-2"><b>Without insurance:</b> Families are typically left burdened with over R250,000 in immediate debt and living expenses.</p>
                           <p class="mb-2"><b>With insurance: </b> You invest a fraction of that, from just R150/month, and secure your loved ones' financial stability forever.</p>
                           <p><b>Honestly, why risk your family's future?</b></p>
-                          
+
                       </div>
                   </div>
 
@@ -136,7 +136,7 @@
                         <p>Don’t let Thabo’s story become yours.
                         </p>
                         <p>You’re reading this because you care. Because deep down, you already know what you need to do.</p>
-                        <p>Take the step now. Protect them—while you still can.</p>
+                        <p>Take the step now. Protect them while you still can.</p>
                       </div>
                   </div>
 
@@ -144,7 +144,7 @@
                 </div>
             </div>
 
-              
+
               <div class="col-lg-12 wow fadeIn hlabi-form" data-wow-delay="0.5s">
                 <div class="bg-light rounded p-5">
                   <h4 class="mb-4 text-center">CLICK BELOW FOR IMMEDIATE RELIEF</h4>
@@ -179,7 +179,7 @@
                           <label for="gname">Last Name *</label>
                         </div>
                       </div>
-                      
+
                       <div class="col-sm-6">
                         <div class="form-floating">
                           <input
@@ -223,11 +223,11 @@
                     </div>
                     <input type="hidden" name="optinurl" value="https://searchadeal.online/" required>
                     <input type="hidden" name="optindate" value="{{ date('Y-m-d h:i:s') }}" required>
-                
+
                   </form>
                 </div>
               </div>
-    
+
           </div>
 
         </div>
@@ -236,7 +236,7 @@
     <!-- Car Insurence End -->
 
     <style>
-    
+
       .hlabi-body{font-size: 18px !important;}
   </style>
 
