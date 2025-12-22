@@ -159,7 +159,7 @@
           <a href="{{ route('tracker') }}" class="nav-item nav-link  {{ Route::is('tracker') ? 'active' : '' }}">Car Track</a>
           {{--<a href="{{ route('debt') }}" class="nav-item nav-link  {{ Route::is('debt') ? 'active' : '' }}">Debt</a>--}}
           {{--<a href="{{ route('motor') }}" class="nav-item nav-link  {{ Route::is('motor') ? 'active' : '' }}">Motor Warrenty</a>--}}
-          {{--<a href="{{ route('wl-loan') }}" class="nav-item nav-link  {{ Route::is('wl-loan') ? 'active' : '' }}">Loans</a>--}}
+          <a href="{{ route('wl-loan') }}" class="nav-item nav-link  {{ Route::is('wl-loan') ? 'active' : '' }}">Loans</a>
           <a href="{{ route('contact') }}" class="nav-item nav-link {{ Route::is('contact') ? 'active' : '' }}">Contact Us</a>
           <a href="{{ route('success') }}" class="nav-item nav-link"></a>
         </div>
