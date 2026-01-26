@@ -27,15 +27,15 @@ class LoanController extends Controller
             if ($responseBody['code'] == 1) {
                 $resp = json_encode($responseBody['response']);
                 $inser = LoanModel::createQuietly([
-                    'firstname' => $data['firstname'], 
-                    'lastname' => $data['lastname'], 
-                    'phone1' => $data['phone1'], 
-                    'email' => $data['email'], 
-                    'title' => $data['title'], 
-                    'loanamount' => $data['loanamount'], 
+                    'firstname' => $data['firstname'],
+                    'lastname' => $data['lastname'],
+                    'phone1' => $data['phone1'],
+                    'email' => $data['email'],
+                    'title' => $data['title'],
+                    'loanamount' => $data['loanamount'],
                     'underdebtreview' => $data['underdebtreview'],
-                    'idnumber' => $data['idnumber'],
-                    'status' => $resp, 
+                    'idnumber' => 0,
+                    'status' => $resp,
                 ]);
                 // return redirect()->back()->with('success', "Success! Your form has been submitted. One of our friendly consultants will be in touch soon.");
                         // return view('success');
@@ -45,15 +45,15 @@ class LoanController extends Controller
             }else{
                 $resp = json_encode($responseBody['response']);
                 $inser = LoanModel::createQuietly([
-                    'firstname' => $data['firstname'], 
-                    'lastname' => $data['lastname'], 
-                    'phone1' => $data['phone1'], 
-                    'email' => $data['email'], 
-                    'title' => $data['title'], 
-                    'loanamount' => $data['loanamount'], 
+                    'firstname' => $data['firstname'],
+                    'lastname' => $data['lastname'],
+                    'phone1' => $data['phone1'],
+                    'email' => $data['email'],
+                    'title' => $data['title'],
+                    'loanamount' => $data['loanamount'],
                     'underdebtreview' => $data['underdebtreview'],
-                    'idnumber' => $data['idnumber'],
-                    'status' => $resp,   
+                    'idnumber' => 0,
+                    'status' => $resp,
                 ]);
                 return redirect()->back()->with('error', "An error occurred while submitting the form. {$responseBody['response']}");
             }

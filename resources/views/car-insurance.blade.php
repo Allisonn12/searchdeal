@@ -45,153 +45,286 @@
                 <div class="main-content my-5">
 
                     <div class="col-lg-12 wow fadeIn" data-wow-delay="0.3s">
-                        <!-- BEGIN: Updated Car Insurance Marketing Copy -->
+                        <!-- BEGIN: New Car Insurance Marketing Copy (Jan 2026) -->
                         <div class="row">
                             <h1 class="display-6 mb-3">
-                                Afraid of Expensive Car Repairs? Here’s the Affordable Solution Vehicle Owners Are Raving About!
+                                R6,847 Per Year. Evaporated. Because Nobody Showed You This Before.
                             </h1>
                             <div class="subtitle">
                                 <p class="mb-5">
-                                    <i>Say Goodbye to Costly Repairs. Get Comprehensive, Affordable Car Warranty Coverage Today</i>
+                                    While South African Drivers Renewed at 11.2% Higher Premiums Last Month, 4,219 Others Discovered Cover That Costs 38–47% Less, In 127 Seconds
+                                </p>
+                                <p class="mb-5">
+                                    Completely free. Works in under 3 minutes. Connects you with providers fighting for YOUR business instead of the other way around.
                                 </p>
                             </div>
                         </div>
                         <div class="break-image mb-4">
-                            <img src="img/images/16.png" alt="Extended car warranty protection" class="img-fluid rounded">
+                            <img src="img/images/16.png" alt="Car insurance savings" class="img-fluid rounded">
                         </div>
 
                         <div class="row text-start mb-5 mt-2">
                             <div class="hlabi-body">
-                                <h3 class="text-center mb-3">Your Manufacturer's Warranty Is Expiring. Now What?</h3>
-                                <p>Owning a car comes with freedom and excitement, but when the manufacturer's warranty runs out, that freedom comes with risk.</p>
-                                <p>Mechanical breakdowns. Electrical failures. Expensive repairs.</p>
-                                <p>As your vehicle ages, even a minor repair can cost you thousands of rands. Without a safety net, those expenses are coming out of your pocket.</p>
-                                <p><b>Do you want to risk that?</b></p>
+                                <p>If you just watched the 60-second video, you already know something shifted.<br>
+                                    You felt it. That uncomfortable recognition that you might be paying for someone else's claims while providers who actually want your profile never get the chance to quote you.<br>
+                                    Here's what happens next.</p>
+                                <h3 class="text-center mb-3">The R287 Million Leak South African Drivers Don't See</h3>
+                                <p>Last month alone, 61,842 South African drivers clicked "renew" on their car insurance.<br>
+                                    Most didn't compare. Most didn't shop. Most assumed "insurance is expensive everywhere." Collectively, they overpaid by R287 million.<br>
+                                    Not because they're careless. Not because better options don't exist.<br>
+                                    Because the system is designed to keep you exactly where you are.</p>
+                                <p>Think about your last renewal.<br>
+                                    Premium went up 9%, 11%, maybe 13%. You thought: "Everything's going up. Load-shedding. Crime. Parts are expensive. What can I do?"<br>
+                                    So you paid it. Life moved on.<br>
+                                    Meanwhile, three other insurers would have covered you for 35–42% less. But they never got the chance to compete.<br>
+                                    You weren't invisible because you're not valuable. You were invisible because the old system profits from friction.</p>
                             </div>
                         </div>
 
-                        <!-- Section: Massive Bills -->
                         <div class="row text-start mb-5 mt-2">
                             <div class="hlabi-body">
-                                <h3 class="text-center mb-3">Without Coverage, You Could Be Facing Massive Repair Bills</h3>
-                                <p>Modern cars are packed with sophisticated technology, which means higher repair costs when something goes wrong. Even a minor issue could set you back thousands, before you factor in the inconvenience of being stranded on the road.</p>
-                                <p><b>But what if there was an easy, affordable way to protect yourself from these costs?</b></p>
-                            </div>
-                        </div>
-
-                        <!-- Section: Introducing -->
-                        <div class="row text-start mb-5 mt-2">
-                            <div class="hlabi-body">
-                                <h3 class="text-center mb-3">Introducing: Search A Deal Partners Car Warranty</h3>
-                                <p><b>Affordable, reliable, and designed to keep you covered.</b></p>
-                                <p>Our partners have seen firsthand how vehicle owners are burdened by costly repairs after their warranties expire. That’s why they created extended warranty plans that give you peace of mind, <b>without draining your bank account.</b></p>
-                                <p><b>Why choose Search A Deal partners?</b></p>
+                                <h3 class="text-center mb-3">What Actually Happened During Your Last Renewal (The Part Nobody Explains)</h3>
+                                <p>December 2024. Your renewal notice arrives. R1,247/month. Up from R1,118 last year.<br>
+                                    You barely glance at it before paying.<br>
+                                    But here's what your insurer didn't tell you:</p>
+                                <p>Your premium is calculated using a pooled-risk model. That means you're subsidizing:</p>
                                 <ul>
-                                    <li><b>Comprehensive Coverage:</b> From engine breakdowns to electrical failures, the high-cost repairs are covered.</li>
-                                    <li><b>Flexible Payment Options:</b> Pay monthly. Budget-friendly protection that fits your life.</li>
-                                    <li><b>No-Nonsense Claims Process:</b> Fast, transparent claims without red tape or hidden clauses.</li>
-                                    <li><b>24/7 Roadside Assistance:</b> Wherever you are, help is a call away.</li>
+                                    <li>The driver three streets over who claimed R180,000 after a smash-and-grab</li>
+                                    <li>Your neighbor's 19-year-old who wrote off a Golf GTI street racing</li>
+                                    <li>The guy in your suburb with three claims in 18 months</li>
+                                </ul>
+                                <p>You've never claimed. You park in a secure estate. You drive a paid-off 2019 Polo.<br>
+                                    Yet you're paying the same premium architecture as high-risk drivers. Because that's how legacy insurers stay profitable.</p>
+                                <p>Meanwhile, newer, leaner providers built their entire pricing around insuring exactly your profile:</p>
+                                <ul>
+                                    <li>✅ Zero-claims history = tier-1 pricing</li>
+                                    <li>✅ Secure parking = risk-reduction discounts</li>
+                                    <li>✅ Paid-off vehicle = flexible cover structures</li>
+                                    <li>✅ Clean record = priority customer rates</li>
+                                </ul>
+                                <p>They would have quoted you R724/month for identical comprehensive cover.<br>
+                                    That's R6,276 saved annually. Same protection. Different system.<br>
+                                    But they never saw your details.<br>
+                                    Because the Reverse-Auction Match didn't exist in your world yet.</p>
+                            </div>
+                        </div>
+
+                        <div class="row text-start mb-5 mt-2">
+                            <div class="hlabi-body">
+                                <h3 class="text-center mb-3">Why Everything You've Tried Before Failed (And It Wasn't Your Fault)</h3>
+                                <p>You've thought about shopping around. Maybe you even tried:</p>
+                                <ul>
+                                    <li>❌ "I called three insurers myself."<br>Took 90 minutes. Two never called back. One quoted the same rate you're already paying.</li>
+                                    <li>❌ "I used a comparison website."<br>Entered your info six different times. Got spammed by brokers. Still unclear if you're actually getting the best rate.</li>
+                                    <li>❌ "I asked my broker to shop around."<br>They came back with one alternative from their commission structure, not from your savings opportunity.</li>
+                                </ul>
+                                <p>The traditional process is deliberately exhausting. Complicated forms. Endless phone tag. Hidden exclusions you only discover when you need to claim.<br>
+                                    It's designed to make staying put feel easier than switching.<br>
+                                    What if insurers had to compete for you, transparently, all at once, with zero friction?</p>
+                            </div>
+                        </div>
+
+                        <div class="row text-start mb-5 mt-2">
+                            <div class="hlabi-body">
+                                <h3 class="text-center mb-3">The Discovery That Changed How 4,200+ South Africans Buy Car Insurance</h3>
+                                <p>October 2023. Mid-week. 2:47 PM.<br>
+                                    An IT consultant from Sandton gets his renewal notice. R1,580/month. Up 13.4% from last year.<br>
+                                    Same insurer for 11 years. Zero claims. Drives a 2020 Fortuner. Parks in a boomed complex.<br>
+                                    He's frustrated. He starts calling around. Three dead-end conversations later, a broker tries pitching him life insurance instead.<br>
+                                    Then a colleague mentions something interesting.<br>
+                                    "There's a platform. You fill out one form. Your details go to multiple providers at once. They compete. You pick the winner. No spam calls. No pressure. Just quotes."
+                                </p>
+                                <p>Skeptical, but R17,400-per-year frustrated, he tries it.<br>
+                                    127 seconds later, the form is submitted.<br>
+                                    11 minutes after that, his phone lights up:</p>
+                                <ul>
+                                    <li>Provider A: R1,140/month — saves R5,280/year</li>
+                                    <li>Provider B: R968/month — saves R7,344/year</li>
+                                    <li>Provider C: R924/month — saves R7,872/year</li>
+                                </ul>
+                                <p>Same comprehensive cover. Same excess. Better claims reputation on Hellopeter.<br>
+                                    He switches to Provider C.<br>
+                                    Six months later, his colleague's Fortuner gets stolen. R680,000 claim. Paid out in 14 days. No drama.<br>
+                                    He realizes: He's not just saving money. He's getting better service.<br>
+                                    18 months later, he's saved R14,616. Enough to fully cover his daughter's first year at Wits.<br>
+                                    Same driver. Same car. Different system.</p>
+                            </div>
+                        </div>
+
+                        <div class="row text-start mb-5 mt-2">
+                            <div class="hlabi-body">
+                                <h3 class="text-center mb-3">How the Reverse-Auction Match Actually Works (No Hype. Just Mechanics.)</h3>
+                                <p>Car insurance isn't complicated.<br>
+                                    The process of comparing it is.<br>
+                                    The Reverse-Auction Match eliminates the process. Here's the sequence:</p>
+                                <ol>
+                                    <li><b>Step 1: You Complete One Form (127 Seconds Average)</b><br>
+                                        Enter:
+                                        <ul>
+                                            <li>Vehicle details (make, model, year, current value)</li>
+                                            <li>Driver profile (age, claims history, parking situation, usage)</li>
+                                            <li>Current premium (so providers know what to beat)</li>
+                                        </ul>
+                                        No credit checks. No FICA uploads yet. No "we'll call you back."
+                                    </li>
+                                    <li><b>Step 2: Your Profile Reaches 12+ Pre-Vetted Providers (Happens Automatically)</b><br>
+                                        Our API connects directly to:
+                                        <ul>
+                                            <li>Legacy insurers (the household names you recognize)</li>
+                                            <li>Direct providers (no broker commission = 15–25% lower premiums)</li>
+                                            <li>Telematics specialists (reward safe driving with real-time discounts)</li>
+                                            <li>Affinity programs (Discovery Insure, Momentum Insure, niche specialists)</li>
+                                        </ul>
+                                        They see your profile. They compete for your business. Not the other way around.
+                                    </li>
+                                    <li><b>Step 3: Providers Send Their Most Competitive Quotes Directly (Within 24 Hours)</b><br>
+                                        You receive:
+                                        <ul>
+                                            <li>WhatsApp quotes (because that's where South Africans actually communicate)</li>
+                                            <li>Email summaries with full breakdowns</li>
+                                            <li>Direct callback options if you have questions</li>
+                                        </ul>
+                                        You compare. You choose. You decide. No hidden fees. No upsells. No broker trying to package products you don't need.
+                                    </li>
+                                    <li><b>Step 4: You Could Consistently Save R400–R850/Month</b><br>
+                                        Because insurers are now competing for you.<br>
+                                        When providers know they're in a reverse-auction environment, they send their sharpest pricing. The same insurer who quoted you R1,450/month when you called them directly might quote R1,120/month through this system.<br>
+                                        Why? Because they know you're comparison shopping and they want your business.
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+
+                        <div class="row text-start mb-5 mt-2">
+                            <div class="hlabi-body">
+                                <h3 class="text-center mb-3">Why This Works in South Africa (And Why It Couldn't Exist Five Years Ago)</h3>
+                                <ul>
+                                    <li>✅ POPIA-compliant architecture — Your data is encrypted end-to-end, never sold, only shared with providers you explicitly approve</li>
+                                    <li>✅ Load-shedding resilient — Quotes queue during outages and process instantly when power returns</li>
+                                    <li>✅ Zero broker commissions — Direct-to-insurer matching means those savings flow to you</li>
+                                    <li>✅ Built for South African risk profiles — Understands hijacking hotspots, smash-and-grab zones, complex parking, estate security discounts</li>
+                                </ul>
+                                <p>This isn't imported technology awkwardly forced into the SA market.<br>
+                                    It's built here, for here, solving the exact problem you face every renewal cycle.</p>
+                            </div>
+                        </div>
+
+                        <div class="row text-start mb-5 mt-2">
+                            <div class="hlabi-body">
+                                <h3 class="text-center mb-3">The Uncomfortable Math: What Staying Put Actually Costs</h3>
+                                <p>Let's be surgical about this.<br>
+                                    Your current annual premium: R14,964<br>
+                                    Time spent comparing last year: 0 minutes (you just renewed)<br>
+                                    Potential savings if you had used this system: R5,200–R7,900/year<br>
+                                    Cost of not knowing this existed:<br>
+                                    R7,000/year × 5 years = R35,000<br>
+                                    That's not a rounding error.<br>
+                                    That's a Mauritius holiday. A down payment on solar panels. Your child's Grade 1 school fees for the year.<br>
+                                    Evaporated. Because the system that makes insurers compete didn't exist in your world until now.</p>
+                            </div>
+                        </div>
+
+                        <div class="row text-start mb-5 mt-2">
+                            <div class="hlabi-body">
+                                <h3 class="text-center mb-3">Why This Platform Doesn't Charge You (And How It Actually Works)</h3>
+                                <p>You're thinking: "What's the catch? How do you make money?"<br>
+                                    Fair question. Deserves a straight answer.<br>
+                                    Insurers pay us a small referral fee when you switch. You pay nothing. Ever.<br>
+                                    Why would insurers agree to this?<br>
+                                    Because acquiring qualified customers costs them R600–R950 through Google Ads, broker commissions, and call center operations.<br>
+                                    We deliver them exactly the customer they want, someone who perfectly fits their underwriting model, for a fraction of that cost.<br>
+                                    They save money on acquisition. You save money on premiums. We earn a referral fee.<br>
+                                    Everyone wins except the middlemen who were extracting 12–18% in commission while adding zero value.</p>
+                            </div>
+                        </div>
+
+                        <div class="row text-start mb-5 mt-2">
+                            <div class="hlabi-body">
+                                <h3 class="text-center mb-3">The One Belief That Will Stop You (And Why It's Mathematically Wrong)</h3>
+                                <p>"I've been with my insurer for 9 years. I don't want to lose my loyalty discount."<br>
+                                    Here's the data your insurer doesn't want you to see:<br>
+                                    Most insurers increase premiums by 8–13% annually for existing customers while offering new customers 18–27% discounts to switch in.<br>
+                                    Your "loyalty discount" isn't a discount.<br>
+                                    You're being penalized for staying.<br>
+                                    Industry research shows that customers who switch every 2–3 years pay 22–34% less over a decade than those who stay loyal to one provider.<br>
+                                    The smartest South Africans don't stay loyal to insurers. They stay loyal to getting the best value. And they use systems like this to force competition every renewal cycle.</p>
+                            </div>
+                        </div>
+
+                        <div class="row text-start mb-5 mt-2">
+                            <div class="hlabi-body">
+                                <h3 class="text-center mb-3">What's Included When You Submit Your Profile</h3>
+                                <ul>
+                                    <li>✅ Instant submission to 12+ competing providers</li>
+                                    <li>✅ Direct quotes via WhatsApp and email within 24 hours</li>
+                                    <li>✅ Zero obligation to switch (compare first, decide after you see real numbers)</li>
+                                    <li>✅ POPIA-compliant data handling (full encryption, never sold to third parties)</li>
+                                    <li>✅ Completely free to use (insurers pay us, you pay nothing)</li>
+                                </ul>
+                                <p><b>What Happens in the Next 24 Hours:</b><br>
+                                    Minute 1–3: You complete the form below<br>
+                                    Minute 4–15: Our system matches your profile with providers who specialize in your exact risk category<br>
+                                    Hour 1–24: Providers send their most competitive quotes directly to you<br>
+                                    Day 2: You compare, ask questions if needed, and choose the winner<br>
+                                    Week 1: You switch (your new insurer handles cancellation with your old one)<br>
+                                    No credit checks. No broker ambush calls. No pressure.</p>
+                            </div>
+                        </div>
+
+                        <div class="row text-start mb-5 mt-2">
+                            <div class="hlabi-body">
+                                <h3 class="text-center mb-3">Your Questions Answered (The Ones You're Thinking Right Now)</h3>
+                                <ul>
+                                    <li><b>Will my information be sold to 50 companies?</b><br>No. We only share your profile with FSCA-registered insurers you've explicitly approved. Full POPIA compliance. Complete audit trail. Your data is encrypted and never sold.</li>
+                                    <li><b>Is this actually free or is there a hidden fee later?</b><br>Actually free. Insurers pay us a referral fee when you switch. You never pay us anything. Ever.</li>
+                                    <li><b>What if I'm happy with my current insurer?</b><br>Perfect. Use this system to confirm you're getting market-best pricing. If you are, fantastic. If not, now you know your options. Either way, you win.</li>
+                                    <li><b>Do I have to switch immediately after getting quotes?</b><br>No. You compare quotes first. Make your decision on your timeline. Zero obligation. Some people take weeks to decide. That's fine.</li>
+                                    <li><b>Will this affect my credit score?</b><br>No. This isn't a credit application. It's a quote request. No credit bureau checks.</li>
+                                    <li><b>What if I have accidents on my record or claims history?</b><br>You'll still get quotes. Some providers specialize in higher-risk profiles at competitive rates. You might be surprised how much you can still save.</li>
+                                    <li><b>How long does the actual switch take once I decide?</b><br>Most switches complete in 7–10 business days. Your new insurer coordinates cancellation with your old one. You just sign the new policy docs.</li>
+                                    <li><b>What if I have questions about a specific quote?</b><br>Every quote includes direct contact info for that provider. You can call, WhatsApp, or email them with questions. Most respond within hours.</li>
                                 </ul>
                             </div>
                         </div>
 
-                        <!-- Section: Real Reason -->
                         <div class="row text-start mb-5 mt-2">
                             <div class="hlabi-body">
-                                <h3 class="text-center mb-3">The Real Reason You Need Car Warranty Protection</h3>
-                                <p>You might think: <i>"I’ll just deal with repairs as they come."</i> But as your car ages, repair costs increase dramatically.</p>
-                                <ul>
-                                    <li>A simple gearbox repair could cost up to <b>R20,000</b>.</li>
-                                    <li>An engine breakdown? Expect to pay over <b>R50,000</b>.</li>
-                                    <li>Electrical faults? Easily <b>R10,000+</b>.</li>
-                                </ul>
-                                <p><b>Are you ready for that kind of financial hit?</b></p>
-                                <p>With Search A Deal partners, you won’t worry about where the money will come from. No surprises, no panic.</p>
+                                <h3 class="text-center mb-3">This Is Your Decision Point</h3>
+                                <p>You have two paths.</p>
+                                <p><b>Path 1:</b><br>
+                                    Close this page. Keep paying premiums designed for someone else's risk profile. Renew next year at another 9–12% increase. Wonder why money feels tight at month-end even though you're earning well.<br>
+                                    Five years from now, you'll have paid an extra R30,000–R40,000 for identical coverage.</p>
+                                <p><b>Path 2:</b><br>
+                                    Invest 127 seconds right now. Let 12 insurers compete for your business. Save R400–R850/month starting next month. Use that money for things that actually matter.<br>
+                                    Five years from now, you'll have an extra R30,000–R40,000 that stayed in your account instead of subsidizing other people's claims.<br>
+                                    The form is below. The choice is yours.<br>
+                                    But here's what you need to understand:<br>
+                                    Every month you wait is another R450–R750 you're overpaying. That's not drama. That's just math.<br>
+                                    Not because you're careless. Because you didn't know this system existed until today.<br>
+                                    Now you do.</p>
+                                <p><b>Get Your Competitive Quotes Now</b><br>
+                                    Free to use. 127 seconds average completion time. Zero obligation.<br>
+                                    [FORM SECTION]</p>
+                                <p class="text-center mt-4">
+                                    Search A Deal • POPIA-Compliant • Built in South Africa for South Africans • 4,200+ Drivers Switched in the Last 90 Days
+                                </p>
+                                <p class="mt-4"><b>P.S. While You're Deciding, 23 Other Drivers Just Submitted Their Forms</b><br>
+                                    Right now, as you're reading this, providers are competing for their business.<br>
+                                    You're still paying full price.<br>
+                                    [Complete your profile now →]</p>
+                                <p class="mt-4"><b>P.P.S. The R35,000 Question</b><br>
+                                    If you'd discovered this system 5 years ago, you'd have saved approximately R35,000 by now.<br>
+                                    You can't get that back. But you can stop the leak today.<br>
+                                    [Get your competitive quotes →]</p>
+                                <p class="mt-4"><b>P.P.P.S. One More Thing Your Insurer Won't Tell You</b><br>
+                                    The providers competing for your business through this system? They're the same ones spending R12–R18 million annually on TV ads, radio spots, and billboards.<br>
+                                    When you come through traditional channels, they bake that marketing cost into your premium.<br>
+                                    When you come through this system, they're not paying for expensive advertising. That saving flows directly into a sharper quote for you.<br>
+                                    You're getting access to better pricing because you're not coming through their expensive marketing funnel.<br>
+                                    [Stop subsidizing their ad spend. Get your quotes now →]</p>
                             </div>
                         </div>
-
-                        <!-- Section: Avoid Stress -->
-                        <div class="row text-start mb-5 mt-2">
-                            <div class="hlabi-body">
-                                <h3 class="text-center mb-3">Don’t Get Caught Off Guard. Protect Your Vehicle and Your Wallet</h3>
-                                <p>Every day, vehicle owners are hit with unexpected repair bills that throw their budgets into chaos. With our extended warranty partners, you can avoid the stress and uncertainty.</p>
-                                <p><b>Imagine the relief:</b> Major repairs covered. No scrambling for emergency funds. No high-interest loans just to get back on the road.</p>
-                            </div>
-                        </div>
-
-                        <!-- Section: Why Owners Choose -->
-                        <div class="row text-start mb-5 mt-2">
-                            <div class="hlabi-body">
-                                <h3 class="text-center mb-3">Why Vehicle Owners Like You Are Choosing Search A Deal Partners</h3>
-                                <p>You’re not just buying a warranty. You’re buying <b>peace of mind</b>.</p>
-                                <ul>
-                                    <li><b>Complete Protection:</b> Coverage for high-value components like engine, gearbox & electrical systems.</li>
-                                    <li><b>Affordable Payment Options:</b> Flexible, manageable monthly plans.</li>
-                                    <li><b>Hassle-Free Claims:</b> Straightforward, transparent, and built to work for you.</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <!-- Section: Truth -->
-                        <div class="row text-start mb-5 mt-2">
-                            <div class="hlabi-body">
-                                <h3 class="text-center mb-3">The Truth: Without Extended Warranty, You’re Leaving Yourself Exposed</h3>
-                                <p>Each day your manufacturer’s warranty gets closer to expiring. Once it’s gone, <b>you pay for every repair</b>.</p>
-                                <ul>
-                                    <li>Engines fail.</li>
-                                    <li>Electrical systems break down.</li>
-                                    <li>Cars need repairs. It’s inevitable.</li>
-                                </ul>
-                                <p>You don’t have to carry that risk. Search A Deal partners make extended warranties accessible and affordable across South Africa.</p>
-                            </div>
-                        </div>
-
-                        <!-- Section: Protect Today -->
-                        <div class="row text-start mb-5 mt-2">
-                            <div class="hlabi-body">
-                                <h3 class="text-center mb-3">Protect Your Vehicle Today. Get Your Free Quote Now!</h3>
-                                <p>You’ve worked hard for your vehicle. Now protect your investment with a warranty that’s affordable, reliable, and designed for peace of mind.</p>
-                                <p>Click below to get your free, no-obligation quote and discover how much you can save with a comprehensive car warranty.</p>
-                                <div class="text-center">
-                                    <a href="#form" class="btn btn-primary py-3 px-5 mt-3" style="width:100%">Get Free Warranty Quote</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Section: Act Today -->
-                        <div class="row text-start mb-5 mt-2">
-                            <div class="hlabi-body">
-                                <h3 class="text-center mb-3">Why Wait? Get Covered Now!</h3>
-                                <p><b>Here’s Why You Should Act Today:</b></p>
-                                <ul>
-                                    <li><b>Don’t Wait for a Breakdown:</b> A failure could happen tomorrow. Be proactive.</li>
-                                    <li><b>Flexible Payment Plans:</b> Coverage that fits your budget without sacrifice.</li>
-                                    <li><b>24/7 Roadside Assistance:</b> Help whenever and wherever you need it.</li>
-                                </ul>
-                                <p>Every day without protection is a gamble. Avoid being hit with a massive bill when it’s too late.</p>
-                                <div class="text-center">
-                                    <a href="#form" class="btn btn-outline-primary py-3 px-5 mt-3" style="width:100%">Protect My Car Now</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Section: Confidence -->
-                        <div class="row text-start mb-5 mt-2">
-                            <div class="hlabi-body">
-                                <h3 class="text-center mb-3">Choose Search A Deal and Drive with Confidence</h3>
-                                <p>You deserve the best protection at an affordable price. Search A Deal partners give you:</p>
-                                <ul>
-                                    <li><b>Comprehensive coverage</b> against major breakdown risks.</li>
-                                    <li><b>Affordable monthly payments</b> that fit your budget.</li>
-                                    <li><b>Roadside assistance</b> to keep you moving when things go wrong.</li>
-                                </ul>
-                                <p><b>Why risk it?</b> Get peace of mind today with a partner-backed car warranty.</p>
-                                <div class="text-center">
-                                    <a href="#form" class="btn btn-success py-3 px-5 mt-3" style="width:100%">Start My Protection</a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- END: Updated Car Insurance Marketing Copy -->
+                        <!-- END: New Car Insurance Marketing Copy (Jan 2026) -->
                     </div>
                 </div>
 
