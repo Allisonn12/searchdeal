@@ -142,7 +142,7 @@
                             </div>
                         </div>
                         <div class="break-image mb-4">
-                            <img src="img/images/16.png" alt="Insurance and tracker protection" class="img-fluid rounded">
+                            <img src="img/car_insure_upsell/10.png" alt="Insurance and tracker protection" class="img-fluid rounded">
                         </div>
                         <div class="hlabi-body">
                             <div class="row text-start mb-5">
@@ -156,6 +156,9 @@
                             <div class="row text-start mb-5">
                                 <div class="col-12">
                                     <h3 class="text-center mb-3">The Gap Between "Insured" and "Protected" Costs R127,000 on Average</h3>
+                                    <div class="break-image mb-4">
+                                        <img src="img/car_insure_upsell/7.png" alt="Insurance and tracker protection" class="img-fluid rounded">
+                                    </div>
                                     <p>When your insured vehicle is stolen and not recovered, here's the real cost:</p>
                                     <ul>
                                         <li>R18,000:  Average insurance excess you pay out of pocket</li>
@@ -196,6 +199,9 @@
                             <div class="row text-start mb-5">
                                 <div class="col-12">
                                     <h3 class="text-center mb-3">The Brutal Reality: 63% of Stolen Vehicles in South Africa Are Never Recovered Intact</h3>
+                                    <div class="break-image mb-4">
+                                        <img src="img/car_insure_upsell/1.png" alt="Insurance and tracker protection" class="img-fluid rounded">
+                                    </div>
                                     <p>SAPS data, 2024:<br>48 vehicles stolen per day in Gauteng alone. That's one every 30 minutes.<br>Of those stolen vehicles:</p>
                                     <ul>
                                         <li>37% are never found (disappeared into chop shops, across borders, or stripped for parts)</li>
@@ -217,6 +223,9 @@
                             <div class="row text-start mb-5">
                                 <div class="col-12">
                                     <h3 class="text-center mb-3">Introducing: The Recovery Completion System</h3>
+                                    <div class="break-image mb-4">
+                                        <img src="img/car_insure_upsell/9.png" alt="Insurance and tracker protection" class="img-fluid rounded">
+                                    </div>
                                     <p>You've already experienced The Reverse-Auction Match for insurance.<br>Now you get the same process for tracker quotes.<br>Here's how it works:</p>
                                     <ol>
                                         <li>One More 60-Second Form<br>Vehicle details, location, preferred contact method. You've done this once already. Same process.</li>
@@ -244,6 +253,9 @@
                             <div class="row text-start mb-5">
                                 <div class="col-12">
                                     <h3 class="text-center mb-3">The Synergy Nobody Talks About: How Better Insurance + Elite Tracking = Lower Total Cost</h3>
+                                    <div class="break-image mb-4">
+                                        <img src="img/car_insure_upsell/5.png" alt="Insurance and tracker protection" class="img-fluid rounded">
+                                    </div>
                                     <p>Here's the part that surprised even us.<br>When you have both competitive insurance and elite tracking installed:<br>Your insurance premiums drop even further.<br>Why?<br>Because insurers reward tracked vehicles with premium discounts (typically 10–15%) since tracked cars are 3.7x more likely to be recovered intact, which means fewer total-loss claims.</p>
                                     <p>Let's do the math:</p>
                                     <ul>
@@ -259,6 +271,9 @@
                             <div class="row text-start mb-5">
                                 <div class="col-12">
                                     <h3 class="text-center mb-3">The 5 Questions That Reveal Real Recovery Capability (Ask Every Provider Who Contacts You)</h3>
+                                    <div class="break-image mb-4">
+                                        <img src="img/car_insure_upsell/6.png" alt="Insurance and tracker protection" class="img-fluid rounded">
+                                    </div>
                                     <ol>
                                         <li>"What's your average recovery time in [my specific suburb/city]?"<br><i>Listen for specific data ("average 18 minutes in Sandton") vs. vague promises ("we're very fast").</i></li>
                                         <li>"Is installation included, or will there be additional charges on-site?"<br><i>Listen for "fully included" or clear disclosure of any extras. Red flag: "depends on your vehicle."</i></li>
@@ -293,6 +308,9 @@
                             <div class="row text-start mb-5">
                                 <div class="col-12">
                                     <h4 class="mb-3">Questions You're Probably Asking</h4>
+                                    <div class="break-image mb-4">
+                                        <img src="img/car_insure_upsell/4.png" alt="Insurance and tracker protection" class="img-fluid rounded">
+                                    </div>
                                     <p><b>"Didn't I just do this for insurance? Why am I filling out another form?"</b><br>Because insurance and tracking are sourced from different provider networks.<br>The Elite 5 insurers you just connected with don't install trackers. The Elite 5 tracker companies don't sell insurance.<br>This is the final piece. One more 60-second form to complete your vehicle protection system.</p>
                                     <p><b>"Is this actually necessary, or are you just upselling me?"</b><br>Fair question. Here's the honest answer:<br>If you're comfortable with your vehicle being compensated (eventually) rather than recovered (immediately), you don't need this.<br>But if the idea of losing your car permanently, and dealing with the R127,000 real-cost aftermath, feels unacceptable, then yes, this is necessary.<br>Insurance without recovery is financial protection without physical protection.<br>You've secured one. This completes the other.</p>
                                     <p><b>"Can I just research trackers on my own in a few weeks?"</b><br>You can.<br>But here's what happens:<br>Three weeks from now, the urgency fades. You get busy. You delay. You tell yourself "next month."<br>Meanwhile, 48 vehicles per day are being stolen in Gauteng alone.<br>The Recovery Completion System exists to eliminate that delay.<br>Right now, while you're already in "protect my vehicle" mode, you can complete the entire process in under 5 minutes total.<br>Why give yourself the opportunity to procrastinate?</p>

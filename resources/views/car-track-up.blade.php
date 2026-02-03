@@ -143,7 +143,7 @@
                             </div>
                         </div>
                         <div class="break-image mb-4">
-                            <img src="img/images/5.png" alt="Tracker and insurance savings" class="img-fluid rounded">
+                            <img src="img/car_track_upsell/1.png" alt="Tracker and insurance savings" class="img-fluid rounded">
                         </div>
                         <div class="hlabi-body">
                             <div class="row text-start mb-5">
@@ -161,6 +161,9 @@
                             <div class="row text-start mb-5">
                                 <div class="col-12">
                                     <h3 class="text-center mb-3">The Math Your Insurer Hopes You Don't See</h3>
+                                    <div class="break-image mb-4">
+                                        <img src="img/car_track_upsell/4.png" alt="Tracker and insurance savings" class="img-fluid rounded">
+                                    </div>
                                     <p>Let's be direct about what just changed:</p>
                                     <ul>
                                         <li><b>Before today:</b>
@@ -184,6 +187,9 @@
                             <div class="row text-start mb-5">
                                 <div class="col-12">
                                     <h3 class="text-center mb-3">Why This Moment Matters (And Why Waiting Costs You)</h3>
+                                    <div class="break-image mb-4">
+                                        <img src="img/car_track_upsell/12.png" alt="Tracker and insurance savings" class="img-fluid rounded">
+                                    </div>
                                     <p>Here's what happens if you don't address this right now:</p>
                                     <ul>
                                         <li>Month 1–11: You pay full premium despite being a tracker-protected customer</li>
@@ -222,6 +228,9 @@
                             <div class="row text-start mb-5">
                                 <div class="col-12">
                                     <h3 class="text-center mb-3">The System You Already Trust, Now Working For Your Insurance</h3>
+                                    <div class="break-image mb-4">
+                                        <img src="img/car_track_upsell/8.png" alt="Tracker and insurance savings" class="img-fluid rounded">
+                                    </div>
                                     <p>You just used The Provider Intelligence Engine™ to find your ideal tracker.<br>Now use the Reverse-Auction Match to find your ideal insurance rate.<br>Same philosophy. Different problem.<br>Tracker decision: Don't choose from 44 random companies. Get matched to the Elite 5.<br>Insurance decision: Don't accept one insurer's "discount." Make 12+ insurers compete with their sharpest pricing.</p>
                                 </div>
                             </div>
@@ -240,6 +249,9 @@
                             <div class="row text-start mb-5">
                                 <div class="col-12">
                                     <h3 class="text-center mb-3">Why Tracker Customers Save 28-38% More Than Average Drivers</h3>
+                                    <div class="break-image mb-4">
+                                        <img src="img/car_track_upsell/13.png" alt="Tracker and insurance savings" class="img-fluid rounded">
+                                    </div>
                                     <p>Let me show you the actual data:</p>
                                     <ul>
                                         <li><b>Average South African driver using Reverse-Auction Match:</b>
@@ -310,6 +322,9 @@
                             <div class="row text-start mb-5">
                                 <div class="col-12">
                                     <h3 class="text-center mb-3">What's Included (And What You're NOT Signing Up For)</h3>
+                                    <div class="break-image mb-4">
+                                        <img src="img/car_track_upsell/11.png" alt="Tracker and insurance savings" class="img-fluid rounded">
+                                    </div>
                                     <p>When you submit your profile below, here's exactly what happens:</p>
                                     <ul>
                                         <li>✅ Your tracker-protected profile goes to 12+ competing insurers</li>

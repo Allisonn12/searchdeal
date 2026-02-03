@@ -60,7 +60,7 @@
                             </div>
                         </div>
                         <div class="break-image mb-4">
-                            <img src="img/images/16.png" alt="Car insurance savings" class="img-fluid rounded">
+                            <img src="img/car_insurance/1.png" alt="Car insurance savings" class="img-fluid rounded">
                         </div>
 
                         <div class="row text-start mb-5 mt-2">
@@ -68,6 +68,8 @@
                                 <p>If you just watched the 60-second video, you already know something shifted.<br>
                                     You felt it. That uncomfortable recognition that you might be paying for someone else's claims while providers who actually want your profile never get the chance to quote you.<br>
                                     Here's what happens next.</p>
+                            <img src="img/car_insurance/2.png" alt="Car insurance savings" class="img-fluid rounded">
+
                                 <h3 class="text-center mb-3">The R287 Million Leak South African Drivers Don't See</h3>
                                 <p>Last month alone, 61,842 South African drivers clicked "renew" on their car insurance.<br>
                                     Most didn't compare. Most didn't shop. Most assumed "insurance is expensive everywhere." Collectively, they overpaid by R287 million.<br>
@@ -83,6 +85,8 @@
 
                         <div class="row text-start mb-5 mt-2">
                             <div class="hlabi-body">
+                            <img src="img/car_insurance/5.png" alt="Car insurance savings" class="img-fluid rounded">
+
                                 <h3 class="text-center mb-3">What Actually Happened During Your Last Renewal (The Part Nobody Explains)</h3>
                                 <p>December 2024. Your renewal notice arrives. R1,247/month. Up from R1,118 last year.<br>
                                     You barely glance at it before paying.<br>
@@ -97,10 +101,10 @@
                                     Yet you're paying the same premium architecture as high-risk drivers. Because that's how legacy insurers stay profitable.</p>
                                 <p>Meanwhile, newer, leaner providers built their entire pricing around insuring exactly your profile:</p>
                                 <ul>
-                                    <li>✅ Zero-claims history = tier-1 pricing</li>
-                                    <li>✅ Secure parking = risk-reduction discounts</li>
-                                    <li>✅ Paid-off vehicle = flexible cover structures</li>
-                                    <li>✅ Clean record = priority customer rates</li>
+                                    <li>Zero-claims history = tier-1 pricing</li>
+                                    <li>Secure parking = risk-reduction discounts</li>
+                                    <li>Paid-off vehicle = flexible cover structures</li>
+                                    <li>Clean record = priority customer rates</li>
                                 </ul>
                                 <p>They would have quoted you R724/month for identical comprehensive cover.<br>
                                     That's R6,276 saved annually. Same protection. Different system.<br>
@@ -114,9 +118,9 @@
                                 <h3 class="text-center mb-3">Why Everything You've Tried Before Failed (And It Wasn't Your Fault)</h3>
                                 <p>You've thought about shopping around. Maybe you even tried:</p>
                                 <ul>
-                                    <li>❌ "I called three insurers myself."<br>Took 90 minutes. Two never called back. One quoted the same rate you're already paying.</li>
-                                    <li>❌ "I used a comparison website."<br>Entered your info six different times. Got spammed by brokers. Still unclear if you're actually getting the best rate.</li>
-                                    <li>❌ "I asked my broker to shop around."<br>They came back with one alternative from their commission structure, not from your savings opportunity.</li>
+                                    <li>"I called three insurers myself."<br>Took 90 minutes. Two never called back. One quoted the same rate you're already paying.</li>
+                                    <li>"I used a comparison website."<br>Entered your info six different times. Got spammed by brokers. Still unclear if you're actually getting the best rate.</li>
+                                    <li>"I asked my broker to shop around."<br>They came back with one alternative from their commission structure, not from your savings opportunity.</li>
                                 </ul>
                                 <p>The traditional process is deliberately exhausting. Complicated forms. Endless phone tag. Hidden exclusions you only discover when you need to claim.<br>
                                     It's designed to make staying put feel easier than switching.<br>
@@ -153,6 +157,7 @@
 
                         <div class="row text-start mb-5 mt-2">
                             <div class="hlabi-body">
+                            <img src="img/car_insurance/6.png" alt="Car insurance savings" class="img-fluid rounded">
                                 <h3 class="text-center mb-3">How the Reverse-Auction Match Actually Works (No Hype. Just Mechanics.)</h3>
                                 <p>Car insurance isn't complicated.<br>
                                     The process of comparing it is.<br>
@@ -199,10 +204,10 @@
                             <div class="hlabi-body">
                                 <h3 class="text-center mb-3">Why This Works in South Africa (And Why It Couldn't Exist Five Years Ago)</h3>
                                 <ul>
-                                    <li>✅ POPIA-compliant architecture — Your data is encrypted end-to-end, never sold, only shared with providers you explicitly approve</li>
-                                    <li>✅ Load-shedding resilient — Quotes queue during outages and process instantly when power returns</li>
-                                    <li>✅ Zero broker commissions — Direct-to-insurer matching means those savings flow to you</li>
-                                    <li>✅ Built for South African risk profiles — Understands hijacking hotspots, smash-and-grab zones, complex parking, estate security discounts</li>
+                                    <li>POPIA-compliant architecture — Your data is encrypted end-to-end, never sold, only shared with providers you explicitly approve</li>
+                                    <li>Load-shedding resilient — Quotes queue during outages and process instantly when power returns</li>
+                                    <li>Zero broker commissions — Direct-to-insurer matching means those savings flow to you</li>
+                                    <li>Built for South African risk profiles — Understands hijacking hotspots, smash-and-grab zones, complex parking, estate security discounts</li>
                                 </ul>
                                 <p>This isn't imported technology awkwardly forced into the SA market.<br>
                                     It's built here, for here, solving the exact problem you face every renewal cycle.</p>
@@ -211,6 +216,8 @@
 
                         <div class="row text-start mb-5 mt-2">
                             <div class="hlabi-body">
+                            <img src="img/car_insurance/7.png" alt="Car insurance savings" class="img-fluid rounded">
+
                                 <h3 class="text-center mb-3">The Uncomfortable Math: What Staying Put Actually Costs</h3>
                                 <p>Let's be surgical about this.<br>
                                     Your current annual premium: R14,964<br>
@@ -253,13 +260,14 @@
 
                         <div class="row text-start mb-5 mt-2">
                             <div class="hlabi-body">
+                            <img src="img/car_insurance/8.png" alt="Car insurance savings" class="img-fluid rounded">
                                 <h3 class="text-center mb-3">What's Included When You Submit Your Profile</h3>
                                 <ul>
-                                    <li>✅ Instant submission to 12+ competing providers</li>
-                                    <li>✅ Direct quotes via WhatsApp and email within 24 hours</li>
-                                    <li>✅ Zero obligation to switch (compare first, decide after you see real numbers)</li>
-                                    <li>✅ POPIA-compliant data handling (full encryption, never sold to third parties)</li>
-                                    <li>✅ Completely free to use (insurers pay us, you pay nothing)</li>
+                                    <li>Instant submission to 12+ competing providers</li>
+                                    <li>Direct quotes via WhatsApp and email within 24 hours</li>
+                                    <li>Zero obligation to switch (compare first, decide after you see real numbers)</li>
+                                    <li>POPIA-compliant data handling (full encryption, never sold to third parties)</li>
+                                    <li>Completely free to use (insurers pay us, you pay nothing)</li>
                                 </ul>
                                 <p><b>What Happens in the Next 24 Hours:</b><br>
                                     Minute 1–3: You complete the form below<br>
@@ -289,6 +297,7 @@
 
                         <div class="row text-start mb-5 mt-2">
                             <div class="hlabi-body">
+                                <img src="img/car_insurance/9.png" alt="Car insurance savings" class="img-fluid rounded">
                                 <h3 class="text-center mb-3">This Is Your Decision Point</h3>
                                 <p>You have two paths.</p>
                                 <p><b>Path 1:</b><br>
