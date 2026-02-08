@@ -60,7 +60,9 @@
                             </div>
                         </div>
                         <div class="break-image mb-4">
-                            <img src="img/car_insurance/1.png" alt="Car insurance savings" class="img-fluid rounded">
+                            <div class="break-image mb-4">
+                                <img src="img/car_insurance/1.png" alt="Car insurance savings" class="img-fluid rounded">
+                            </div>
                         </div>
 
                         <div class="row text-start mb-5 mt-2">
@@ -68,9 +70,11 @@
                                 <p>If you just watched the 60-second video, you already know something shifted.<br>
                                     You felt it. That uncomfortable recognition that you might be paying for someone else's claims while providers who actually want your profile never get the chance to quote you.<br>
                                     Here's what happens next.</p>
-                            <img src="img/car_insurance/2.png" alt="Car insurance savings" class="img-fluid rounded">
-
                                 <h3 class="text-center mb-3">The R287 Million Leak South African Drivers Don't See</h3>
+
+                                <div class="break-image mb-4">
+                                    <img src="img/car_insurance/2.png" alt="Car insurance savings" class="img-fluid rounded">
+                                </div>
                                 <p>Last month alone, 61,842 South African drivers clicked "renew" on their car insurance.<br>
                                     Most didn't compare. Most didn't shop. Most assumed "insurance is expensive everywhere." Collectively, they overpaid by R287 million.<br>
                                     Not because they're careless. Not because better options don't exist.<br>
@@ -85,9 +89,10 @@
 
                         <div class="row text-start mb-5 mt-2">
                             <div class="hlabi-body">
-                            <img src="img/car_insurance/5.png" alt="Car insurance savings" class="img-fluid rounded">
-
                                 <h3 class="text-center mb-3">What Actually Happened During Your Last Renewal (The Part Nobody Explains)</h3>
+                                <div class="break-image mb-4">
+                                    <img src="img/car_insurance/5.png" alt="Car insurance savings" class="img-fluid rounded">
+                                </div>
                                 <p>December 2024. Your renewal notice arrives. R1,247/month. Up from R1,118 last year.<br>
                                     You barely glance at it before paying.<br>
                                     But here's what your insurer didn't tell you:</p>
@@ -157,8 +162,10 @@
 
                         <div class="row text-start mb-5 mt-2">
                             <div class="hlabi-body">
-                            <img src="img/car_insurance/6.png" alt="Car insurance savings" class="img-fluid rounded">
                                 <h3 class="text-center mb-3">How the Reverse-Auction Match Actually Works (No Hype. Just Mechanics.)</h3>
+                                <div class="break-image mb-4">
+                                    <img src="img/car_insurance/6.png" alt="Car insurance savings" class="img-fluid rounded">
+                                </div>
                                 <p>Car insurance isn't complicated.<br>
                                     The process of comparing it is.<br>
                                     The Reverse-Auction Match eliminates the process. Here's the sequence:</p>
@@ -216,9 +223,9 @@
 
                         <div class="row text-start mb-5 mt-2">
                             <div class="hlabi-body">
-                            <img src="img/car_insurance/7.png" alt="Car insurance savings" class="img-fluid rounded">
 
                                 <h3 class="text-center mb-3">The Uncomfortable Math: What Staying Put Actually Costs</h3>
+                                <img src="img/car_insurance/7.png" alt="Car insurance savings" class="img-fluid rounded">
                                 <p>Let's be surgical about this.<br>
                                     Your current annual premium: R14,964<br>
                                     Time spent comparing last year: 0 minutes (you just renewed)<br>
@@ -260,8 +267,11 @@
 
                         <div class="row text-start mb-5 mt-2">
                             <div class="hlabi-body">
-                            <img src="img/car_insurance/8.png" alt="Car insurance savings" class="img-fluid rounded">
                                 <h3 class="text-center mb-3">What's Included When You Submit Your Profile</h3>
+
+                                <div class="break-image mb-4">
+                                    <img src="img/car_insurance/10.png" alt="Car insurance savings" class="img-fluid rounded">
+                                </div>
                                 <ul>
                                     <li>Instant submission to 12+ competing providers</li>
                                     <li>Direct quotes via WhatsApp and email within 24 hours</li>
@@ -297,8 +307,10 @@
 
                         <div class="row text-start mb-5 mt-2">
                             <div class="hlabi-body">
-                                <img src="img/car_insurance/9.png" alt="Car insurance savings" class="img-fluid rounded">
                                 <h3 class="text-center mb-3">This Is Your Decision Point</h3>
+                                <div class="break-image mb-4">
+                                    <img src="img/car_insurance/9.png" alt="Car insurance savings" class="img-fluid rounded">
+                                </div>
                                 <p>You have two paths.</p>
                                 <p><b>Path 1:</b><br>
                                     Close this page. Keep paying premiums designed for someone else's risk profile. Renew next year at another 9–12% increase. Wonder why money feels tight at month-end even though you're earning well.<br>
