@@ -222,7 +222,9 @@
     padding: 32px 0;
 }
 .main {
-    width: 80%;
+    padding: 0 30px;
+    width: 95% !important;
+    max-width: 1400px;
     margin: 0 auto;
 }
 .main-content {
@@ -318,13 +320,17 @@
     color: white;
 }
 .break-image {
+    /* Align images with the same readable column as the body text */
     width: 80% !important;
-    margin: 0 auto;
+    max-width: 1100px;
+    margin: 0 auto 2rem;
 }
 .break-image img {
     width: 100%;
-    padding-bottom: 50px;
     border-radius: 5px;
+    /* Use margin/parent spacing instead of padding for consistent vertical rhythm */
+    padding-bottom: 0;
+    display: block;
 }
 
 .breadcrumb {
@@ -339,21 +345,33 @@
 }
 .main {
     padding: 0 30px;
-    width: 65% !important;
+    width: 95% !important;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 h3 {
-    width: 90%;
+    width: 100%;
     font-size: 34px;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hlabi-form {
     width: 80%;
+    max-width: 1100px;
     margin: 0 auto;
 }
 .hlabi-body {
     width: 80%;
+    max-width: 1100px;
     margin: 0 auto;
-    font-size: 18px !important;
+    font-size: 21px !important;
+}
+
+.hlabi-body p {
+    font-size: 20px;
+    line-height: 1.6;
 }
 
 @media screen and (max-width: 676px) {
@@ -369,12 +387,17 @@ h3 {
     }
     h3 {
         font-size: 16px;
+        width: 100%;
     }
     #form * {
         width: 100% !important;
     }
     .hlabi-body {
-        font-size: 14px !important;
+        width: 100% !important;
+        font-size: 16px !important;
+    }
+    .hlabi-body img{
+        width: 100% !important;
     }
     .hlabi-form {
         width: 100%;
