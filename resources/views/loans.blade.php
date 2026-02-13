@@ -123,9 +123,10 @@
 
 
 <!-- Personal Loans Copy Start -->
-<div class="container-fluid py-5 wow fadeIn" data-wow-delay="0.1s">
+<div class="py-5 wow fadeIn" data-wow-delay="0.1s">
   <div class="container">
-    <div class="row g-5">
+    {{--<div class="row g-5">--}}
+    <div class="mx-auto" style="max-width: 820px;">
 
       <div class="main">
         <div class="main-content my-5">

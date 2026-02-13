@@ -124,9 +124,10 @@
 
 
 <!-- Car Insurence Start -->
-<div class="container-fluid py-5 wow fadeIn" data-wow-delay="0.1s">
+<div class="py-5 wow fadeIn" data-wow-delay="0.1s">
     <div class="container">
-        <div class="row g-5">
+        {{--<div class="row g-5">--}}
+        <div class="mx-auto" style="max-width: 820px;">
 
             <div class="main">
                 <div class="main-content my-5">
@@ -185,13 +186,13 @@
                                     <h3 class="text-center mb-3">The Completion Principle: Why Insurance Without Recovery Is Only Half-Protected</h3>
                                     <p>You just unlocked competitive insurance pricing. That's massive.<br>But think about what you actually secured:</p>
                                     <ul>
-                                        <li>✅ Financial protection if your vehicle disappears permanently</li>
-                                        <li>✅ Lower premiums because insurers competed for you</li>
-                                        <li>✅ Better coverage terms from elite providers</li>
-                                        <li>❌ The ability to stop a theft in progress</li>
-                                        <li>❌ Real-time location tracking if your car is taken</li>
-                                        <li>❌ Armed response coordination with SAPS</li>
-                                        <li>❌ Recovery infrastructure that works at 2 AM on a Sunday</li>
+                                        <li>Financial protection if your vehicle disappears permanently</li>
+                                        <li>Lower premiums because insurers competed for you</li>
+                                        <li>Better coverage terms from elite providers</li>
+                                        <li>The ability to stop a theft in progress</li>
+                                        <li>Real-time location tracking if your car is taken</li>
+                                        <li>Armed response coordination with SAPS</li>
+                                        <li>Recovery infrastructure that works at 2 AM on a Sunday</li>
                                     </ul>
                                     <p>You've locked in the financial safety net.<br>You haven't locked in the physical recovery system.<br>And here's why that matters more than most people realize:</p>
                                 </div>
@@ -231,11 +232,11 @@
                                         <li>One More 60-Second Form<br>Vehicle details, location, preferred contact method. You've done this once already. Same process.</li>
                                         <li>Your Profile Reaches the Elite 5 Tracker Providers Simultaneously<br>Not 12 random resellers. Not startups that vanish after 18 months.<br>The same 5 established leaders you'd find if you spent 3 weeks researching on your own:
                                             <ul>
-                                                <li>✅ 10+ years in continuous business</li>
-                                                <li>✅ Thousands of successful recoveries annually</li>
-                                                <li>✅ Verified SAPS partnerships and armed response integration</li>
-                                                <li>✅ 24/7 live monitoring centers (tested, not promised)</li>
-                                                <li>✅ In-house installation teams (no reseller middlemen)</li>
+                                                <li>10+ years in continuous business</li>
+                                                <li>Thousands of successful recoveries annually</li>
+                                                <li>Verified SAPS partnerships and armed response integration</li>
+                                                <li>24/7 live monitoring centers (tested, not promised)</li>
+                                                <li>In-house installation teams (no reseller middlemen)</li>
                                             </ul>
                                         </li>
                                         <li>Between 3-5 Elite Providers Contact You Within Minutes<br>Same strategic filtering as the insurance quotes:
@@ -299,7 +300,7 @@
                             </div>
                             <div class="row text-start mb-5">
                                 <div class="col-12 text-center">
-                                    <h3 class="mb-3">🔒 Get Elite Tracker Quotes Now (Final Step)</h3>
+                                    <h3 class="mb-3">Get Elite Tracker Quotes Now (Final Step)</h3>
                                     <p class="mb-4">Same process. Same Elite 5. Complete protection.</p>
                                     <a href="#form" class="btn btn-primary py-3 px-5 mb-3" style="width:100%" data-cta="tracker-primary">Get your elite tracker quotes →</a>
                                     <p class="small text-muted mb-0">By submitting, you agree to be contacted by pre-screened elite tracker providers. Find My Offer is an affiliate platform and earns a commission if you choose to install. We do not provide installation services.</p>
@@ -321,14 +322,14 @@
                             <div class="row text-start mb-5">
                                 <div class="col-12">
                                     <p><b>P.S.  The One Statistic That Changes Everything</b><br>Vehicles with elite tracking systems are 3.7x more likely to be recovered intact within 24 hours.<br>Vehicles without tracking are 2.4x more likely to be found stripped, burned, or never found at all.<br>Your vehicle is already insured. The question is whether it's recoverable.<br><a href="#form">Complete your protection now →</a></p>
-                                    <p><b>P.P.S.  The Real Cost of "I'll Handle It Later"</b><br>If your vehicle is stolen next month and not recovered:
+                                    <p><b>P.P.S.  The Real Cost of "I'll Handle It Later"</b><br>If your vehicle is stolen next month and not recovered:</p>
                                     <ul>
                                         <li>R18,000 excess you'll pay</li>
                                         <li>R47,000 depreciation gap in replacement value</li>
                                         <li>R14,000 premium increases over 3 years</li>
                                         <li>Weeks of paperwork, rental cars, and settlement delays</li>
                                     </ul>
-                                    Total cost: R79,000+ for a vehicle that was insured but not tracked.<br>Cost of adding elite tracking today: R220/month, funded by the insurance savings you just secured.<br>The math isn't complicated. The decision is.<br><a href="#form">Get your elite tracker quotes →</a></p>
+                                    <p>Total cost: R79,000+ for a vehicle that was insured but not tracked.<br>Cost of adding elite tracking today: R220/month, funded by the insurance savings you just secured.<br>The math isn't complicated. The decision is.<br><a href="#form">Get your elite tracker quotes →</a></p>
                                 </div>
                             </div>
                         </div>

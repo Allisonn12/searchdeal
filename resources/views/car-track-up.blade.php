@@ -125,9 +125,10 @@
 
 
 <!-- Car Insurence Start -->
-<div class="container-fluid py-5 wow fadeIn" data-wow-delay="0.1s">
+<div class="py-5 wow fadeIn" data-wow-delay="0.1s">
     <div class="container">
-        <div class="row g-5">
+        {{--<div class="row g-5">--}}
+        <div class="mx-auto" style="max-width: 820px;">
 
             <div class="main">
                 <div class="main-content my-5">
@@ -327,17 +328,17 @@
                                     </div>
                                     <p>When you submit your profile below, here's exactly what happens:</p>
                                     <ul>
-                                        <li>✅ Your tracker-protected profile goes to 12+ competing insurers</li>
-                                        <li>✅ Within 24 hours, you receive WhatsApp quotes reflecting your new risk tier</li>
-                                        <li>✅ Zero obligation to switch—compare first, decide after you see real numbers</li>
-                                        <li>✅ Completely free—insurers pay us, you pay nothing</li>
-                                        <li>✅ POPIA-compliant—data encrypted, never sold</li>
+                                        <li>Your tracker-protected profile goes to 12+ competing insurers</li>
+                                        <li>Within 24 hours, you receive WhatsApp quotes reflecting your new risk tier</li>
+                                        <li>Zero obligation to switch—compare first, decide after you see real numbers</li>
+                                        <li>Completely free—insurers pay us, you pay nothing</li>
+                                        <li>POPIA-compliant—data encrypted, never sold</li>
                                     </ul>
                                     <p>What you're NOT getting:</p>
                                     <ul>
-                                        <li>❌ Spam calls from brokers trying to upsell you 17 other products</li>
-                                        <li>❌ Pressure tactics or "limited-time offers"</li>
-                                        <li>❌ Hidden fees or commission-inflated quotes</li>
+                                        <li>Spam calls from brokers trying to upsell you 17 other products</li>
+                                        <li>Pressure tactics or "limited-time offers"</li>
+                                        <li>Hidden fees or commission-inflated quotes</li>
                                     </ul>
                                     <p>Just clean, competitive pricing from insurers who want your tracker-protected business.</p>
                                 </div>
@@ -379,7 +380,7 @@
                             </div>
                             <div class="row text-start mb-5">
                                 <div class="col-12 text-center">
-                                    <h3 class="mb-3">🔒 Get Your Tracker-Protected Insurance Quotes Now</h3>
+                                    <h3 class="mb-3">Get Your Tracker-Protected Insurance Quotes Now</h3>
                                     <p class="mb-4">90 seconds. 12+ competing insurers. R350–R650/month in potential savings.<br>Vehicle already covered against theft. Now make sure you're not overpaying to insure it.</p>
                                     <a href="#form" class="btn btn-primary py-3 px-5 mb-3" style="width:100%" data-cta="insurance-primary">Get your competitive quotes now →</a>
                                     <p class="small text-muted mb-0">By submitting, you agree to be contacted by pre-screened insurance providers. Search A Deal is an affiliate platform earning referral fees. We do not provide insurance services. POPIA-compliant.</p>
@@ -407,10 +408,13 @@
                             <input type="hidden" name="protection_stage" value="sentinel_match" />
 
                             <div class="row g-3">
-                                <!-- ...existing form fields... -->
                                 <div class="col-sm-12">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control" id="gname" placeholder="First Name" name="firstname" required />
+                                        <input type="text"
+                                               class="form-control"
+                                               id="gname"
+                                               placeholder="First Name"
+                                               name="firstname" required />
                                         <label for="gname">First Name *</label>
                                     </div>
                                 </div>
