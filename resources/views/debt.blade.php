@@ -20,7 +20,7 @@
             background-size: cover;"
     >
         <div class="overlay-color">
-      <div class="container py-5">
+      <div class="container py-5" style="z-index: 1000; position: relative;">
         <h1 class="display-4 animated slideInDown mb-4 text-white">Debt</h1>
         <nav aria-label="breadcrumb animated slideInDown">
           <ol class="breadcrumb mb-0">
@@ -34,14 +34,14 @@
       </div>
     </div>
     <!-- Page Header End -->
-    
 
-    
+
+
     <!-- Car Insurence Start -->
     <div class="container-fluid py-5 wow fadeIn" data-wow-delay="0.1s">
       <div class="container">
         <div class="row g-5">
-          
+
           <div class="main">
             <div class="main-content my-5">
 
@@ -61,7 +61,7 @@
                     </div>
                     <div class="row">
                         <h3><i> FACT: 7 out of 10 South Africans are drowning in debt.</i></h3>
-                        
+
                         <div class="hlabi-body">
                             <div class="points text-start">
                             <ul>
@@ -132,7 +132,7 @@
                         <div class="hlabi-body">
                             <p class="mb-2"><b>At Search A Deal, we help South Africans get debt-free faster—without borrowing more money.</b></p>
                         <p><b> No new loans. No scams. Just a real way out.</b></p>
-                        
+
                         <div class="points text-start" >
                             <p>Here’s how we do it:</p>
                             <ul>
@@ -219,7 +219,7 @@
                 </div>
             </div>
 
-              
+
               <div class="col-lg-12 wow fadeIn hlabi-form" data-wow-delay="0.5s">
                 <div class="bg-light rounded p-5">
                   <h4 class="mb-4">Request A Quote</h4>
@@ -254,7 +254,7 @@
                           <label for="gname">Last Name *</label>
                         </div>
                       </div>
-                      
+
                       <div class="col-sm-6">
                         <div class="form-floating">
                           <input
@@ -288,7 +288,7 @@
                             <option selected></option>
                             <option value="false">< R30 000.00</option>
                             <option value="true">> R30 000.00</option>
-                            
+
                           </select>
                           <label for="cage">How is your Debt?</label>
                         </div>
@@ -299,7 +299,7 @@
                             <option selected></option>
                             <option value="false">< R10 000.00</option>
                              <option value="true">> R10 000.00</option>
-                                
+
                           </select>
                           <label for="cage">Is your income:</label>
                         </div>
@@ -310,7 +310,7 @@
                             <option selected></option>
                             <option value="true">Yes</option>
                              <option value="false">No</option>
-                                
+
                           </select>
                           <label for="cage">Are you currently under debt review?</label>
                         </div>
@@ -321,7 +321,7 @@
                             <option selected></option>
                             <option value="true">Yes</option>
                              <option value="false">No</option>
-                                
+
                           </select>
                           <label for="cage">Are you currently employed?</label>
                         </div>
@@ -345,7 +345,7 @@
                   </form>
                 </div>
               </div>
-    
+
           </div>
 
         </div>

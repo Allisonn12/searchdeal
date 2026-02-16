@@ -20,7 +20,7 @@
         style="background: url(img/images/16.png) center center no-repeat;"
 >
     <div class="overlay-color">
-        <div class="container py-5">
+        <div class="container py-5" style="z-index: 1000; position: relative;">
             <h1 class="display-4 animated text-white slideInDown mb-4">Car Insurance</h1>
             <nav aria-label="breadcrumb animated slideInDown">
                 <ol class="breadcrumb mb-0 text-white">
@@ -246,9 +246,8 @@
                             <div class="hlabi-body">
 
                                 <h3 class="text-center mb-3">The Uncomfortable Math: What Staying Put Actually Costs</h3>
-                                {{--TODO: FIX IMAGE--}}
-                                <div class="break-image mb-4">
-                                    <img src="img/car_insurance/7.png" style="" alt="Car insurance savings" class="img-fluid rounded">
+                                <div class="mb-4">
+                                    <img src="img/car_insurance/7.png" style="height: 715px" alt="Car insurance savings" class="img-fluid rounded">
                                 </div>
                                 <p>Let's be surgical about this.</p>
                                 <p>Your current annual premium: R14,964</p>

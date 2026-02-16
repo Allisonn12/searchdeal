@@ -17,7 +17,7 @@
 <!-- Page Header Start -->
 <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s" style="background: url(img/images/6.png) center center no-repeat; background-size: cover;">
   <div class="overlay-color">
-    <div class="container py-5">
+    <div class="container py-5" style="z-index: 1000; position: relative;">
       <h1 class="display-4 animated text-white slideInDown mb-4">Car Tracker</h1>
       <nav aria-label="breadcrumb animated slideInDown">
         <ol class="breadcrumb mb-0 text-white">
@@ -39,9 +39,9 @@
           <!-- BEGIN: Updated Elite 5 Tracker Providers Copy (Jan 2026) -->
           <div class="col-lg-12 wow fadeIn" data-wow-delay="0.3s">
             <!-- Section: Headline and Introduction -->
-            <div class="row">
+            <div class="row text-center">
               <h1 class="display-6 mb-3">The 5 Tracker Companies Every Security-Conscious South African Driver Trusts (But Can't Easily Compare Without Getting Buried in Sales Calls)</h1>
-              <div class="subtitle">
+              <div class="subtitle ">
                 <p class="mb-4"><em>Here's what nobody tells you about choosing a car tracker in South Africa:</em></p>
               </div>
             </div>
@@ -67,9 +67,15 @@
                 <p>The difference between "gone forever" and "recovered in hours" isn't luck.</p>
                 <p>It's three things:</p>
                 <ul>
-                  <li>• A tracker installed correctly the first time (not "we'll come back next week")</li>
-                  <li>• A 24/7 monitoring center that responds in minutes, not business hours</li>
-                  <li>• A recovery team with actual SAPS relationships and armed response integration</li>
+                  <li>
+                    <p>A tracker installed correctly the first time (not "we'll come back next week")</p>
+                  </li>
+                  <li>
+                    <p>A 24/7 monitoring center that responds in minutes, not business hours</p>
+                  </li>
+                  <li>
+                    <p>A recovery team with actual SAPS relationships and armed response integration</p>
+                  </li>
                 </ul>
 
                 <p>But here's the problem:</p>
@@ -129,13 +135,13 @@
                 <p>If they don't pass all 7, they don't get access to you.</p>
                 <p>Only 5 companies currently qualify:</p>
                 <ul>
-                  <li>• 10+ years in business (not a startup that disappears after 18 months)</li>
-                  <li>• Top-tier market position in installation volume and active monitoring</li>
-                  <li>• Verified SAPS partnerships (not "we'll call the police for you")</li>
-                  <li>• 24/7 monitoring centers (tested, not promised)</li>
-                  <li>• Proven recovery infrastructure with armed response integration</li>
-                  <li>• No reseller middlemen (installers only, no brokers)</li>
-                  <li>• Transparent contract terms (no hidden 36-month lock-ins)</li>
+                  <li> <p>10+ years in business (not a startup that disappears after 18 months)</p></li>
+                  <li> <p>Top-tier market position in installation volume and active monitoring</p></li>
+                  <li> <p>Verified SAPS partnerships (not "we'll call the police for you")</p></li>
+                  <li> <p>24/7 monitoring centers (tested, not promised)</p></li>
+                  <li> <p>Proven recovery infrastructure with armed response integration</p></li>
+                  <li> <p>No reseller middlemen (installers only, no brokers)</p></li>
+                  <li> <p>Transparent contract terms (no hidden 36-month lock-ins)</p></li>
                 </ul>
                 <p>If a company doesn't meet all 7 criteria, they're not in the system. Period.</p>
               </div>
@@ -149,9 +155,9 @@
                 <p>No. More choice is how the industry keeps you confused.</p>
                 <p>When you're comparing 15 tracker providers, you're not comparing quality. You're drowning in noise:</p>
                 <ul>
-                  <li>R1,850 vs R2,400 vs R3,100 vs R1,299 vs R2,750 (why the gaps?)</li>
-                  <li>"Basic GPS" vs "Advanced Geofencing" vs "AI-Powered Tracking" vs "Military-Grade Security" (marketing or substance?)</li>
-                  <li>12-month contract vs 24-month vs month-to-month vs 36-month with "discounts" (which is the trap?)</li>
+                  <li><p>R1,850 vs R2,400 vs R3,100 vs R1,299 vs R2,750 (why the gaps?)</p></li>
+                  <li><p>"Basic GPS" vs "Advanced Geofencing" vs "AI-Powered Tracking" vs "Military-Grade Security" (marketing or substance?)</p></li>
+                  <li><p>12-month contract vs 24-month vs month-to-month vs 36-month with "discounts" (which is the trap?)</p></li>
                 </ul>
                 <p>Decision paralysis. Overwhelm. Delay.</p>
                 <p>The Provider Intelligence Engine eliminates the noise.</p>
@@ -173,39 +179,45 @@
                     <p><b>Step 1:</b> You fill out the secure form below</p>
                     <p>Basic details: vehicle make, model, location, contact preference. Takes 60 seconds.</p>
                   </li>
+                  <br>
                   <li>
                     <p><b>Step 2:</b> Your information is sent to all 5 elite providers simultaneously</p>
                     <p>Not to an algorithm. Not to a "matching system." Directly to the top 5 companies that passed The Provider Intelligence Engine™ evaluation.</p>
                     <p>Why all 5? Because we can't predict which one will have:</p>
                     <ul>
-                      <li>The best price for your specific vehicle type</li>
-                      <li>The fastest installation availability in your area</li>
-                      <li>The feature set that matches your priorities</li>
-                      <li>The strongest recovery network in your specific suburb</li>
+                      <li><p>The best price for your specific vehicle type</p></li>
+                      <li><p>The fastest installation availability in your area</p></li>
+                      <li><p>The feature set that matches your priorities</p></li>
+                      <li><p>The strongest recovery network in your specific suburb</p></li>
                     </ul>
+                    <br>
                     <p>You decide who's the best fit. Not us. Not an algorithm.</p>
                   </li>
+                  <br>
                   <li>
                     <p><b>Step 3:</b> Between 3-5 providers contact you within minutes</p>
                     <p>Depending on your vehicle type and location, you'll be contacted by 3-5 of the elite providers.</p>
                     <p>Why the variance? Some providers specialize in luxury vehicles. Others focus on high-theft areas. Some have stronger networks in Cape Town vs Johannesburg.</p>
                     <p>The Provider Intelligence Engine™ ensures every provider who contacts you:</p>
                     <ul>
-                      <li>Services your area with verified infrastructure</li>
-                      <li>Has experience with your vehicle type</li>
-                      <li>Can deliver installation within your region's typical timeframe</li>
+                      <li><p>Services your area with verified infrastructure</p></li>
+                      <li><p>Has experience with your vehicle type</p></li>
+                      <li><p>Can deliver installation within your region's typical timeframe</p></li>
                     </ul>
+                    <br>
                     <p>This isn't spam. This is strategic comparison.</p>
                     <p>Expect calls (or WhatsApp, if you selected that preference) within 5-15 minutes of submission.</p>
                     <p>Each provider will:</p>
                     <ul>
-                      <li>Confirm your vehicle details</li>
-                      <li>Provide a personalized quote (not generic pricing)</li>
-                      <li>Offer installation timelines specific to your location</li>
-                      <li>Answer your questions about their system</li>
+                      <li><p>Confirm your vehicle details</p></li>
+                      <li><p>Provide a personalized quote (not generic pricing)</p></li>
+                      <li><p>Offer installation timelines specific to your location</p></li>
+                      <li><p>Answer your questions about their system</p></li>
                     </ul>
+                    <br>
                     <p>You're not being "sold to" by 12 random resellers. You're consulting with South Africa's most established tracker leaders.</p>
                   </li>
+                  <br>
                   <li>
                     <p><b>Step 4:</b> You compare, ask the right questions, and choose</p>
                     <p>We'll give you a Provider Evaluation Framework below—5 strategic questions to ask each provider so you can compare intelligently.</p>
@@ -263,11 +275,11 @@
                 <p>When you get quotes from 3-5 elite providers, you're not just comparing price.</p>
                 <p>You're comparing:</p>
                 <ul>
-                  <li>Installation speed: Can they install this week, or is it a 3-week wait?</li>
-                  <li>Feature sets: Does Provider A's "premium" package match what Provider B includes as standard?</li>
-                  <li>Contract flexibility: Who has the shortest lock-in? Who has the fairest cancellation terms?</li>
-                  <li>Coverage strength: Whose recovery network is strongest in your specific area?</li>
-                  <li>Customer support: Who answers fastest when you call at 2 AM with a suspected theft?</li>
+                  <li><p>Installation speed: Can they install this week, or is it a 3-week wait?</p></li>
+                  <li><p>Feature sets: Does Provider A's "premium" package match what Provider B includes as standard?</p></li>
+                  <li><p>Contract flexibility: Who has the shortest lock-in? Who has the fairest cancellation terms?</p></li>
+                  <li><p>Coverage strength: Whose recovery network is strongest in your specific area?</p></li>
+                  <li><p>Customer support: Who answers fastest when you call at 2 AM with a suspected theft?</p></li>
                 </ul>
                 <p>This is strategic comparison. Not "who has the lowest number on the quote."</p>
                 <p>And you can't do it effectively with 15 random options. You can only do it with the proven Elite 5.</p>
@@ -283,9 +295,12 @@
                 </div>
                 <p>These are real situations from South African drivers who had trackers—but didn't have the right ones.</p>
                 <ul>
-                  <li><b>Pretoria East, 2023.</b> A single mother clicked a Facebook ad: "R799 tracker installation, no monthly fees." She filled out the form. Got a call. Booked installation. The installer never showed. Rescheduled. Didn't show again. By the third missed appointment, his number was disconnected. She gave up. Drove unprotected for 9 months. Her Polo was taken outside Spar. Never recovered. The "R799 installer" was a reseller. No infrastructure. No monitoring center. Just a guy with a website and a dream.</li>
-                  <li><b>Durban, 2024.</b> A small business owner chose the cheapest quote from a comparison site: R1,200 installed, R149/month monitoring. Three months later, his bakkie was hijacked in Pinetown. He called the monitoring center. Voicemail. He called the installer. Number disconnected. He called the "24/7 emergency line" listed on his contract. Rang to a cell phone. Voicemail. He never heard from them again. SAPS found the vehicle 6 days later, stripped. The "monitoring center" was a virtual assistant taking messages during business hours. The "installer" was a contractor who moved to Mozambique. The "company" was dissolved 2 months after his installation.</li>
-                  <li><b>Sandton, 2024.</b> A Joburg father paid R3,800 for a "premium tracker" with "guaranteed 5-minute armed response." When his Q7 was taken at gunpoint, the monitoring center called him—15 minutes later—to confirm the theft. By the time armed response arrived, the vehicle was already in a container in Germiston. He checked his contract. "Guaranteed response" was marketing copy, not a contractual obligation. The system worked. The promises didn't.</li>
+                  <li>
+                    <p><b>Pretoria East, 2023.</b> A single mother clicked a Facebook ad: "R799 tracker installation, no monthly fees." She filled out the form. Got a call. Booked installation. The installer never showed. Rescheduled. Didn't show again. By the third missed appointment, his number was disconnected. She gave up. Drove unprotected for 9 months. Her Polo was taken outside Spar. Never recovered. The "R799 installer" was a reseller. No infrastructure. No monitoring center. Just a guy with a website and a dream.</p></li>
+                  <li>
+                    <p><b>Durban, 2024.</b> A small business owner chose the cheapest quote from a comparison site: R1,200 installed, R149/month monitoring. Three months later, his bakkie was hijacked in Pinetown. He called the monitoring center. Voicemail. He called the installer. Number disconnected. He called the "24/7 emergency line" listed on his contract. Rang to a cell phone. Voicemail. He never heard from them again. SAPS found the vehicle 6 days later, stripped. The "monitoring center" was a virtual assistant taking messages during business hours. The "installer" was a contractor who moved to Mozambique. The "company" was dissolved 2 months after his installation.</p></li>
+                  <li>
+                    <p><b>Sandton, 2024.</b> A Joburg father paid R3,800 for a "premium tracker" with "guaranteed 5-minute armed response." When his Q7 was taken at gunpoint, the monitoring center called him—15 minutes later—to confirm the theft. By the time armed response arrived, the vehicle was already in a container in Germiston. He checked his contract. "Guaranteed response" was marketing copy, not a contractual obligation. The system worked. The promises didn't.</p></li>
                 </ul>
                 <p>These aren't edge cases. This is what happens when you choose based on price, pressure, or whoever called first.</p>
                 <p>The Provider Intelligence Engine™ exists to eliminate these outcomes.</p>
@@ -300,13 +315,13 @@
                 <p>You've heard the name. Here's what it actually does.</p>
                 <p>The Provider Intelligence Engine is a systematic evaluation framework that measures every tracker company in South Africa against 7 performance benchmarks:</p>
                 <ul>
-                  <li><b>Operational Longevity</b>: Minimum 10 years in continuous business operation. No startups. No companies that launched last year with venture capital and aggressive marketing.</li>
-                  <li><b>Market Position</b>: Top-tier installation volume and active monitoring subscriptions. We verify this through industry reports and direct confirmation with providers.</li>
-                  <li><b>Recovery Infrastructure</b>: Verified partnerships with SAPS, armed response companies, and provincial recovery units. Not "we'll call the police for you"—actual documented liaison relationships.</li>
-                  <li><b>Monitoring Capability</b>: 24/7 live monitoring centers (not automated after-hours systems). We test this by triggering alerts at random times, including 2 AM on weekends.</li>
-                  <li><b>Installation Standards</b>: In-house installation teams or verified contractor networks. No reseller middlemen. No "independent installers" who disappear after the job.</li>
-                  <li><b>Contract Transparency</b>: Clear terms with no hidden lock-ins, reasonable cancellation policies, and fair treatment if vehicle is stolen/totaled. We read every contract.</li>
-                  <li><b>Performance Track Record</b>: Measurable success rates in installation completion, system activation, and recovery coordination. We track complaints and resolution patterns.</li>
+                  <li><p><b>Operational Longevity</b>: Minimum 10 years in continuous business operation. No startups. No companies that launched last year with venture capital and aggressive marketing.</p></li>
+                  <li><p><b>Market Position</b>: Top-tier installation volume and active monitoring subscriptions. We verify this through industry reports and direct confirmation with providers.</p></li>
+                  <li><p><b>Recovery Infrastructure</b>: Verified partnerships with SAPS, armed response companies, and provincial recovery units. Not "we'll call the police for you"—actual documented liaison relationships.</p></li>
+                  <li><p><b>Monitoring Capability</b>: 24/7 live monitoring centers (not automated after-hours systems). We test this by triggering alerts at random times, including 2 AM on weekends.</p></li>
+                  <li><p><b>Installation Standards</b>: In-house installation teams or verified contractor networks. No reseller middlemen. No "independent installers" who disappear after the job.</p></li>
+                  <li><p><b>Contract Transparency</b>: Clear terms with no hidden lock-ins, reasonable cancellation policies, and fair treatment if vehicle is stolen/totaled. We read every contract.</p></li>
+                  <li><p><b>Performance Track Record</b>: Measurable success rates in installation completion, system activation, and recovery coordination. We track complaints and resolution patterns.</p></li>
                 </ul>
                 <p>If a company doesn't meet all 7 criteria, they're not in the system.</p>
                 <p>Currently, only 5 companies pass. That's not by design, it's reality.</p>
@@ -323,9 +338,9 @@
                 <p>But depending on your vehicle type and location, you'll be contacted by 3-5 of them.</p>
                 <p>Here's why:</p>
                 <ul>
-                  <li><b>Geographic specialization:</b> Some providers have stronger recovery networks in Gauteng vs Western Cape. If you're in Cape Town, you won't hear from a provider whose nearest armed response partner is 90 minutes away.</li>
-                  <li><b>Vehicle expertise:</b> Luxury vehicles (Audi, BMW, Mercedes) require specialized installation and monitoring. Not all providers specialize in high-value targets. If you drive a Polo, you won't hear from the provider who focuses exclusively on R800K+ vehicles.</li>
-                  <li><b>Current capacity:</b> If a provider is backlogged with 3-week installation waits in your area, they may temporarily opt out of new leads to maintain service quality.</li>
+                  <li><p><b>Geographic specialization:</b> Some providers have stronger recovery networks in Gauteng vs Western Cape. If you're in Cape Town, you won't hear from a provider whose nearest armed response partner is 90 minutes away.</p></li>
+                  <li><p><b>Vehicle expertise:</b> Luxury vehicles (Audi, BMW, Mercedes) require specialized installation and monitoring. Not all providers specialize in high-value targets. If you drive a Polo, you won't hear from the provider who focuses exclusively on R800K+ vehicles.</p></li>
+                  <li><p><b>Current capacity:</b> If a provider is backlogged with 3-week installation waits in your area, they may temporarily opt out of new leads to maintain service quality.</p></li>
                 </ul>
                 <p>The result: You only hear from providers who can actually serve you well.</p>
                 <p>This isn't arbitrary. It's strategic filtering that ensures every call you receive is from a provider positioned to deliver.</p>
@@ -341,10 +356,10 @@
                 <p>We're a referral platform working exclusively with South Africa's 5 most established tracker providers.</p>
                 <p>That means:</p>
                 <ul>
-                  <li>• No resellers in the mix: Only companies with their own installation teams and monitoring centers</li>
-                  <li>• No startups that disappear: Only providers with 10+ years of proven performance</li>
-                  <li>• No random spam: You get 3-5 strategic consultations, not 12 pressure calls from brokers</li>
-                  <li>• No decision paralysis: You're comparing the best, not sorting through junk to find quality</li>
+                  <li><p>No resellers in the mix: Only companies with their own installation teams and monitoring centers</p></li>
+                  <li><p>No startups that disappear: Only providers with 10+ years of proven performance</p></li>
+                  <li><p>No random spam: You get 3-5 strategic consultations, not 12 pressure calls from brokers</p></li>
+                  <li><p>No decision paralysis: You're comparing the best, not sorting through junk to find quality</p></li>
                 </ul>
                 <p>We make money when you choose one of the Elite 5 and complete installation.</p>
                 <p>That means our incentive is accuracy, not volume. A bad experience with one of these providers hurts our reputation and costs us future referrals.</p>
@@ -363,19 +378,19 @@
                 <p>Let's be completely transparent about what this service is, and isn't.</p>
                 <p><b>What You Get:</b></p>
                 <ul>
-                  <li>• Direct access to South Africa's Elite 5 tracker providers: the companies with the longest track records and most robust infrastructure</li>
-                  <li>• 3-5 personalized quotes: tailored to your vehicle type, location, and priorities (not generic pricing)</li>
-                  <li>• Strategic comparison guidance: the 5 questions to ask that reveal real quality vs marketing promises</li>
-                  <li>• No spam from random resellers: only vetted providers contact you, not 12 brokers</li>
-                  <li>• A completely free service: you pay nothing to Find My Offer: we earn a referral fee from whichever provider you choose</li>
-                  <li>• Fast response, expect contact from 3-5 providers within minutes of form submission</li>
+                  <li><p>Direct access to South Africa's Elite 5 tracker providers: the companies with the longest track records and most robust infrastructure</p></li>
+                  <li><p>3-5 personalized quotes: tailored to your vehicle type, location, and priorities (not generic pricing)</p></li>
+                  <li><p>Strategic comparison guidance: the 5 questions to ask that reveal real quality vs marketing promises</p></li>
+                  <li><p>No spam from random resellers: only vetted providers contact you, not 12 brokers</p></li>
+                  <li><p>A completely free service: you pay nothing to Find My Offer: we earn a referral fee from whichever provider you choose</p></li>
+                  <li><p>Fast response, expect contact from 3-5 providers within minutes of form submission</p></li>
                 </ul>
                 <p><b>What You Don't Get:</b></p>
                 <ul>
-                  <li>• A guarantee that your vehicle will be recovered: we connect you to the best providers, but recovery depends on circumstances no one can control</li>
-                  <li>• Installation done by us: we're the connection platform, not the installer</li>
-                  <li>• Price shopping across 44 companies: you get the Elite 5, not a catalog</li>
-                  <li>• A "perfect match" algorithm: all 5 elite providers receive your details; 3-5 will contact you based on relevance</li>
+                  <li><p>A guarantee that your vehicle will be recovered: we connect you to the best providers, but recovery depends on circumstances no one can control</p></li>
+                  <li><p>Installation done by us: we're the connection platform, not the installer</p></li>
+                  <li><p>Price shopping across 44 companies: you get the Elite 5, not a catalog</p></li>
+                  <li><p>A "perfect match" algorithm: all 5 elite providers receive your details; 3-5 will contact you based on relevance</p></li>
                 </ul>
                 <p>We're not selling you a tracker. We're eliminating the chaos that stops you from choosing the right provider.</p>
               </div>
@@ -391,9 +406,9 @@
                 <p>Driving unprotected isn't a neutral decision. It's a calculated risk.</p>
                 <p>You're betting:</p>
                 <ul>
-                  <li>That hijackings happen to other people, not you</li>
-                  <li>That your suburb is "safe enough" (until it isn't)</li>
-                  <li>That you'll "handle it next month" before the statistics catch up</li>
+                  <li><p>That hijackings happen to other people, not you</p></li>
+                  <li><p>That your suburb is "safe enough" (until it isn't)</p></li>
+                  <li><p>That you'll "handle it next month" before the statistics catch up</p></li>
                 </ul>
                 <p>And maybe you're right. Maybe your car never gets taken. Maybe you beat the odds.</p>
                 <p>But here's what nobody says out loud:</p>
@@ -521,9 +536,9 @@
                 <p><b>"What happens to my data after I submit?"</b></p>
                 <p>Your details are sent directly to the Elite 5 tracker providers. They use it to:</p>
                 <ul>
-                  <li>Confirm your vehicle type and location</li>
-                  <li>Generate a personalized quote</li>
-                  <li>Contact you to schedule installation if you choose them</li>
+                  <li><p>Confirm your vehicle type and location</p></li>
+                  <li><p>Generate a personalized quote</p></li>
+                  <li><p>Contact you to schedule installation if you choose them</p></li>
                 </ul>
                 <p>We do not sell your data to anyone else. No email lists. No third-party marketers. No "partners" you didn't agree to.</p>
                 <p>3-5 of the Elite 5 will contact you (based on vehicle type and location relevance). The others won't reach out because they're not positioned to serve you optimally.</p>
@@ -552,10 +567,10 @@
                 <p>While we can't control post-installation service (that's between you and the provider), we do track performance.</p>
                 <p>If you experience:</p>
                 <ul>
-                  <li>Missed appointments without notice</li>
-                  <li>Pressure tactics or misrepresentation</li>
-                  <li>Poor post-installation support</li>
-                  <li>System failures that aren't resolved promptly</li>
+                  <li><p>Missed appointments without notice</p></li>
+                  <li><p>Pressure tactics or misrepresentation</p></li>
+                  <li><p>Poor post-installation support</p></li>
+                  <li><p>System failures that aren't resolved promptly</p></li>
                 </ul>
                 <p>Report it to us. We use that feedback to evaluate whether we continue working with that provider.</p>
                 <p>We're not a regulatory body, but we are selective about who we refer to. Consistently poor performance gets a provider removed from the Elite 5.</p>

@@ -107,7 +107,7 @@
         style="background: url(img/images/16.png) center center no-repeat; background-size: cover;"
 >
     <div class="overlay-color">
-        <div class="container py-5">
+        <div class="container py-5" style="z-index: 1000; position: relative;">
             <h1 class="display-4 animated text-white slideInDown mb-4">Car Insurance</h1>
             <nav aria-label="breadcrumb animated slideInDown">
                 <ol class="breadcrumb mb-0 text-white">
