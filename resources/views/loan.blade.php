@@ -19,7 +19,7 @@
   style="background: url(img/images/money-growth.jpg) center center no-repeat; background-size: cover;"
 >
   <div class="overlay-color">
-    <div class="container py-5">
+    <div class="container py-5" style="z-index: 1000; position: relative;">
       <h1 class="display-4 animated slideInDown mb-4 text-white">Personal Loans</h1>
       <nav aria-label="breadcrumb animated slideInDown">
         <ol class="breadcrumb mb-0">
@@ -33,34 +33,33 @@
 <!-- Page Header End -->
 
 <!-- Personal Loans Content Start -->
-<div class="container-fluid py-5 wow fadeIn" data-wow-delay="0.1s">
+<div class="py-5 wow fadeIn" data-wow-delay="0.1s">
   <div class="container">
-    <div class="row g-5">
+    {{--<div class="row g-5">--}}
+    <div class="mx-auto" style="max-width: 820px;">
       <div class="main">
         <div class="main-content my-5">
           <div class="col-lg-12 wow fadeIn" data-wow-delay="0.3s">
-            <div class="row">
+            <div class="row text-center">
               <h1 class="display-6 mb-4">Personal Loans Comparison Platform</h1>
               <div class="subtitle">
                 <p class="mb-4">
                   <strong>Stop Wasting Time. Find the Right Personal Loan in Minutes.</strong>
                 </p>
-                <p>Connect with multiple registered lenders through one simple application. Compare real offers and choose what works for your situation.</p>
+                <p><i>Connect with multiple registered lenders through one simple application. Compare real offers and choose what works for your situation.</i></p>
               </div>
             </div>
-
+            <div class="break-image mb-4">
+              <img src="img/loans/1.jpeg" alt="Insurance and tracker protection" class="img-fluid rounded">
+            </div>
             <div class="row mt-4">
               <div class="col-12">
                 <div class="hlabi-body">
                   <ul>
-                    • One application connects you to multiple registered lenders
-                      <br>
-                    • Compare offers from banks, neobanks, and licensed credit providers
-                      <br>
-                    • No obligation to accept any offer—you stay in control
-                      <br>
-                    • Free service—we connect you, you decide
-                      <br>
+                    <li><p>One application connects you to multiple registered lenders</p></li>
+                    <li><p>Compare offers from banks, neobanks, and licensed credit providers</p></li>
+                    <li><p>No obligation to accept any offer—you stay in control</p></li>
+                    <li><p>Free service—we connect you, you decide</p></li>
                   </ul>
                 </div>
               </div>
@@ -71,9 +70,9 @@
                 <h3 class="mb-3">Trusted by South Africans</h3>
                 <div class="hlabi-body">
                   <ul>
-                    <li><strong>15+ Registered Lenders</strong></li>
-                    <li><strong>24/7 Application Processing</strong></li>
-                    <li><strong>100% Free to Use</strong></li>
+                    <li><p><strong>15+ Registered Lenders</strong></p></li>
+                    <li><p><strong>24/7 Application Processing</strong></p></li>
+                    <li><p><strong>100% Free to Use</strong></p></li>
                   </ul>
                 </div>
               </div>
@@ -83,6 +82,9 @@
               <div class="col-12">
                 <div class="hlabi-body">
                   <h2 class="mb-3">You Shouldn't Have to Visit 10 Banks to Find One Loan</h2>
+                  <div class="break-image mb-4">
+                    <img src="img/loans/2.jpeg" alt="Insurance and tracker protection" class="img-fluid rounded">
+                  </div>
                   <p>Applying for personal loans the old way wastes your time and hurts your credit score with multiple applications.</p>
 
                   <h4 class="mt-4">Hours Wasted Visiting Branches</h4>
@@ -112,6 +114,10 @@
               <div class="col-12">
                 <div class="hlabi-body">
                   <h2 class="mb-3">How Our Platform Works</h2>
+
+                  <div class="break-image mb-4">
+                    <img src="img/loans/3.jpeg" alt="Insurance and tracker protection" class="img-fluid rounded">
+                  </div>
                   <p>We connect you with multiple registered lenders through one simple process.</p>
 
                   <h4 class="mt-3">Step 1: Complete One Application</h4>
@@ -133,30 +139,34 @@
               <div class="col-12">
                 <div class="hlabi-body">
                   <h2 class="mb-3">Why Thousands Choose Our Platform</h2>
+
+                  <div class="break-image mb-4">
+                    <img src="img/loans/4.jpeg" alt="Insurance and tracker protection" class="img-fluid rounded">
+                  </div>
                   <p>We make the loan comparison process transparent and efficient.</p>
 
-                  <h4 class="mt-3">Save Time and Effort</h4>
+                  <h4 class="mt-5">Save Time and Effort</h4>
                   <p>One application instead of filling out forms at 5-10 different banks. Submit once and let lenders come to you.</p>
 
-                  <h4 class="mt-3">Protect Your Credit Score</h4>
+                  <h4 class="mt-5">Protect Your Credit Score</h4>
                   <p>Our application process minimizes hard credit checks. Lenders can assess your basic profile before running formal credit bureau checks.</p>
 
-                  <h4 class="mt-3">Access More Options</h4>
+                  <h4 class="mt-5">Access More Options</h4>
                   <p>Connect with major banks like Capitec, FNB, and Standard Bank, plus neobanks and digital lenders you might not know about.</p>
 
-                  <h4 class="mt-3">Transparent Comparisons</h4>
+                  <h4 class="mt-5">Transparent Comparisons</h4>
                   <p>When you receive offers, you'll see the interest rate, fees, and total cost of credit for each, making comparison straightforward.</p>
 
-                  <h4 class="mt-3">No Hidden Obligations</h4>
+                  <h4 class="mt-5">No Hidden Obligations</h4>
                   <p>We don't force you to accept any offer. If nothing works for you, walk away. No strings attached.</p>
 
-                  <h4 class="mt-3">Completely Free Service</h4>
+                  <h4 class="mt-5">Completely Free Service</h4>
                   <p>You never pay us. Lenders compensate us for connecting them with potential borrowers, which means our service costs you nothing.</p>
 
-                  <h4 class="mt-3">NCR-Registered Lenders Only</h4>
+                  <h4 class="mt-5">NCR-Registered Lenders Only</h4>
                   <p>All lenders in our network are registered with the National Credit Regulator and comply with the National Credit Act.</p>
 
-                  <h4 class="mt-3">Fast Processing</h4>
+                  <h4 class="mt-5">Fast Processing</h4>
                   <p>Applications are processed 24/7. Many lenders can give preliminary feedback within hours, not days.</p>
                 </div>
               </div>
@@ -167,34 +177,37 @@
                 <div class="hlabi-body">
                   <h2 class="mb-3">Traditional Applications vs. Our Platform</h2>
 
+                  <div class="break-image mb-4">
+                    <img src="img/loans/5.jpeg" alt="Insurance and tracker protection" class="img-fluid rounded">
+                  </div>
                   <h4 class="mt-3">Number of Applications Needed</h4>
                   <ul>
-                    <li>Traditional Way: 5-10 separate applications</li>
-                    <li><strong>Our Platform: Just 1 application</strong></li>
+                    <li><p>Traditional Way: 5-10 separate applications</p></li>
+                    <li><p><strong>Our Platform: Just 1 application</strong></p></li>
                   </ul>
 
                   <h4 class="mt-3">Time to Apply Everywhere</h4>
                   <ul>
-                    <li>Traditional Way: Days of visiting branches</li>
-                    <li><strong>Our Platform: Minutes to complete</strong></li>
+                    <li><p>Traditional Way: Days of visiting branches</p></li>
+                    <li><p><strong>Our Platform: Minutes to complete</strong></p></li>
                   </ul>
 
                   <h4 class="mt-3">Credit Score Impact</h4>
                   <ul>
-                    <li>Traditional Way: Multiple hard credit checks</li>
-                    <li><strong>Our Platform: Minimized credit checks</strong></li>
+                    <li><p>Traditional Way: Multiple hard credit checks</p></li>
+                    <li><p><strong>Our Platform: Minimized credit checks</strong></p></li>
                   </ul>
 
                   <h4 class="mt-3">Access to Neobanks & Digital Lenders</h4>
                   <ul>
-                    <li>Traditional Way: Limited to banks you know</li>
-                    <li><strong>Our Platform: Full network access</strong></li>
+                    <li><p>Traditional Way: Limited to banks you know</p></li>
+                    <li><p><strong>Our Platform: Full network access</strong></p></li>
                   </ul>
 
                   <h4 class="mt-3">Easy Comparison</h4>
                   <ul>
-                    <li>Traditional Way: Difficult to compare different offers</li>
-                    <li><strong>Our Platform: Side-by-side comparison</strong></li>
+                    <li><p>Traditional Way: Difficult to compare different offers</p></li>
+                    <li><p><strong>Our Platform: Side-by-side comparison</strong></p></li>
                   </ul>
                 </div>
               </div>
@@ -244,10 +257,6 @@
                   <h2 class="mb-3">Ready to Compare Your Loan Options?</h2>
                   <p>One application. Multiple lenders. You decide what works.</p>
                   <p><strong>Start Your Application Now</strong><br>Takes 5 minutes. No obligation. Completely free.</p>
-
-                  <div class="mt-3">
-                    <a href="#form" class="btn btn-primary py-3 px-5" style="width:100%">Start Your Application Now</a>
-                  </div>
                 </div>
               </div>
             </div>

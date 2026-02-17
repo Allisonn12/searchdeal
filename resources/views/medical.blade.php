@@ -20,7 +20,7 @@
         style="background: url(img/home/medicalaid/1.jpg) center center no-repeat; background-size: cover;"
 >
     <div class="overlay-color">
-        <div class="container py-5">
+        <div class="container py-5" style="z-index: 1000; position: relative;">
             <h1 class="display-4 animated slideInDown mb-4 text-white">Medical Insurance</h1>
             <nav aria-label="breadcrumb animated slideInDown">
                 <ol class="breadcrumb mb-0">

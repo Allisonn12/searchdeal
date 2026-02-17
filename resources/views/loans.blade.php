@@ -106,7 +106,7 @@
         style="background: url(img/images/money-growth.jpg) center center no-repeat; background-size: cover;"
 >
   <div class="overlay-color">
-    <div class="container py-5">
+    <div class="container py-5" style="z-index: 1000; position: relative;">
       <h1 class="display-4 animated slideInDown mb-4 text-white">Personal Loans</h1>
       <nav aria-label="breadcrumb animated slideInDown">
         <ol class="breadcrumb mb-0">
@@ -123,9 +123,10 @@
 
 
 <!-- Personal Loans Copy Start -->
-<div class="container-fluid py-5 wow fadeIn" data-wow-delay="0.1s">
+<div class="py-5 wow fadeIn" data-wow-delay="0.1s">
   <div class="container">
-    <div class="row g-5">
+    {{--<div class="row g-5">--}}
+    <div class="mx-auto" style="max-width: 820px;">
 
       <div class="main">
         <div class="main-content my-5">
