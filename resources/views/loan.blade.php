@@ -50,7 +50,7 @@
               </div>
             </div>
             <div class="break-image mb-4">
-              <img src="img/loans/1.jpeg" alt="Insurance and tracker protection" class="img-fluid rounded">
+              <img src="img/loans/2.jpeg" alt="Insurance and tracker protection" class="img-fluid rounded">
             </div>
             <div class="row mt-4">
               <div class="col-12">
@@ -83,7 +83,7 @@
                 <div class="hlabi-body">
                   <h2 class="mb-3">You Shouldn't Have to Visit 10 Banks to Find One Loan</h2>
                   <div class="break-image mb-4">
-                    <img src="img/loans/2.jpeg" alt="Insurance and tracker protection" class="img-fluid rounded">
+                    <img src="img/loans/5.jpeg" alt="Insurance and tracker protection" class="img-fluid rounded">
                   </div>
                   <p>Applying for personal loans the old way wastes your time and hurts your credit score with multiple applications.</p>
 
@@ -116,7 +116,7 @@
                   <h2 class="mb-3">How Our Platform Works</h2>
 
                   <div class="break-image mb-4">
-                    <img src="img/loans/3.jpeg" alt="Insurance and tracker protection" class="img-fluid rounded">
+                    <img src="img/loans/1.jpeg" alt="Insurance and tracker protection" class="img-fluid rounded">
                   </div>
                   <p>We connect you with multiple registered lenders through one simple process.</p>
 
@@ -178,7 +178,7 @@
                   <h2 class="mb-3">Traditional Applications vs. Our Platform</h2>
 
                   <div class="break-image mb-4">
-                    <img src="img/loans/5.jpeg" alt="Insurance and tracker protection" class="img-fluid rounded">
+                    <img src="img/loans/3.jpeg" alt="Insurance and tracker protection" class="img-fluid rounded">
                   </div>
                   <h4 class="mt-3">Number of Applications Needed</h4>
                   <ul>
