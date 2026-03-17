@@ -130,10 +130,12 @@
                     Providers fight for YOUR business
                 </div>
             </div>
-            <button type="button" class="w-full sm:w-auto px-8 md:px-10 py-4 md:py-5 bg-primary text-white rounded-full font-heading text-[15px] md:text-[16px] font-bold hover:bg-accent transition-all group flex items-center justify-center gap-3 md:gap-4 mx-auto black-button">
-                Get Your Competitive Quotes Now
+            <a
+        href="#tracker-form"
+        class="w-full sm:w-auto px-8 md:px-10 py-4 md:py-5 bg-primary text-white rounded-full font-heading text-[15px] md:text-[16px] font-bold hover:bg-accent transition-all group inline-flex items-center justify-center gap-3 md:gap-4 mx-auto black-button"
+      >   Get Your Competitive Quotes Now
                 <i data-lucide="arrow-right" class="w-[18px] md:w-[20px] h-[18px] md:h-[20px] group-hover:translate-x-1 transition-transform"></i>
-            </button>
+            </a>
         </div>
     </section>
 
@@ -399,7 +401,7 @@
             </div>
 
             <!-- Form Section -->
-            <div class="bg-white border-2 border-primary p-6 md:p-12 rounded-[3px] mb-16 text-center shadow-2xl" style="border: 2px solid #0F172A">
+            <div id="tracker-form" class="bg-white border-2 border-primary p-6 md:p-12 rounded-[3px] mb-16 text-center shadow-2xl" style="border: 2px solid #0F172A">
                 <h3 class="font-heading text-[20px] md:text-[24px] font-medium text-primary mb-3 md:mb-4">Get Your Competitive Quotes Now</h3>
                 <p class="font-body text-[13px] md:text-[14px] text-muted mb-6 md:mb-8">Free to use. 127 seconds average completion time. Zero obligation.</p>
                 <div class="space-y-3 md:space-y-4 max-w-md mx-auto">
