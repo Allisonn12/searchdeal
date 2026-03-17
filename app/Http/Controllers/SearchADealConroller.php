@@ -46,4 +46,9 @@ class SearchADealConroller extends Controller
     public function policy(){
         return view('private-policy');
     }
+
+    // Serves the combined How It Works editorial page
+    public function howItWorks(){
+        return view('how-it-works');
+    }
 }

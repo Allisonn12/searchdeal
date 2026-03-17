@@ -99,29 +99,282 @@
     </div>
 @endif
 
-
-<!-- Page Header Start -->
-<div
-        class="container-fluid page-header py-5 mb-5 wow fadeIn"
-        data-wow-delay="0.1s"
-        style="background: url(img/images/16.png) center center no-repeat; background-size: cover;"
->
-    <div class="overlay-color">
-        <div class="container py-5" style="z-index: 1000; position: relative;">
-            <h1 class="display-4 animated text-white slideInDown mb-4">Car Insurance</h1>
-            <nav aria-label="breadcrumb animated slideInDown">
-                <ol class="breadcrumb mb-0 text-white">
-                    <li class="breadcrumb-item"><a href="{{ route('index') }}">Home</a></li>
-                    <li class="breadcrumb-item active text-white" aria-current="page">
-                        Car Insurance
-                    </li>
-                </ol>
-            </nav>
+<div className="pt-[58px] bg-white">
+    {/* Hero Section */}
+    <section className="py-20 px-[14.5px] md:px-[58px] bg-background">
+        <div className="max-w-[1000px] mx-auto text-center">
+            <h1 className="font-heading text-[clamp(40px,5vw,72px)] font-medium leading-[0.9] tracking-[-0.03em] text-primary mb-8">
+                R6,847 Per Year. Evaporated.<br />
+                <span className="text-accent">Because Nobody Showed You This Before.</span>
+            </h1>
+            <p className="font-heading text-[clamp(18px,2vw,24px)] text-primary font-medium mb-12 leading-tight max-w-3xl mx-auto">
+                While South African Drivers Renewed at 11.2% Higher Premiums Last Month, 4,219 Others Discovered Cover That Costs 38–47% Less, In 127 Seconds
+            </p>
+            <div className="flex flex-col md:flex-row items-center justify-center gap-6 mb-12">
+                <div className="flex items-center gap-2 font-body text-[14px] text-muted">
+                    <CheckCircle2 size={18} className="text-accent" />
+                    Completely free
+                </div>
+                <div className="flex items-center gap-2 font-body text-[14px] text-muted">
+                    <Clock size={18} className="text-accent" />
+                    Works in under 3 minutes
+                </div>
+                <div className="flex items-center gap-2 font-body text-[14px] text-muted">
+                    <Zap size={18} className="text-accent" />
+                    Providers fight for YOUR business
+                </div>
+            </div>
+            <button className="px-10 py-5 bg-primary text-white rounded-full font-heading text-[16px] font-bold hover:bg-accent transition-all group flex items-center gap-4 mx-auto">
+                Get Your Competitive Quotes Now
+                <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
+            </button>
         </div>
-    </div>
-</div>
-<!-- Page Header End -->
+    </section>
 
+    {/* Editorial Content */}
+    <section className="py-20 px-[14.5px] md:px-[58px]">
+        <div className="max-w-[800px] mx-auto prose prose-slate prose-lg">
+            <div className="bg-background p-8 rounded-[3px] border-l-4 border-accent mb-12">
+                <p className="font-body text-[18px] text-primary italic leading-relaxed m-0">
+                    "If you just watched the 60-second video, you already know something shifted. You felt it. That uncomfortable recognition that you might be paying for someone else's claims while providers who actually want your profile never get the chance to quote you."
+                </p>
+            </div>
+
+            <h2 className="font-heading text-[32px] font-medium text-primary mb-6 tracking-tight">
+                The R287 Million Leak South African Drivers Don't See
+            </h2>
+            <p className="font-body text-[16px] text-muted leading-relaxed mb-6">
+                Last month alone, 61,842 South African drivers clicked "renew" on their car insurance. Most didn't compare. Most didn't shop. Most assumed "insurance is expensive everywhere."
+            </p>
+            <p className="font-body text-[16px] text-muted leading-relaxed mb-6 font-bold text-primary">
+                Collectively, they overpaid by R287 million.
+            </p>
+            <p className="font-body text-[16px] text-muted leading-relaxed mb-12">
+                Not because they're careless. Not because better options don't exist. Because the system is designed to keep you exactly where you are. Think about your last renewal. Premium went up 9%, 11%, maybe 13%. You thought: "Everything's going up. Load-shedding. Crime. Parts are expensive. What can I do?"
+            </p>
+
+            <div className="bg-primary text-white p-12 rounded-[3px] mb-16">
+                <h3 className="font-heading text-[24px] font-medium mb-6 text-white">
+                    What Actually Happened During Your Last Renewal
+                </h3>
+                <p className="font-body text-[15px] opacity-80 mb-8">
+                    December 2024. Your renewal notice arrives. R1,247/month. Up from R1,118 last year. You barely glance at it before paying. But here's what your insurer didn't tell you:
+                </p>
+                <div className="space-y-4">
+                    <div className="flex items-start gap-4">
+                        <XCircle size={20} className="text-red-400 shrink-0 mt-1" />
+                        <p className="font-body text-[15px] m-0">The driver three streets over who claimed R180,000 after a smash-and-grab</p>
+                    </div>
+                    <div className="flex items-start gap-4">
+                        <XCircle size={20} className="text-red-400 shrink-0 mt-1" />
+                        <p className="font-body text-[15px] m-0">Your neighbor's 19-year-old who wrote off a Golf GTI street racing</p>
+                    </div>
+                    <div className="flex items-start gap-4">
+                        <XCircle size={20} className="text-red-400 shrink-0 mt-1" />
+                        <p className="font-body text-[15px] m-0">The guy in your suburb with three claims in 18 months</p>
+                    </div>
+                </div>
+                <p className="mt-8 font-body text-[15px] italic opacity-90">
+                    You've never claimed. You park in a secure estate. Yet you're paying the same premium architecture as high-risk drivers.
+                </p>
+            </div>
+
+            <h2 className="font-heading text-[32px] font-medium text-primary mb-6 tracking-tight">
+                Why Everything You've Tried Before Failed
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+                <div className="p-6 border border-border rounded-[3px]">
+                    <div className="text-red-500 mb-4 font-bold">❌ Manual Calls</div>
+                    <p className="text-[13px] text-muted m-0">Took 90 minutes. Two never called back. One quoted the same rate.</p>
+                </div>
+                <div className="p-6 border border-border rounded-[3px]">
+                    <div className="text-red-500 mb-4 font-bold">❌ Old Comparison</div>
+                    <p className="text-[13px] text-muted m-0">Entered info 6 times. Got spammed by brokers. Unclear rates.</p>
+                </div>
+                <div className="p-6 border border-border rounded-[3px]">
+                    <div className="text-red-500 mb-4 font-bold">❌ Your Broker</div>
+                    <p className="text-[13px] text-muted m-0">Came back with one alternative from their commission structure.</p>
+                </div>
+            </div>
+
+            <h2 className="font-heading text-[32px] font-medium text-primary mb-6 tracking-tight">
+                The Discovery That Changed How 4,200+ South Africans Buy Car Insurance
+            </h2>
+            <div className="bg-background p-8 rounded-[3px] border border-border mb-12">
+                <p className="font-body text-[16px] text-muted leading-relaxed mb-4">
+                    October 2023. Mid-week. 2:47 PM. An IT consultant from Sandton gets his renewal notice. R1,580/month. Up 13.4% from last year. Same insurer for 11 years. Zero claims. Drives a 2020 Fortuner.
+                </p>
+                <p className="font-body text-[16px] text-muted leading-relaxed mb-4">
+                    He's frustrated. He starts calling around. Three dead-end conversations later, a broker tries pitching him life insurance instead. Then a colleague mentions something interesting.
+                </p>
+                <p className="font-body text-[16px] text-primary font-medium italic mb-6">
+                    "There's a platform. You fill out one form. Your details go to multiple providers at once. They compete. You pick the winner. No spam calls. No pressure. Just quotes."
+                </p>
+                <div className="bg-white p-6 rounded-[3px] border border-accent/20 mb-6">
+                    <div className="grid grid-cols-1 gap-3">
+                        <div className="flex justify-between text-[14px]"><span className="text-muted">Provider A:</span> <span className="font-bold text-primary">R1,140/month — saves R5,280/year</span></div>
+                        <div className="flex justify-between text-[14px]"><span className="text-muted">Provider B:</span> <span className="font-bold text-primary">R968/month — saves R7,344/year</span></div>
+                        <div className="flex justify-between text-[14px]"><span className="text-muted">Provider C:</span> <span className="font-bold text-accent">R924/month — saves R7,872/year</span></div>
+                    </div>
+                </div>
+                <p className="font-body text-[16px] text-muted leading-relaxed">
+                    He switches to Provider C. 18 months later, he's saved R14,616. Enough to fully cover his daughter's first year at Wits. Same driver. Same car. Different system.
+                </p>
+            </div>
+
+            <h2 className="font-heading text-[32px] font-medium text-primary mb-6 tracking-tight">
+                How the Reverse-Auction Match Actually Works
+            </h2>
+            <div className="space-y-12 mb-16">
+                {[
+                { step: "01", title: "You Complete One Form", desc: "Vehicle details, driver profile, current premium. No credit checks. 127 seconds average." },
+                { step: "02", title: "Profile Reaches 12+ Providers", desc: "Legacy insurers, direct providers, and telematics specialists compete for your business automatically." },
+                { step: "03", title: "Receive Competitive Quotes", desc: "WhatsApp quotes and email summaries with full breakdowns. You compare. You choose. You decide." },
+                { step: "04", title: "Consistently Save R400–R850/Month", desc: "Insurers send their sharpest pricing because they know they're in a competitive environment." }
+                ].map((item, idx) => (
+                <div key={idx} className="flex gap-8">
+                    <div className="font-heading text-[40px] font-bold text-accent/20 leading-none">{item.step}</div>
+                    <div>
+                        <h4 className="font-heading text-[20px] font-medium text-primary mb-2">{item.title}</h4>
+                        <p className="font-body text-[15px] text-muted m-0">{item.desc}</p>
+                    </div>
+                </div>
+                ))}
+            </div>
+
+            <div className="bg-accent text-white p-12 rounded-[3px] mb-16 text-center">
+                <h3 className="font-heading text-[28px] font-medium mb-4 text-white">The Uncomfortable Math</h3>
+                <p className="font-body text-[18px] mb-8 opacity-90">
+                    Staying put costs you approximately <span className="font-bold">R35,000</span> over 5 years.
+                </p>
+                <p className="font-body text-[14px] opacity-70">
+                    That's a Mauritius holiday. A down payment on solar panels. Your child's Grade 1 school fees.
+                </p>
+            </div>
+
+            <h2 className="font-heading text-[32px] font-medium text-primary mb-6 tracking-tight">
+                Why This Works in South Africa
+            </h2>
+            <p className="font-body text-[16px] text-muted leading-relaxed mb-8">
+                Most comparison platforms were built for European markets. Copy-paste code. Awkward user experience. Data handling nightmares. Here's why the Reverse-Auction Match is fundamentally different:
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-12">
+                {[
+                { title: "POPIA-compliant", desc: "Data is encrypted end-to-end, never sold, only shared with providers you approve." },
+                { title: "Load-shedding resilient", desc: "Quotes queue during outages and process instantly when power returns." },
+                { title: "Zero broker commissions", desc: "Direct-to-insurer matching means those savings flow to you." },
+                { title: "Built for SA risk profiles", desc: "Understands hijacking hotspots, smash-and-grab zones, and estate security." }
+                ].map((item, i) => (
+                <div key={i} className="flex items-start gap-3 p-4 bg-background rounded-[3px]">
+                    <CheckCircle2 size={18} className="text-accent shrink-0 mt-1" />
+                    <div>
+                        <div className="font-heading text-[14px] font-bold text-primary">{item.title}</div>
+                        <p className="text-[13px] text-muted m-0">{item.desc}</p>
+                    </div>
+                </div>
+                ))}
+            </div>
+
+            <h2 className="font-heading text-[32px] font-medium text-primary mb-6 tracking-tight">
+                The One Belief That Will Stop You
+            </h2>
+            <div className="bg-primary text-white p-8 rounded-[3px] mb-12">
+                <p className="font-body text-[16px] mb-6 italic opacity-90">
+                    "I've been with my insurer for 9 years. I don't want to lose my loyalty discount."
+                </p>
+                <p className="font-body text-[15px] mb-4">
+                    Here's the data your insurer doesn't want you to see: Most insurers increase premiums by 8–13% annually for existing customers while offering new customers 18–27% discounts to switch in.
+                </p>
+                <p className="font-body text-[15px] font-bold">
+                    Your "loyalty discount" isn't a discount. You're being penalized for staying.
+                </p>
+            </div>
+
+            <div className="bg-background p-12 rounded-[3px] border border-border mb-16">
+                <h3 className="font-heading text-[24px] font-medium text-primary mb-8">What's Included When You Submit Your Profile</h3>
+                <ul className="space-y-4 m-0 p-0 list-none">
+                    {[
+                    "Instant submission to 12+ competing providers",
+                    "Direct quotes via WhatsApp and email within 24 hours",
+                    "Zero obligation to switch (compare first, decide after)",
+                    "POPIA-compliant data handling (full encryption)",
+                    "Completely free to use (insurers pay us)"
+                    ].map((text, i) => (
+                    <li key={i} className="flex items-center gap-4 font-body text-[15px] text-primary">
+                        <CheckCircle2 size={20} className="text-accent shrink-0" />
+                        {text}
+                    </li>
+                    ))}
+                </ul>
+            </div>
+
+            <h2 className="font-heading text-[32px] font-medium text-primary mb-6 tracking-tight">
+                Your Questions Answered
+            </h2>
+            <div className="space-y-4 mb-16">
+                {[
+                { q: "Will my information be sold to 50 companies?", a: "No. We only share your profile with FSCA-registered insurers you've explicitly approved. Full POPIA compliance." },
+                { q: "Is this actually free or is there a hidden fee later?", a: "Actually free. Insurers pay us a referral fee when you switch. You never pay us anything. Ever." },
+                { q: "What if I'm happy with my current insurer?", a: "Perfect. Use this system to confirm you're getting market-best pricing. If you are, fantastic. If not, now you know your options." },
+                { q: "Do I have to switch immediately after getting quotes?", a: "No. You compare quotes first. Make your decision on your timeline. Zero obligation." },
+                { q: "Will this affect my credit score?", a: "No. This isn't a credit application. It's a quote request. No credit bureau checks." },
+                { q: "What if I have accidents on my record?", a: "You'll still get quotes. Some providers specialize in higher-risk profiles at competitive rates." }
+                ].map((faq, i) => (
+                <div key={i} className="p-6 border border-border rounded-[3px]">
+                    <div className="font-heading text-[16px] font-bold text-primary mb-2">{faq.q}</div>
+                    <p className="font-body text-[14px] text-muted m-0">{faq.a}</p>
+                </div>
+                ))}
+            </div>
+
+            <h2 className="font-heading text-[32px] font-medium text-primary mb-6 tracking-tight text-center">
+                This Is Your Decision Point
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+                <div className="p-8 border border-border rounded-[3px]">
+                    <div className="font-heading text-[18px] font-bold text-muted mb-4 uppercase tracking-widest">Path 1</div>
+                    <p className="text-[14px] text-muted leading-relaxed">
+                        Close this page. Keep paying premiums designed for someone else's risk profile. Five years from now, you'll have paid an extra R30,000–R40,000 for identical coverage.
+                    </p>
+                </div>
+                <div className="p-8 border-2 border-accent rounded-[3px] bg-accent/5">
+                    <div className="font-heading text-[18px] font-bold text-accent mb-4 uppercase tracking-widest">Path 2</div>
+                    <p className="text-[14px] text-primary leading-relaxed">
+                        Invest 127 seconds right now. Let 12 insurers compete for your business. Save R400–R850/month. Five years from now, you'll have an extra R30,000–R40,000 in your account.
+                    </p>
+                </div>
+            </div>
+
+            {/* Form Section Placeholder */}
+            <div className="bg-white border-2 border-primary p-12 rounded-[3px] mb-16 text-center shadow-2xl">
+                <h3 className="font-heading text-[24px] font-medium text-primary mb-4">Get Your Competitive Quotes Now</h3>
+                <p className="font-body text-[14px] text-muted mb-8">Free to use. 127 seconds average completion time. Zero obligation.</p>
+                <div className="space-y-4 max-w-md mx-auto">
+                    <input type="text" placeholder="Full Name" className="w-full p-4 border border-border rounded-[3px] font-body text-[14px]" />
+                    <input type="email" placeholder="Email Address" className="w-full p-4 border border-border rounded-[3px] font-body text-[14px]" />
+                    <input type="tel" placeholder="Phone Number" className="w-full p-4 border border-border rounded-[3px] font-body text-[14px]" />
+                    <button
+                    className="w-full py-5 bg-primary text-white font-heading font-bold rounded-full hover:bg-accent transition-colors"
+                    >
+                    Complete your profile now →
+                    </button>
+                </div>
+                <p className="mt-6 font-body text-[11px] text-muted uppercase tracking-widest">
+                    Search A Deal • POPIA-Compliant • Built in South Africa
+                </p>
+            </div>
+
+            <div className="space-y-8 text-center border-t border-border pt-16">
+                <p className="font-body text-[14px] text-muted italic">
+                    P.S. While You're Deciding, 23 Other Drivers Just Submitted Their Forms. Right now, as you're reading this, providers are competing for their business.
+                </p>
+                <p className="font-body text-[14px] text-muted italic">
+                    P.P.S. The R35,000 Question. If you'd discovered this system 5 years ago, you'd have saved approximately R35,000 by now. You can't get that back. But you can stop the leak today.
+                </p>
+            </div>
+        </div>
+    </section>
+</div>
 
 <!-- Car Insurence Start -->
 <div class="py-5 wow fadeIn" data-wow-delay="0.1s">

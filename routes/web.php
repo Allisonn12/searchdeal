@@ -19,6 +19,7 @@ Route::get('/car-insurance-success', [SearchADealConroller::class, 'carInsuresuc
 Route::get('/car-track-success', [SearchADealConroller::class, 'carTrackerSuccess'])->name('car_track_success');
 Route::get('/terms-and-conditions', [SearchADealConroller::class, 'terms'])->name('terms');
 Route::get('/private-policy', [SearchADealConroller::class, 'policy'])->name('policy');
+Route::get('/how-it-works', [SearchADealConroller::class, 'howItWorks'])->name('how-it-works');
 Route::get('/car-insure-sales', [SearchADealConroller::class, 'cicslhcf'])->name('cicslhcf');
 Route::get('/car-track-up', [SearchADealConroller::class, 'carTrackerup'])->name('car-track-up');
 
@@ -38,6 +39,10 @@ Route::get('/debt-white-list', [DebtController::class, 'index'])->name('debt');
 Route::post('/debt-white-list', [DebtController::class, 'store'])->name('debt.submit');
 
 Route::get('/car-tracker', [TrackerController::class, 'index'])->name('tracker');
+Route::view('/car-tracker-elite', 'tracker1')->name('tracker1');
+Route::view('/tracker-loan', 'trackerloan')->name('tracker.loan');
+Route::view('/car-insurance-elite', 'carInsure')->name('car.insure.elite');
+Route::view('/car-tracker-upsell', 'carTractUpsell')->name('car.tract.upsell');
 Route::post('/car-tracker', [TrackerController::class, 'store'])->name('tracker.submit');
 
 Route::get('/life-insurance', [LifeController::class, 'index'])->name('life');
