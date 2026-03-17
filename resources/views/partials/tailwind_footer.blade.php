@@ -18,9 +18,6 @@
         <div class="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 mb-12 md:mb-16">
             <div class="md:col-span-4 flex flex-col items-start">
                 <div class="font-heading font-bold text-2xl md:text-3xl tracking-tighter mb-6 md:mb-8">SearchADeal</div>
-                <a href="{{ route('contact') }}" class="w-full sm:w-auto px-6 md:px-8 py-3 rounded-full border border-primary font-heading text-[14px] md:text-[15px] hover:bg-primary hover:text-white transition-colors text-center">
-                    Contact us
-                </a>
             </div>
 
             <div class="md:col-span-8 grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
@@ -33,7 +30,6 @@
                 <div class="flex flex-col gap-3 md:gap-4">
                     <h5 class="font-heading text-[10px] md:text-[11px] font-bold uppercase tracking-wider text-primary mb-1 md:mb-2">Company</h5>
                     <a href="{{ route('how-it-works') }}"  class="font-heading text-[14px] md:text-[15px] text-primary hover:text-accent transition-colors">How It Works</a>
-                    <a href="{{ route('contact') }}"  class="font-heading text-[14px] md:text-[15px] text-primary hover:text-accent transition-colors">Contact</a>
                     <a href="{{ route('policy') }}"   class="font-heading text-[14px] md:text-[15px] text-primary hover:text-accent transition-colors">Privacy</a>
                 </div>
                 <div class="flex flex-col items-start md:items-end gap-4">

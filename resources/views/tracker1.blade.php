@@ -194,7 +194,7 @@
       </div>
 
       <div id="tracker-form" class="bg-white border-2 border-primary p-6 md:p-12 rounded-[3px] mb-16 text-center shadow-2xl" style="border: 2px solid #0F172A">
-        <h3 class="font-heading text-[20px] md:text-[24px] font-medium text-primary mb-3 md:mb-4">🔒 Get Quotes From the Elite 5 Now</h3>
+        <h3 class="font-heading text-[20px] md:text-[24px] font-medium text-primary mb-3 md:mb-4">Get Quotes From the Elite 5 Now</h3>
         <p class="font-body text-[13px] md:text-[14px] text-muted mb-6 md:mb-8">60-second form • 3-5 elite providers • Real protection</p>
         <div class="space-y-3 md:space-y-4 max-w-md mx-auto">
           <form action="{{ route('tracker.submit') }}" method="post">
