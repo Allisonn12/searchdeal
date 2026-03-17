@@ -1163,7 +1163,7 @@
           </div>
 
           <div class="bg-white border-2 border-primary p-12 rounded-[3px] mb-16 text-center shadow-2xl">
-            <h3 class="font-heading text-[24px] font-medium text-primary mb-4">🔒 Get Quotes From the Elite 5 Now</h3>
+            <h3 class="font-heading text-[24px] font-medium text-primary mb-4">Get Quotes From the Elite 5 Now</h3>
             <p class="font-body text-[14px] text-muted mb-8">60-second form • 3-5 elite providers • Real protection</p>
             <div class="space-y-4 max-w-md mx-auto">
               <input type="text" placeholder="Full Name" class="w-full p-4 border border-border rounded-[3px] font-body text-[14px]" />
@@ -1690,7 +1690,7 @@
             <div class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-accent/10 text-accent mb-6">
               <i data-lucide="shield-check" class="w-[24px] h-[24px]"></i>
             </div>
-            <h3 class="font-heading text-[24px] font-medium text-primary mb-4">🔒 Get Elite Tracker Quotes Now (Final Step)</h3>
+            <h3 class="font-heading text-[24px] font-medium text-primary mb-4">Get Elite Tracker Quotes Now (Final Step)</h3>
             <p class="font-body text-[14px] text-muted mb-8">Same process. Same Elite 5. Complete protection.</p>
             <div class="space-y-4 max-w-md mx-auto">
               <input type="text" placeholder="Full Name" class="w-full p-4 border border-border rounded-[3px] font-body text-[14px]" />
@@ -1944,7 +1944,7 @@
             <div class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-accent/10 text-accent mb-6">
               <i data-lucide="trending-down" class="w-[24px] h-[24px]"></i>
             </div>
-            <h3 class="font-heading text-[24px] font-medium text-primary mb-4">🔒 Get Your Tracker-Protected Insurance Quotes Now</h3>
+            <h3 class="font-heading text-[24px] font-medium text-primary mb-4">Get Your Tracker-Protected Insurance Quotes Now</h3>
             <p class="font-body text-[14px] text-muted mb-8">90 seconds. 12+ competing insurers. R350–R650/month in potential savings.</p>
             <div class="space-y-4 max-w-md mx-auto">
               <input type="text" placeholder="Full Name" class="w-full p-4 border border-border rounded-[3px] font-body text-[14px]" />

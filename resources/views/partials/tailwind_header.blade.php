@@ -25,7 +25,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta content="insurance, cheap insurance, best insurance, compare insurance, affordable insurance, insurance deals, insurance discount" name="keywords" />
     <meta content="SearchADeal helps you find the best insurance deals! Compare quotes for car, medical, life and many more insurances from top providers. Save money with affordable rates and exclusive discounts. Get your free quote today!" name="description" />
-    
+
     <title>SearchADeal</title>
 
     <script>
@@ -112,9 +112,9 @@
 <div id="mobile-menu" class="md:hidden hidden fixed top-[58px] inset-x-0 z-40 bg-white border-b border-border shadow-sm float-end">
     <div class="px-4 py-3 flex flex-col gap-3 font-heading text-[12px] uppercase">
         <a href="{{ route('index') }}"         class="py-2">Home</a>
-        <a href="{{ route('how-it-works') }}"  class="py-2">How It Works</a>
         <a href="{{ route('car-insurance') }}" class="py-2">Car Insurance</a>
         <a href="{{ route('tracker1') }}"      class="py-2">Car Trackers</a>
         <a href="{{ route('tracker.loan') }}"  class="py-2">Personal Loans</a>
+        <a href="{{ route('how-it-works') }}"  class="py-2">How It Works</a>
     </div>
 </div>

@@ -41,8 +41,8 @@ Route::post('/debt-white-list', [DebtController::class, 'store'])->name('debt.su
 Route::get('/car-tracker', [TrackerController::class, 'index'])->name('tracker');
 Route::view('/car-tracker-elite', 'tracker1')->name('tracker1');
 Route::view('/tracker-loan', 'trackerloan')->name('tracker.loan');
-Route::view('/car-insurance-elite', 'carInsure')->name('car.insure.elite');
-Route::view('/car-tracker-upsell', 'carTractUpsell')->name('car.tract.upsell');
+Route::view('/car-insurance-elite', 'carInsure')->name('car.insure.elite'); // Upsell
+Route::view('/car-tracker-upsell', 'carTractUpsell')->name('car.tract.upsell'); // Upsell
 Route::post('/car-tracker', [TrackerController::class, 'store'])->name('tracker.submit');
 
 Route::get('/life-insurance', [LifeController::class, 'index'])->name('life');
