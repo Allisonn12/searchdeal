@@ -86,21 +86,6 @@
 </div>
 <!-- Spinner End -->
 
-
-@if(session('success'))
-    <div class="alert alert-success" role="alert">
-        {{ session('success') }}
-    </div>
-@endif
-
-@if(session('error'))
-    <div class="alert alert-danger" role="alert">
-        {{ session('error') }}
-    </div>
-@endif
-
-
-
 <!-- Page Header Start -->
 <div
         class="container-fluid page-header py-5 mb-5 wow fadeIn"

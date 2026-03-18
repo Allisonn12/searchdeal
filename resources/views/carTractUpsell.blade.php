@@ -1,10 +1,4 @@
-{{-- Flash messages --}}
-@if(session('success'))
-  <div class="alert alert-success" role="alert">{{ session('success') }}</div>
-@endif
-@if(session('error'))
-  <div class="alert alert-danger" role="alert">{{ session('error') }}</div>
-@endif
+@include('partials.flash')
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -579,6 +573,11 @@
         <p class="mt-5 md:mt-6 font-body text-[10px] md:text-[11px] text-muted uppercase tracking-widest leading-relaxed">
           By submitting, you agree to be contacted by pre-screened insurance providers. Search A Deal is an affiliate platform earning referral fees. We do not provide insurance services. POPIA-compliant.
         </p>
+
+        <p class="mt-5 font-body text-muted italic text-bold text-orange-700">
+          <a href="{{ route('success') }}">I do not need Car Tracker Right Now</a>
+        </p>
+
       </div>
 
       {{-- P.S. closing section --}}
