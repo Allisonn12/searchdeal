@@ -1,11 +1,4 @@
-{{-- Flash messages --}}
-@if(session('success'))
-  <div class="alert alert-success" role="alert">{{ session('success') }}</div>
-@endif
-@if(session('error'))
-  <div class="alert alert-danger" role="alert">{{ session('error') }}</div>
-@endif
-
+@include('partials.flash')
 <!DOCTYPE html>
 <!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=G-WX9J0BVDQC"></script> <script> window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-WX9J0BVDQC'); </script>
@@ -475,6 +468,12 @@
         <p class="mt-5 md:mt-6 font-body text-[10px] md:text-[11px] text-muted uppercase tracking-widest leading-relaxed">
           By submitting, you agree to be contacted by pre-screened elite tracker providers. SearchADeal is an affiliate platform and earns a commission if you choose to install. We do not provide installation services.
         </p>
+
+        <p class="mt-5 font-body text-muted italic text-bold text-orange-700">
+          <a href="{{ route('success') }}">I do not need Car Insurance Right Now</a>
+        </p>
+
+
       </div>
 
       {{-- FAQ --}}

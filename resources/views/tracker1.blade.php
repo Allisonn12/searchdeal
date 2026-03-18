@@ -1,15 +1,4 @@
 @include('partials.tailwind_header', ['title' => 'Car Tracker - SearchADeal']);
-@if(session('success'))
-  <div class="alert alert-success" role="alert">
-    {{ session('success') }}
-  </div>
-@endif
-
-@if(session('error'))
-  <div class="alert alert-danger" role="alert">
-    {{ session('error') }}
-  </div>
-@endif
 
 <main class="flex-grow pt-[58px] bg-white">
   <section class="py-14 md:py-20 px-[14.5px] md:px-[58px] bg-background grey-bg">

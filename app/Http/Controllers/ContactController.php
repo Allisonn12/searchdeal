@@ -1,34 +1,36 @@
 <?php
 
 namespace App\Http\Controllers;
+
 use App\Mail\ContactMail;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Http\Request;
+use Throwable;
 
 class ContactController extends Controller
 {
-        
     public function send(Request $request)
     {
+        // Validate user-provided contact fields
         $data = $request->validate([
-            'name' => 'required|string',
-            'email' => 'required|email',
+            'name' => 'required|string|max:255',
+            'email' => 'required|email|max:255',
             'message' => 'required|string',
-            'subject' => 'sometimes|required|string',
-            'phone' => 'sometimes|required|string',
+            'subject' => 'sometimes|required|string|max:255',
+            'phone' => 'sometimes|required|string|max:20',
         ]);
 
-        $mailer = Mail::to('support@searchadeal.online')->send(new ContactMail($data));
+        // Mail::send() throws an exception on failure — use try/catch instead of
+        // checking the return value (which is void/SentMessage and not reliably truthy).
+        try {
+            Mail::to('support@searchadeal.online')->send(new ContactMail($data));
 
-        // dd($mailer);
-        if ($mailer) {
-            echo "<script>alert('Success')</sccript>";
-            return redirect()->route('index')->with('success', 'Your message has been sent!');         
+            return redirect()->route('index')->with('success', 'Your message has been sent! We\'ll get back to you shortly.');
+        } catch (Throwable $e) {
+            // Log for observability without leaking internals to the user
+            logger()->error('ContactMail failed: ' . $e->getMessage());
 
-        }else{
-            return redirect()->back()->with('error', "An error occurred while submitting the form. Please try again");
-
+            return redirect()->back()->with('error', 'We could not send your message right now. Please try again later.');
         }
-        // return back()->with('success', 'Your message has been sent!');
     }
 }

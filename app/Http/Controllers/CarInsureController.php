@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
 use App\Models\CarInsureModel;
+use App\Http\Requests\CarInsurance\StoreRequest;
 
 class CarInsureController extends Controller
 {
@@ -16,115 +17,65 @@ class CarInsureController extends Controller
         return view('car-insure');
     }
 
-    public function store(Request $request)
+    public function store(StoreRequest $request)
     {
-            $data = $request->all();
-            $responseBody = $this->submitToApi($data);
+        $data = $request->all();
 
-            if ($responseBody['code'] == 1) {
-                $resp = json_encode($responseBody['response']);
-                $inser = CarInsureModel::createQuietly([
-                    'firstname' => $data['firstname'], 
-                    'lastname' => $data['lastname'], 
-                    'phone1' => $data['phone1'], 
-                    'email' => $data['email'], 
-                    'gender' => $data['gender'], 
-                    'currentinsurer' => $data['currentinsurer'], 
-                    'vehiclemake' => $data['vehiclemake'], 
-                    'language' => $data['language'], 
-                    'optindate' => $data['optindate'],
-                    'channel' => $data['channel'],
-                    'product' => $data['product'],
-                    'affiliateshortcode' => $data['affiliateshortcode'],
-                    'Leadsource' => $data['Leadsource'],
-                    'offer_id' => $data['offer_id'],
-                    'status' => $resp,
-                ]);
+        $responseBody = $this->submitToApi($data);
+        $resp = json_encode($responseBody['response'] ?? null);
 
-                // return redirect()->back()->with('success', "Success! {$responseBody['response']}");
-                // return view('success');
-                // return redirect()->route('success');
-                // if ($data['form_source'] === "car_insure_landing") {
-                //     return redirect()->route('car-track-up');
-                // }else if($data['form_source'] === "car_insure_camp"){
-                //     return redirect()->route('car-track-up');
-                // }else if($data['form_source'] === "car_insure_success"){
-                //     return redirect()->route('success');
-                // }
+        CarInsureModel::createQuietly([
+            'firstname'          => $data['firstname'],
+            'lastname'           => $data['lastname'],
+            'phone1'             => $data['phone1'],
+            'email'              => $data['email'],
+            'gender'             => $data['gender'],
+            'currentinsurer'     => $data['currentinsurer'] ?? null,
+            'vehiclemake'        => $data['vehiclemake'],
+            'language'           => $data['language'] ?? 'English',
+            'optindate'          => $data['optindate'],
+            'channel'            => $data['channel'],
+            'product'            => $data['product'],
+            'affiliateshortcode' => $data['affiliateshortcode'],
+            'Leadsource'         => $data['Leadsource'],
+            'offer_id'           => $data['offer_id'],
+            'status'             => $resp,
+        ]);
 
-                if ($data['form_source'] === 'car_insure_landing') {
-                    return redirect()->route('car-track-up');
-                } else {
-                    if ($data['form_source'] === 'car_insure_camp') {
-                        return redirect()->route('car-track-up');
-                    } else {
-                        if ($data['form_source'] === 'car_insure_success') {
-                            return redirect()->route('success');
-                        } else {
-                            if ($data['form_source'] === 'car_track_success') {
-                                return redirect()->route('success');
-                            }
-                        }
-                    }
-                }
-                
-            }else{
-                $resp = json_encode($responseBody['response']);
-                $inser = CarInsureModel::createQuietly([
-                    'firstname' => $data['firstname'], 
-                    'lastname' => $data['lastname'], 
-                    'phone1' => $data['phone1'], 
-                    'email' => $data['email'], 
-                    'gender' => $data['gender'], 
-                    'currentinsurer' => $data['currentinsurer'], 
-                    'vehiclemake' => $data['vehiclemake'], 
-                    'language' => $data['language'], 
-                    'optindate' => $data['optindate'],
-                    'channel' => $data['channel'],
-                    'product' => $data['product'],
-                    'affiliateshortcode' => $data['affiliateshortcode'],
-                    'Leadsource' => $data['Leadsource'],
-                    'offer_id' => $data['offer_id'],
-                    'status' => $resp,
-                ]);
-                return redirect()->back()->with('error', "An error occurred while submitting the form. {$responseBody['response']}");
-            }
-    }
-
-    /**
-     * Submit form data to the API.
-     *
-     * @param array $data Form data to submit.
-     * @return array API response.
-     */
-    private function submitToApi($data)
-    {
-        $date = date("Y/m/d h:i:sa");
-        $data['campid'] = 'CAR-INSURANCE';
-        $data['sid'] = '25154';
-        $data['returnjson'] = 'yes';
-        // $data['optindate'] = $date;
-        // $data['language'] = 'English';
-
-        // Use Laravel's HTTP client to send the request
-        $response = Http::asForm()->post('https://returnxdigital.leadbyte.co.uk/api/submit.php', $data);
-        
-        return $response->json();
-    }
-
-    /**
-     * Handle the API response.
-     *
-     * @param array $responseBody Decoded API response.
-     */
-    private function handleResponse($responseBody)
-    {
         if ($responseBody['code'] == 1) {
-            // Success response
-            return redirect()->back()->with('success', "Success! {$responseBody['response']}");
-        } else {
-            // Error response
-            return redirect()->back()->with('error', "Submission failed: {$responseBody['response']}");
+            $successMessage = 'Success! Your form has been submitted. One of our friendly consultants will be in touch soon.';
+
+            return match ($data['form_source']) {
+                'car_insure_landing',
+                'car_insure_camp'    => redirect()->route('car.tract.upsell')->with('success', $successMessage),
+                'car_insure_success',
+                'car_track_success'  => redirect()->route('success')->with('success', $successMessage),
+                // Safe fallback — always return a response
+                default => redirect()->back()->with('success', $successMessage),
+            };
         }
+
+        return redirect()->back()->with(
+            'error',
+            'We were unable to process your request. Please check your details and try again.'. $resp
+        );
+    }
+
+    /**
+     * Submit form data to the external lead API.
+     *
+     * @param  array $data  Form data to submit.
+     * @return array        Decoded API response with at minimum 'code' and 'response' keys.
+     */
+    private function submitToApi(array $data): array
+    {
+        $data['campid']     = 'CAR-INSURANCE';
+        $data['sid']        = '25154';
+        $data['returnjson'] = 'yes';
+
+        $response = Http::asForm()->post('https://returnxdigital.leadbyte.co.uk/api/submit.php', $data);
+
+        // Provide a safe fallback if the API returns no body or an unexpected format
+        return $response->json() ?? ['code' => 0, 'response' => 'No response received from provider.'];
     }
 }

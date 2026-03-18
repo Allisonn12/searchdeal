@@ -27,8 +27,8 @@ Route::get('/car-track-up', [SearchADealConroller::class, 'carTrackerup'])->name
 Route::get('/contact', [SearchADealConroller::class, 'contact'])->name('contact');
 Route::post('/contact', [ContactController::class, 'send'])->name('contact.send');
 
-Route::get('/car-insurance', [CarInsureController::class, 'index'])->name('car-insurance');
-Route::get('/car-insure', [CarInsureController::class, 'landing'])->name('car-insure');
+Route::get('/car-insurance', [CarInsureController::class, 'index'])->name('car-insurance'); // Legacy routes
+Route::get('/car-insure', [CarInsureController::class, 'landing'])->name('car-insure'); // Legacy routes
 Route::post('/car-insurance', [CarInsureController::class, 'store'])->name('car.insure.submit');
 Route::post('/car-insure', [CarInsureController::class, 'store'])->name('car.insure.submit');
 
@@ -38,9 +38,9 @@ Route::post('/motor-warrenty', [MotorController::class, 'store'])->name('motor.i
 Route::get('/debt-white-list', [DebtController::class, 'index'])->name('debt');
 Route::post('/debt-white-list', [DebtController::class, 'store'])->name('debt.submit');
 
-Route::get('/car-tracker', [TrackerController::class, 'index'])->name('tracker');
+Route::get('/car-tracker', [TrackerController::class, 'index'])->name('tracker'); // Legacy routes
 Route::view('/car-tracker-elite', 'tracker1')->name('tracker1');
-Route::view('/tracker-loan', 'trackerloan')->name('tracker.loan');
+Route::view('/personal-loan', 'trackerloan')->name('tracker.loan');
 Route::view('/car-insurance-elite', 'carInsure')->name('car.insure.elite'); // Upsell
 Route::view('/car-tracker-upsell', 'carTractUpsell')->name('car.tract.upsell'); // Upsell
 Route::post('/car-tracker', [TrackerController::class, 'store'])->name('tracker.submit');
@@ -48,10 +48,10 @@ Route::post('/car-tracker', [TrackerController::class, 'store'])->name('tracker.
 Route::get('/life-insurance', [LifeController::class, 'index'])->name('life');
 Route::post('/life-insurance', [LifeController::class, 'store'])->name('life.submit');
 
-Route::get('/wl-loans', [LoanController::class, 'index'])->name('wl-loan');
+Route::get('/wl-loans', [LoanController::class, 'index'])->name('wl-loan'); // Legacy routes
 Route::post('/wl-loans', [LoanController::class, 'store'])->name('loan.submit');
 
-Route::get('/loans', [LoanController::class, 'loans'])->name('loans');
+Route::get('/loans', [LoanController::class, 'loans'])->name('loans'); // Legacy routes
 Route::post('/loans', [LoanController::class, 'store'])->name('loan.submit');
 
 Route::get('/medical-insurance', [MedicalController::class, 'index'])->name('medical');

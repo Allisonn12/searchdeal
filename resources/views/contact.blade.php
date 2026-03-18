@@ -1,15 +1,5 @@
 @include('partials.header')
-@if(session('success'))
-<div class="alert alert-success" role="alert">
-    {{ session('success') }}
-</div>
-@endif
-
-@if(session('error'))
-<div class="alert alert-danger" role="alert">
-    {{ session('error') }}
-</div>
-@endif
+@include('partials.flash')
     <!-- Page Header Start -->
     <div
       class="container-fluid page-header py-5 mb-5 wow fadeIn"
@@ -38,7 +28,7 @@
           <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
             <h1 class="display-6 mb-5">
               Have a question? <br>Let's get in touch
-            </h1>           
+            </h1>
             <form action="{{ route('contact.send') }}" method="POST">
               @csrf
               <div class="row g-3">
