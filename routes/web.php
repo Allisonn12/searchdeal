@@ -10,6 +10,7 @@ use App\Http\Controllers\LoanController;
 use App\Http\Controllers\MedicalController;
 use App\Http\Controllers\LifeController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\KaruCrmController;
 
 
 Route::get('/', [SearchADealConroller::class, 'index'])->name('index');
@@ -57,6 +58,15 @@ Route::post('/loans', [LoanController::class, 'store'])->name('loan.submit');
 Route::get('/medical-insurance', [MedicalController::class, 'index'])->name('medical');
 Route::post('/medical-insurance', [MedicalController::class, 'store'])->name('medical.submit');
 
+/*
+|--------------------------------------------------------------------------
+| Karu CRM (Cartrack) Lead Submission
+|--------------------------------------------------------------------------
+| Accepts a JSON POST of lead data and forwards it to the Karu CRM API.
+| Returns JSON — frontend integration is handled in a separate PR.
+*/
+Route::get('/dashcams', [KaruCrmController::class, 'index'])->name('dashcams');
+Route::post('/dashcams', [KaruCrmController::class, 'store'])->name('karu.submit');
 // Cookies
 /**
  * Accepts and stores a cookie consent.

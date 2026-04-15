@@ -35,4 +35,20 @@ return [
         ],
     ],
 
+    /*
+    |--------------------------------------------------------------------------
+    | Karu CRM (Cartrack) Lead Integration
+    |--------------------------------------------------------------------------
+    | Credentials and endpoint for pushing leads into the Karu CRM system.
+    | All sensitive values are driven by environment variables — never
+    | hard-code tokens or UIDs in source code.
+    */
+    'karu_crm' => [
+        'endpoint'            => env('KARU_CRM_ENDPOINT', 'https://ctcrm.cartrack.co.za/jsonrpc/crm_hook.php'),
+        'token'               => env('KARU_CRM_TOKEN'),
+        'instance_uid'        => env('KARU_CRM_INSTANCE_UID'),
+        'campaign_uid'        => env('KARU_CRM_CAMPAIGN_UID'),
+        'external_system_uid' => env('KARU_CRM_EXTERNAL_SYSTEM_UID', 'SearchADealWWW'),
+    ],
+
 ];
