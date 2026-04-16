@@ -36,7 +36,7 @@ class KaruCrmController extends Controller
     if ($result['success']) {
       $statusCode = $result['duplicate'] ? 200 : 201;
 
-      return redirect()->route('success')->with(
+        return redirect()->route('success')->with(
             'success',
             'Your request was submitted successfully! Providers will be in touch soon.'
         );
@@ -48,7 +48,7 @@ class KaruCrmController extends Controller
       // ], $statusCode);
     }
 
-    return redirect()->back()->with(
+      return redirect()->back()->with(
           'error',
           'We were unable to process your request. Please check your details and try again.'. $resp
       );
