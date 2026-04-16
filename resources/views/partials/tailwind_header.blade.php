@@ -104,6 +104,7 @@
         <a href="{{ route('car-insurance') }}"  class="nav-item nav-link {{ Route::is('car-insurance') ? 'active' : '' }}">Car Insurance</a>
         <a href="{{ route('tracker1') }}"       class="nav-item nav-link {{ Route::is('tracker1')      ? 'active' : '' }}">Car Trackers</a>
         <a href="{{ route('tracker.loan') }}"   class="hover:text-accent transition-colors">Personal Loans</a>
+        <a href="{{ route('dashcams') }}"   class="hover:text-accent transition-colors">Dashcam</a>
         <a href="{{ route('how-it-works') }}"   class="nav-item nav-link {{ Route::is('how-it-works')   ? 'active' : '' }}">How It Works</a>
     </nav>
 
