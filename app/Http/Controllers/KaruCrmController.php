@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\KaruCrm\StoreLeadRequest;
 use App\Services\KaruCrmService;
-use Illuminate\Http\JsonResponse;
 
 class KaruCrmController extends Controller
 {
@@ -30,7 +29,7 @@ class KaruCrmController extends Controller
    *   422          — validation failure (handled by Laravel automatically)
    *   502          — CRM rejected or was unreachable
    */
-  public function store(StoreLeadRequest $request): JsonResponse
+  public function store(StoreLeadRequest $request)
   {
     $result = $this->karuCrmService->submitLead($request->validated());
 
