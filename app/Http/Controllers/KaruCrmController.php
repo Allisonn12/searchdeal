@@ -50,7 +50,7 @@ class KaruCrmController extends Controller
 
       return redirect()->back()->with(
           'error',
-          'We were unable to process your request. Please check your details and try again.'. $resp
+          'We were unable to process your request. Please check your details and try again.'
       );
     // return response()->json([
     //   'status'  => 'failed',
