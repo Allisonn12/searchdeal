@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\KaruCrm\StoreLeadRequest;
 use App\Services\KaruCrmService;
-use Illuminate\Http\JsonResponse;
 
 class KaruCrmController extends Controller
 {
@@ -30,25 +29,33 @@ class KaruCrmController extends Controller
    *   422          — validation failure (handled by Laravel automatically)
    *   502          — CRM rejected or was unreachable
    */
-  public function store(StoreLeadRequest $request): JsonResponse
+  public function store(StoreLeadRequest $request)
   {
     $result = $this->karuCrmService->submitLead($request->validated());
 
     if ($result['success']) {
       $statusCode = $result['duplicate'] ? 200 : 201;
 
-      return response()->json([
-        'status'      => $result['duplicate'] ? 'duplicate' : 'created',
-        'message'     => $result['message'],
-        'crm_lead_id' => $result['crm_lead_id'],
-        'lead_id'     => $result['lead']->id,
-      ], $statusCode);
+      return redirect()->route('success')->with(
+            'success',
+            'Your request was submitted successfully! Providers will be in touch soon.'
+        );
+      // return response()->json([
+      //   'status'      => $result['duplicate'] ? 'duplicate' : 'created',
+      //   'message'     => $result['message'],
+      //   'crm_lead_id' => $result['crm_lead_id'],
+      //   'lead_id'     => $result['lead']->id,
+      // ], $statusCode);
     }
 
-    return response()->json([
-      'status'  => 'failed',
-      'message' => $result['message'],
-      'lead_id' => $result['lead']->id, // Local record ID for support reference
-    ], 502);
+    return redirect()->back()->with(
+          'error',
+          'We were unable to process your request. Please check your details and try again.'. $resp
+      );
+    // return response()->json([
+    //   'status'  => 'failed',
+    //   'message' => $result['message'],
+    //   'lead_id' => $result['lead']->id, // Local record ID for support reference
+    // ], 502);
   }
 }
