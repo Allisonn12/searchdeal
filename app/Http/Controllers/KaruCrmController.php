@@ -16,6 +16,10 @@ class KaruCrmController extends Controller
       return view('dashcam');
   }
 
+  public function dashcamsCarTrackerUpsell(){
+      return view('dashcams-car-tracker-upsell');
+  }
+
   /**
    * Accept a validated lead and forward it to Karu CRM.
    *
