@@ -65,12 +65,12 @@ Route::post('/medical-insurance', [MedicalController::class, 'store'])->name('me
 | Accepts a JSON POST of lead data and forwards it to the Karu CRM API.
 | Returns JSON — frontend integration is handled in a separate PR.
 */
-Route::get('/dashcams-car-insurance-upsell', function(){
+Route::get('/dashcams-car-insurance-upsell', function () {
   return view('dashcamCarInsureUpsell');
-});
-Route::get('/dashcams-car-tracker-upsell', function(){
+})->name('dashcams.insure.upsell');
+Route::get('/dashcams-car-tracker-upsell', function () {
   return view('dashcamCarTrackerUpsell');
-});
+})->name('dashcams.tracker.upsell');
 Route::get('/dashcams', [KaruCrmController::class, 'index'])->name('dashcams');
 Route::post('/dashcams', [KaruCrmController::class, 'store'])->name('karu.submit');
 // Cookies

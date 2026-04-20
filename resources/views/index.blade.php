@@ -11,7 +11,7 @@
         <div class="relative flex flex-col md:flex-row justify-between items-start md:items-center mb-16 gap-8">
           <div class="absolute top-1/2 left-0 w-[87.5%] h-[1px] bg-border hidden md:block -z-10"></div>
 
-          <button type="button" class="flex items-center gap-4 px-8 py-4 bg-primary text-white rounded-full font-heading text-[14px] hover:bg-accent transition-colors group black-button">
+          <button type="button" style="visibility: hidden" class="flex items-center gap-4 px-8 py-4 bg-primary text-white rounded-full font-heading text-[14px] hover:bg-accent transition-colors group black-button">
             Find My Best Deal
             <i data-lucide="arrow-down" class="w-[18px] h-[18px] group-hover:translate-y-1 transition-transform"></i>
           </button>
