@@ -48,8 +48,8 @@ class CarInsureController extends Controller
             return match ($data['form_source']) {
                 'car_insure_landing',
                 'car_insure_camp'    => redirect()->route('car.tract.upsell')->with('success', $successMessage),
-                'car_insure_success',
-                'car_track_success'  => redirect()->route('success')->with('success', $successMessage),
+                'car_insure_success' => redirect()->route('success')->with('success', $successMessage),
+                'car_track_success'  => redirect()->route('dashcams.tracker.upsell')->with('success', $successMessage),
                 // Safe fallback — always return a response
                 default => redirect()->back()->with('success', $successMessage),
             };

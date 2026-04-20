@@ -47,7 +47,7 @@ class TrackerController extends Controller
       return match ($data['form_source']) {
         'car_track_landing'             => redirect()->route('car.insure.elite')->with('success', $successMessage),
         'car_track_upsell',
-        'car_track_upse'                => redirect()->route('success')->with('success', $successMessage),
+        'car_track_upse'                => redirect()->route('dashcams.insure.upsell')->with('success', $successMessage),
         default                         => redirect()->back()->with('success', $successMessage),
       };
     }

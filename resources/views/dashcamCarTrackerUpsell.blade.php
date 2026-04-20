@@ -545,9 +545,11 @@
             <!-- Skip Option -->
             <div class="text-center max-w-2xl mx-auto mb-16 p-8 border border-border rounded-[3px] bg-background">
                 <div class="font-heading text-[12px] font-bold uppercase tracking-widest text-muted mb-4">OR</div>
-                <p class="font-body text-[14px] text-muted italic m-0">
-                    Skip this and continue, I understand that if someone disputes fault at my next incident and there is no footage, my insurer has no mechanism to tell my version of events from theirs, and the premium I just lowered may not stay low.
-                </p>
+                <a href="{{ route('success') }}">
+                    <p class="font-body text-[14px] text-muted italic m-0">
+                        Skip this and continue, I understand that if someone disputes fault at my next incident and there is no footage, my insurer has no mechanism to tell my version of events from theirs, and the premium I just lowered may not stay low.
+                    </p>
+                </a>
             </div>
 
             <!-- Postscripts -->
