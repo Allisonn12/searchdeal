@@ -1,27 +1,29 @@
 
 
 {{-- ── Footer — identical to tracker1 ── --}}
-<footer class="relative min-h-[40vh] md:min-h-[60vh] flex items-end mt-12 md:mt-20">
-    <div class="absolute inset-0 z-0">
-        <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=1600" alt="Abstract Background" class="w-full h-full object-cover" />
-        <div class="absolute inset-0 bg-black/40 backdrop-blur-sm"></div>
-    </div>
-
-    <div class="relative z-10 w-full max-w-[1400px] mx-auto bg-white p-5 md:p-[58px] pb-[22px]">
-        <div class="mb-8 md:mb-12 p-4 md:p-6 bg-background rounded-[3px] border border-border">
-            <h5 class="font-heading text-[10px] md:text-[11px] font-bold uppercase tracking-wider text-primary mb-2 md:mb-4">Important Disclosure</h5>
-            <p class="font-body text-[12px] text-muted leading-relaxed">
-                SearchADeal is not a registered financial services provider, insurer, or credit provider. We operate as an affiliate comparison platform connecting consumers with registered providers. All insurance decisions, terms, premiums, and approvals remain subject to each insurer&rsquo;s independent underwriting assessment.
-            </p>
+<footer class="relative {{ Route::is('index') ? 'min-h-[40vh] md:min-h-[60vh] mt-12 md:mt-20' : 'mt-8' }} flex items-end">
+    @if(Route::is('index'))
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=1600" alt="Abstract Background" class="w-full h-full object-cover" />
+            <div class="absolute inset-0 bg-black/40 backdrop-blur-sm"></div>
         </div>
+    @endif
 
+    <div class="relative z-10 w-full max-w-[1400px] mx-auto bg-white {{ Route::is('index') ? 'p-5 md:p-[58px] pb-[22px]' : 'px-5 md:px-[58px] py-6' }}">
         {{--
-          Full marketing nav block (services / company / social) renders only on the
-          homepage. Inner and funnel pages keep the footer minimal to avoid leaking
-          users out of the conversion flow. Legal disclosure and legal links below
-          remain on every page for compliance (FSCA affiliate disclosure / POPIA).
+          Marketing footer (disclosure + services/company/social) renders only on the
+          homepage. Inner and funnel pages keep the footer to the statutory minimum
+          (legal links + copyright) to avoid leaking users out of the conversion flow
+          while remaining POPIA-compliant.
         --}}
         @if(Route::is('index'))
+            <div class="mb-8 md:mb-12 p-4 md:p-6 bg-background rounded-[3px] border border-border">
+                <h5 class="font-heading text-[10px] md:text-[11px] font-bold uppercase tracking-wider text-primary mb-2 md:mb-4">Important Disclosure</h5>
+                <p class="font-body text-[12px] text-muted leading-relaxed">
+                    SearchADeal is not a registered financial services provider, insurer, or credit provider. We operate as an affiliate comparison platform connecting consumers with registered providers. All insurance decisions, terms, premiums, and approvals remain subject to each insurer&rsquo;s independent underwriting assessment.
+                </p>
+            </div>
+
             <div class="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 mb-12 md:mb-16">
                 <div class="md:col-span-4 flex flex-col items-start">
                     <div class="font-heading font-bold text-2xl md:text-3xl tracking-tighter mb-6 md:mb-8">SearchADeal</div>
@@ -48,7 +50,8 @@
             </div>
         @endif
 
-        <div class="pt-6 md:pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-3 md:gap-4 font-body text-[12px] md:text-[13px] text-muted">
+        {{-- Legal links + copyright always render — POPIA requires a privacy link on every page collecting PII --}}
+        <div class="{{ Route::is('index') ? 'pt-6 md:pt-8 border-t border-border' : '' }} flex flex-col md:flex-row justify-between items-center gap-3 md:gap-4 font-body text-[12px] md:text-[13px] text-muted">
             <div class="flex flex-wrap justify-center gap-4 md:gap-6">
                 <a href="{{ route('policy') }}" class="hover:text-primary transition-colors">Privacy Policy</a>
                 <a href="{{ route('terms') }}"  class="hover:text-primary transition-colors">Terms of Use</a>
