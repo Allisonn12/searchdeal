@@ -15,30 +15,38 @@
             </p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 mb-12 md:mb-16">
-            <div class="md:col-span-4 flex flex-col items-start">
-                <div class="font-heading font-bold text-2xl md:text-3xl tracking-tighter mb-6 md:mb-8">SearchADeal</div>
-            </div>
+        {{--
+          Full marketing nav block (services / company / social) renders only on the
+          homepage. Inner and funnel pages keep the footer minimal to avoid leaking
+          users out of the conversion flow. Legal disclosure and legal links below
+          remain on every page for compliance (FSCA affiliate disclosure / POPIA).
+        --}}
+        @if(Route::is('index'))
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 mb-12 md:mb-16">
+                <div class="md:col-span-4 flex flex-col items-start">
+                    <div class="font-heading font-bold text-2xl md:text-3xl tracking-tighter mb-6 md:mb-8">SearchADeal</div>
+                </div>
 
-            <div class="md:col-span-8 grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
-                <div class="flex flex-col gap-3 md:gap-4">
-                    <h5 class="font-heading text-[10px] md:text-[11px] font-bold uppercase tracking-wider text-primary mb-1 md:mb-2">Services</h5>
-                    <a href="{{ route('car-insurance') }}" class="font-heading text-[14px] md:text-[15px] text-primary hover:text-accent transition-colors">Car Insurance</a>
-                    <a href="{{ route('tracker1') }}"       class="font-heading text-[14px] md:text-[15px] text-primary hover:text-accent transition-colors">Car Trackers</a>
-                    <a href="{{ route('tracker.loan') }}"   class="font-heading text-[14px] md:text-[15px] text-primary hover:text-accent transition-colors">Personal Loans</a>
-                </div>
-                <div class="flex flex-col gap-3 md:gap-4">
-                    <h5 class="font-heading text-[10px] md:text-[11px] font-bold uppercase tracking-wider text-primary mb-1 md:mb-2">Company</h5>
-                    <a href="{{ route('how-it-works') }}"  class="font-heading text-[14px] md:text-[15px] text-primary hover:text-accent transition-colors">How It Works</a>
-                    <a href="{{ route('policy') }}"   class="font-heading text-[14px] md:text-[15px] text-primary hover:text-accent transition-colors">Privacy</a>
-                </div>
-                <div class="flex flex-col items-start md:items-end gap-4">
-                    <a href="#" class="w-10 md:w-12 h-10 md:h-12 rounded-full border border-primary flex items-center justify-center hover:bg-primary hover:text-white transition-colors group" aria-label="LinkedIn">
-                        <i data-lucide="linkedin" class="w-[18px] md:w-[20px] h-[18px] md:h-[20px] text-primary group-hover:text-white transition-colors"></i>
-                    </a>
+                <div class="md:col-span-8 grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
+                    <div class="flex flex-col gap-3 md:gap-4">
+                        <h5 class="font-heading text-[10px] md:text-[11px] font-bold uppercase tracking-wider text-primary mb-1 md:mb-2">Services</h5>
+                        <a href="{{ route('car-insurance') }}" class="font-heading text-[14px] md:text-[15px] text-primary hover:text-accent transition-colors">Car Insurance</a>
+                        <a href="{{ route('tracker1') }}"       class="font-heading text-[14px] md:text-[15px] text-primary hover:text-accent transition-colors">Car Trackers</a>
+                        <a href="{{ route('tracker.loan') }}"   class="font-heading text-[14px] md:text-[15px] text-primary hover:text-accent transition-colors">Personal Loans</a>
+                    </div>
+                    <div class="flex flex-col gap-3 md:gap-4">
+                        <h5 class="font-heading text-[10px] md:text-[11px] font-bold uppercase tracking-wider text-primary mb-1 md:mb-2">Company</h5>
+                        <a href="{{ route('how-it-works') }}"  class="font-heading text-[14px] md:text-[15px] text-primary hover:text-accent transition-colors">How It Works</a>
+                        <a href="{{ route('policy') }}"   class="font-heading text-[14px] md:text-[15px] text-primary hover:text-accent transition-colors">Privacy</a>
+                    </div>
+                    <div class="flex flex-col items-start md:items-end gap-4">
+                        <a href="#" class="w-10 md:w-12 h-10 md:h-12 rounded-full border border-primary flex items-center justify-center hover:bg-primary hover:text-white transition-colors group" aria-label="LinkedIn">
+                            <i data-lucide="linkedin" class="w-[18px] md:w-[20px] h-[18px] md:h-[20px] text-primary group-hover:text-white transition-colors"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
+        @endif
 
         <div class="pt-6 md:pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-3 md:gap-4 font-body text-[12px] md:text-[13px] text-muted">
             <div class="flex flex-wrap justify-center gap-4 md:gap-6">
