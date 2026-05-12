@@ -11,6 +11,7 @@ use App\Http\Controllers\MedicalController;
 use App\Http\Controllers\LifeController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\KaruCrmController;
+use App\Http\Controllers\IzigizController;
 
 
 Route::get('/', [SearchADealConroller::class, 'index'])->name('index');
@@ -73,6 +74,25 @@ Route::get('/dashcams-car-tracker-upsell', function () {
 })->name('dashcams.tracker.upsell');
 Route::get('/dashcams', [KaruCrmController::class, 'index'])->name('dashcams');
 Route::post('/dashcams', [KaruCrmController::class, 'store'])->name('karu.submit');
+
+/*
+|--------------------------------------------------------------------------
+| Izigiz Tracker Lead Submission
+|--------------------------------------------------------------------------
+| Three separate GET+POST pairs, one per campaign code.
+|
+|   /tracker/digital            → VT0001   (main digital acquisition)
+|   /tracker/unbranded-warmup   → VTWU0001 (cold-traffic, no brand)
+|   /tracker/warmup-cartrack    → CTK0002  (Cartrack-branded warm-up)
+*/
+Route::get('/tracker/digital', [IzigizController::class, 'showDigital'])->name('izigiz.digital.show');
+Route::post('/tracker/digital', [IzigizController::class, 'storeDigital'])->name('izigiz.digital');
+
+Route::get('/tracker/unbranded-warmup', [IzigizController::class, 'showUnbrandedWarmup'])->name('izigiz.unbranded_warmup.show');
+Route::post('/tracker/unbranded-warmup', [IzigizController::class, 'storeUnbrandedWarmup'])->name('izigiz.unbranded_warmup');
+
+Route::get('/tracker/warmup-cartrack', [IzigizController::class, 'showWarmupCartrack'])->name('izigiz.warmup_cartrack.show');
+Route::post('/tracker/warmup-cartrack', [IzigizController::class, 'storeWarmupCartrack'])->name('izigiz.warmup_cartrack');
 // Cookies
 /**
  * Accepts and stores a cookie consent.
