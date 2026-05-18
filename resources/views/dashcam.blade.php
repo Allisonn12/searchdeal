@@ -429,7 +429,9 @@
                 <h3 class="font-heading text-[24px] font-medium text-primary mb-4">Find My Witness Now</h3>
                 <p class="font-body text-[14px] text-muted mb-8">No sign-up · No credit card · No obligation · Under 2 minutes</p>
                 <form action="{{ route('karu.submit') }}" method="post">
-                    @csrf
+                        @csrf
+                        <input type="hidden" name="product" value="dashcam" />
+                        <input type="hidden" name="source_url" value="searchadeal.online/dashcams" />
                     <div class="space-y-6 max-w-md mx-auto text-left">
                     <div class="space-y-2">
                         <label class="font-heading text-[14px] font-bold text-primary">1. What do you drive?</label>

@@ -6,12 +6,6 @@ use Tests\TestCase;
 
 class Tracker1PageTest extends TestCase
 {
-	/**
-	 * Plan:
-	 * 1. Request the dedicated tracker elite route.
-	 * 2. Assert that the page renders successfully.
-	 * 3. Assert that the core marketing headline and live form action are present.
-	 */
 	public function test_tracker1_page_renders_with_tracker_quote_form(): void
 	{
 		$response = $this->get(route('tracker1'));

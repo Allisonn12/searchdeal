@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\KaruCrm\StoreLeadRequest;
 use App\Services\KaruCrmService;
+use Illuminate\Support\Facades\Log;
 
 class KaruCrmController extends Controller
 {
@@ -31,31 +32,35 @@ class KaruCrmController extends Controller
    */
   public function store(StoreLeadRequest $request)
   {
-    $result = $this->karuCrmService->submitLead($request->validated());
+    try {
+        $result = $this->karuCrmService->submitLead($request->validated());
 
-    if ($result['success']) {
-      $statusCode = $result['duplicate'] ? 200 : 201;
+        if ($result['success']) {
+            return redirect()->route('success')->with(
+                'success',
+                'Your request was submitted successfully! Providers will be in touch soon.'
+            );
+        }
 
-        return redirect()->route('success')->with(
-            'success',
-            'Your request was submitted successfully! Providers will be in touch soon.'
+        \Log::warning('Dashcam lead submission failed', [
+            'message' => $result['message'],
+            'lead_id' => $result['lead']->id ?? null,
+        ]);
+
+
+        return redirect()->back()->with(
+            'error',
+            'We were unable to process your request. Please check your details and try again.'. $result
         );
-      // return response()->json([
-      //   'status'      => $result['duplicate'] ? 'duplicate' : 'created',
-      //   'message'     => $result['message'],
-      //   'crm_lead_id' => $result['crm_lead_id'],
-      //   'lead_id'     => $result['lead']->id,
-      // ], $statusCode);
-    }
+    } catch (\Exception $e) {
+        \Log::error('Error sending dashcam lead', [
+            'error' => $e->getMessage(),
+        ]);
 
-      return redirect()->back()->with(
-          'error',
-          'We were unable to process your request. Please check your details and try again.'
-      );
-    // return response()->json([
-    //   'status'  => 'failed',
-    //   'message' => $result['message'],
-    //   'lead_id' => $result['lead']->id, // Local record ID for support reference
-    // ], 502);
+        return redirect()->back()->with(
+            'error',
+            'We were unable to process your request. Please check your details and try again.'
+        );
+    }
   }
 }
