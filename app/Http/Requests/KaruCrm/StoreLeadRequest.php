@@ -16,9 +16,9 @@ class StoreLeadRequest extends FormRequest
   public function rules(): array
   {
     return [
-      // Per spec: at least one of these is required — enforced in withValidator below.
+      // Per spec: phone is required; name and email are optional identifiers.
       'name'            => 'sometimes|nullable|string|max:255',
-      'phone'           => 'sometimes|nullable|string|max:30',
+      'phone'           => 'required|string|max:30',
       'email'           => 'sometimes|nullable|email|max:255',
 
       // Extended contact / address fields
@@ -31,28 +31,23 @@ class StoreLeadRequest extends FormRequest
 
       'remark_message'  => 'sometimes|nullable|string|max:2000',
 
+      // Affiliate hook vehicle/product fields.
+      'vehicle_make'    => 'sometimes|nullable|string|max:100',
+      'vehicle_model'   => 'sometimes|nullable|string|max:100',
+      'product'         => 'sometimes|nullable|string|max:100',
+      'source_url'      => 'sometimes|nullable|string|max:255',
+
       // meta: optional free-form JSON object — must be an array if provided
       'meta'            => 'sometimes|nullable|array',
     ];
   }
 
   /**
-   * Enforce the spec rule: at least one of name, phone, or email must be present.
+   * No custom cross-field identity check needed: phone is required by the rule above.
    */
   public function withValidator(Validator $validator): void
   {
-    $validator->after(function (Validator $v) {
-      $hasIdentifier = filled($this->input('name'))
-        || filled($this->input('phone'))
-        || filled($this->input('email'));
-
-      if (! $hasIdentifier) {
-        $v->errors()->add(
-          'identity',
-          'At least one of name, phone, or email must be provided.'
-        );
-      }
-    });
+    // Intentionally empty — phone is enforced via the required rule.
   }
 
   public function messages(): array
