@@ -14,9 +14,18 @@ class IzigizService
    * Value = the exact LeadCampaignCode the Izigiz API expects.
    */
   public const CAMPAIGNS = [
-    'digital'           => 'VT0001',
-    'unbranded_warmup'  => 'VTWU0001',
-    'warmup_cartrack'   => 'CTK0002',
+    'tracker'            => 'VT0001',
+    'warm_up_unbranded'  => 'VTWU0001',
+    'warm_up_cartrack'   => 'CTK0002',
+    'car_insurance'      => 'HIP0001',
+  ];
+
+  /**
+   * When a campaign code is rejected by the API, retry once with its fallback.
+   * Key = the primary code that failed. Value = the fallback code to try next.
+   */
+  public const CAMPAIGN_FALLBACKS = [
+    'HIP0001' => 'KP0001',
   ];
 
   /**
@@ -60,6 +69,10 @@ class IzigizService
   /**
    * Step 2 — call the Izigiz REST API and update the lead record.
    *
+   * If the primary campaign code is rejected (non-2xx), and a fallback code is
+   * defined in CAMPAIGN_FALLBACKS, the call is retried once with the fallback
+   * before the lead is marked as failed.
+   *
    * Called from app()->terminating() in the controller, which means it runs
    * AFTER the HTTP response has been committed to the browser (PHP-FPM).
    * A timeout here does NOT affect the user's page load.
@@ -67,13 +80,30 @@ class IzigizService
   public function callApi(IzigizLead $lead, array $payload): void
   {
     try {
-      $response   = Http::timeout(30)
-        ->withHeaders(['Content-Type' => 'application/json'])
-        ->post(config('services.izigiz.endpoint'), $payload);
+      [$success, $httpStatus, $body] = $this->attemptApiCall($payload);
 
-      $httpStatus = $response->status();
-      $body       = $response->json();
-      $success    = in_array($httpStatus, [200, 201], true);
+      // Primary attempt failed — check for a configured fallback campaign code.
+      if (!$success) {
+        $primaryCode  = $lead->campaign_code;
+        $fallbackCode = self::CAMPAIGN_FALLBACKS[$primaryCode] ?? null;
+
+        if ($fallbackCode !== null) {
+          Log::info('IzigizService: primary campaign rejected, retrying with fallback', [
+            'lead_id'       => $lead->id,
+            'primary_code'  => $primaryCode,
+            'fallback_code' => $fallbackCode,
+            'http_status'   => $httpStatus,
+          ]);
+
+          $fallbackPayload          = $this->swapCampaignCode($payload, $fallbackCode);
+          [$success, $httpStatus, $body] = $this->attemptApiCall($fallbackPayload);
+
+          // Record the fallback code that was ultimately used.
+          if ($success) {
+            $lead->update(['campaign_code' => $fallbackCode]);
+          }
+        }
+      }
 
       $lead->update([
         'status'       => $success ? IzigizLead::STATUS_SUCCESS : IzigizLead::STATUS_FAILED,
@@ -86,15 +116,15 @@ class IzigizService
           'campaign' => $lead->campaign_code,
         ]);
       } else {
-        Log::warning('IzigizService: API rejected lead', [
+        Log::warning('IzigizService: API rejected lead (all attempts exhausted)', [
           'lead_id'     => $lead->id,
           'http_status' => $httpStatus,
           'response'    => $body,
         ]);
       }
     } catch (\Throwable $e) {
-      // timeout or connection failure — lead stays STATUS_PENDING in DB
-      // and can be retried via: php artisan izigiz:retry-pending
+      // Network failure — lead stays STATUS_PENDING and can be retried
+      // via: php artisan izigiz:retry-pending
       Log::error('IzigizService: API call failed', [
         'lead_id' => $lead->id,
         'error'   => $e->getMessage(),
@@ -105,6 +135,39 @@ class IzigizService
         'api_response' => ['error' => $e->getMessage()],
       ]);
     }
+  }
+
+  /**
+   * Execute a single HTTP call to the Izigiz API.
+   * Returns a three-element array: [bool $success, int $httpStatus, mixed $body].
+   */
+  private function attemptApiCall(array $payload): array
+  {
+    $response   = Http::timeout(30)
+      ->withHeaders(['Content-Type' => 'application/json'])
+      ->post(config('services.izigiz.endpoint'), $payload);
+
+    $httpStatus = $response->status();
+    $body       = $response->json();
+    $success    = in_array($httpStatus, [200, 201], true);
+
+    return [$success, $httpStatus, $body];
+  }
+
+  /**
+   * Return a copy of $payload with the LeadCampaignCode parameter swapped
+   * to $newCode. Used when retrying with a fallback campaign.
+   */
+  private function swapCampaignCode(array $payload, string $newCode): array
+  {
+    $payload['Parameters'] = array_map(
+      static fn(array $param) => $param['Key'] === 'LeadCampaignCode'
+        ? ['Key' => 'LeadCampaignCode', 'Value' => $newCode]
+        : $param,
+      $payload['Parameters']
+    );
+
+    return $payload;
   }
 
   // ---------------------------------------------------------------------------
