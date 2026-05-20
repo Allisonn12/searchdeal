@@ -51,4 +51,17 @@ return [
         'external_system_uid' => env('KARU_CRM_EXTERNAL_SYSTEM_UID', 'SearchADealWWW'),
     ],
 
+    /*
+    |--------------------------------------------------------------------------
+    | Izigiz Lead API
+    |--------------------------------------------------------------------------
+    | REST endpoint for the Izigiz tracker lead submission service.
+    | Campaign codes (VT0001, VTWU0001, CTK0002) are resolved at runtime by
+    | IzigizService::CAMPAIGNS — they are not environment-specific so they
+    | live in code, not in .env.
+    */
+    'izigiz' => [
+        'endpoint' => env('IZIGIZ_ENDPOINT', 'https://izigiz.com/api/lead/add'),
+    ],
+
 ];

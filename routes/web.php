@@ -11,6 +11,7 @@ use App\Http\Controllers\MedicalController;
 use App\Http\Controllers\LifeController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\KaruCrmController;
+use App\Http\Controllers\IzigizController;
 
 
 Route::get('/', [SearchADealConroller::class, 'index'])->name('index');
@@ -28,10 +29,13 @@ Route::get('/car-track-up', [SearchADealConroller::class, 'carTrackerup'])->name
 Route::get('/contact', [SearchADealConroller::class, 'contact'])->name('contact');
 Route::post('/contact', [ContactController::class, 'send'])->name('contact.send');
 
-Route::get('/car-insurance', [CarInsureController::class, 'index'])->name('car-insurance'); // Legacy routes
-Route::get('/car-insure', [CarInsureController::class, 'landing'])->name('car-insure'); // Legacy routes
-Route::post('/car-insurance', [CarInsureController::class, 'store'])->name('car.insure.submit');
-Route::post('/car-insure', [CarInsureController::class, 'store'])->name('car.insure.submit');
+// GET handlers replaced with Izigiz — forms on other pages (car-insurance.blade.php, car-insure.blade.php,
+// car-insurance-success.blade.php, car-track-success.blade.php, cicslhcf.blade.php, carTractUpsell.blade.php)
+// still POST via car.insure.submit → CarInsureController, which must remain untouched.
+Route::get('/car-insurance', [IzigizController::class, 'showCarInsurance'])->name('car-insurance');
+Route::get('/car-insure', [IzigizController::class, 'showCarInsureLanding'])->name('car-insure');
+Route::post('/car-insurance', [IzigizController::class, 'store'])->name('car.insure.submit');
+// POST /car-insure intentionally omitted — showCarInsureLanding() posts to car.insure.submit above.
 
 Route::get('/motor-warrenty', [MotorController::class, 'index'])->name('motor');
 Route::post('/motor-warrenty', [MotorController::class, 'store'])->name('motor.insure.submit');
@@ -39,12 +43,14 @@ Route::post('/motor-warrenty', [MotorController::class, 'store'])->name('motor.i
 Route::get('/debt-white-list', [DebtController::class, 'index'])->name('debt');
 Route::post('/debt-white-list', [DebtController::class, 'store'])->name('debt.submit');
 
-Route::get('/car-tracker', [TrackerController::class, 'index'])->name('tracker'); // Legacy routes
+// GET handler replaced with Izigiz — forms on other pages (tracker1, carInsure, car-track-up, carTractUpsell)
+// still POST via tracker.submit → TrackerController, which must remain untouched.
+Route::get('/car-tracker', [IzigizController::class, 'showCarTracker'])->name('tracker');
 Route::view('/car-tracker-elite', 'tracker1')->name('tracker1');
 Route::view('/personal-loan', 'trackerloan')->name('tracker.loan');
 Route::view('/car-insurance-elite', 'carInsure')->name('car.insure.elite'); // Upsell
 Route::view('/car-tracker-upsell', 'carTractUpsell')->name('car.tract.upsell'); // Upsell
-Route::post('/car-tracker', [TrackerController::class, 'store'])->name('tracker.submit');
+Route::post('/car-tracker', [IzigizController::class, 'store'])->name('tracker.submit');
 
 Route::get('/life-insurance', [LifeController::class, 'index'])->name('life');
 Route::post('/life-insurance', [LifeController::class, 'store'])->name('life.submit');
@@ -58,13 +64,6 @@ Route::post('/loans', [LoanController::class, 'store'])->name('loan.submit');
 Route::get('/medical-insurance', [MedicalController::class, 'index'])->name('medical');
 Route::post('/medical-insurance', [MedicalController::class, 'store'])->name('medical.submit');
 
-/*
-|--------------------------------------------------------------------------
-| Karu CRM (Cartrack) Lead Submission
-|--------------------------------------------------------------------------
-| Accepts a JSON POST of lead data and forwards it to the Karu CRM API.
-| Returns JSON — frontend integration is handled in a separate PR.
-*/
 Route::get('/dashcams-car-insurance-upsell', function () {
   return view('dashcamCarInsureUpsell');
 })->name('dashcams.insure.upsell');
@@ -73,6 +72,25 @@ Route::get('/dashcams-car-tracker-upsell', function () {
 })->name('dashcams.tracker.upsell');
 Route::get('/dashcams', [KaruCrmController::class, 'index'])->name('dashcams');
 Route::post('/dashcams', [KaruCrmController::class, 'store'])->name('karu.submit');
+
+/*
+|--------------------------------------------------------------------------
+| Izigiz Tracker Lead Submission
+|--------------------------------------------------------------------------
+|   /tracker/digital  → VT0001  (alias for /car-tracker, kept for backward compat)
+*/
+Route::get('/tracker/digital', [IzigizController::class, 'showDigital'])->name('izigiz.digital.show');
+Route::post('/tracker/digital', [IzigizController::class, 'store'])->name('izigiz.digital');
+
+/*
+|--------------------------------------------------------------------------
+| Izigiz Car Insurance Lead Submission
+|--------------------------------------------------------------------------
+|   /insurance/hip  → HIP0001  (alias for /car-insurance, kept for backward compat)
+*/
+Route::get('/insurance/hip', [IzigizController::class, 'showCarInsurance'])->name('izigiz.car_insurance_hip.show');
+Route::post('/insurance/hip', [IzigizController::class, 'store'])->name('izigiz.car_insurance_hip');
+
 // Cookies
 /**
  * Accepts and stores a cookie consent.
