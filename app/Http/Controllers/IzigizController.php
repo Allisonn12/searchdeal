@@ -74,12 +74,12 @@ class IzigizController extends Controller
   /**
    * Single entry point for ALL Izigiz lead submissions.
    *
-   * The campaign code and success redirect are resolved from the HTTP Referer
-   * header, so the same endpoint serves every form on the site without needing
-   * a hidden field or separate routes per campaign.
+   * The campaign code is resolved from the HTTP Referer header so the same
+   * endpoint serves every form on the site. All submissions redirect to the
+   * shared /success page — no upsell pages are shown.
    *
-   *   Referer contains "car-insurance" or "car-insure" → HIP0001 → car_insure_success
-   *   Everything else (car-tracker, tracker/*, unknown)  → VT0001  → tracker1
+   *   Referer contains "car-insurance" or "car-insure" → HIP0001 → success
+   *   Everything else (car-tracker, tracker/*, unknown)  → VT0001  → success
    */
   public function store(StoreLeadRequest $request)
   {
@@ -103,21 +103,21 @@ class IzigizController extends Controller
     $path = parse_url($request->headers->get('referer', ''), PHP_URL_PATH) ?? '';
 
     if (str_contains($path, 'car-insurance') || str_contains($path, 'car-insure') || str_contains($path, 'insurance/hip')) {
-      return [IzigizService::CAMPAIGNS['car_insurance'], 'car_insure_success'];
+      return [IzigizService::CAMPAIGNS['car_insurance'], 'success'];
     }
 
     // Warm-up channel — unbranded (/car-track-up).
     if (str_contains($path, 'car-track-up')) {
-      return [IzigizService::CAMPAIGNS['warm_up_unbranded'], 'tracker1'];
+      return [IzigizService::CAMPAIGNS['warm_up_unbranded'], 'success'];
     }
 
     // Warm-up channel — Cartrack branded (/car-tracker-upsell).
     if (str_contains($path, 'car-tracker-upsell')) {
-      return [IzigizService::CAMPAIGNS['warm_up_cartrack'], 'tracker1'];
+      return [IzigizService::CAMPAIGNS['warm_up_cartrack'], 'success'];
     }
 
     // Default: digital tracker campaign covers /car-tracker, /tracker/*, and any unknown source.
-    return [IzigizService::CAMPAIGNS['tracker'], 'tracker1'];
+    return [IzigizService::CAMPAIGNS['tracker'], 'success'];
   }
 
   /**
