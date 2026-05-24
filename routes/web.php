@@ -47,7 +47,7 @@ Route::post('/debt-white-list', [DebtController::class, 'store'])->name('debt.su
 // still POST via tracker.submit → TrackerController, which must remain untouched.
 Route::get('/car-tracker', [IzigizController::class, 'showCarTracker'])->name('tracker');
 Route::view('/car-tracker-elite', 'tracker1')->name('tracker1');
-Route::view('/personal-loan', 'trackerloan')->name('tracker.loan');
+Route::view('/personal-loan', 'loan')->name('tracker.loan');
 Route::view('/car-insurance-elite', 'carInsure')->name('car.insure.elite'); // Upsell
 Route::view('/car-tracker-upsell', 'carTractUpsell')->name('car.tract.upsell'); // Upsell
 Route::post('/car-tracker', [IzigizController::class, 'store'])->name('tracker.submit');

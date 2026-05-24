@@ -1,4 +1,3 @@
-@include('partials.flash')
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
@@ -37,7 +36,7 @@
               primary: '#0f172a',
               background: '#f8fafc',
               white: '#ffffff',
-              accent: '#f59e0b',
+              accent: '#E23E3E',
               muted: '#64748b',
               border: '#e2e8f0',
               insurance: '#1e40af',
@@ -56,11 +55,12 @@
     <link rel="stylesheet" href="{{ asset('css/styles.css') }}" />
 
     <style>
-        .text-accent  { color: #F59E0B; }
-        .orange-bg    { background: #F59E0B; }
+
+        .text-accent  { color: #E23E3E; }
+        .orange-bg    { background: #E23E3E; }
         .black-button,
         .black-bg     { background: #0F172A; }
-        .black-button:hover { background: #F59E0B; }
+        .black-button:hover { background: #E23E3E; }
         .grey-bg      { background: #F8FAFC; }
         .light-orange { color: #312002; }
         .blue-bg     { background: #0F172A; }
@@ -132,3 +132,5 @@
         </div>
     </div>
 @endif
+
+@include('partials.flash')

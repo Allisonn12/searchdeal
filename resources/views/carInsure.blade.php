@@ -1,586 +1,846 @@
-@include('partials.flash')
 <!DOCTYPE html>
-<!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=G-WX9J0BVDQC"></script> <script> window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-WX9J0BVDQC'); </script>
-
-<!-- Facebook Pixel Code -->
-<script nonce="4BUkMtdd">
-  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-          n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-          document,'script','https://connect.facebook.net/en_US/fbevents.js');
-
-  fbq('init', '1322182192366880');
-  fbq('set','agent','tmgoogletagmanager', '1322182192366880');
-  fbq('track', "PageView");
-</script>
-<noscript><img height="1" width="1" style="display:none"
-               src="https://www.facebook.com/tr?id=1322182192366880&ev=PageView&noscript=1"
-  /></noscript>
-<!-- End Facebook Pixel Code -->
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Complete Your Vehicle Protection | SearchADeal</title>
+  <title>Car Insurance Upsell</title>
 
-  {{-- Tailwind config — identical design tokens to tracker1 --}}
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            primary: '#0f172a',
-            background: '#f8fafc',
-            white: '#ffffff',
-            accent: '#f59e0b',
-            muted: '#64748b',
-            border: '#e2e8f0',
-            insurance: '#1e40af',
-            tracker: '#065f46',
-            loans: '#92400e'
-          },
-          fontFamily: {
-            heading: ['DM Sans', 'ui-sans-serif', 'system-ui', 'sans-serif'],
-            body: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif']
-          }
-        }
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <style>
+
+    :root{
+      --bg:#f8f6f2;
+      --surface:#f0ece5;
+      --ink:#171411;
+      --ink-soft:#5e5953;
+      --accent:#c84b11;
+      --accent-tint:#fff4ee;
+      --divider:#d9d2ca;
+      --primary:#081225;
+      --white:#ffffff;
+      --trust:#2470a8;
+      --danger:#d74b4b;
+      --muted:#7a756e;
+    }
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      background:var(--bg);
+      color:var(--ink);
+      font-family:'DM Sans',sans-serif;
+      line-height:1.6;
+      -webkit-font-smoothing:antialiased;
+    }
+
+    h1,h2,h3,h4{
+      font-family:'Playfair Display',serif;
+      font-weight:700;
+    }
+
+    img{
+      max-width:100%;
+      display:block;
+    }
+
+    .container{
+      width:100%;
+      max-width:760px;
+      margin:0 auto;
+      padding:0 24px;
+    }
+
+    /* HERO */
+
+    .hero{
+      padding:70px 0 50px;
+      text-align:center;
+    }
+
+    .hero-badge{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      color:var(--accent);
+      text-transform:uppercase;
+      letter-spacing:.08em;
+      font-size:13px;
+      font-weight:700;
+      margin-bottom:24px;
+    }
+
+    .hero h1{
+      font-size:clamp(2.3rem,5vw,4.3rem);
+      line-height:1.05;
+      letter-spacing:-.03em;
+      margin-bottom:40px;
+    }
+
+    /*.hero-full-image{*/
+    /*  width:100vw;*/
+    /*  position:relative;*/
+    /*  left:50%;*/
+    /*  transform:translateX(-50%);*/
+    /*  margin-bottom:40px;*/
+    /*}*/
+
+    .hero-desc{
+      font-size:clamp(1.15rem,2vw,1.5rem);
+      line-height:1.5;
+      color:var(--ink-soft);
+      font-style:italic;
+      margin-bottom:30px;
+    }
+
+    .hero-note{
+      font-size:clamp(1rem,2vw,1.25rem);
+      font-weight:700;
+      line-height:1.6;
+    }
+
+    /* CONTENT */
+
+    section.content{
+      padding-bottom:80px;
+    }
+
+    p{
+      font-size:18px;
+      line-height:1.7;
+      margin-bottom:24px;
+    }
+
+    h2{
+      font-size:clamp(2rem,4vw,3rem);
+      line-height:1.15;
+      letter-spacing:-.02em;
+      margin-bottom:28px;
+    }
+
+    h3{
+      font-size:1.7rem;
+      line-height:1.2;
+      margin-bottom:16px;
+    }
+
+    hr{
+      border:none;
+      border-top:1px solid var(--divider);
+      margin:70px 0;
+    }
+
+    /* DARK CALLOUT */
+
+    .callout-dark{
+      background:var(--ink);
+      color:#fff;
+      padding:38px;
+      border-radius:10px;
+      margin-bottom:50px;
+    }
+
+    .callout-dark p{
+      margin:0;
+      opacity:.9;
+      font-size:1.3rem;
+      font-style:italic;
+    }
+
+    /* GRID */
+
+    .grid-2{
+      display:grid;
+      grid-template-columns:1fr;
+      gap:24px;
+      margin:50px 0;
+    }
+
+    @media(min-width:768px){
+      .grid-2{
+        grid-template-columns:1fr 1fr;
       }
     }
-  </script>
-  <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
-  <link rel="stylesheet" href="{{ asset('css/styles.css') }}" />
 
-  <style>
-    .text-accent  { color: #F59E0B; }
-    .orange-bg    { background: #F59E0B; }
-    .black-button,
-    .black-bg     { background: #0F172A; }
-    .grey-bg      { background: #F8FAFC; }
-    .light-orange { color: #312002; }
-  </style>
-
-
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-              new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-NWN5MH94');</script>
-  <!-- End Google Tag Manager -->
-  <style>
-    .hlabi-body{
-      font-size: 18px !important;
+    .card{
+      padding:30px;
+      border-radius:10px;
     }
+
+    .card-default{
+      border:1px solid var(--divider);
+      background:var(--surface);
+    }
+
+    .card-accent{
+      border:2px solid var(--accent);
+      background:var(--accent-tint);
+    }
+
+    .card h4{
+      font-size:1.05rem;
+      margin-bottom:12px;
+      font-family:'DM Sans',sans-serif;
+    }
+
+    .card p{
+      margin:0;
+      color:var(--ink-soft);
+      font-size:16px;
+    }
+
+    /* LISTS */
+
+    .list{
+      display:flex;
+      flex-direction:column;
+      gap:18px;
+      margin-top:20px;
+    }
+
+    .list-item{
+      display:flex;
+      align-items:flex-start;
+      gap:12px;
+    }
+
+    .icon{
+      width:22px;
+      height:22px;
+      border-radius:50%;
+      flex-shrink:0;
+      margin-top:2px;
+    }
+
+    .icon.check{
+      background:#2f8b58;
+    }
+
+    .icon.x{
+      background:#d74b4b;
+    }
+
+    /* BOX */
+
+    .box{
+      background:#fff;
+      border:1px solid var(--divider);
+      border-radius:10px;
+      padding:36px;
+      margin:40px 0;
+    }
+
+    .box-highlight{
+      background:var(--accent-tint);
+      border-left:4px solid var(--accent);
+    }
+
+    .cost-row{
+      display:flex;
+      gap:18px;
+      margin-bottom:20px;
+      align-items:flex-start;
+    }
+
+    .cost{
+      width:95px;
+      flex-shrink:0;
+      color:#cf5b28;
+      font-weight:700;
+    }
+
+    /* STEPS */
+
+    .steps{
+      display:flex;
+      flex-direction:column;
+      gap:50px;
+      margin:60px 0;
+    }
+
+    .step{
+      display:flex;
+      gap:24px;
+    }
+
+    .step-number{
+      width:34px;
+      height:34px;
+      border-radius:50%;
+      background:var(--ink);
+      color:#fff;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-weight:700;
+      flex-shrink:0;
+      margin-top:4px;
+    }
+
+    /* FORM */
+
+    .form-section{
+      background:var(--surface);
+      border:2px solid var(--divider);
+      border-radius:12px;
+      padding:55px 34px;
+      max-width:640px;
+      margin:90px auto;
+      position:relative;
+      box-shadow:0 18px 40px rgba(0,0,0,.08);
+    }
+
+    .form-badge{
+      position:absolute;
+      top:-16px;
+      left:50%;
+      transform:translateX(-50%);
+      background:var(--surface);
+      padding:0 14px;
+    }
+
+    .form-badge span{
+      background:rgba(200,75,17,.12);
+      color:var(--accent);
+      border-radius:999px;
+      padding:8px 16px;
+      font-size:12px;
+      text-transform:uppercase;
+      letter-spacing:.1em;
+      font-weight:700;
+    }
+
+    .form-section h3{
+      text-align:center;
+      margin-bottom:12px;
+    }
+
+    .form-sub{
+      text-align:center;
+      color:var(--muted);
+      margin-bottom:38px;
+      font-style:italic;
+    }
+
+    form{
+      display:flex;
+      flex-direction:column;
+      gap:24px;
+    }
+
+    .form-group{
+      display:flex;
+      flex-direction:column;
+      gap:10px;
+    }
+
+    label{
+      font-size:14px;
+      font-weight:700;
+    }
+
+    input,
+    select{
+      width:100%;
+      height:60px;
+      padding:0 18px;
+      border:1px solid #d7d0c7;
+      border-radius:4px;
+      background:#fff;
+      font-size:15px;
+      font-family:'DM Sans',sans-serif;
+    }
+
+    input:focus,
+    select:focus{
+      outline:none;
+      border-color:var(--accent);
+    }
+
+    .contact-group{
+      border-top:1px solid var(--divider);
+      padding-top:28px;
+      display:flex;
+      flex-direction:column;
+      gap:16px;
+    }
+
+    .btn-submit{
+      border:none;
+      background:var(--primary);
+      color:#fff;
+      border-radius:999px;
+      min-height:88px;
+      cursor:pointer;
+      margin-top:10px;
+      transition:.2s ease;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+    }
+
+    .btn-submit:hover{
+      background:var(--accent);
+      transform:translateY(-2px);
+    }
+
+    .btn-main{
+      font-size:18px;
+      font-weight:700;
+      text-transform:uppercase;
+      letter-spacing:.04em;
+    }
+
+    .btn-sub{
+      font-size:12px;
+      opacity:.8;
+      margin-top:5px;
+    }
+
+    .form-legal{
+      margin-top:30px;
+      text-align:center;
+      font-size:11px;
+      color:var(--muted);
+      text-transform:uppercase;
+      letter-spacing:.08em;
+      line-height:1.8;
+    }
+
+    /* FAQ */
+
+    .faq-item{
+      padding:30px 0;
+      border-bottom:1px solid var(--divider);
+    }
+
+    .faq-item h3{
+      font-size:1.5rem;
+      margin-bottom:12px;
+    }
+
+    /* POSTSCRIPT */
+
+    .ps-box{
+      display:grid;
+      grid-template-columns:1fr;
+      gap:30px;
+      border-top:4px solid var(--accent);
+      background:var(--accent-tint);
+      padding:36px;
+      border-radius:10px;
+      margin-top:70px;
+    }
+
+    @media(min-width:768px){
+      .ps-box{
+        grid-template-columns:40% 60%;
+      }
+    }
+
   </style>
 </head>
-<body class="min-h-screen flex flex-col relative bg-white">
 
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NWN5MH94"
-                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+<body>
 
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
 
-{{-- ── Header — identical structure to tracker1 ── --}}
-{{-- ── Header — identical to tracker1 ── --}}
-<header class="fixed top-0 left-0 right-0 h-[58px] px-[14.5px] md:px-[58px] flex items-center justify-between z-50 bg-background/90 backdrop-blur-sm">
-  <div class="font-heading font-bold text-xl tracking-tighter">SearchADeal</div>
+    <div class="hero-badge">
+      🛡️ One Final Step: Complete Your Vehicle Protection
+    </div>
 
-  <button
-          type="button"
-          aria-label="Open Menu"
-          class="md:hidden inline-flex items-center justify-center w-9 h-9 rounded-md border border-primary text-primary hover:bg-background/60"
-          onclick="document.getElementById('mobile-menu').classList.toggle('hidden')"
-  >
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
-      <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-    </svg>
-  </button>
+    <h1>
+      You Just Made One of the Smartest Decisions a South African Driver Can Make
+    </h1>
 
-  <nav class="hidden md:flex items-center gap-8 font-heading text-[10px] font-medium uppercase tracking-wider">
-    <a href="{{ route('index') }}"         class="nav-item nav-link {{ Route::is('index')         ? 'active' : '' }}">Home</a>
-    <a href="{{ route('car-insurance') }}"  class="nav-item nav-link {{ Route::is('car-insurance') ? 'active' : '' }}">Car Insurance</a>
-    <a href="{{ route('tracker1') }}"       class="nav-item nav-link {{ Route::is('tracker1')      ? 'active' : '' }}">Car Trackers</a>
-    <a href="{{ route('tracker.loan') }}"   class="hover:text-accent transition-colors">Personal Loans</a>
-    <a href="{{ route('how-it-works') }}"   class="nav-item nav-link {{ Route::is('how-it-works')   ? 'active' : '' }}">How It Works</a>
-  </nav>
-
-</header>
-
-{{-- Mobile menu drawer --}}
-<div id="mobile-menu" class="md:hidden hidden fixed top-[58px] inset-x-0 z-40 bg-white border-b border-border shadow-sm float-end">
-  <div class="px-4 py-3 flex flex-col gap-3 font-heading text-[12px] uppercase">
-    <a href="{{ route('index') }}"         class="py-2">Home</a>
-    <a href="{{ route('car-insurance') }}" class="py-2">Car Insurance</a>
-    <a href="{{ route('tracker1') }}"      class="py-2">Car Trackers</a>
-    <a href="{{ route('tracker.loan') }}"  class="py-2">Personal Loans</a>
-    <a href="{{ route('how-it-works') }}"  class="py-2">How It Works</a>
   </div>
-</div>
 
-{{-- ══════════════════ MAIN ══════════════════ --}}
-<main class="flex-grow pt-[58px] bg-white">
+  <div class="">
+    <img src="https://billboardads.digitalcavemen.com/wp-content/uploads/2026/04/Image-1-Varient-A.png"
+         class="w-full h-auto mb-8 mt-6 rounded-lg shadow-sm"
+         style="position: relative; width: 100vw; left: 50%; transform: translateX(-50%);"
+         alt="">
+  </div>
 
-  {{-- ── Hero Section ── --}}
-  <section class="py-20 px-[14.5px] md:px-[58px] bg-background grey-bg">
-    <div class="max-w-[1000px] mx-auto text-center">
+  <div class="container">
 
-      {{-- Urgency badge — bg-accent/10 via inline style for CDN Tailwind reliability --}}
-      <div class="inline-flex items-center gap-2 px-4 py-2 text-accent rounded-full font-heading text-[12px] font-bold uppercase tracking-widest mb-8" style="background-color:rgba(245,158,11,0.1);">
-        <i data-lucide="shield-alert" class="w-[16px] h-[16px]"></i>
-        One Final Step: Complete Your Vehicle Protection
-      </div>
+    <p class="hero-desc">
+      Congratulations. Seriously. By getting competitive insurance quotes from the Elite 5, you've done something 94% of drivers never do.
+    </p>
 
-      <h1 class="font-heading text-[clamp(36px,4.5vw,64px)] font-medium leading-[1.1] tracking-[-0.03em] text-primary mb-8">
-        You Just Made One of the Smartest Decisions a South African Driver Can Make
-      </h1>
+    <p class="hero-note">
+      That takes intelligence. Discipline. A refusal to overpay for identical coverage.
+    </p>
 
-      <p class="font-body text-[18px] text-muted max-w-3xl mx-auto mb-8 leading-relaxed">
-        Congratulations. Seriously. By getting competitive insurance quotes from the Elite 5, you&rsquo;ve done something 94% of drivers never do: you&rsquo;ve forced insurers to compete for your business instead of settling for whatever renewal notice shows up.
-      </p>
+  </div>
+</section>
 
-      <p class="font-body text-[16px] text-primary font-bold max-w-3xl mx-auto">
-        That takes intelligence. Discipline. A refusal to overpay for identical coverage.
+<!-- CONTENT -->
+<section class="content">
+  <div class="container">
+
+    <div class="callout-dark">
+      <h3>But here's what nobody tells you about insurance savings...</h3>
+      <p>
+        Insurance only protects you after something's already been taken.
       </p>
     </div>
-  </section>
 
-  {{-- ── Editorial Content ── --}}
-  <section class="py-20 px-[14.5px] md:px-[58px]">
-    <div class="max-w-[800px] mx-auto prose prose-slate prose-lg">
+    <p>
+      Think about it. The Reverse-Auction Match just saved you R400–R850/month by connecting you with providers who'll compensate you if your vehicle is stolen.
+    </p>
 
-      {{-- Dark callout box — "But here's what nobody tells you..." --}}
-      <div class="p-8 rounded-[3px] mb-12 not-prose black-bg text-white">
-        <h3 class="font-heading text-[24px] font-medium mb-4 text-white">
-          But here&rsquo;s what nobody tells you about insurance savings&hellip;
-        </h3>
-        <p class="font-body text-[18px] italic m-0" style="opacity:0.9;">
-          Insurance only protects you after something&rsquo;s already been taken.
+    <div class="grid-2">
+
+      <div class="card card-default">
+        <h4>Compensation is:</h4>
+        <p>
+          Your car disappears, you file a claim, you wait 30 days, you get a payout minus excess.
         </p>
       </div>
 
-      <p class="font-body text-[16px] text-muted leading-relaxed mb-6">
-        Think about it. The Reverse-Auction Match just saved you R400&ndash;R850/month by connecting you with providers who&rsquo;ll compensate you if your vehicle is stolen. But compensation isn&rsquo;t recovery.
+      <div class="card card-accent">
+        <h4 style="color:var(--accent);">Recovery is:</h4>
+        <p style="color:var(--ink);">
+          Your tracker activates, armed response is dispatched, your vehicle is recovered within hours.
+        </p>
+      </div>
+
+    </div>
+
+    <p style="text-align:center;font-weight:700;font-size:24px;">
+      One gives you money eventually. The other gives you your actual car back immediately.
+    </p>
+
+    <img
+            src="https://billboardads.digitalcavemen.com/wp-content/uploads/2026/04/Image-2-Varient-B.png"
+            alt=""
+            style="margin:50px 0;border-radius:10px;"
+    >
+
+    <hr>
+
+    <h2>
+      The gap between "insured" and "protected" costs R127,000 on average
+    </h2>
+
+    <div class="box">
+
+      <div class="cost-row">
+        <div class="cost">R18,000:</div>
+        <div>Average insurance excess you pay out of pocket</div>
+      </div>
+
+      <div class="cost-row">
+        <div class="cost">R47,000:</div>
+        <div>Value depreciation gap</div>
+      </div>
+
+      <div class="cost-row">
+        <div class="cost">R14,000:</div>
+        <div>Premium increase over 3 years</div>
+      </div>
+
+      <div class="cost-row">
+        <div class="cost">R22,000:</div>
+        <div>Replacement shopping costs</div>
+      </div>
+
+      <div class="cost-row">
+        <div class="cost">R26,000:</div>
+        <div>Psychological and emotional impact</div>
+      </div>
+
+      <hr style="margin:30px 0;">
+
+      <p style="font-weight:700;margin:0;">
+        Total real cost: R127,000
       </p>
 
-      {{-- Two-column: Compensation vs Recovery --}}
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12 not-prose">
-        <div class="p-6 border border-border rounded-[3px] grey-bg">
-          <div class="font-heading text-[16px] font-bold text-primary mb-3">Compensation is:</div>
-          <p class="font-body text-[14px] text-muted m-0">Your car disappears, you file a claim, you wait 30 days, you get a payout minus excess, you spend weeks shopping for a replacement, you settle for something inferior because values have increased.</p>
+    </div>
+
+    <div class="box box-highlight">
+
+      <div class="list">
+
+        <div class="list-item">
+          <div class="icon check"></div>
+          <div><strong>R0:</strong> No excess paid</div>
         </div>
-        <div class="p-6 rounded-[3px]" style="border:2px solid #F59E0B; background-color:rgba(245,158,11,0.05);">
-          <div class="font-heading text-[16px] font-bold mb-3 text-accent">Recovery is:</div>
-          <p class="font-body text-[14px] text-primary m-0">Your car is taken, your tracker activates, armed response is dispatched within minutes, your vehicle is recovered within hours, you drive it home the same day.</p>
+
+        <div class="list-item">
+          <div class="icon check"></div>
+          <div><strong>R0:</strong> No depreciation loss</div>
+        </div>
+
+        <div class="list-item">
+          <div class="icon check"></div>
+          <div><strong>R0:</strong> No premium spike</div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <hr>
+
+    <h2>The Completion Principle</h2>
+
+    <div class="grid-2">
+
+      <div>
+        <h4 style="margin-bottom:20px;">What you secured:</h4>
+
+        <div class="list">
+
+          <div class="list-item">
+            <div class="icon check"></div>
+            <div>Financial protection if your vehicle disappears permanently</div>
+          </div>
+
+          <div class="list-item">
+            <div class="icon check"></div>
+            <div>Lower premiums because insurers competed for you</div>
+          </div>
+
         </div>
       </div>
 
-      <p class="font-body text-[16px] text-primary font-bold mb-12 text-center">
-        One gives you money eventually. The other gives you your actual car back immediately.
-      </p>
+      <div>
+        <h4 style="margin-bottom:20px;">What you haven't secured yet:</h4>
 
-      {{-- The R127,000 Gap --}}
-      <h2 class="font-heading text-[32px] font-medium text-primary mb-6 tracking-tight">
-        The Gap Between &ldquo;Insured&rdquo; and &ldquo;Protected&rdquo; Costs R127,000 on Average
-      </h2>
-      <p class="font-body text-[16px] text-muted leading-relaxed mb-8">
-        When your insured vehicle is stolen and not recovered, here&rsquo;s the real cost:
-      </p>
+        <div class="list">
 
-      <div class="p-8 rounded-[3px] border border-border mb-12 not-prose grey-bg">
-        <div class="space-y-4 mb-6">
-
-          <div class="flex items-start gap-4">
-            <span class="font-heading text-[16px] font-bold text-red-500 shrink-0" style="width:80px;">R18,000:</span>
-            <span class="font-body text-[15px] text-muted">Average insurance excess you pay out of pocket</span>
-          </div>
-          <div class="flex items-start gap-4">
-            <span class="font-heading text-[16px] font-bold text-red-500 shrink-0" style="width:80px;">R47,000:</span>
-            <span class="font-body text-[15px] text-muted">Value depreciation gap (what insurance pays vs. what replacement actually costs in 2025)</span>
-          </div>
-          <div class="flex items-start gap-4">
-            <span class="font-heading text-[16px] font-bold text-red-500 shrink-0" style="width:80px;">R14,000:</span>
-            <span class="font-body text-[15px] text-muted">Premium increase over the next 3 years (claims spike your risk profile)</span>
-          </div>
-          <div class="flex items-start gap-4">
-            <span class="font-heading text-[16px] font-bold text-red-500 shrink-0" style="width:80px;">R22,000:</span>
-            <span class="font-body text-[15px] text-muted">Replacement shopping costs (rental car, time off work, settlement delays)</span>
-          </div>
-          <div class="flex items-start gap-4">
-            <span class="font-heading text-[16px] font-bold text-red-500 shrink-0" style="width:80px;">R26,000:</span>
-            <span class="font-body text-[15px] text-muted">Intangible costs (violation, fear, psychological impact, lost personal items)</span>
+          <div class="list-item">
+            <div class="icon x"></div>
+            <div>The ability to stop a theft in progress</div>
           </div>
 
-        </div>
-        <div class="pt-4 border-t border-border">
-          <p class="font-heading text-[18px] font-bold text-primary m-0">
-            Total real cost: R127,000. For a vehicle insurance &ldquo;replaced.&rdquo;
-          </p>
+          <div class="list-item">
+            <div class="icon x"></div>
+            <div>Real-time location tracking</div>
+          </div>
+
         </div>
       </div>
 
-      <p class="font-body text-[16px] text-muted leading-relaxed mb-6">
-        Meanwhile, if that same vehicle had been recovered intact within hours:
-      </p>
+    </div>
 
-      {{-- Recovery cost = R0 box —  border-accent/20 via inline style --}}
-      <div class="p-8 rounded-[3px] mb-12 not-prose" style="background-color:rgba(245,158,11,0.1); border:1px solid rgba(245,158,11,0.2);">
-        <div class="space-y-2 mb-6">
-          <div class="flex items-center gap-3">
-            <i data-lucide="check-circle-2" class="w-[18px] h-[18px] text-accent shrink-0"></i>
-            <span class="font-body text-[15px] text-primary"><strong>R0:</strong> No excess paid (no claim filed)</span>
-          </div>
-          <div class="flex items-center gap-3">
-            <i data-lucide="check-circle-2" class="w-[18px] h-[18px] text-accent shrink-0"></i>
-            <span class="font-body text-[15px] text-primary"><strong>R0:</strong> No depreciation loss (you kept your car)</span>
-          </div>
-          <div class="flex items-center gap-3">
-            <i data-lucide="check-circle-2" class="w-[18px] h-[18px] text-accent shrink-0"></i>
-            <span class="font-body text-[15px] text-primary"><strong>R0:</strong> No premium spike (no claim on record)</span>
-          </div>
-          <div class="flex items-center gap-3">
-            <i data-lucide="check-circle-2" class="w-[18px] h-[18px] text-accent shrink-0"></i>
-            <span class="font-body text-[15px] text-primary"><strong>R0:</strong> No replacement hassle</span>
-          </div>
-          <div class="flex items-center gap-3">
-            <i data-lucide="check-circle-2" class="w-[18px] h-[18px] text-accent shrink-0"></i>
-            <span class="font-body text-[15px] text-primary"><strong>R0:</strong> No psychological violation</span>
-          </div>
-        </div>
-        <div class="pt-4" style="border-top:1px solid rgba(245,158,11,0.2);">
-          <p class="font-heading text-[18px] font-bold text-primary m-0">
-            Total real cost: R0. Plus you still have your car.
-          </p>
-        </div>
-      </div>
+    <hr>
 
-      {{-- The Completion Principle --}}
-      <h2 class="font-heading text-[32px] font-medium text-primary mb-6 tracking-tight">
-        The Completion Principle
-      </h2>
-      <p class="font-body text-[16px] text-muted leading-relaxed mb-8">
-        You just unlocked competitive insurance pricing. That&rsquo;s massive. But think about what you actually secured:
-      </p>
+    <h2>The Recovery Completion System</h2>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16 not-prose">
+    <div class="steps">
+
+      <div class="step">
+        <div class="step-number">1</div>
+
         <div>
-          <h4 class="font-heading text-[16px] font-bold text-primary mb-4">What you secured:</h4>
-          <ul class="space-y-3 m-0 p-0 list-none">
-            <li class="flex items-start gap-3">
-              <i data-lucide="check-circle-2" class="w-[18px] h-[18px] text-accent shrink-0 mt-0.5"></i>
-              <span class="text-[14px] text-muted">Financial protection if your vehicle disappears permanently</span>
-            </li>
-            <li class="flex items-start gap-3">
-              <i data-lucide="check-circle-2" class="w-[18px] h-[18px] text-accent shrink-0 mt-0.5"></i>
-              <span class="text-[14px] text-muted">Lower premiums because insurers competed for you</span>
-            </li>
-            <li class="flex items-start gap-3">
-              <i data-lucide="check-circle-2" class="w-[18px] h-[18px] text-accent shrink-0 mt-0.5"></i>
-              <span class="text-[14px] text-muted">Better coverage terms from elite providers</span>
-            </li>
-          </ul>
+          <h3>One More 60-Second Form</h3>
+          <p>Vehicle details, location, preferred contact method.</p>
         </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">2</div>
+
         <div>
-          <h4 class="font-heading text-[16px] font-bold text-primary mb-4">What you haven&rsquo;t secured yet:</h4>
-          <ul class="space-y-3 m-0 p-0 list-none">
-            <li class="flex items-start gap-3">
-              <i data-lucide="x-circle" class="w-[18px] h-[18px] text-red-400 shrink-0 mt-0.5"></i>
-              <span class="text-[14px] text-muted">The ability to stop a theft in progress</span>
-            </li>
-            <li class="flex items-start gap-3">
-              <i data-lucide="x-circle" class="w-[18px] h-[18px] text-red-400 shrink-0 mt-0.5"></i>
-              <span class="text-[14px] text-muted">Real-time location tracking if your car is taken</span>
-            </li>
-            <li class="flex items-start gap-3">
-              <i data-lucide="x-circle" class="w-[18px] h-[18px] text-red-400 shrink-0 mt-0.5"></i>
-              <span class="text-[14px] text-muted">Armed response coordination with SAPS</span>
-            </li>
-            <li class="flex items-start gap-3">
-              <i data-lucide="x-circle" class="w-[18px] h-[18px] text-red-400 shrink-0 mt-0.5"></i>
-              <span class="text-[14px] text-muted">Recovery infrastructure that works at 2 AM on a Sunday</span>
-            </li>
-          </ul>
+          <h3>Your Profile Reaches the Elite 5 Trackers</h3>
+          <p>The same established leaders you'd find through weeks of research.</p>
         </div>
       </div>
 
-      {{-- SAPS Stats --}}
-      <h2 class="font-heading text-[32px] font-medium text-primary mb-6 tracking-tight">
-        The Brutal Reality: 63% of Stolen Vehicles in South Africa Are Never Recovered Intact
-      </h2>
-      <div class="p-8 rounded-[3px] border-l-4 border-primary mb-12 not-prose grey-bg">
-        <p class="font-body text-[15px] text-muted mb-4"><strong>SAPS data, 2024:</strong> 48 vehicles stolen per day in Gauteng alone. That&rsquo;s one every 30 minutes. Of those stolen vehicles:</p>
-        <ul class="space-y-2 mb-4">
-          <li class="text-[14px] text-muted">&bull; 37% are never found (disappeared into chop shops, across borders, or stripped for parts)</li>
-          <li class="text-[14px] text-muted">&bull; 26% are found burned or stripped (recovered, but totaled)</li>
-          <li class="text-[14px] text-primary font-bold">&bull; Only 37% are recovered intact, and most of those had active tracking systems</li>
-        </ul>
-      </div>
+      <div class="step">
+        <div class="step-number">3</div>
 
-      {{-- Recovery Completion System --}}
-      <h2 class="font-heading text-[32px] font-medium text-primary mb-6 tracking-tight">
-        Introducing: The Recovery Completion System
-      </h2>
-      <p class="font-body text-[16px] text-muted leading-relaxed mb-8">
-        You&rsquo;ve already experienced The Reverse-Auction Match for insurance. Now you get the same process for tracker quotes.
-      </p>
-
-      <div class="space-y-8 mb-16 not-prose">
-
-        <div class="p-6 border border-border rounded-[3px]">
-          <h4 class="font-heading text-[18px] font-bold text-primary mb-2">Step 1: One More 60-Second Form</h4>
-          <p class="font-body text-[15px] text-muted m-0">Vehicle details, location, preferred contact method. You&rsquo;ve done this once already. Same process.</p>
+        <div>
+          <h3>Elite Providers Contact You</h3>
+          <p>Strategic filtering based on region, vehicle, and installation capacity.</p>
         </div>
-
-        <div class="p-6 border border-border rounded-[3px]">
-          <h4 class="font-heading text-[18px] font-bold text-primary mb-2">Step 2: Your Profile Reaches the Elite 5 Tracker Providers Simultaneously</h4>
-          <p class="font-body text-[15px] text-muted m-0">Not 12 random resellers. The same 5 established leaders you&rsquo;d find if you spent 3 weeks researching on your own: 10+ years in business, verified SAPS partnerships, 24/7 live monitoring.</p>
-        </div>
-
-        <div class="p-6 border border-border rounded-[3px]">
-          <h4 class="font-heading text-[18px] font-bold text-primary mb-2">Step 3: Between 3-5 Elite Providers Contact You Within Minutes</h4>
-          <p class="font-body text-[15px] text-muted m-0">Same strategic filtering as the insurance quotes: Geographic specialization, vehicle expertise, and current capacity.</p>
-        </div>
-
-        <div class="p-6 border border-border rounded-[3px]">
-          <h4 class="font-heading text-[18px] font-bold text-primary mb-2">Step 4: You Compare, Choose, and Complete Your Protection</h4>
-          <p class="font-body text-[15px] text-muted m-0">Ask the 5 strategic questions. Compare quotes. Choose the provider with the best combination of price, features, and recovery strength. Most providers install within 7&ndash;10 days.</p>
-        </div>
-
-      </div>
-
-      {{-- Synergy box — dark background --}}
-      <div class="p-12 rounded-[3px] mb-16 text-center not-prose black-bg text-white">
-        <h3 class="font-heading text-[28px] font-medium mb-6 text-white">The Synergy Nobody Talks About</h3>
-        <p class="font-body text-[16px] mb-8" style="opacity:0.9;">
-          When you have both competitive insurance and elite tracking installed, your insurance premiums drop even further. Insurers reward tracked vehicles with premium discounts (typically 10&ndash;15%).
-        </p>
-
-        {{-- Savings breakdown card inside dark section --}}
-        <div class="max-w-md mx-auto p-6 rounded-[3px] text-left" style="background-color:rgba(255,255,255,0.1);">
-          <div class="flex justify-between mb-2">
-            <span style="opacity:0.8;">Insurance savings:</span>
-            <span>R600/mo</span>
-          </div>
-          <div class="flex justify-between mb-2">
-            <span style="opacity:0.8;">Tracker discount:</span>
-            <span>+ R180/mo</span>
-          </div>
-          <div class="flex justify-between mb-2 pb-2" style="border-bottom:1px solid rgba(255,255,255,0.2);">
-            <span style="opacity:0.8;">Tracker fee:</span>
-            <span>- R220/mo</span>
-          </div>
-          <div class="flex justify-between mt-2 font-bold text-[18px]">
-            <span>Net savings:</span>
-            <span class="text-accent">R560/mo</span>
-          </div>
-        </div>
-
-        <p class="mt-6 font-body text-[14px] italic" style="opacity:0.8;">
-          You&rsquo;re saving more money while being more protected.
-        </p>
-      </div>
-
-      {{-- ── Form Section ── --}}
-      {{-- id="tracker-form" — form_source=car_track_upsell redirects to success route --}}
-      <div id="tracker-form" class="bg-white border-2 border-primary p-6 md:p-12 rounded-[3px] mb-16 text-center shadow-2xl not-prose" style="border:2px solid #0F172A;">
-
-        {{-- Shield icon badge --}}
-        <div class="inline-flex items-center justify-center w-12 h-12 rounded-full mb-6 text-accent" style="background-color:rgba(245,158,11,0.1);">
-          <i data-lucide="shield-check" class="w-[24px] h-[24px]"></i>
-        </div>
-
-        <h3 class="font-heading text-[20px] md:text-[24px] font-medium text-primary mb-3 md:mb-4">Get Elite Tracker Quotes Now (Final Step)</h3>
-        <p class="font-body text-[13px] md:text-[14px] text-muted mb-6 md:mb-8">Same process. Same Elite 5. Complete protection.</p>
-
-        <div class="space-y-3 md:space-y-4 max-w-md mx-auto">
-          {{-- TrackerController@store: form_source=car_track_upsell → redirects to route('success') --}}
-          <form action="{{ route('tracker.submit') }}" method="post" class="space-y-3">
-            @csrf
-            <input type="hidden" name="form_source" value="car_track_upsell" />
-
-            <input
-              type="text"
-              class="w-full p-3 md:p-4 border border-border rounded-[3px] font-body text-[14px]"
-              placeholder="First Name"
-              name="firstname"
-              required
-            />
-            <input
-              type="text"
-              class="w-full p-3 md:p-4 border border-border rounded-[3px] font-body text-[14px]"
-              placeholder="Last Name"
-              name="lastname"
-              required
-            />
-            <input
-              type="email"
-              class="w-full p-3 md:p-4 border border-border rounded-[3px] font-body text-[14px]"
-              placeholder="Email Address"
-              name="email"
-              required
-            />
-            <input
-              type="tel"
-              class="w-full p-3 md:p-4 border border-border rounded-[3px] font-body text-[14px]"
-              placeholder="Phone Number"
-              name="phone1"
-              required
-            />
-
-            {{-- Terms consent --}}
-            <div class="flex items-start gap-3 text-left">
-              <input
-                id="carinsure-terms"
-                type="checkbox"
-                name="acceptterms"
-                value="true"
-                required
-                class="bg-gray-50 border-gray-300 focus:ring-3 focus:ring-blue-300 h-4 w-4 rounded mt-1"
-              />
-              <label for="carinsure-terms" class="text-sm font-medium text-gray-900">
-                I agree to the <a href="{{ route('terms') }}" class="text-blue-600 hover:underline">terms and conditions</a>
-              </label>
-            </div>
-
-            <div>
-              <button
-                type="submit"
-                class="w-full py-4 md:py-5 bg-primary text-white font-heading font-bold rounded-full hover:bg-accent transition-colors black-button inline-flex items-center justify-center gap-2"
-              >
-                Complete Your Protection Now
-                <i data-lucide="arrow-right" class="w-[18px] h-[18px]"></i>
-              </button>
-            </div>
-
-            {{-- Hidden API fields — identical values to tracker1 --}}
-            <input type="hidden" name="optinurl"            value="https://searchadeal.online/" />
-            <input type="hidden" name="optindate"           value="{{ date('d/m/y H:i:s') }}" />
-            <input type="hidden" name="channel"             value="JMAff" />
-            <input type="hidden" name="product"             value="Vehicle Tracking" />
-            <input type="hidden" name="leadsource"          value="JMLSSEARCHADEAL9020" />
-            <input type="hidden" name="affiliateshortcode"  value="JMAFFSite15019" />
-            <input type="hidden" name="offer_id"            value="1523" />
-          </form>
-        </div>
-
-        <p class="mt-5 md:mt-6 font-body text-[10px] md:text-[11px] text-muted uppercase tracking-widest leading-relaxed">
-          By submitting, you agree to be contacted by pre-screened elite tracker providers. SearchADeal is an affiliate platform and earns a commission if you choose to install. We do not provide installation services.
-        </p>
-
-        <p class="mt-5 font-body text-muted italic text-bold text-orange-700">
-          <a href="{{ route('success') }}">I do not need Car Insurance Right Now</a>
-        </p>
-
-
-      </div>
-
-      {{-- FAQ --}}
-      <h2 class="font-heading text-[32px] font-medium text-primary mb-6 tracking-tight">
-        Questions You&rsquo;re Probably Asking
-      </h2>
-      <div class="space-y-6 mb-16 not-prose">
-
-        <div class="pb-6 border-b border-border">
-          <div class="font-heading text-[16px] font-bold text-primary mb-2">Didn&rsquo;t I just do this for insurance? Why am I filling out another form?</div>
-          <p class="font-body text-[14px] text-muted m-0">Because insurance and tracking are sourced from different provider networks. The Elite 5 insurers you just connected with don&rsquo;t install trackers. This is the final piece to complete your vehicle protection system.</p>
-        </div>
-
-        <div class="pb-6 border-b border-border">
-          <div class="font-heading text-[16px] font-bold text-primary mb-2">Is this actually necessary, or are you just upselling me?</div>
-          <p class="font-body text-[14px] text-muted m-0">If you&rsquo;re comfortable with your vehicle being compensated (eventually) rather than recovered (immediately), you don&rsquo;t need this. But if the idea of losing your car permanently feels unacceptable, then yes, this is necessary. Insurance without recovery is financial protection without physical protection.</p>
-        </div>
-
-        <div class="pb-6 border-b border-border">
-          <div class="font-heading text-[16px] font-bold text-primary mb-2">Can I just research trackers on my own in a few weeks?</div>
-          <p class="font-body text-[14px] text-muted m-0">You can. But three weeks from now, the urgency fades. You delay. Meanwhile, 48 vehicles per day are being stolen in Gauteng alone. The Recovery Completion System exists to eliminate that delay right now.</p>
-        </div>
-
-        <div class="pb-0">
-          <div class="font-heading text-[16px] font-bold text-primary mb-2">What if I get quotes and none of them fit my budget?</div>
-          <p class="font-body text-[14px] text-muted m-0">Then you decline and move on. Zero obligation. But most drivers discover their insurance savings more than cover the tracker monitoring fees.</p>
-        </div>
-
-      </div>
-
-      {{-- P.S. closing statements --}}
-      <div class="space-y-8 text-center border-t border-border pt-16 not-prose">
-        <p class="font-body text-[14px] text-muted italic">
-          <strong>P.S. The One Statistic That Changes Everything:</strong> Vehicles with elite tracking systems are 3.7x more likely to be recovered intact within 24 hours. Vehicles without tracking are 2.4x more likely to be found stripped, burned, or never found at all.
-        </p>
-        <p class="font-body text-[14px] text-muted italic">
-          <strong>P.P.S. The Real Cost of &ldquo;I&rsquo;ll Handle It Later&rdquo;:</strong> If your vehicle is stolen next month and not recovered, the total cost is R79,000+ for a vehicle that was insured but not tracked. Cost of adding elite tracking today: R220/month, funded by the insurance savings you just secured.
-        </p>
       </div>
 
     </div>
-  </section>
 
-</main>
+    <!-- FORM -->
+    <div class="form-section" style="background: #F8FAFC">
 
-{{-- ── Footer — identical to tracker1 ── --}}
-<footer class="relative min-h-[40vh] md:min-h-[60vh] flex items-end mt-12 md:mt-20">
-  <div class="absolute inset-0 z-0">
-    <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=1600" alt="Abstract Background" class="w-full h-full object-cover" />
-    <div class="absolute inset-0 bg-black/40 backdrop-blur-sm"></div>
-  </div>
+      <div class="form-badge" style="background: #F8FAFC; border-radius: 50%">
+        <span>FINAL STEP</span>
+      </div>
 
-  <div class="relative z-10 w-full max-w-[1400px] mx-auto bg-white p-5 md:p-[58px] pb-[22px]">
-    <div class="mb-8 md:mb-12 p-4 md:p-6 bg-background rounded-[3px] border border-border">
-      <h5 class="font-heading text-[10px] md:text-[11px] font-bold uppercase tracking-wider text-primary mb-2 md:mb-4">Important Disclosure</h5>
-      <p class="font-body text-[12px] text-muted leading-relaxed">
-        SearchADeal is not a registered financial services provider, insurer, or credit provider. We operate as an affiliate comparison platform connecting consumers with registered providers. For tracking services, pricing, contracts, installation windows, and recovery outcomes remain subject to each provider&rsquo;s independent assessment and service availability.
+      <h3>Get Elite Tracker Quotes Now</h3>
+
+      <p class="form-sub">
+        Same process. Same Elite 5. Complete protection.
+      </p>
+
+      <form action="{{ route('tracker.submit') }}" method="POST">
+
+        @csrf
+        <input type="hidden" name="form_source" value="car_track_upsell" />
+
+        <div name="vehicle_type" class="form-group">
+          <label>1. What do you drive?</label>
+
+          <select>
+            <option value="">Select vehicle type...</option>
+            <option value="sedan">Sedan</option>
+            <option value="suv">SUV or 4×4</option>
+            <option value="bakkie">Bakkie</option>
+            <option value="hatchback">Hatchback</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>2. What is your primary need?</label>
+
+          <select name="primaryneed" required>
+            <option value="">Select primary need...</option>
+            <option value="theft-recovery">Theft & Recovery</option>
+            <option value="insurance-discount">Insurance Discount</option>
+            <option value="fleet-tracking">Fleet Tracking</option>
+            <option value="peace-of-mind">Peace of Mind</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>3. Where is the vehicle parked securely?</label>
+
+          <select name="parkingsecurity" required>
+            <option value="">Select parking...</option>
+            <option value="garage">Locked Garage</option>
+            <option value="complex">Secured Complex / Estate</option>
+            <option value="carport">Carport</option>
+            <option value="street">Street Parking</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="contact-group">
+
+          <label>Where should we send your quotes?</label>
+
+          <input
+                  type="text"
+                  name="firstname"
+                  placeholder="First Name"
+                  required
+          >
+
+          <input
+                  type="text"
+                  name="lastname"
+                  placeholder="Last Name"
+                  required
+          >
+
+          <input
+                  type="email"
+                  name="email"
+                  placeholder="Email Address"
+                  required
+          >
+
+          <input
+                  type="tel"
+                  name="phone1"
+                  placeholder="Phone Number"
+                  required
+          >
+          <div class="checkbox-row" style="display:flex; align-items:center; gap:8px;">
+            <input type="checkbox" style="width: 15px;" id="terms" required name="acceptterms">
+
+            <label for="tracker-terms" class="text-sm font-medium text-gray-900 font-body">
+              I agree to the <a href="{{ route('terms') }}" class="text-blue-600 hover:underline">terms and conditions</a>
+            </label>
+          </div>
+
+        </div>
+
+        <button class="btn-submit" type="submit">
+
+            <span class="btn-main">
+              Complete Your Protection Now →
+            </span>
+
+          <span class="btn-sub">
+              Get Elite Tracker Quotes
+            </span>
+
+        </button>
+
+      </form>
+
+      <p class="form-legal">
+        By submitting, you agree to be contacted by pre-screened elite tracker providers.
+      </p>
+
+    </div>
+
+    <hr>
+
+    <!-- FAQ -->
+    <h2 style="text-align:center;">
+      Questions you're probably asking
+    </h2>
+
+    <div class="faq-item">
+      <h3>Didn't I just do this for insurance?</h3>
+      <p>
+        Insurance and tracking are sourced from different provider networks.
       </p>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 mb-12 md:mb-16">
-      <div class="md:col-span-4 flex flex-col items-start">
-        <div class="font-heading font-bold text-2xl md:text-3xl tracking-tighter mb-6 md:mb-8">SearchADeal</div>
-        <a href="{{ route('contact') }}" class="w-full sm:w-auto px-6 md:px-8 py-3 rounded-full border border-primary font-heading text-[14px] md:text-[15px] hover:bg-primary hover:text-white transition-colors text-center">
-          Contact us
-        </a>
-      </div>
-
-      <div class="md:col-span-8 grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
-        <div class="flex flex-col gap-3 md:gap-4">
-          <h5 class="font-heading text-[10px] md:text-[11px] font-bold uppercase tracking-wider text-primary mb-1 md:mb-2">Services</h5>
-          <a href="{{ route('car-insurance') }}" class="font-heading text-[14px] md:text-[15px] text-primary hover:text-accent transition-colors">Car Insurance</a>
-          <a href="{{ route('tracker1') }}"       class="font-heading text-[14px] md:text-[15px] text-primary hover:text-accent transition-colors">Car Trackers</a>
-          <a href="{{ route('tracker.loan') }}"   class="font-heading text-[14px] md:text-[15px] text-primary hover:text-accent transition-colors">Personal Loans</a>
-        </div>
-        <div class="flex flex-col gap-3 md:gap-4">
-          <h5 class="font-heading text-[10px] md:text-[11px] font-bold uppercase tracking-wider text-primary mb-1 md:mb-2">Company</h5>
-          <a href="#tracker-form"          class="font-heading text-[14px] md:text-[15px] text-primary hover:text-accent transition-colors">How It Works</a>
-          <a href="{{ route('contact') }}"  class="font-heading text-[14px] md:text-[15px] text-primary hover:text-accent transition-colors">Contact</a>
-          <a href="{{ route('policy') }}"   class="font-heading text-[14px] md:text-[15px] text-primary hover:text-accent transition-colors">Privacy</a>
-        </div>
-        <div class="flex flex-col items-start md:items-end gap-4">
-          <a href="#" class="w-10 md:w-12 h-10 md:h-12 rounded-full border border-primary flex items-center justify-center hover:bg-primary hover:text-white transition-colors group" aria-label="LinkedIn">
-            <i data-lucide="linkedin" class="w-[18px] md:w-[20px] h-[18px] md:h-[20px] text-primary group-hover:text-white transition-colors"></i>
-          </a>
-        </div>
-      </div>
+    <div class="faq-item">
+      <h3>Is this actually necessary?</h3>
+      <p>
+        If permanent loss of your vehicle feels unacceptable, then yes.
+      </p>
     </div>
 
-    <div class="pt-6 md:pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-3 md:gap-4 font-body text-[12px] md:text-[13px] text-muted">
-      <div class="flex flex-wrap justify-center gap-4 md:gap-6">
-        <a href="{{ route('policy') }}" class="hover:text-primary transition-colors">Privacy Policy</a>
-        <a href="{{ route('terms') }}"  class="hover:text-primary transition-colors">Terms of Use</a>
-        <a href="{{ route('policy') }}" class="hover:text-primary transition-colors">POPIA Compliance</a>
+    <!-- POSTSCRIPT -->
+    <div class="ps-box">
+
+      <div>
+        <img
+                src="https://billboardads.digitalcavemen.com/wp-content/uploads/2026/04/Image-7-vARIENT-B.png"
+                alt=""
+                style="border-radius:10px;"
+        >
       </div>
-      <span>&copy; <span id="current-year"></span> SearchADeal</span>
+
+      <div>
+
+        <p>
+          <strong style="color:var(--accent);">
+            P.S. Vehicles with elite tracking systems are 3.7x more likely to be recovered intact.
+          </strong>
+        </p>
+
+        <p>
+          <strong style="color:var(--accent);">
+            P.P.S. The cost of delay is far greater than the tracker fee itself.
+          </strong>
+        </p>
+
+      </div>
+
     </div>
+
   </div>
-</footer>
+</section>
 
-{{-- Lucide icon init — identical to tracker1 --}}
-<script src="https://unpkg.com/lucide@latest"></script>
-<script>
-  document.getElementById('current-year').textContent = new Date().getFullYear()
-  if (window.lucide && typeof window.lucide.createIcons === 'function') {
-    window.lucide.createIcons()
-  }
-</script>
 </body>
 </html>
