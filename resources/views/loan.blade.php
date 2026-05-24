@@ -1,425 +1,684 @@
-@include('partials.header')
-@include('partials.flash')
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Loans – South Africa's Independent Loan Comparison Service</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #f9f7f4;
+      --surface: #f0ede8;
+      --ink: #1a1612;
+      --ink-soft: #4a4540;
+      --accent: #c84b11;
+      --accent-dark: #a33a0b;
+      --success: #2a7d4f;
+      --caution: #c84b11;
+      --divider: #ddd8d0;
+      --border: #ccc7bf;
+      --muted: #7a756e;
+      --faint: #8a857e;
+      --trust: #1a5c8a;
+      --primary: #1a1612;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      font-family: 'DM Sans', sans-serif;
+      color: var(--ink);
+      -webkit-font-smoothing: antialiased;
+    }
+    h1, h2, h3, h4 { font-family: 'Playfair Display', serif; }
+    img { display: block; max-width: 100%; }
 
-<!-- Page Header Start -->
-<div
-  class="container-fluid page-header py-5 mb-5 wow fadeIn"
-  data-wow-delay="0.1s"
-  style="background: url(img/images/money-growth.jpg) center center no-repeat; background-size: cover;"
->
-  <div class="overlay-color">
-    <div class="container py-5" style="z-index: 1000; position: relative;">
-      <h1 class="display-4 animated slideInDown mb-4 text-white">Personal Loans</h1>
-      <nav aria-label="breadcrumb animated slideInDown">
-        <ol class="breadcrumb mb-0">
-          <li class="breadcrumb-item text-white"><a href="#">Home</a></li>
-          <li class="breadcrumb-item text-white active" aria-current="page">Personal Loans</li>
-        </ol>
-      </nav>
+    /* Layout */
+    .container-sm { max-width: 768px; margin: 0 auto; padding: 0 1.5rem; }
+    .container-md { max-width: 896px; margin: 0 auto; padding: 0 1.5rem; }
+
+    /* Hero */
+    .hero { padding: 4rem 0; text-align: center; }
+    .hero-eyebrow {
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: .12em;
+      font-size: .8125rem;
+      font-weight: 700;
+      margin-bottom: .75rem;
+    }
+    .hero h1 {
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      line-height: 1.1;
+      letter-spacing: -.02em;
+      margin-bottom: 2rem;
+    }
+    .hero h1 span { color: var(--accent); }
+    .hero-img { margin: 0 auto 2rem; max-width: 672px; }
+    .hero-desc {
+      font-size: clamp(1.0625rem, 2vw, 1.25rem);
+      line-height: 1.65;
+      max-width: 640px;
+      margin: 0 auto 2.5rem;
+      color: var(--ink);
+    }
+    .trust-badges {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-bottom: 3rem;
+    }
+    .badge {
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+      color: var(--ink-soft);
+      font-size: .9375rem;
+      font-weight: 500;
+    }
+    .badge svg { color: var(--success); flex-shrink: 0; }
+    .btn-primary {
+      display: inline-block;
+      background: var(--accent);
+      color: #fff;
+      font-weight: 700;
+      font-size: clamp(1rem, 2.5vw, 1.125rem);
+      padding: 1rem 2.5rem;
+      border-radius: .5rem;
+      border: none;
+      cursor: pointer;
+      transition: background .2s;
+      text-decoration: none;
+      font-family: 'DM Sans', sans-serif;
+    }
+    .btn-primary:hover { background: var(--accent-dark); }
+
+    /* Editorial */
+    .editorial { padding: 3rem 0 4rem; }
+    .editorial h2 {
+      font-size: clamp(1.75rem, 4vw, 2.5rem);
+      line-height: 1.15;
+      letter-spacing: -.02em;
+      margin-bottom: 1.5rem;
+    }
+    .lead {
+      font-size: clamp(1.0625rem, 2vw, 1.25rem);
+      line-height: 1.65;
+      margin-bottom: 1.5rem;
+    }
+    .pain-list { list-style: none; display: flex; flex-direction: column; gap: 1rem; margin-bottom: 4rem; }
+    .pain-item {
+      display: flex;
+      gap: 1rem;
+      padding: 1.5rem;
+      background: var(--surface);
+    }
+    .pain-item svg { flex-shrink: 0; margin-top: .2rem; color: var(--caution); }
+    .pain-item h4 { font-family: 'DM Sans', sans-serif; font-size: clamp(1rem, 2vw, 1.125rem); font-weight: 700; margin-bottom: .25rem; }
+    .pain-item p { font-size: clamp(1rem, 2vw, 1.125rem); line-height: 1.6; }
+
+    .pullquote {
+      border-left: 4px solid var(--accent);
+      padding: .5rem 0 .5rem 1.5rem;
+      margin-bottom: 4rem;
+    }
+    .pullquote p {
+      font-size: clamp(1.25rem, 3vw, 1.5rem);
+      font-style: italic;
+      line-height: 1.55;
+    }
+
+    hr.divider { border: none; border-top: 1px solid var(--divider); margin: 3rem 0; }
+
+    /* Steps */
+    .steps { position: relative; display: flex; flex-direction: column; gap: 2.5rem; margin-bottom: 4rem; }
+    .steps::before {
+      content: '';
+      position: absolute;
+      left: 1rem;
+      top: 1rem;
+      bottom: 1rem;
+      width: 1px;
+      background: var(--divider);
+    }
+    @media (min-width: 640px) { .steps::before { left: 1.5rem; } }
+    .step { display: flex; gap: 1.5rem; position: relative; z-index: 1; }
+    .step-num {
+      width: 2rem;
+      height: 2rem;
+      background: var(--accent);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      font-weight: 700;
+      font-size: 1rem;
+      flex-shrink: 0;
+    }
+    @media (min-width: 640px) {
+      .step-num { width: 3rem; height: 3rem; font-size: 1.25rem; }
+    }
+    .step-body { padding-top: .15rem; }
+    @media (min-width: 640px) { .step-body { padding-top: .5rem; } }
+    .step-body h4 { font-family: 'DM Sans', sans-serif; font-size: clamp(1.2rem, 3vw, 1.5rem); font-weight: 700; margin-bottom: .5rem; }
+    .step-body p { font-size: clamp(1rem, 2vw, 1.125rem); line-height: 1.6; }
+
+    /* Benefits */
+    .benefits-list { list-style: none; display: flex; flex-direction: column; gap: 1rem; margin-bottom: 4rem; }
+    .benefit { display: flex; gap: 1rem; }
+    .benefit svg { flex-shrink: 0; margin-top: .2rem; color: var(--success); }
+    .benefit p { font-size: clamp(1rem, 2vw, 1.125rem); line-height: 1.6; }
+
+    /* Comparison Table */
+    .comparison-section { max-width: 1024px; margin: 0 auto 4rem; padding: 0 1.5rem; }
+    .comparison-section h2 { text-align: center; font-size: clamp(1.75rem, 4vw, 2.5rem); margin-bottom: 2rem; }
+    .compare-table { width: 100%; border-collapse: collapse; display: none; }
+    @media (min-width: 768px) { .compare-table { display: table; } }
+    .compare-table thead tr { background: var(--ink); color: #fff; }
+    .compare-table th { padding: 1rem 1.5rem; text-align: left; font-size: .875rem; text-transform: uppercase; font-weight: 700; font-family: 'DM Sans', sans-serif; }
+    .compare-table th:last-child { background: var(--ink-soft); }
+    .compare-table td { padding: 1rem 1.5rem; font-size: clamp(1rem, 2vw, 1.125rem); border-bottom: 1px solid var(--divider); font-family: 'DM Sans', sans-serif; }
+    .compare-table tr:nth-child(even) td { background: var(--surface); }
+    .compare-table td:first-child { font-weight: 700; border-right: 1px solid var(--divider); width: 33%; }
+    .compare-table td:last-child { font-weight: 700; border-left: 1px solid var(--divider); background: var(--surface); }
+    .compare-table .old-cell { display: flex; align-items: center; gap: .5rem; color: var(--ink-soft); }
+    .compare-table .new-cell { display: flex; align-items: center; gap: .5rem; }
+    .compare-cards { display: flex; flex-direction: column; gap: 1rem; }
+    @media (min-width: 768px) { .compare-cards { display: none; } }
+    .compare-card { background: var(--surface); padding: 1.5rem; border: 1px solid var(--divider); }
+    .compare-card h4 { font-family: 'DM Sans', sans-serif; font-weight: 700; font-size: 1rem; text-transform: uppercase; margin-bottom: 1rem; }
+    .compare-row { display: flex; flex-direction: column; gap: .75rem; }
+    .compare-old, .compare-new { display: flex; gap: .5rem; font-size: .9375rem; }
+    .compare-old { color: var(--ink-soft); }
+    .compare-old svg { color: var(--caution); flex-shrink: 0; margin-top: .15rem; }
+    .compare-new { font-weight: 700; }
+    .compare-new svg { color: var(--success); flex-shrink: 0; margin-top: .15rem; }
+    .compare-label { font-size: .8125rem; font-weight: 700; text-transform: uppercase; display: block; margin-bottom: .2rem; }
+    .compare-old .compare-label { color: var(--ink-soft); }
+    .compare-new .compare-label { color: var(--ink-soft); font-weight: 700; }
+
+    /* FAQ */
+    .faq { margin-bottom: 4rem; border-top: 1px solid var(--divider); }
+    .faq-item { padding: 2rem 0; border-bottom: 1px solid var(--divider); }
+    .faq-q { font-size: clamp(1.125rem, 2.5vw, 1.375rem); font-style: italic; font-weight: 500; margin-bottom: 1rem; }
+    .faq-a { font-size: clamp(1rem, 2vw, 1.125rem); line-height: 1.65; }
+
+    /* Form */
+    .form-section { text-align: center; margin-bottom: 4rem; }
+    .form-section h3 { font-size: clamp(1.75rem, 4vw, 2.5rem); margin-bottom: 1rem; }
+    .form-section .lead { margin-bottom: 2rem; }
+    .loan-form { max-width: 28rem; margin: 0 auto; text-align: left; display: flex; flex-direction: column; gap: 1.5rem; }
+    .form-group { display: flex; flex-direction: column; gap: .5rem; }
+    .form-group label { font-size: .875rem; font-weight: 700; color: var(--primary); }
+    .form-group select,
+    .form-group input {
+      width: 100%;
+      padding: 1rem;
+      border: 1px solid var(--border);
+      border-radius: 3px;
+      font-family: 'DM Sans', sans-serif;
+      font-size: .875rem;
+      background: #fff;
+      color: var(--ink);
+      transition: border-color .2s;
+      -webkit-appearance: none;
+      appearance: none;
+    }
+    .form-group select { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%234a4540' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 1rem center; padding-right: 2.5rem; }
+    .form-group select:focus,
+    .form-group input:focus { outline: none; border-color: var(--accent); }
+    .form-note { margin-top: 1rem; color: var(--muted); font-size: .875rem; text-align: center; }
+
+    /* Range slider */
+    .range-label { font-size: .9375rem; font-weight: 600; color: var(--ink); margin-bottom: .75rem; }
+    .loan-amount-display { color: var(--accent); font-size: 1.125rem; font-weight: 700; margin-top: .5rem; }
+    input[type=range] {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 100%;
+      height: 6px;
+      border-radius: 3px;
+      outline: none;
+      cursor: pointer;
+    }
+    input[type=range]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: #e8a020;
+      cursor: pointer;
+      border: 2px solid #fff;
+      box-shadow: 0 1px 4px rgba(0,0,0,.25);
+    }
+    input[type=range]::-moz-range-thumb {
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: #e8a020;
+      cursor: pointer;
+      border: 2px solid #fff;
+    }
+
+    /* Checkbox */
+    .checkbox-row { display: flex; align-items: flex-start; gap: .625rem; font-size: .9375rem; color: var(--ink); }
+    .checkbox-row input[type=checkbox] {
+      width: 16px;
+      height: 16px;
+      flex-shrink: 0;
+      margin-top: .15rem;
+      accent-color: var(--primary);
+      cursor: pointer;
+    }
+    .checkbox-row a { color: var(--trust); text-decoration: none; }
+    .checkbox-row a:hover { text-decoration: underline; }
+
+    /* Submit button */
+    .btn-submit {
+      width: 100%;
+      padding: 1.1rem 1rem;
+      background: var(--primary);
+      color: #fff;
+      border: none;
+      border-radius: 9999px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: .5rem;
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 700;
+      font-size: 1.0625rem;
+      letter-spacing: .02em;
+      transition: background .2s;
+    }
+    .btn-submit:hover { background: #2a3040; }
+
+    /* Disclosure */
+    .disclosure {
+      background: var(--surface);
+      padding: 2rem;
+      color: var(--faint);
+      font-size: clamp(.8125rem, 1.5vw, .875rem);
+      line-height: 1.7;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .disclosure-heading { font-weight: 700; color: var(--ink-soft); font-size: clamp(1rem, 2vw, 1.125rem); margin-bottom: .5rem; }
+    .disclosure .trust-label { color: var(--trust); font-weight: 700; }
+
+    /* Icon SVGs */
+    .icon { display: inline-block; vertical-align: middle; }
+  </style>
+</head>
+<body>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="container-sm">
+    <p class="hero-eyebrow">South Africa's Independent Loan Comparison Service</p>
+    <h1>Stop Wasting Time. Find the Right <span>Personal Loan in Minutes.</span></h1>
+    <div class="hero-img">
+      <img src="https://billboardads.digitalcavemen.com/wp-content/uploads/2026/04/IMAGE-1-Variation-A.png" alt="Personal Loans Hero" />
     </div>
+    <p class="hero-desc">Connect with multiple registered lenders through one simple application. Compare real offers and choose what works for your situation.</p>
+    <div class="trust-badges">
+        <span class="badge">
+          <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          15+ Registered Lenders
+        </span>
+      <span class="badge">
+          <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          24/7 Application Processing
+        </span>
+      <span class="badge">
+          <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+          100% Free to Use
+        </span>
+    </div>
+    <button class="btn-primary" onclick="document.getElementById('loan-quotes-form').scrollIntoView({behavior:'smooth'})">
+      Compare My Loan Options →
+    </button>
   </div>
-</div>
-<!-- Page Header End -->
+</section>
 
-<!-- Personal Loans Content Start -->
-<div class="py-5 wow fadeIn" data-wow-delay="0.1s">
-  <div class="container">
-    {{--<div class="row g-5">--}}
-    <div class="mx-auto" style="max-width: 820px;">
-      <div class="main">
-        <div class="main-content my-5">
-          <div class="col-lg-12 wow fadeIn" data-wow-delay="0.3s">
-            <div class="row text-center">
-              <h1 class="display-6 mb-4">Personal Loans Comparison Platform</h1>
-              <div class="subtitle">
-                <p class="mb-4">
-                  <strong>Stop Wasting Time. Find the Right Personal Loan in Minutes.</strong>
-                </p>
-                <p><i>Connect with multiple registered lenders through one simple application. Compare real offers and choose what works for your situation.</i></p>
-              </div>
-            </div>
-            <div class="break-image mb-4">
-              <img src="img/loans/2.jpeg" alt="Insurance and tracker protection" class="img-fluid rounded">
-            </div>
-            <div class="row mt-4">
-              <div class="col-12">
-                <div class="hlabi-body">
-                  <ul>
-                    <li><p>One application connects you to multiple registered lenders</p></li>
-                    <li><p>Compare offers from banks, neobanks, and licensed credit providers</p></li>
-                    <li><p>No obligation to accept any offer—you stay in control</p></li>
-                    <li><p>Free service—we connect you, you decide</p></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
+<!-- Editorial Content -->
+<section class="editorial">
+  <div class="container-sm">
 
-            <div class="row mt-5">
-              <div class="col-12">
-                <h3 class="mb-3">Trusted by South Africans</h3>
-                <div class="hlabi-body">
-                  <ul>
-                    <li><p><strong>15+ Registered Lenders</strong></p></li>
-                    <li><p><strong>24/7 Application Processing</strong></p></li>
-                    <li><p><strong>100% Free to Use</strong></p></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
+    <h2>You shouldn't have to visit 10 banks to find one loan</h2>
+    <p class="lead">Applying for personal loans the old way wastes your time and hurts your credit score with multiple applications.</p>
 
-            <div class="row mt-5 text-start">
-              <div class="col-12">
-                <div class="hlabi-body">
-                  <h2 class="mb-3">You Shouldn't Have to Visit 10 Banks to Find One Loan</h2>
-                  <div class="break-image mb-4">
-                    <img src="img/loans/5.jpeg" alt="Insurance and tracker protection" class="img-fluid rounded">
-                  </div>
-                  <p>Applying for personal loans the old way wastes your time and hurts your credit score with multiple applications.</p>
+    <img src="https://billboardads.digitalcavemen.com/wp-content/uploads/2026/04/IMAGE-2-Variation-B.png" alt="Problems with the old way" style="margin-bottom:2.5rem;" />
 
-                  <h4 class="mt-4">Hours Wasted Visiting Branches</h4>
-                  <p>Taking time off work to stand in queues at multiple banks only to hear "we'll get back to you" is exhausting and often leads nowhere.</p>
+    <ul class="pain-list">
+      <li class="pain-item">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+        <div><h4>Hours Wasted Visiting Branches</h4><p>Taking time off work to stand in queues at multiple banks only to hear 'we'll get back to you' is exhausting and often leads nowhere.</p></div>
+      </li>
+      <li class="pain-item">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+        <div><h4>Multiple Credit Checks Hurt Your Score</h4><p>Every loan application creates a credit enquiry on your record. Too many enquiries make you look desperate and can lower your approval chances.</p></div>
+      </li>
+      <li class="pain-item">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+        <div><h4>Endless Rejections Without Explanation</h4><p>Most banks reject applications without telling you why. You're left guessing what went wrong and where to try next.</p></div>
+      </li>
+      <li class="pain-item">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+        <div><h4>Confusing Terms and Hidden Fees</h4><p>Interest rates, initiation fees, service charges, credit life insurance—every lender structures things differently, making fair comparison nearly impossible.</p></div>
+      </li>
+      <li class="pain-item">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+        <div><h4>Pushy Sales Calls You Never Asked For</h4><p>Give your number to one loan site and suddenly you're bombarded with calls from brokers who just want their commission.</p></div>
+      </li>
+      <li class="pain-item">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+        <div><h4>Time Is Running Out</h4><p>When you need funds for an emergency, to consolidate debt, or cover essential expenses, you can't afford to wait weeks for approval.</p></div>
+      </li>
+    </ul>
 
-                  <h4 class="mt-3">Multiple Credit Checks Hurt Your Score</h4>
-                  <p>Every loan application creates a credit enquiry on your record. Too many enquiries make you look desperate and can lower your approval chances.</p>
+    <div class="pullquote">
+      <p>"You know you need a personal loan. The question isn't whether to borrow, it's where to get the best deal without wasting days of your life."</p>
+    </div>
 
-                  <h4 class="mt-3">Endless Rejections Without Explanation</h4>
-                  <p>Most banks reject applications without telling you why. You're left guessing what went wrong and where to try next.</p>
+    <hr class="divider" />
 
-                  <h4 class="mt-3">Confusing Terms and Hidden Fees</h4>
-                  <p>Interest rates, initiation fees, service charges, credit life insurance—every lender structures things differently, making fair comparison nearly impossible.</p>
+    <h2>How our platform works</h2>
+    <p class="lead" style="margin-bottom:2.5rem;">We connect you with multiple registered lenders through one simple process.</p>
 
-                  <h4 class="mt-3">Pushy Sales Calls You Never Asked For</h4>
-                  <p>Give your number to one loan site and suddenly you're bombarded with calls from brokers who just want their commission.</p>
-
-                  <h4 class="mt-3">Time Is Running Out</h4>
-                  <p>When you need funds for an emergency, to consolidate debt, or cover essential expenses, you can't afford to wait weeks for approval.</p>
-
-                  <p class="mt-3">You know you need a personal loan. The question isn't whether to borrow—it's where to get the best deal without wasting days of your life.</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="row mt-5 text-start">
-              <div class="col-12">
-                <div class="hlabi-body">
-                  <h2 class="mb-3">How Our Platform Works</h2>
-
-                  <div class="break-image mb-4">
-                    <img src="img/loans/1.jpeg" alt="Insurance and tracker protection" class="img-fluid rounded">
-                  </div>
-                  <p>We connect you with multiple registered lenders through one simple process.</p>
-
-                  <h4 class="mt-3">Step 1: Complete One Application</h4>
-                  <p>Fill in your details once. Tell us what you need and provide basic information about your income and expenses.</p>
-
-                  <h4 class="mt-3">Step 2: We Share With Lenders</h4>
-                  <p>Your application goes to our network of registered banks, neobanks, and licensed credit providers who compete for your business.</p>
-
-                  <h4 class="mt-3">Step 3: Receive Multiple Offers</h4>
-                  <p>Get contacted by lenders who are willing to work with your situation. Each will present their terms—interest rate, fees, and repayment schedule.</p>
-
-                  <h4 class="mt-3">Step 4: You Choose What Works</h4>
-                  <p>Compare the offers you receive and select the one that fits your budget. No pressure. No obligation. Your decision entirely.</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="row mt-5 text-start">
-              <div class="col-12">
-                <div class="hlabi-body">
-                  <h2 class="mb-3">Why Thousands Choose Our Platform</h2>
-
-                  <div class="break-image mb-4">
-                    <img src="img/loans/4.jpeg" alt="Insurance and tracker protection" class="img-fluid rounded">
-                  </div>
-                  <p>We make the loan comparison process transparent and efficient.</p>
-
-                  <h4 class="mt-5">Save Time and Effort</h4>
-                  <p>One application instead of filling out forms at 5-10 different banks. Submit once and let lenders come to you.</p>
-
-                  <h4 class="mt-5">Protect Your Credit Score</h4>
-                  <p>Our application process minimizes hard credit checks. Lenders can assess your basic profile before running formal credit bureau checks.</p>
-
-                  <h4 class="mt-5">Access More Options</h4>
-                  <p>Connect with major banks like Capitec, FNB, and Standard Bank, plus neobanks and digital lenders you might not know about.</p>
-
-                  <h4 class="mt-5">Transparent Comparisons</h4>
-                  <p>When you receive offers, you'll see the interest rate, fees, and total cost of credit for each, making comparison straightforward.</p>
-
-                  <h4 class="mt-5">No Hidden Obligations</h4>
-                  <p>We don't force you to accept any offer. If nothing works for you, walk away. No strings attached.</p>
-
-                  <h4 class="mt-5">Completely Free Service</h4>
-                  <p>You never pay us. Lenders compensate us for connecting them with potential borrowers, which means our service costs you nothing.</p>
-
-                  <h4 class="mt-5">NCR-Registered Lenders Only</h4>
-                  <p>All lenders in our network are registered with the National Credit Regulator and comply with the National Credit Act.</p>
-
-                  <h4 class="mt-5">Fast Processing</h4>
-                  <p>Applications are processed 24/7. Many lenders can give preliminary feedback within hours, not days.</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="row mt-5 text-start">
-              <div class="col-12">
-                <div class="hlabi-body">
-                  <h2 class="mb-3">Traditional Applications vs. Our Platform</h2>
-
-                  <div class="break-image mb-4">
-                    <img src="img/loans/3.jpeg" alt="Insurance and tracker protection" class="img-fluid rounded">
-                  </div>
-                  <h4 class="mt-3">Number of Applications Needed</h4>
-                  <ul>
-                    <li><p>Traditional Way: 5-10 separate applications</p></li>
-                    <li><p><strong>Our Platform: Just 1 application</strong></p></li>
-                  </ul>
-
-                  <h4 class="mt-3">Time to Apply Everywhere</h4>
-                  <ul>
-                    <li><p>Traditional Way: Days of visiting branches</p></li>
-                    <li><p><strong>Our Platform: Minutes to complete</strong></p></li>
-                  </ul>
-
-                  <h4 class="mt-3">Credit Score Impact</h4>
-                  <ul>
-                    <li><p>Traditional Way: Multiple hard credit checks</p></li>
-                    <li><p><strong>Our Platform: Minimized credit checks</strong></p></li>
-                  </ul>
-
-                  <h4 class="mt-3">Access to Neobanks & Digital Lenders</h4>
-                  <ul>
-                    <li><p>Traditional Way: Limited to banks you know</p></li>
-                    <li><p><strong>Our Platform: Full network access</strong></p></li>
-                  </ul>
-
-                  <h4 class="mt-3">Easy Comparison</h4>
-                  <ul>
-                    <li><p>Traditional Way: Difficult to compare different offers</p></li>
-                    <li><p><strong>Our Platform: Side-by-side comparison</strong></p></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <div class="row mt-5 text-start">
-              <div class="col-12">
-                <div class="hlabi-body">
-                  <h2 class="mb-3">Common Questions</h2>
-
-                  <h4 class="mt-3">Are you a lender?</h4>
-                  <p>No. We are not a registered financial services provider and we do not issue loans. We are a comparison platform that connects you with multiple registered lenders in South Africa. Lenders make all credit decisions independently.</p>
-
-                  <h4 class="mt-3">How do you make money if the service is free?</h4>
-                  <p>We receive a referral fee from lenders when we connect them with potential borrowers. This commission is paid by the lender, not by you. It doesn't affect the interest rate or terms you receive.</p>
-
-                  <h4 class="mt-3">Will applying hurt my credit score?</h4>
-                  <p>Submitting your details on our platform generates a soft enquiry or no enquiry initially. If a lender wants to make you an offer, they will request permission to run a full credit check. You control when that happens.</p>
-
-                  <h4 class="mt-3">What if I have bad credit or am blacklisted?</h4>
-                  <p>Our network includes lenders who work with different credit profiles. While we can't guarantee approval, some lenders specialize in near-prime and subprime lending. Being truthful in your application helps match you with appropriate lenders.</p>
-
-                  <h4 class="mt-3">How long does it take to hear back from lenders?</h4>
-                  <p>Some lenders respond within hours, while others may take 24-48 hours to review your application. The fastest responses typically come from digital lenders and neobanks.</p>
-
-                  <h4 class="mt-3">Do I have to accept an offer?</h4>
-                  <p>Absolutely not. You are under no obligation to accept any loan offer. Review all the terms, compare offers, and only proceed if something genuinely works for your situation.</p>
-
-                  <h4 class="mt-3">Are the lenders in your network legitimate?</h4>
-                  <p>Yes. All lenders in our network are registered with the National Credit Regulator (NCR) and comply with the National Credit Act. This ensures consumer protection and fair lending practices.</p>
-
-                  <h4 class="mt-3">What information do I need to apply?</h4>
-                  <p>You'll need your ID number, employment details, income information, bank account details, and basic information about your current expenses and debt obligations.</p>
-
-                  <h4 class="mt-3">Can I apply if I'm under debt review?</h4>
-                  <p>If you are currently under debt review (debt counselling), you cannot legally take on new credit until the process is complete. Being honest about this in your application helps avoid wasting your time.</p>
-
-                  <h4 class="mt-3">What loan amounts can I apply for?</h4>
-                  <p>Lenders in our network offer personal loans ranging from as little as R1,000 to R500,000, depending on your affordability assessment. The amount you're approved for depends on your income, expenses, and credit profile.</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="row mt-5">
-              <div class="col-12">
-                <div class="hlabi-body">
-                  <h2 class="mb-3">Ready to Compare Your Loan Options?</h2>
-                  <p>One application. Multiple lenders. You decide what works.</p>
-                  <p><strong>Start Your Application Now</strong><br>Takes 5 minutes. No obligation. Completely free.</p>
-                </div>
-              </div>
-            </div>
-
-          </div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <h4>Complete one application</h4>
+          <p>Fill in your details once. Tell us what you need and provide basic information about your income and expenses.</p>
         </div>
-
-        <!-- Form Section -->
-        <div class="col-lg-12 wow fadeIn hlabi-form" id="form" data-wow-delay="0.5s">
-          <div class="bg-light rounded p-5">
-            <h4 class="mb-4">Start Your Application Now</h4>
-            <form action="{{ route('loan.submit') }}" method="post">
-              @csrf
-              <input type="hidden" name="form_source" value="personal_loans_landing">
-
-              <div class="row g-3">
-                <div class="col-sm-12">
-                  <div class="form-floating">
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="firstname"
-                      placeholder="First Name"
-                      name="firstname"
-                      required
-                    />
-                    <label for="firstname">First Name *</label>
-                  </div>
-                </div>
-
-                <div class="col-sm-12">
-                  <div class="form-floating">
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="lastname"
-                      placeholder="Last Name"
-                      name="lastname"
-                      required
-                    />
-                    <label for="lastname">Last Name *</label>
-                  </div>
-                </div>
-
-                <div class="col-sm-6">
-                  <div class="form-floating">
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="phone_number"
-                      placeholder="Phone Number, format: 0xx-xxx-xxxx"
-                      name="phone1"
-                      required
-                    />
-                    <label for="phone_number">Phone Number *</label>
-                  </div>
-                </div>
-
-                <div class="col-sm-6">
-                  <div class="form-floating">
-                    <input
-                      type="email"
-                      class="form-control"
-                      id="email"
-                      placeholder="Email"
-                      required
-                      name="email"
-                    />
-                    <label for="email">Your Email</label>
-                  </div>
-                </div>
-
-                <div class="col-sm-6">
-                  <div class="form-floating">
-                    <select name="title" required class="form-select" id="title">
-                      <option selected></option>
-                      <option value="Mr">Mr</option>
-                      <option value="Ms">Ms</option>
-                      <option value="Mrs">Mrs</option>
-                    </select>
-                    <label for="title">Title *</label>
-                  </div>
-                </div>
-
-                <div class="col-sm-6">
-                  <div class="form-floating">
-                    <select name="underdebtreview" class="form-select" id="underdebtreview">
-                      <option selected></option>
-                      <option value="true">Yes</option>
-                      <option value="false">No</option>
-                    </select>
-                    <label for="underdebtreview">Are you currently under Debt Review?</label>
-                  </div>
-                </div>
-
-                <div class="col-sm-12">
-                  <div class="form-floating">
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="idnumber"
-                      placeholder="ID Number"
-                      required
-                      name="idnumber"
-                    />
-                    <label for="idnumber">13 Digit ID Number *</label>
-                  </div>
-                </div>
-
-                <div class="col-sm-12">
-                  <label for="loanamount" class="form-label">How much would you like to loan?</label>
-                  <input
-                    type="range"
-                    class="form-range"
-                    min="1000"
-                    max="9000"
-                    step="500"
-                    id="loanamount"
-                    name="loanamount"
-                    value="1000"
-                    oninput="loanOutput.value = 'R ' + Number(this.value).toLocaleString()"
-                  >
-                  <output id="loanOutput" class="form-text d-block mt-1">R 1 000.00</output>
-                </div>
-
-                <div class="col-sm-12">
-                  <input
-                    id="checkbox-1"
-                    required
-                    name="acceptterms"
-                    value="true"
-                    aria-describedby="checkbox-1"
-                    type="checkbox"
-                    class="bg-gray-50 border-gray-300 focus:ring-3 focus:ring-blue-300 h-4 w-4 rounded"
-                  >
-                  <label for="checkbox-1" class="text-sm ml-3 font-medium text-gray-900">
-                    I agree to the <a href="{{ route('terms') }}" class="text-blue-600 hover:underline">terms and conditions</a>
-                  </label>
-                </div>
-
-                <div class="col-12">
-                  <button class="btn btn-primary py-3 px-5" type="submit">Get Loan</button>
-                </div>
-              </div>
-
-              <input type="hidden" name="optinurl" value="https://searchadeal.online/" required>
-              <input type="hidden" name="optindate" value="{{ date('Y-m-d h:i:s') }}" required>
-            </form>
-          </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <h4>We share with lenders</h4>
+          <p>Your application goes to our network of registered banks, neobanks, and licensed credit providers who compete for your business.</p>
         </div>
-
-        <div class="row text-start mb-5 mt-5">
-          <div class="col-12">
-            <h2 class="mb-3">Important Disclosure</h2>
-            <div class="hlabi-body">
-              <p><strong>Important Disclosure:</strong> We are not a registered financial services provider and do not issue personal loans. We operate as an affiliate platform that connects consumers with registered lenders and credit providers in South Africa. All lenders in our network are independently registered with the National Credit Regulator (NCR) and comply with the National Credit Act.</p>
-
-              <p><strong>How It Works:</strong> When you submit an application through our platform, we share your information with multiple lenders in our network. These lenders will independently assess your application according to their own credit criteria. We receive a referral fee from lenders when they successfully originate a loan through our platform. This commission does not affect the interest rate, fees, or terms you receive.</p>
-
-              <p><strong>No Guarantee of Approval:</strong> Submitting an application does not guarantee loan approval. Each lender makes independent credit decisions based on their own assessment of your creditworthiness, income, expenses, and compliance with the National Credit Act's affordability requirements.</p>
-
-              <p><strong>Your Rights:</strong> You are under no obligation to accept any loan offer. You have the right to compare offers and choose what works best for your situation. All lenders must provide you with a pre-agreement statement and quotation showing the total cost of credit, interest rate, fees, and repayment terms before you sign any agreement.</p>
-
-              <p><strong>Responsible Borrowing:</strong> Borrowing money costs money. Before accepting any loan, carefully consider whether you can afford the monthly repayments. Over-indebtedness can have serious consequences for your financial health. If you're struggling with debt, consider speaking with a registered debt counsellor.</p>
-
-              <p><strong>Privacy:</strong> We handle your personal information in accordance with the Protection of Personal Information Act (POPIA). Your information is only shared with lenders in our network for the purpose of assessing your loan application.</p>
-            </div>
-          </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <h4>Receive multiple offers</h4>
+          <p>Get contacted by lenders who are willing to work with your situation. Each will present their terms—interest rate, fees, and repayment schedule.</p>
         </div>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <h4>You choose what works</h4>
+          <p>Compare the offers you receive and select the one that fits your budget. No pressure. No obligation. Your decision entirely.</p>
+        </div>
+      </div>
+    </div>
 
+    <img src="https://billboardads.digitalcavemen.com/wp-content/uploads/2026/04/IMAGE-3-Varient-A.png" alt="Four Step Process" style="margin-bottom:4rem;" />
+
+    <hr class="divider" />
+
+    <h2>Why thousands choose our platform</h2>
+    <p class="lead" style="margin-bottom:2rem;">We make the loan comparison process transparent and efficient.</p>
+
+    <ul class="benefits-list">
+      <li class="benefit">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        <p><strong>Save Time and Effort</strong> — One application instead of filling out forms at 5-10 different banks. Submit once and let lenders come to you.</p>
+      </li>
+      <li class="benefit">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        <p><strong>Protect Your Credit Score</strong> — Our application process minimizes hard credit checks. Lenders can assess your basic profile before running formal credit bureau checks.</p>
+      </li>
+      <li class="benefit">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        <p><strong>Access More Options</strong> — Connect with major banks like Capitec, FNB, and Standard Bank, plus neobanks and digital lenders you might not know about.</p>
+      </li>
+      <li class="benefit">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        <p><strong>Transparent Comparisons</strong> — When you receive offers, you'll see the interest rate, fees, and total cost of credit for each, making comparison straightforward.</p>
+      </li>
+      <li class="benefit">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        <p><strong>No Hidden Obligations</strong> — We don't force you to accept any offer. If nothing works for you, walk away. No strings attached.</p>
+      </li>
+      <li class="benefit">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        <p><strong>Completely Free Service</strong> — You never pay us. Lenders compensate us for connecting them with potential borrowers, which means our service costs you nothing.</p>
+      </li>
+      <li class="benefit">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        <p><strong>NCR-Registered Lenders Only</strong> — All lenders in our network are registered with the National Credit Regulator and comply with the National Credit Act.</p>
+      </li>
+      <li class="benefit">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        <p><strong>Fast Processing</strong> — Applications are processed 24/7. Many lenders can give preliminary feedback within hours, not days.</p>
+      </li>
+    </ul>
+
+  </div><!-- /container-sm -->
+
+  <!-- Comparison Table – wider container -->
+  <div class="comparison-section">
+    <h2>Traditional Applications vs. Our Platform</h2>
+
+    <!-- Desktop table -->
+    <table class="compare-table">
+      <thead>
+      <tr>
+        <th>Feature</th>
+        <th>Traditional Way</th>
+        <th>Our Platform</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>Number of Applications</td>
+        <td><span class="old-cell"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg> 5-10 separate applications</span></td>
+        <td><span class="new-cell"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> Just 1 application</span></td>
+      </tr>
+      <tr>
+        <td>Time to Apply Everywhere</td>
+        <td><span class="old-cell"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg> Days of visiting branches</span></td>
+        <td><span class="new-cell"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> Minutes to complete</span></td>
+      </tr>
+      <tr>
+        <td>Credit Score Impact</td>
+        <td><span class="old-cell"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg> Multiple hard credit checks</span></td>
+        <td><span class="new-cell"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> Minimized credit checks</span></td>
+      </tr>
+      <tr>
+        <td>Access to Lenders</td>
+        <td><span class="old-cell"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg> Limited to banks you know</span></td>
+        <td><span class="new-cell"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> Full network access</span></td>
+      </tr>
+      <tr>
+        <td>Easy Comparison</td>
+        <td><span class="old-cell"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg> Difficult to compare offers</span></td>
+        <td><span class="new-cell"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> Side-by-side comparison</span></td>
+      </tr>
+      </tbody>
+    </table>
+
+    <!-- Mobile cards -->
+    <div class="compare-cards">
+      <div class="compare-card">
+        <h4>Number of Applications</h4>
+        <div class="compare-row">
+          <div class="compare-old"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg><div><span class="compare-label">Traditional</span>5-10 separate applications</div></div>
+          <div class="compare-new"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><div><span class="compare-label">Our Platform</span>Just 1 application</div></div>
+        </div>
+      </div>
+      <div class="compare-card">
+        <h4>Time to Apply Everywhere</h4>
+        <div class="compare-row">
+          <div class="compare-old"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg><div><span class="compare-label">Traditional</span>Days of visiting branches</div></div>
+          <div class="compare-new"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><div><span class="compare-label">Our Platform</span>Minutes to complete</div></div>
+        </div>
+      </div>
+      <div class="compare-card">
+        <h4>Credit Score Impact</h4>
+        <div class="compare-row">
+          <div class="compare-old"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg><div><span class="compare-label">Traditional</span>Multiple hard credit checks</div></div>
+          <div class="compare-new"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><div><span class="compare-label">Our Platform</span>Minimized credit checks</div></div>
+        </div>
+      </div>
+      <div class="compare-card">
+        <h4>Access to Lenders</h4>
+        <div class="compare-row">
+          <div class="compare-old"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg><div><span class="compare-label">Traditional</span>Limited to banks you know</div></div>
+          <div class="compare-new"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><div><span class="compare-label">Our Platform</span>Full network access</div></div>
+        </div>
+      </div>
+      <div class="compare-card">
+        <h4>Easy Comparison</h4>
+        <div class="compare-row">
+          <div class="compare-old"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg><div><span class="compare-label">Traditional</span>Difficult to compare offers</div></div>
+          <div class="compare-new"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><div><span class="compare-label">Our Platform</span>Side-by-side comparison</div></div>
+        </div>
       </div>
     </div>
   </div>
-</div>
-<!-- Personal Loans Content End -->
 
-@include('partials.footer')
+  <div class="container-sm">
+    <img src="https://billboardads.digitalcavemen.com/wp-content/uploads/2026/04/IMAGE-4-Varient-A.png" alt="NCR Legitimacy" style="margin-bottom:4rem;" />
+
+    <hr class="divider" />
+
+    <h2>Questions worth asking</h2>
+    <div class="faq">
+      <div class="faq-item">
+        <p class="faq-q">"Are you a lender?"</p>
+        <p class="faq-a">No. We are not a registered financial services provider and we do not issue loans. We are a comparison platform that connects you with multiple registered lenders in South Africa. Lenders make all credit decisions independently.</p>
+      </div>
+      <div class="faq-item">
+        <p class="faq-q">"How do you make money if the service is free?"</p>
+        <p class="faq-a">We receive a referral fee from lenders when we connect them with potential borrowers. This commission is paid by the lender, not by you. It doesn't affect the interest rate or terms you receive.</p>
+      </div>
+      <div class="faq-item">
+        <p class="faq-q">"Will applying hurt my credit score?"</p>
+        <p class="faq-a">Submitting your details on our platform generates a soft enquiry or no enquiry initially. If a lender wants to make you an offer, they will request permission to run a full credit check. You control when that happens.</p>
+      </div>
+      <div class="faq-item">
+        <p class="faq-q">"What if I have bad credit or am blacklisted?"</p>
+        <p class="faq-a">Our network includes lenders who work with different credit profiles. While we can't guarantee approval, some lenders specialize in near-prime and subprime lending. Being truthful in your application helps match you with appropriate lenders.</p>
+      </div>
+      <div class="faq-item">
+        <p class="faq-q">"Do I have to accept an offer?"</p>
+        <p class="faq-a">Absolutely not. You are under no obligation to accept any loan offer. Review all the terms, compare offers, and only proceed if something genuinely works for your situation.</p>
+      </div>
+    </div>
+
+    <!-- Form -->
+    <div id="loan-quotes-form" class="form-section">
+      <h3>Ready to Compare Your Loan Options?</h3>
+      <p class="lead">One application. Multiple lenders. You decide what works.</p>
+      <form class="loan-form" action="{{ route('loan.submit') }}" method="post" onsubmit="handleSubmit(event)">
+        @csrf
+        <input type="hidden" name="form_source" value="personal_loans_landing" />
+
+        <div class="form-group">
+          <input type="text" placeholder="First Name" required name="firstname"/>
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="Last Name" required name="lastname"/>
+        </div>
+        <div class="form-group">
+          <input type="email" placeholder="Email Address" required name="email"/>
+        </div>
+        <div class="form-group">
+          <input type="tel" placeholder="Phone Number" required name="phone1"/>
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="13 Digit ID Number *" maxlength="13" required name="idnumber"/>
+        </div>
+
+        <div class="form-group">
+          <select name="title">
+            <option value="">Title</option>
+            <option value="mr">Mr</option>
+            <option value="mrs">Mrs</option>
+            <option value="ms">Ms</option>
+            <option value="dr">Dr</option>
+            <option value="prof">Prof</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <select required name="underdebtreview"
+          >
+            <option value="">Are you currently under Debt Review?</option>
+            <option value="no">No</option>
+            <option value="yes">Yes</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p class="range-label">How much would you like to loan?</p>
+          <input type="range" id="loanSlider" min="1000" max="9000" name="loanamount" step="500" value="1000" oninput="updateLoanAmount(this.value)" />
+          <p class="loan-amount-display" id="loanAmountDisplay">R 1 000</p>
+        </div>
+
+        <div class="checkbox-row">
+          <input type="checkbox" id="terms" required name="acceptterms"/>
+          <label for="terms">I agree to the <a href="#">terms and conditions</a></label>
+        </div>
+
+        <button type="submit" class="btn-submit">
+          Start Your Application Now
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </button>
+
+
+        {{-- Hidden tracking fields — mirrors loans.blade.php --}}
+        <input type="hidden" name="optinurl"  value="https://searchadeal.online/" />
+        <input type="hidden" name="optindate" value="{{ date('d/m/y H:i:s') }}" />
+      </form>
+      <p class="form-note">No sign-up · No credit card · No obligation · Under 2 minutes</p>
+    </div>
+
+    <!-- Disclosure -->
+    <div class="disclosure">
+      <p class="disclosure-heading">Important Disclosure</p>
+      <p>We are not a registered financial services provider and do not issue personal loans. We operate as an affiliate platform that connects consumers with registered lenders and credit providers in South Africa. All lenders in our network are independently registered with the <span class="trust-label">NCR</span> and comply with the National Credit Act.</p>
+      <p>When you submit an application through our platform, we share your information with multiple lenders in our network. These lenders will independently assess your application according to their own credit criteria. We receive a referral fee from lenders when they successfully originate a loan through our platform. This commission does not affect the interest rate, fees, or terms you receive.</p>
+      <p>Submitting an application does not guarantee loan approval. Each lender makes independent credit decisions based on their own assessment of your creditworthiness, income, expenses, and compliance with the National Credit Act's affordability requirements.</p>
+      <p>You are under no obligation to accept any loan offer. You have the right to compare offers and choose what works best for your situation. All lenders must provide you with a pre-agreement statement and quotation showing the total cost of credit, interest rate, fees, and repayment terms before you sign any agreement.</p>
+      <p>We handle your personal information in accordance with <span class="trust-label">POPIA</span>. Your information is only shared with lenders in our network for the purpose of assessing your loan application.</p>
+    </div>
+
+  </div>
+</section>
+
+<script>
+  function handleSubmit(e) {
+    e.preventDefault();
+    alert("Thank you! Your application has been submitted to our lending network.");
+  }
+  function updateLoanAmount(val) {
+    const num = parseInt(val);
+    document.getElementById('loanAmountDisplay').textContent = 'R ' + num.toLocaleString('en-ZA');
+    updateSliderTrack(document.getElementById('loanSlider'));
+  }
+  function updateSliderTrack(slider) {
+    const min = parseFloat(slider.min) || 0;
+    const max = parseFloat(slider.max) || 100;
+    const val = parseFloat(slider.value);
+    const pct = ((val - min) / (max - min)) * 100;
+    slider.style.background = 'linear-gradient(to right, #e8a020 0%, #e8a020 ' + pct + '%, #ddd8d0 ' + pct + '%, #ddd8d0 100%)';
+  }
+  window.addEventListener('DOMContentLoaded', function() {
+    var slider = document.getElementById('loanSlider');
+    if (slider) updateSliderTrack(slider);
+  });
+</script>
+</body>
+</html>
