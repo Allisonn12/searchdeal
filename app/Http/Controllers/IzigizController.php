@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\Izigiz\StoreLeadRequest;
 use App\Services\IzigizService;
 use Illuminate\Http\Request;
+use App\Models\IzigizLead;
 
 class IzigizController extends Controller
 {
@@ -14,6 +15,13 @@ class IzigizController extends Controller
   // ---------------------------------------------------------------------------
   // GET — landing pages
   // ---------------------------------------------------------------------------
+
+  public function index(Request $request)
+  {
+    $leads = IzigizLead::latest()->paginate(15);
+
+    return view('admin.car_insure', compact('leads'));
+  }
 
   /**
    * Car tracker landing at /car-tracker and /tracker/digital.

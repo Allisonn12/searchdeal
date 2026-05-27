@@ -12,6 +12,9 @@ use App\Http\Controllers\LifeController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\KaruCrmController;
 use App\Http\Controllers\IzigizController;
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\AdminAuthController;
 
 
 Route::get('/', [SearchADealConroller::class, 'index'])->name('index');
@@ -55,7 +58,6 @@ Route::post('/car-tracker', [IzigizController::class, 'store'])->name('tracker.s
 Route::get('/life-insurance', [LifeController::class, 'index'])->name('life');
 Route::post('/life-insurance', [LifeController::class, 'store'])->name('life.submit');
 
-Route::get('/wl-loans', [LoanController::class, 'index'])->name('wl-loan'); // Legacy routes
 Route::post('/wl-loans', [LoanController::class, 'store'])->name('loan.submit');
 
 Route::get('/loans', [LoanController::class, 'loans'])->name('loans'); // Legacy routes
@@ -81,6 +83,38 @@ Route::post('/dashcams', [KaruCrmController::class, 'store'])->name('karu.submit
 */
 Route::get('/tracker/digital', [IzigizController::class, 'showDigital'])->name('izigiz.digital.show');
 Route::post('/tracker/digital', [IzigizController::class, 'store'])->name('izigiz.digital');
+
+// ---------------------------------------------------------------------------
+// Admin — authentication (public, rate-limited)
+// ---------------------------------------------------------------------------
+Route::prefix('admin')->name('admin.')->group(function () {
+  Route::middleware('throttle:5,1')->group(function () {
+    Route::get('/login',  [AdminAuthController::class, 'showLogin'])->name('login');
+    Route::post('/login', [AdminAuthController::class, 'login']);
+  });
+  Route::post('/logout', [AdminAuthController::class, 'logout'])->name('logout');
+});
+
+// ---------------------------------------------------------------------------
+// Admin — protected resource (requires `admin` guard session)
+// ---------------------------------------------------------------------------
+Route::middleware('auth:admin')->group(function () {
+    Route::get('/dashboard', DashboardController::class)->name('admin-dashboard');
+    Route::get('/admin', [AdminController::class, 'index'])->name('admin.index');
+    Route::apiResource('/admin', AdminController::class)->except('show', 'index');
+    Route::get('/admin-car-insurance', [IzigizController::class, 'index'])->name('admin-car-insure');
+    Route::get('/admin-loans', [LoanController::class, 'index'])->name('admin-loan'); // Legacy routes
+    Route::get('/admin-dashcams', [KaruCrmController::class, 'getAllDashcam'])->name('admin-dashcams');
+
+});
+//Route::middleware('auth:admin')->group(function () {
+//    Route::get('/dashboard', function (){
+//        return view('admin.dashboard');
+//    })->name('admin-dashboard');
+//    Route::apiResource('/admin', AdminController::class)->only(['store', 'update', 'destroy']);
+//    Route::get('/admin-car-insurance', [IzigizController::class, 'index'])->name('admin-car-insure');
+//
+//});
 
 /*
 |--------------------------------------------------------------------------

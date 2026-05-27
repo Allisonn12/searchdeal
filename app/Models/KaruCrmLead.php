@@ -3,9 +3,12 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+
 
 class KaruCrmLead extends Model
 {
+    use HasFactory;
   // Status constants — single source of truth shared with the service
   public const STATUS_PENDING   = 'pending';
   public const STATUS_SUCCESS   = 'success';
