@@ -33,6 +33,7 @@
       <a
         href="#dashcam-form"
         class="inline-block bg-accent hover:bg-amber-600 text-white font-bold text-[18px] md:text-[20px] py-4 px-8 rounded-lg shadow-lg transition-colors w-full md:w-auto tracking-[0.01em] font-heading"
+        style="background: #E23E3E"
       >
         Find My Witness Now &rarr;
       </a>
