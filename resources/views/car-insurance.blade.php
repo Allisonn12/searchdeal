@@ -73,7 +73,7 @@
       {{-- Opening pull quote --}}
       <div class="pl-4 border-l-[4px] border-accent mb-12 mt-8">
         <p class="text-primary text-[20px] md:text-[24px] italic m-0 font-body leading-[1.55]">
-          &ldquo;If you just watched the 60-second video, you already know something shifted. You felt it. That uncomfortable recognition that you might be paying for someone else&rsquo;s claims while providers who actually want your profile never get the chance to quote you.&rdquo;
+          &ldquo;if you reading this, you already know something shifted. You felt it. That uncomfortable recognition that you might be paying for someone else&rsquo;s claims while providers who actually want your profile never get the chance to quote you.&rdquo;
         </p>
       </div>
 
@@ -239,7 +239,7 @@
           <div class="w-8 h-8 bg-primary text-white rounded-full items-center justify-center font-bold text-[16px] shrink-0 mt-1 hidden md:flex font-heading">3</div>
           <div>
             <h3 class="text-primary text-[22px] md:text-[24px] font-bold mb-3 font-heading">Receive competitive quotes</h3>
-            <p class="text-primary text-[18px] leading-[1.65] m-0 font-body">WhatsApp quotes and email summaries with full breakdowns. You compare. You choose. You decide.</p>
+            <p class="text-primary text-[18px] leading-[1.65] m-0 font-body">Phone call with complete breakdowns. You compare. You choose. You decide.</p>
           </div>
         </div>
 
@@ -341,7 +341,7 @@
           </li>
           <li class="flex items-center gap-4 text-[17px] md:text-[19px] text-primary font-body">
             <i data-lucide="check-circle-2" class="w-6 h-6 text-accent shrink-0"></i>
-            <span class="font-medium">Direct quotes via WhatsApp and email within 24 hours</span>
+            <span class="font-medium">Direct quotes via direct call with an expert ready to answer all your questions within minutes of your application.</span>
           </li>
           <li class="flex items-center gap-4 text-[17px] md:text-[19px] text-primary font-body">
             <i data-lucide="check-circle-2" class="w-6 h-6 text-accent shrink-0"></i>
