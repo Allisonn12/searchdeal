@@ -40,6 +40,13 @@ return [
             'driver' => 'session',
             'provider' => 'users',
         ],
+
+        // Dedicated session guard for the admin panel.
+        // Isolated from the public `web` guard so admin/user sessions never collide.
+        'admin' => [
+            'driver'   => 'session',
+            'provider' => 'admins',
+        ],
     ],
 
     /*
@@ -65,10 +72,11 @@ return [
             'model' => env('AUTH_MODEL', App\Models\User::class),
         ],
 
-        // 'users' => [
-        //     'driver' => 'database',
-        //     'table' => 'users',
-        // ],
+        // Admin provider backed by the AdminModel / `admin` table.
+        'admins' => [
+            'driver' => 'eloquent',
+            'model'  => App\Models\AdminModel::class,
+        ],
     ],
 
     /*

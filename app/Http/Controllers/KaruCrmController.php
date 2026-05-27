@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\KaruCrm\StoreLeadRequest;
 use App\Services\KaruCrmService;
 use Illuminate\Support\Facades\Log;
+use App\Models\KaruCrmLead;
 
 class KaruCrmController extends Controller
 {
@@ -12,8 +13,15 @@ class KaruCrmController extends Controller
   {
   }
 
-  public function index(){
+  public function index()
+  {
       return view('dashcam');
+  }
+
+  public function getAllDashcam()
+  {
+      $leads = KaruCrmLead::latest()->paginate(15);
+      return view('admin.dashcam', compact('leads'));
   }
 
   public function dashcamsCarTrackerUpsell(){

@@ -12,7 +12,8 @@ class LoanController extends Controller
 {
   public function index()
   {
-    return view('loan');
+      $leads = LoanModel::latest()->paginate(15);
+      return view('admin.loans', compact('leads'));
   }
 
   public function loans()
