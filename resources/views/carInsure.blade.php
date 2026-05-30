@@ -844,3 +844,120 @@
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{{--<form action="{{ route('tracker.submit') }}" method="POST">--}}
+
+{{--    @csrf--}}
+{{--    <input type="hidden" name="form_source" value="car_track_upsell" />--}}
+
+{{--    <div name="vehicle_type" class="form-group">--}}
+{{--        <label>1. What do you drive?</label>--}}
+
+{{--        <select>--}}
+{{--            <option value="">Select vehicle type...</option>--}}
+{{--            <option value="sedan">Sedan</option>--}}
+{{--            <option value="suv">SUV or 4×4</option>--}}
+{{--            <option value="bakkie">Bakkie</option>--}}
+{{--            <option value="hatchback">Hatchback</option>--}}
+{{--            <option value="other">Other</option>--}}
+{{--        </select>--}}
+{{--    </div>--}}
+
+{{--    <div class="form-group">--}}
+{{--        <label>2. What is your primary need?</label>--}}
+
+{{--        <select name="primaryneed" required>--}}
+{{--            <option value="">Select primary need...</option>--}}
+{{--            <option value="theft-recovery">Theft & Recovery</option>--}}
+{{--            <option value="insurance-discount">Insurance Discount</option>--}}
+{{--            <option value="fleet-tracking">Fleet Tracking</option>--}}
+{{--            <option value="peace-of-mind">Peace of Mind</option>--}}
+{{--            <option value="other">Other</option>--}}
+{{--        </select>--}}
+{{--    </div>--}}
+
+{{--    <div class="form-group">--}}
+{{--        <label>3. Where is the vehicle parked securely?</label>--}}
+
+{{--        <select name="parkingsecurity" required>--}}
+{{--            <option value="">Select parking...</option>--}}
+{{--            <option value="garage">Locked Garage</option>--}}
+{{--            <option value="complex">Secured Complex / Estate</option>--}}
+{{--            <option value="carport">Carport</option>--}}
+{{--            <option value="street">Street Parking</option>--}}
+{{--            <option value="other">Other</option>--}}
+{{--        </select>--}}
+{{--    </div>--}}
+
+{{--    <div class="contact-group">--}}
+
+{{--        <label>Where should we send your quotes?</label>--}}
+
+{{--        <input--}}
+{{--            type="text"--}}
+{{--            name="firstname"--}}
+{{--            placeholder="First Name"--}}
+{{--            required--}}
+{{--        >--}}
+
+{{--        <input--}}
+{{--            type="text"--}}
+{{--            name="lastname"--}}
+{{--            placeholder="Last Name"--}}
+{{--            required--}}
+{{--        >--}}
+
+{{--        <input--}}
+{{--            type="email"--}}
+{{--            name="email"--}}
+{{--            placeholder="Email Address"--}}
+{{--            required--}}
+{{--        >--}}
+
+{{--        <input--}}
+{{--            type="tel"--}}
+{{--            name="phone1"--}}
+{{--            placeholder="Phone Number"--}}
+{{--            required--}}
+{{--        >--}}
+{{--        <div class="checkbox-row" style="display:flex; align-items:center; gap:8px;">--}}
+{{--            <input type="checkbox" style="width: 15px;" id="terms" required name="acceptterms">--}}
+
+{{--            <label for="tracker-terms" class="text-sm font-medium text-gray-900 font-body">--}}
+{{--                I agree to the <a href="{{ route('terms') }}" class="text-blue-600 hover:underline">terms and conditions</a>--}}
+{{--            </label>--}}
+{{--        </div>--}}
+
+{{--    </div>--}}
+
+{{--    <button class="btn-submit" type="submit">--}}
+
+{{--            <span class="btn-main">--}}
+{{--              Complete Your Protection Now →--}}
+{{--            </span>--}}
+
+{{--        <span class="btn-sub">--}}
+{{--              Get Elite Tracker Quotes--}}
+{{--            </span>--}}
+
+{{--    </button>--}}
+
+{{--</form>--}}

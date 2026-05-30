@@ -101,13 +101,33 @@ class IzigizController extends Controller
   // ---------------------------------------------------------------------------
 
   /**
-   * Determine which campaign and success route to use based on the page
-   * the form was submitted from (HTTP Referer).
+   * Determine which campaign code and post-submission redirect to use.
+   *
+   * Priority 1 — form_source field (reliable, in our control):
+   *   car_insure_landing  → HIP0001 → tracker upsell (/car-tracker-upsell)
+   *   car_tracker_landing → VT0001  → car insurance upsell (/car-insurance-elite)
+   *
+   * Priority 2 — HTTP Referer (legacy fallback for forms without form_source,
+   *   e.g. warm-up channels, third-party embeds). Always redirects to /success.
    *
    * Returns a two-element array: [campaignCode, successRouteName].
    */
   private function resolveContext(Request $request): array
   {
+    // --- Primary: use the hidden form_source field ---
+    $formSource = $request->input('form_source');
+
+    if ($formSource === 'car_insure_landing') {
+      // User submitted from a car-insurance page → upsell them on tracker.
+      return [IzigizService::CAMPAIGNS['car_insurance'], 'car.tract.upsell'];
+    }
+
+    if ($formSource === 'car_tracker_landing') {
+      // User submitted from a car-tracker page → upsell them on car insurance.
+      return [IzigizService::CAMPAIGNS['tracker'], 'car.insure.elite'];
+    }
+
+    // --- Fallback: legacy Referer-based resolution (no upsell, goes to /success) ---
     $path = parse_url($request->headers->get('referer', ''), PHP_URL_PATH) ?? '';
 
     if (str_contains($path, 'car-insurance') || str_contains($path, 'car-insure') || str_contains($path, 'insurance/hip')) {
@@ -124,7 +144,7 @@ class IzigizController extends Controller
       return [IzigizService::CAMPAIGNS['warm_up_cartrack'], 'success'];
     }
 
-    // Default: digital tracker campaign covers /car-tracker, /tracker/*, and any unknown source.
+    // Default: tracker campaign for /car-tracker, /tracker/*, and any unknown source.
     return [IzigizService::CAMPAIGNS['tracker'], 'success'];
   }
 
