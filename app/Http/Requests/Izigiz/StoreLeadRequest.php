@@ -31,6 +31,10 @@ class StoreLeadRequest extends FormRequest
 
       // Terms acceptance — required on the frontend, validated here.
       'acceptterms' => 'required|accepted',
+
+      // Identifies which form submitted this lead — drives upsell routing.
+      // Must be one of the known source identifiers; silently ignored if absent.
+      'form_source' => 'nullable|string|in:car_insure_landing,car_tracker_landing',
     ];
   }
 

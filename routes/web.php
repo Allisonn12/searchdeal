@@ -51,9 +51,13 @@ Route::post('/debt-white-list', [DebtController::class, 'store'])->name('debt.su
 Route::get('/car-tracker', [IzigizController::class, 'showCarTracker'])->name('tracker');
 Route::view('/car-tracker-elite', 'tracker1')->name('tracker1');
 Route::view('/personal-loan', 'loan')->name('tracker.loan');
+Route::post('/car-tracker', [IzigizController::class, 'store'])->name('tracker.submit');
+
+// =====================================================================================================================
+// Upsell pages — GET only, no form submission
+// =====================================================================================================================
 Route::view('/car-insurance-elite', 'carInsure')->name('car.insure.elite'); // Upsell
 Route::view('/car-tracker-upsell', 'carTractUpsell')->name('car.tract.upsell'); // Upsell
-Route::post('/car-tracker', [IzigizController::class, 'store'])->name('tracker.submit');
 
 Route::get('/life-insurance', [LifeController::class, 'index'])->name('life');
 Route::post('/life-insurance', [LifeController::class, 'store'])->name('life.submit');
