@@ -128,6 +128,7 @@
             <a href="{{ route('car-insurance') }}" class="py-2">Car Insurance</a>
             <a href="{{ route('tracker1') }}"      class="py-2">Car Trackers</a>
             <a href="{{ route('tracker.loan') }}"  class="py-2">Personal Loans</a>
+            <a href="{{ route('dashcams') }}"   class="py-2">Dashcam</a>
             <a href="{{ route('how-it-works') }}"  class="py-2">How It Works</a>
         </div>
     </div>
