@@ -79,6 +79,20 @@ Route::get('/dashcams-car-tracker-upsell', function () {
 Route::get('/dashcams', [KaruCrmController::class, 'index'])->name('dashcams');
 Route::post('/dashcams', [KaruCrmController::class, 'store'])->name('karu.submit');
 
+
+// =====================================================================================================================
+// Thank You Pages — GET only, no form submission
+// =====================================================================================================================
+Route::get('/car-insurance-thank-you', function () {
+  return view('carInsuranceThankYouPage');
+})->name('car-insurance-thank-you');
+
+Route::get('/car-track-thank-you', function () {
+  return view('carTrackThankYouPage');
+})->name('car-track-thank-you');
+
+
+
 /*
 |--------------------------------------------------------------------------
 | Izigiz Tracker Lead Submission
