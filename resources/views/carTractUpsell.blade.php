@@ -454,6 +454,15 @@
     .ps-section { border-top: 1px solid var(--divider); padding-top: 4rem; display: flex; flex-direction: column; gap: 2rem; text-align: center; }
     .ps-section p { font-size: .875rem; color: var(--muted); font-style: italic; line-height: 1.7; }
   </style>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18179664123"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'AW-18179664123');
+    </script>
 </head>
 <body>
 
@@ -795,7 +804,9 @@
       </span>
 
         </button>
-
+          <p>
+              <i>I do not need any protection</i>, <a href="{{ route('car-insurance-thank-you') }}">Im done</a>
+          </p>
       </form>
 
       <p class="form-legal">

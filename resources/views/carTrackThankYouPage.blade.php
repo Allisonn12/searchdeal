@@ -331,6 +331,91 @@
             background: #20bd5a;
             transform: translateY(-2px);
         }
+        .share-modal-overlay {
+            position: fixed;
+            inset: 0;
+            z-index: 1000;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            background: rgba(26, 22, 18, .58);
+            padding: 1rem;
+        }
+        .share-modal-overlay.is-open { display: flex; }
+        .share-modal {
+            width: min(100%, 560px);
+            max-height: min(90vh, 720px);
+            overflow-y: auto;
+            background: #fff;
+            border-radius: .5rem;
+            padding: 1.5rem;
+            box-shadow: 0 24px 80px rgba(0,0,0,.24);
+        }
+        .share-modal-header {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+        .share-modal h3 {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 1.25rem;
+            line-height: 1.25;
+            color: var(--ink);
+        }
+        .share-modal p {
+            color: var(--ink-soft);
+            font-size: .9375rem;
+            line-height: 1.55;
+            margin-bottom: 1rem;
+        }
+        .share-modal-close {
+            flex: 0 0 auto;
+            width: 36px;
+            height: 36px;
+            border: 1px solid var(--divider);
+            border-radius: 50%;
+            background: #fff;
+            color: var(--ink);
+            cursor: pointer;
+            font-size: 1.5rem;
+            line-height: 1;
+        }
+        .share-options {
+            display: grid;
+            gap: .75rem;
+        }
+        .share-option {
+            width: 100%;
+            border: 1px solid var(--divider);
+            border-radius: .5rem;
+            background: var(--bg);
+            color: var(--ink);
+            cursor: pointer;
+            padding: 1rem;
+            text-align: left;
+            font-family: 'DM Sans', sans-serif;
+            transition: border-color .2s, transform .2s, background .2s;
+        }
+        .share-option:hover {
+            background: var(--green-light);
+            border-color: var(--whatsapp);
+            transform: translateY(-1px);
+        }
+        .share-option strong {
+            display: block;
+            margin-bottom: .35rem;
+            font-size: .9375rem;
+            color: var(--whatsapp-dark);
+        }
+        .share-option span {
+            display: block;
+            color: var(--ink-soft);
+            font-size: .875rem;
+            line-height: 1.5;
+        }
+        body.modal-open { overflow: hidden; }
 
         /* ── Message Box ── */
         .message-box {
@@ -385,7 +470,42 @@
         .footer-note p:last-child {
             color: var(--muted);
         }
+
+        .share-option {
+    width:100%;
+    border:1px solid var(--divider);
+    border-radius:.5rem;
+    background:#fff;
+    padding:1rem;
+    cursor:pointer;
+    transition:.2s;
+}
+
+.share-option:hover {
+    border-color:var(--whatsapp);
+    background:#f7fffa;
+}
+
+.share-option.active {
+    border-color:var(--whatsapp);
+    background:#f0fff5;
+}
+
+#custom-message:focus {
+    outline:none;
+    border-color:var(--whatsapp);
+}
     </style>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18179664123"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'AW-18179664123');
+    </script>
 </head>
 <body>
 
@@ -451,10 +571,76 @@
     </div>
 
     <!-- Quote -->
-    <div class="quote-box">
-        <p>"His number was disconnected. The 'monitoring center' was a virtual assistant taking messages during business hours. I never heard from them again."</p>
-        <p class="quote-author">Small business owner, Durban 2024, after his bakkie was hijacked</p>
+    <!-- Message Selector -->
+<div class="quote-box">
+
+    <h3 style="
+        font-family:'DM Sans',sans-serif;
+        font-size:1.25rem;
+        margin-bottom:1rem;
+        color:var(--whatsapp-dark);
+        font-style:normal;
+    ">
+        Choose Your WhatsApp Message
+    </h3>
+
+    <p style="
+        font-style:normal;
+        color:var(--ink-soft);
+        margin-bottom:1.25rem;
+    ">
+        Select a message below and we'll automatically open WhatsApp with your chosen message and link.
+    </p>
+
+    <div class="share-options">
+
+        <button
+                type="button"
+                class="share-option"
+                data-message="family"
+        >
+            <strong> For Family</strong>
+            <span>
+                Perfect for parents, siblings or relatives.
+            </span>
+        </button>
+
+        <button
+                type="button"
+                class="share-option"
+                data-message="friend"
+        >
+            <strong> For A Friend</strong>
+            <span>
+                Someone who still needs tracker protection.
+            </span>
+        </button>
+
+        <button
+                type="button"
+                class="share-option"
+                data-message="business"
+        >
+            <strong> For A Business Owner</strong>
+            <span>
+                Great for fleets, bakkies and work vehicles.
+            </span>
+        </button>
+
+        <button
+                type="button"
+                class="share-option"
+                data-message="custom"
+        >
+            <strong> Write My Own Message</strong>
+            <span>
+                Create and edit your own WhatsApp message.
+            </span>
+        </button>
+
     </div>
+
+</div>
 
     <!-- CTA Text -->
     <p class="cta-text">Sending this takes 10 seconds. <strong>Not sending it could cost someone everything.</strong></p>
@@ -510,10 +696,10 @@
                 Share on WhatsApp
             </h2>
             <p>
-                wa.me/?text=[YOUR SHARE MESSAGE + LINK]<br/>
-                <span>Tap to send, no sign-up required</span>
+                Choose a message and we'll add {{ route('tracker') }} automatically.<br/>
+                <span>Tap to send, no copying required</span>
             </p>
-            <a href="https://wa.me/?text={{ urlencode('Hey, I just found a way to get quotes from SA\'s top 5 car tracker companies without getting spammed by random resellers. One form, direct contact only. Worth a look before you sign anything: searchadeal.co.za/trackers') }}" target="_blank" rel="noopener noreferrer" class="btn-whatsapp">
+            <a href="https://wa.me/?text={{ urlencode('Hey, I just found a way to get quotes from SA\'s top 5 car tracker companies without getting spammed by random resellers. One form, direct contact only. Worth a look before you sign anything: ' . route('tracker')) }}" target="_blank" rel="noopener noreferrer" class="btn-whatsapp" id="open-share-modal">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <circle cx="18" cy="5" r="3"/>
                     <circle cx="6" cy="12" r="3"/>
@@ -525,16 +711,40 @@
             </a>
         </div>
 
-        <!-- Suggested Message -->
-        <div class="message-box">
-            <p class="label">SUGGESTED WHATSAPP MESSAGE</p>
-            <p>"Hey [Name], I just found a way to get quotes from SA's top 5 car tracker companies without getting spammed by random resellers. One form, direct contact only. Worth a look before you sign anything: searchadeal.co.za/trackers"</p>
+        <div class="share-modal-overlay" id="share-modal" aria-hidden="true">
+            <div class="share-modal" role="dialog" aria-modal="true" aria-labelledby="share-modal-title">
+                <div class="share-modal-header">
+                    <h3 id="share-modal-title">Choose a WhatsApp message</h3>
+                    <button type="button" class="share-modal-close" id="close-share-modal" aria-label="Close message picker">&times;</button>
+                </div>
+                <p>Pick the wording you want. The tracker link is added automatically.</p>
+                <div class="share-options" id="share-options"></div>
+            </div>
         </div>
 
-        <!-- Skip Link -->
-        <div class="skip-link">
-            <a href="{{ route('home') }}">I'd rather keep this to myself.</a>
-        </div>
+        <!-- Suggested Message -->
+        <div class="message-box">
+
+    <p class="label">
+        SELECTED WHATSAPP MESSAGE
+    </p>
+
+    <textarea
+            id="custom-message"
+            style="
+                width:100%;
+                min-height:140px;
+                border:1px solid var(--divider);
+                border-radius:8px;
+                padding:1rem;
+                font-family:'DM Sans',sans-serif;
+                font-size:.95rem;
+                resize:vertical;
+            "
+    ></textarea>
+
+</div>
+
     </section>
 
     <!-- Footer Note -->
@@ -544,6 +754,107 @@
     </div>
 
 </div>
+
+<script>
+
+const trackerShareUrl = @json(route('tracker'));
+
+const trackerMessages = {
+
+    family: `Hey, I thought of you when I found this.
+
+I just compared quotes from South Africa's top vehicle tracker companies in one place.
+
+No spam. No endless searching.
+
+Take a look:`,
+
+    friend: `I used this to compare tracker providers without getting flooded by reseller calls.
+
+Might be useful if you're still looking for a tracker:`,
+
+    business: `Found a simple way to compare vehicle tracker quotes for work vehicles and small fleets.
+
+Worth checking out:`,
+
+    custom: ''
+};
+
+const textarea =
+    document.getElementById('custom-message');
+
+const shareButtons =
+    document.querySelectorAll('.share-option');
+
+function openWhatsapp(message)
+{
+    const finalMessage =
+        `${message}\n\n${trackerShareUrl}`;
+
+    window.open(
+        `https://wa.me/?text=${encodeURIComponent(finalMessage)}`,
+        '_blank'
+    );
+}
+
+shareButtons.forEach(button => {
+
+    button.addEventListener('click', () => {
+
+        shareButtons.forEach(btn =>
+            btn.classList.remove('active')
+        );
+
+        button.classList.add('active');
+
+        const type =
+            button.dataset.message;
+
+        const message =
+            trackerMessages[type];
+
+        if(type === 'custom')
+        {
+            textarea.value =
+                `Hey,\n\nI thought you might find this useful.\n\n${trackerShareUrl}`;
+
+            textarea.focus();
+
+            return;
+        }
+
+        textarea.value =
+            `${message}\n\n${trackerShareUrl}`;
+
+        openWhatsapp(message);
+    });
+
+});
+
+document
+    .getElementById('open-share-modal')
+    .addEventListener('click', function(e){
+
+        e.preventDefault();
+
+        const message =
+            textarea.value.trim();
+
+        window.open(
+            `https://wa.me/?text=${encodeURIComponent(message)}`,
+            '_blank'
+        );
+
+    });
+
+textarea.value =
+`Hey,
+
+I thought you might find this useful.
+
+${trackerShareUrl}`;
+
+</script>
 
 </body>
 </html>
