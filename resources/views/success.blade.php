@@ -35,6 +35,15 @@
       animation: fadeIn 0.8s ease-out forwards;
     }
   </style>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18179664123"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'AW-18179664123');
+    </script>
 </head>
 <body class="bg-[#f3f4f6] min-h-screen flex items-center justify-center p-6">
 <!-- BEGIN: SuccessContainer -->

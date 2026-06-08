@@ -102,19 +102,16 @@
             background: var(--trust);
             border-radius: 50%;
             animation: pulse 2s infinite;
+            flex-shrink: 0;
         }
         @keyframes pulse {
             0%, 100% { opacity: 1; }
             50% { opacity: .4; }
         }
-        .proof-bar p {
-            font-size: .9375rem;
-            color: var(--ink);
-            margin: 0;
-        }
+        .proof-bar p { font-size: .9375rem; color: var(--ink); margin: 0; }
         .proof-bar p strong { color: var(--ink); }
 
-        /* ── Alert Box (Uncomfortable Part) ── */
+        /* ── Alert Box ── */
         .alert-box {
             background: rgba(200,75,17,.06);
             border-left: 4px solid var(--accent);
@@ -168,11 +165,7 @@
             line-height: 1;
             margin-bottom: .5rem;
         }
-        .stat-label {
-            font-size: .875rem;
-            color: var(--muted);
-            line-height: 1.5;
-        }
+        .stat-label { font-size: .875rem; color: var(--muted); line-height: 1.5; }
 
         /* ── Who is overpaying? ── */
         .section-heading {
@@ -207,95 +200,35 @@
             gap: .5rem;
         }
         .person-card h3 svg { flex-shrink: 0; }
-        .person-card p {
+        .person-card p { font-size: .9375rem; line-height: 1.65; color: var(--ink-soft); margin: 0; }
+
+        /* ── Quote Box (share trigger) ── */
+        .quote-box {
+            background: var(--green-light);
+            border-left: 4px solid var(--whatsapp);
+            padding: 1.5rem;
+            border-radius: 0 .5rem .5rem 0;
+            margin-bottom: 3rem;
+            transition: transform .2s, box-shadow .2s;
+        }
+        .quote-box:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(0,0,0,.08);
+        }
+        .quote-box p {
             font-size: .9375rem;
             line-height: 1.65;
-            color: var(--ink-soft);
-            margin: 0;
+            color: #128C7E;
+            font-style: italic;
+            margin-bottom: .75rem;
         }
-
-        /* ── Message Templates ── */
-        .message-section { margin-bottom: 4rem; }
-        .message-box {
-            background: var(--surface);
-            border: 1px solid var(--divider);
-            border-radius: .5rem;
-            padding: 1.5rem;
-            position: relative;
-            box-shadow: 0 1px 3px rgba(0,0,0,.04);
-        }
-        .copy-btn {
-            position: absolute;
-            top: 1rem;
-            right: 1rem;
-            background: #fff;
-            border: 1px solid var(--divider);
-            color: var(--ink);
-            padding: .5rem 1rem;
-            border-radius: .375rem;
-            font-size: .875rem;
+        .quote-box .quote-author {
+            font-size: .8125rem;
+            color: #128C7E;
+            opacity: .8;
             font-weight: 500;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            gap: .5rem;
-            font-family: 'DM Sans', sans-serif;
-            box-shadow: 0 1px 2px rgba(0,0,0,.04);
-            transition: background .2s;
+            font-style: normal;
         }
-        .copy-btn:hover { background: var(--bg); }
-        .copy-btn svg { flex-shrink: 0; }
-        .message-text {
-            white-space: pre-wrap;
-            font-size: clamp(1rem, 2vw, 1.125rem);
-            line-height: 1.65;
-            color: var(--ink);
-            padding-right: 6rem;
-        }
-
-        /* ── Variants ── */
-        .variants-section { margin-bottom: 4rem; }
-        .variant-card {
-            background: var(--surface);
-            border: 1px solid var(--divider);
-            border-radius: .5rem;
-            padding: 1.5rem;
-            position: relative;
-            margin-bottom: 1.5rem;
-        }
-        .variant-card:last-child { margin-bottom: 0; }
-        .variant-label {
-            font-size: .75rem;
-            text-transform: uppercase;
-            letter-spacing: .08em;
-            color: var(--muted);
-            font-weight: 700;
-            margin-bottom: 1rem;
-        }
-        .variant-text {
-            white-space: pre-wrap;
-            font-size: .9375rem;
-            line-height: 1.65;
-            color: var(--ink);
-            padding-right: 3rem;
-        }
-        .variant-copy-btn {
-            position: absolute;
-            top: 1rem;
-            right: 1rem;
-            background: #fff;
-            border: 1px solid var(--divider);
-            color: var(--ink-soft);
-            padding: .5rem;
-            border-radius: .375rem;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 1px 2px rgba(0,0,0,.04);
-            transition: color .2s;
-        }
-        .variant-copy-btn:hover { color: var(--accent); }
 
         /* ── WhatsApp CTA Box ── */
         .whatsapp-box {
@@ -310,7 +243,7 @@
             font-size: clamp(1.5rem, 4vw, 1.75rem);
             font-weight: 700;
             color: var(--whatsapp-dark);
-            margin-bottom: 1rem;
+            margin-bottom: .5rem;
             font-family: 'DM Sans', sans-serif;
         }
         .whatsapp-box p {
@@ -321,10 +254,10 @@
         }
         .whatsapp-box p span {
             display: block;
-            font-style: italic;
             font-weight: 400;
-            font-size: .9375rem;
-            margin-top: .5rem;
+            font-size: .8125rem;
+            opacity: .8;
+            margin-top: .25rem;
         }
         .btn-whatsapp {
             display: inline-flex;
@@ -344,9 +277,101 @@
             cursor: pointer;
             font-family: 'DM Sans', sans-serif;
         }
-        .btn-whatsapp:hover {
-            background: #20bd5a;
-            transform: translateY(-2px);
+        .btn-whatsapp:hover { background: #20bd5a; transform: translateY(-2px); }
+
+        /* ── Message Selector (mirrors car tracker) ── */
+        .share-selector-box {
+            background: var(--green-light);
+            border-left: 4px solid var(--whatsapp);
+            padding: 1.5rem;
+            border-radius: 0 .5rem .5rem 0;
+            margin-bottom: 3rem;
+        }
+        .share-selector-box h3 {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--whatsapp-dark);
+            font-style: normal;
+            margin-bottom: 1rem;
+        }
+        .share-selector-box > p {
+            font-style: normal;
+            color: var(--ink-soft);
+            margin-bottom: 1.25rem;
+            font-size: .9375rem;
+            line-height: 1.6;
+        }
+        .share-options {
+            display: grid;
+            gap: .75rem;
+            margin-bottom: 1.25rem;
+        }
+        .share-option {
+            width: 100%;
+            border: 1px solid var(--divider);
+            border-radius: .5rem;
+            background: #fff;
+            padding: 1rem;
+            cursor: pointer;
+            text-align: left;
+            font-family: 'DM Sans', sans-serif;
+            transition: border-color .2s, background .2s;
+        }
+        .share-option:hover {
+            border-color: var(--whatsapp);
+            background: #f7fffa;
+        }
+        .share-option.active {
+            border-color: var(--whatsapp);
+            background: #f0fff5;
+        }
+        .share-option strong {
+            display: block;
+            margin-bottom: .25rem;
+            font-size: .9375rem;
+            color: var(--whatsapp-dark);
+        }
+        .share-option span {
+            display: block;
+            color: var(--ink-soft);
+            font-size: .875rem;
+            line-height: 1.5;
+        }
+
+        /* ── Message Box (textarea preview) ── */
+        .message-box {
+            background: var(--surface);
+            padding: 1.5rem;
+            border-radius: .5rem;
+            border: 1px solid var(--divider);
+            margin-bottom: 2rem;
+        }
+        .message-box .label {
+            font-size: .75rem;
+            text-transform: uppercase;
+            letter-spacing: .08em;
+            color: var(--muted);
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+        #custom-message {
+            width: 100%;
+            min-height: 140px;
+            border: 1px solid var(--divider);
+            border-radius: 8px;
+            padding: 1rem;
+            font-family: 'DM Sans', sans-serif;
+            font-size: .95rem;
+            resize: vertical;
+            color: var(--ink);
+            background: #fff;
+            line-height: 1.6;
+        }
+        #custom-message:focus {
+            outline: none;
+            border-color: var(--whatsapp);
+            box-shadow: 0 0 0 3px rgba(37,211,102,.12);
         }
 
         /* ── Footer ── */
@@ -384,15 +409,16 @@
             background: var(--divider);
             border-radius: 50%;
         }
-
-        /* ── Copy feedback ── */
-        .copied-feedback {
-            color: var(--green);
-            display: flex;
-            align-items: center;
-            gap: .25rem;
-        }
     </style>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18179664123"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'AW-18179664123');
+    </script>
 </head>
 <body>
 
@@ -420,9 +446,9 @@
     <!-- The Uncomfortable Part -->
     <section class="alert-box">
         <p class="section-label">THE UNCOMFORTABLE PART</p>
-        <h2>Someone you know is paying R450-R750 too much this month.</h2>
+        <h2>Someone you know is paying R450–R750 too much this month.</h2>
         <p>You just discovered that the system is designed to keep drivers invisible to better pricing. That knowledge didn't exist in your world an hour ago. <strong>It still doesn't exist in theirs.</strong></p>
-        <p>While you wait for your quotes, they'll renew at whatever their insurer asks, the same way you did last year.</p>
+        <p>While you wait for your quotes, they'll renew at whatever their insurer asks — the same way you did last year.</p>
     </section>
 
     <!-- Data Points -->
@@ -457,11 +483,11 @@
         </div>
         <div class="person-card">
             <h3>Parent</h3>
-            <p>Loyal to one insurer for 10+ years? Loyalty is costing them 22-34% more than drivers who compare every cycle. The loyalty discount is a myth, they're being penalised for staying.</p>
+            <p>Loyal to one insurer for 10+ years? Loyalty is costing them 22–34% more than drivers who compare every cycle. The loyalty discount is a myth — they're being penalised for staying.</p>
         </div>
         <div class="person-card">
             <h3>Sibling</h3>
-            <p>Probably never compared. Probably meaning to 'at some point.' At some point never comes. 127 seconds does.</p>
+            <p>Probably never compared. Probably meaning to "at some point." At some point never comes. 127 seconds does.</p>
         </div>
         <div class="person-card">
             <h3>
@@ -477,99 +503,63 @@
         </div>
     </div>
 
-    <!-- Message Templates -->
-    <div class="message-section">
-        <h2 class="section-heading">Your message - ready to send</h2>
-        <p class="section-lead">Copy this. Send it on WhatsApp right now. You don't need to explain it, the link does the work.</p>
+    <!-- Message Selector (mirrors car tracker pattern) -->
+    <div class="share-selector-box">
 
-        <div class="message-box">
-            <button class="copy-btn" onclick="copyText(this, 'default-msg')">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
-                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
-                </svg>
-                <span>Copy Text</span>
+        <h3>Choose Your WhatsApp Message</h3>
+
+        <p>Select a message below and we'll automatically open WhatsApp with your chosen message and link.</p>
+
+        <div class="share-options">
+
+            <button type="button" class="share-option" data-message="spouse">
+                <strong>For a Spouse / Partner</strong>
+                <span>On a separate policy and probably overpaying too.</span>
             </button>
-            <div class="message-text" id="default-msg">Hey,
-                Just found something worth 2 minutes of your time.
-                I compared my car insurance using this platform: one form, no broker calls, multiple providers actually competing for my business. The savings are real.
-                It's completely free and takes about 127 seconds: searchadeal.co.za
-                Don't just renew blindly like I was doing.</div>
+
+            <button type="button" class="share-option" data-message="parent">
+                <strong>For a Parent</strong>
+                <span>Loyal to one insurer for years — and paying for it.</span>
+            </button>
+
+            <button type="button" class="share-option" data-message="sibling">
+                <strong>For a Sibling</strong>
+                <span>Still meaning to compare "at some point."</span>
+            </button>
+
+            <button type="button" class="share-option" data-message="friend">
+                <strong>For a Close Friend</strong>
+                <span>The kind you'd forward a genuine money-saving tip to.</span>
+            </button>
+
+            <button type="button" class="share-option" data-message="custom">
+                <strong>Write My Own Message</strong>
+                <span>Create and edit your own WhatsApp message.</span>
+            </button>
+
         </div>
+
     </div>
 
-    <!-- Personalised Variants -->
-    <div class="variants-section">
-        <h3 class="section-heading" style="font-size: clamp(1.25rem, 3vw, 1.375rem);">Personalised variants:</h3>
-        <p class="section-lead" style="font-size: 1rem;">Use these if you know exactly who you're sending to.</p>
-
-        <div class="variant-card">
-            <p class="variant-label">FOR A PARENT</p>
-            <div class="variant-text" id="variant-parent">Mom/Dad, please try this, it took me under 3 minutes. You might be overpaying on car insurance.
-                searchadeal.co.za
-                Free to use. No pressure. Multiple insurers quote you at once. You might be surprised.</div>
-            <button class="variant-copy-btn" onclick="copyText(this, 'variant-parent')" title="Copy text">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
-                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
-                </svg>
-            </button>
-        </div>
-
-        <div class="variant-card">
-            <p class="variant-label">FOR A SIBLING</p>
-            <div class="variant-text" id="variant-sibling">Bro/sis, stop renewing blindly. I compared my car insurance using this and it was actually eye-opening.
-                searchadeal.co.za
-                One form. No spam calls. Real competing quotes. Takes 2 minutes.</div>
-            <button class="variant-copy-btn" onclick="copyText(this, 'variant-sibling')" title="Copy text">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
-                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
-                </svg>
-            </button>
-        </div>
-
-        <div class="variant-card">
-            <p class="variant-label">FOR A FRIEND</p>
-            <div class="variant-text" id="variant-friend">Hey, found something actually useful. Compare your car insurance at searchadeal.co.za, took me 127 seconds and multiple insurers compete for your business. Free. No broker nonsense.</div>
-            <button class="variant-copy-btn" onclick="copyText(this, 'variant-friend')" title="Copy text">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
-                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
-                </svg>
-            </button>
-        </div>
-
-        <div class="variant-card">
-            <p class="variant-label">FOR A SPOUSE / PARTNER</p>
-            <div class="variant-text" id="variant-spouse">Just did this, it took me 2 minutes. Compare your car insurance: searchadeal.co.za
-                Providers actually compete against each other. I got quotes 38% lower. It's free, no broker calls.</div>
-            <button class="variant-copy-btn" onclick="copyText(this, 'variant-spouse')" title="Copy text">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
-                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
-                </svg>
-            </button>
-        </div>
+    <!-- Selected Message Preview -->
+    <div class="message-box">
+        <p class="label">SELECTED WHATSAPP MESSAGE</p>
+        <textarea id="custom-message"></textarea>
     </div>
 
-    <!-- Grand CTA -->
+    <!-- WhatsApp CTA -->
     <div class="whatsapp-box">
         <h2>Share on WhatsApp now</h2>
         <p>
-            wa.me/?text= [paste your message above]
-            <span>Or tap the WhatsApp share button below.</span>
+            Your selected message is ready to send.
+            <span>Tap below — no copying required.</span>
         </p>
-        <a href="https://wa.me/?text={{ urlencode("Hey,\nJust found something worth 2 minutes of your time.\nI compared my car insurance using this platform: one form, no broker calls, multiple providers actually competing for my business. The savings are real.\nIt's completely free and takes about 127 seconds: searchadeal.co.za\nDon't just renew blindly like I was doing.") }}" target="_blank" rel="noopener noreferrer" class="btn-whatsapp">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="18" cy="5" r="3"/>
-                <circle cx="6" cy="12" r="3"/>
-                <circle cx="18" cy="19" r="3"/>
-                <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/>
-                <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/>
+        <button type="button" class="btn-whatsapp" id="send-whatsapp">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
             </svg>
             Share via WhatsApp
-        </a>
+        </button>
     </div>
 
     <!-- Footer Note -->
@@ -590,16 +580,53 @@
 </div>
 
 <script>
-    function copyText(btn, elementId) {
-        const text = document.getElementById(elementId).innerText;
-        navigator.clipboard.writeText(text).then(function() {
-            const originalHTML = btn.innerHTML;
-            btn.innerHTML = `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span class="copied-feedback">Copied!</span>`;
-            setTimeout(function() {
-                btn.innerHTML = originalHTML;
-            }, 2000);
-        });
+    const insuranceShareUrl = @json(route('car-insure'));
+
+    const insuranceMessages = {
+        spouse:  "Hey, before your next insurance renewal I thought you should see this. I just compared quotes from multiple insurers through one form — no spam, no broker calls. You're probably overpaying on your separate policy:",
+        parent:  "Mom/Dad, before you renew your car insurance again, try this first. Staying with one insurer for years is actually costing you more — I found this out the hard way. One form, multiple quotes:",
+        sibling: "Bro/sis, stop renewing blindly. I used this to compare multiple insurance providers in one place and it took less than 2 minutes. Might save you a few hundred rand a month:",
+        friend:  "Found something genuinely useful — compare multiple insurance quotes without filling in forms everywhere or getting spammed by brokers. Worth checking before your next renewal:",
+        custom:  ''
+    };
+
+    const textarea     = document.getElementById('custom-message');
+    const shareButtons = document.querySelectorAll('.share-option');
+    const sendBtn      = document.getElementById('send-whatsapp');
+
+    function openWhatsapp(message) {
+        const final = message + '\n\n' + insuranceShareUrl;
+        window.open('https://wa.me/?text=' + encodeURIComponent(final), '_blank', 'noopener,noreferrer');
     }
+
+    shareButtons.forEach(function(button) {
+        button.addEventListener('click', function() {
+
+            shareButtons.forEach(function(btn) { btn.classList.remove('active'); });
+            button.classList.add('active');
+
+            const type    = button.dataset.message;
+            const message = insuranceMessages[type];
+
+            if (type === 'custom') {
+                textarea.value = 'Hey,\n\nI thought you might find this useful.\n\n' + insuranceShareUrl;
+                textarea.focus();
+                return;
+            }
+
+            textarea.value = message + '\n\n' + insuranceShareUrl;
+            openWhatsapp(message);
+        });
+    });
+
+    sendBtn.addEventListener('click', function() {
+        const message = textarea.value.trim();
+        if (!message) return;
+        window.open('https://wa.me/?text=' + encodeURIComponent(message), '_blank', 'noopener,noreferrer');
+    });
+
+    // Default textarea state
+    textarea.value = 'Hey,\n\nI thought you might find this useful.\n\n' + insuranceShareUrl;
 </script>
 
 </body>
