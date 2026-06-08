@@ -84,6 +84,21 @@
         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
       })(window,document,'script','dataLayer','GTM-NWN5MH94');</script>
     <!-- End Google Tag Manager -->
+
+    <!-- Signals Gateway Pixel Code -->
+    <script>
+        !function(a,h,e,v,n,t,s){
+            if(a.cbq)return;
+            n=a.cbq=function(){n.callMethod ? n.callMethod.apply(n,arguments) : n.queue.push(arguments);};
+            if(!a._cbq)a._cbq=n;
+            n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];
+            t=h.createElement(e);t.async=!0; t.src=v;s=h.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s);
+        }(window, document,'script', 'https://m.sgw1-usercentrics.io/sdk/4001657421801748733/events.js');
+        cbq('setHost', 'https://m.sgw1-usercentrics.io/');
+        cbq('init', '4001657421801748733');
+        cbq('track', 'PageView');
+    </script>
+    <!-- End Signals Gateway Pixel Code -->
 </head>
 <body class="min-h-screen flex flex-col relative bg-white">
 
