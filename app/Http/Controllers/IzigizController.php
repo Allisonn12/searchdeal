@@ -2,12 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Controllers\Controller;
-use App\Http\Requests\Izigiz\StoreLeadRequest;
 use App\Services\IzigizService;
 use Illuminate\Http\Request;
 use App\Models\IzigizLead;
-use JetBrains\PhpStorm\NoReturn;
 
 class IzigizController extends Controller
 {
