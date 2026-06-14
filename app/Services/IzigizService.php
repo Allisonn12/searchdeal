@@ -3,6 +3,7 @@
 namespace App\Services;
 
 use App\Models\IzigizLead;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Log;
 
@@ -40,23 +41,23 @@ class IzigizService
    *   - payload    (array)      The payload array to be sent to the API.
    *
    * @param  string $campaignCode  One of the CAMPAIGNS values (e.g. 'VT0001').
-   * @param  array  $data          Validated data from the Form Request.
+   * @param  Request  $data          Validated data from the Form Request.
    * @return array{lead: IzigizLead, payload: array}
    */
-  public function submitLead(string $campaignCode, array $data): array
+  public function submitLead(string $campaignCode, Request $data): array
   {
     $lead = IzigizLead::create([
       'campaign_code'       => $campaignCode,
-      'firstname'           => $data['firstname'],
-      'lastname'            => $data['lastname'],
-      'phone'               => $data['phone1'],
-      'email'               => $data['email'] ?? null,
-      'date_of_birth'       => $data['date_of_birth'] ?? null,
-      'car_make'            => $data['car_make'] ?? null,
-      'car_model'           => $data['car_model'] ?? null,
-      'car_year'            => $data['car_year'] ?? null,
-      'car_usage'           => $data['car_usage'] ?? null,
-      'preferred_call_time' => $data['preferred_call_time'] ?? null,
+      'firstname'           => $data->input('firstname'),
+      'lastname'            => $data->input('lastname'),
+      'phone'               => $data->input('phone1'),
+      'email'               => $data->input('email') ?? null,
+      'date_of_birth'       => $data->input('date_of_birth') ?? null,
+      'car_make'            => $data->input('car_make') ?? null,
+      'car_model'           => $data->input('car_model') ?? null,
+      'car_year'            => $data->input('car_year') ?? null,
+      'car_usage'           => $data->input('car_usage') ?? null,
+      'preferred_call_time' => $data->input('preferred_call_time') ?? null,
       'status'              => IzigizLead::STATUS_PENDING,
     ]);
 
@@ -179,7 +180,7 @@ class IzigizService
    * Called here and passed directly to the job — avoids reconstructing it
    * at retry time when the original $data array is no longer available.
    */
-  private function buildPayload(string $campaignCode, array $data): array
+  private function buildPayload(string $campaignCode, Request $data): array
   {
     $parameters = [
       ['Key' => 'LeadCampaignCode', 'Value' => $campaignCode],
@@ -187,12 +188,12 @@ class IzigizService
 
     // Only append optional parameters when the caller provided a value.
     $optionalMap = [
-      'DateOfBirth'        => $data['date_of_birth'] ?? null,
-      'CarMake'            => $data['car_make'] ?? null,
-      'CarModel'           => $data['car_model'] ?? null,
-      'CarYear'            => $data['car_year'] ?? null,
-      'CarUsage'           => $data['car_usage'] ?? null,
-      'PreferedTimeOfCall' => $data['preferred_call_time'] ?? null, // Typo is intentional — matches the API spec
+        'DateOfBirth'        => $data->input('date_of_birth'),
+        'CarMake'            => $data->input('car_make'),
+        'CarModel'           => $data->input('car_model'),
+        'CarYear'            => $data->input('car_year'),
+        'CarUsage'           => $data->input('car_usage'),
+        'PreferedTimeOfCall' => $data->input('preferred_call_time'), // Typo is intentional — matches the API spec
     ];
 
     foreach ($optionalMap as $key => $value) {

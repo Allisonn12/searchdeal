@@ -7,6 +7,7 @@ use App\Http\Requests\Izigiz\StoreLeadRequest;
 use App\Services\IzigizService;
 use Illuminate\Http\Request;
 use App\Models\IzigizLead;
+use JetBrains\PhpStorm\NoReturn;
 
 class IzigizController extends Controller
 {
@@ -89,7 +90,8 @@ class IzigizController extends Controller
    *   Referer contains "car-insurance" or "car-insure" → HIP0001 → success
    *   Everything else (car-tracker, tracker/*, unknown)  → VT0001  → success
    */
-  public function store(StoreLeadRequest $request)
+//  public function store(StoreLeadRequest $request)
+  public function store(Request $request)
   {
     [$campaignCode, $successRoute] = $this->resolveContext($request);
 
@@ -155,11 +157,11 @@ class IzigizController extends Controller
    * The API call runs in PHP-FPM's terminate() phase — the browser receives
    * the redirect before the 30-second Izigiz HTTP call even starts.
    */
-  private function handle(StoreLeadRequest $request, string $campaignCode, string $successRoute)
+  private function handle(Request $request, string $campaignCode, string $successRoute)
   {
     ['lead' => $lead, 'payload' => $payload] = $this->service->submitLead(
       $campaignCode,
-      $request->validated()
+      $request
     );
 
     $service = $this->service;
