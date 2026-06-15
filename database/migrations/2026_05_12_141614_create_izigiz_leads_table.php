@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('firstname');
             $table->string('lastname');
             $table->string('phone');
-            $table->string('email');
+            $table->string('email')->nullable();
             $table->string('date_of_birth')->nullable();
             $table->string('car_make')->nullable();
             $table->string('car_model')->nullable();
@@ -25,7 +25,7 @@ return new class extends Migration
             $table->string('car_usage')->nullable();
             $table->string('preferred_call_time')->nullable();
             $table->string('status')->nullable();
-            $table->string('api_response')->nullable();
+            $table->text('api_response')->nullable();
             $table->timestamps();
         });
     }

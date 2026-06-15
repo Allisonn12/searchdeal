@@ -290,7 +290,7 @@
 
         <form action="{{ route('tracker.submit') }}" method="POST" class="space-y-6 max-w-md mx-auto text-left">
           @csrf
-          <input type="hidden" name="form_source" value="car_track_landing">
+          <input type="hidden" name="form_source" value="car_tracker_landing">
 
           {{-- Step 1: Vehicle type --}}
           <div class="space-y-2">
