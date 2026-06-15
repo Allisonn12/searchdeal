@@ -62,6 +62,9 @@ return [
     */
     'izigiz' => [
         'endpoint' => env('IZIGIZ_ENDPOINT', 'https://izigiz.com/api/lead/add'),
+        // Izigiz's IIS endpoint has been observed responding in ~45s under load,
+        // so anything below ~60s risks cutting off otherwise-successful POSTs.
+        'timeout'  => (int) env('IZIGIZ_TIMEOUT', 60),
     ],
 
 ];
