@@ -2,7 +2,7 @@
 
 namespace Database\Seeders;
 
-use App\Models\LoanModel;
+use App\Models\Loan as LoanModel;
 use Illuminate\Database\Seeder;
 
 class LoanSeeder extends Seeder

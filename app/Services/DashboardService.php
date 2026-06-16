@@ -8,7 +8,7 @@ use App\Models\CarInsuranceLead;
 use App\Models\CarTrackerLead;
 use App\Models\KaruCrmLead;
 use App\Models\LifeModel;
-use App\Models\LoanModel;
+use App\Models\Loan as LoanModel;
 use App\Models\MedicalModel;
 use App\Models\MotorModel;
 use App\Models\TrackerModel;
