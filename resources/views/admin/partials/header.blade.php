@@ -34,6 +34,10 @@
                 <span class="nav-icon"><i class="bi bi-people" aria-hidden="true"></i></span>
                 <span class="nav-text">Car Insurance</span>
             </a>
+            <a class="nav-link" href="{{ route('admin-car-tracker') }}">
+                <span class="nav-icon"><i class="bi bi-geo-alt" aria-hidden="true"></i></span>
+                <span class="nav-text">Car Tracker</span>
+            </a>
             <a class="nav-link" href="{{ route('admin-loan') }}">
                 <span class="nav-icon"><i class="bi bi-person-plus" aria-hidden="true"></i></span>
                 <span class="nav-text">Loans</span>
