@@ -370,6 +370,26 @@
 </head>
 <body>
 
+@if ($errors->any() || session('error'))
+  <section class="container-sm" style="padding-top: 2rem;">
+    @if ($errors->any())
+      <div style="background:#fff1f2;border:1px solid #fecdd3;color:#881337;padding:1rem 1.25rem;border-radius:.5rem;margin-bottom:1rem;">
+        <p style="font-weight:700;margin-bottom:.5rem;">Please fix the following:</p>
+        <ul style="padding-left:1.25rem;line-height:1.6;">
+          @foreach ($errors->all() as $error)
+            <li>{{ $error }}</li>
+          @endforeach
+        </ul>
+      </div>
+    @endif
+    @if (session('error'))
+      <div style="background:#fff1f2;border:1px solid #fecdd3;color:#881337;padding:1rem 1.25rem;border-radius:.5rem;">
+        {{ session('error') }}
+      </div>
+    @endif
+  </section>
+@endif
+
 <!-- Hero -->
 <section class="hero">
   <div class="container-sm">
@@ -634,55 +654,54 @@
     <div id="loan-quotes-form" class="form-section">
       <h3>Ready to Compare Your Loan Options?</h3>
       <p class="lead">One application. Multiple lenders. You decide what works.</p>
-      <form class="loan-form" action="{{ route('loan.submit') }}" method="post" onsubmit="handleSubmit(event)">
+      <form class="loan-form" action="{{ route('loan.submit') }}" method="post">
         @csrf
         <input type="hidden" name="form_source" value="personal_loans_landing" />
 
         <div class="form-group">
-          <input type="text" placeholder="First Name" required name="firstname"/>
+          <input type="text" placeholder="First Name" required name="firstname" value="{{ old('firstname') }}"/>
         </div>
         <div class="form-group">
-          <input type="text" placeholder="Last Name" required name="lastname"/>
+          <input type="text" placeholder="Last Name" required name="lastname" value="{{ old('lastname') }}"/>
         </div>
         <div class="form-group">
-          <input type="email" placeholder="Email Address" required name="email"/>
+          <input type="email" placeholder="Email Address" required name="email" value="{{ old('email') }}"/>
         </div>
         <div class="form-group">
-          <input type="tel" placeholder="Phone Number" required name="phone1"/>
+          <input type="tel" placeholder="Phone Number" required name="phone1" value="{{ old('phone1') }}"/>
         </div>
         <div class="form-group">
-          <input type="text" placeholder="13 Digit ID Number *" maxlength="13" required name="idnumber"/>
+          <input type="text" placeholder="13 Digit ID Number *" maxlength="13" required name="idnumber" value="{{ old('idnumber') }}"/>
         </div>
 
         <div class="form-group">
-          <select name="title">
-            <option value="">Title</option>
-            <option value="mr">Mr</option>
-            <option value="mrs">Mrs</option>
-            <option value="ms">Ms</option>
-            <option value="dr">Dr</option>
-            <option value="prof">Prof</option>
+          <select name="title" required>
+            <option value="" @selected(! old('title'))>Title</option>
+            <option value="mr" @selected(old('title') === 'mr')>Mr</option>
+            <option value="mrs" @selected(old('title') === 'mrs')>Mrs</option>
+            <option value="ms" @selected(old('title') === 'ms')>Ms</option>
+            <option value="dr" @selected(old('title') === 'dr')>Dr</option>
           </select>
         </div>
 
         <div class="form-group">
           <select required name="underdebtreview"
           >
-            <option value="">Are you currently under Debt Review?</option>
-            <option value="no">No</option>
-            <option value="yes">Yes</option>
+            <option value="" @selected(! old('underdebtreview'))>Are you currently under Debt Review?</option>
+            <option value="false" @selected(old('underdebtreview') === 'false')>No</option>
+            <option value="true" @selected(old('underdebtreview') === 'true')>Yes</option>
           </select>
         </div>
 
         <div class="form-group">
           <p class="range-label">How much would you like to loan?</p>
-          <input type="range" id="loanSlider" min="1000" max="9000" name="loanamount" step="500" value="1000" oninput="updateLoanAmount(this.value)" />
-          <p class="loan-amount-display" id="loanAmountDisplay">R 1 000</p>
+          <input type="range" id="loanSlider" min="1000" max="9000" name="loanamount" step="500" value="{{ old('loanamount', 1000) }}" oninput="updateLoanAmount(this.value)" />
+          <p class="loan-amount-display" id="loanAmountDisplay">R {{ number_format((float) old('loanamount', 1000), 0, '.', ' ') }}</p>
         </div>
 
         <div class="checkbox-row">
-          <input type="checkbox" id="terms" required name="acceptterms"/>
-          <label for="terms">I agree to the <a href="#">terms and conditions</a></label>
+          <input type="checkbox" id="terms" required name="acceptterms" @checked(old('acceptterms'))/>
+          <label for="terms">I agree to the <a href="{{ route('terms') }}">terms and conditions</a></label>
         </div>
 
         <button type="submit" class="btn-submit">
@@ -712,10 +731,6 @@
 </section>
 
 <script>
-  function handleSubmit(e) {
-    e.preventDefault();
-    alert("Thank you! Your application has been submitted to our lending network.");
-  }
   function updateLoanAmount(val) {
     const num = parseInt(val);
     document.getElementById('loanAmountDisplay').textContent = 'R ' + num.toLocaleString('en-ZA');

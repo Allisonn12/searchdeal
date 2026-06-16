@@ -3,12 +3,10 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 
-class LoanModel extends Model
+class Loan extends Model
 {
-    use HasFactory;
     protected $table = 'loans';
     protected $fillable = [
         'firstname',
@@ -19,5 +17,11 @@ class LoanModel extends Model
         'loanamount',
         'idnumber',
         'underdebtreview',
-        'status'];
+        'status',
+    ];
+
+    protected $casts = [
+        'loanamount' => 'decimal:2',
+        'underdebtreview' => 'boolean',
+    ];
 }

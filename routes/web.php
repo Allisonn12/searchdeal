@@ -2,10 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SearchADealConroller;
-use App\Http\Controllers\CarInsureController;
 use App\Http\Controllers\MotorController;
 use App\Http\Controllers\DebtController;
-use App\Http\Controllers\TrackerController;
 use App\Http\Controllers\LoanController;
 use App\Http\Controllers\MedicalController;
 use App\Http\Controllers\LifeController;
@@ -50,8 +48,14 @@ Route::post('/debt-white-list', [DebtController::class, 'store'])->name('debt.su
 // still POST via tracker.submit → TrackerController, which must remain untouched.
 Route::get('/car-tracker', [IzigizController::class, 'showCarTracker'])->name('tracker');
 Route::view('/car-tracker-elite', 'tracker1')->name('tracker1');
-Route::view('/personal-loan', 'loan')->name('tracker.loan');
 Route::post('/car-tracker', [IzigizController::class, 'store'])->name('tracker.submit');
+
+// =====================================================================================================================
+// PERSONAL LOANS
+// =====================================================================================================================
+Route::view('/personal-loan', 'loan')->name('tracker.loan');
+Route::post('/loans', [LoanController::class, 'store'])->name('loan.submit');
+
 
 // =====================================================================================================================
 // Upsell pages — GET only, no form submission
@@ -61,11 +65,6 @@ Route::view('/car-tracker-upsell', 'carTractUpsell')->name('car.tract.upsell'); 
 
 Route::get('/life-insurance', [LifeController::class, 'index'])->name('life');
 Route::post('/life-insurance', [LifeController::class, 'store'])->name('life.submit');
-
-Route::post('/wl-loans', [LoanController::class, 'store'])->name('loan.submit');
-
-Route::get('/loans', [LoanController::class, 'loans'])->name('loans'); // Legacy routes
-Route::post('/loans', [LoanController::class, 'store'])->name('loan.submit');
 
 Route::get('/medical-insurance', [MedicalController::class, 'index'])->name('medical');
 Route::post('/medical-insurance', [MedicalController::class, 'store'])->name('medical.submit');
@@ -125,14 +124,6 @@ Route::middleware('auth:admin')->group(function () {
     Route::get('/admin-dashcams', [KaruCrmController::class, 'getAllDashcam'])->name('admin-dashcams');
 
 });
-//Route::middleware('auth:admin')->group(function () {
-//    Route::get('/dashboard', function (){
-//        return view('admin.dashboard');
-//    })->name('admin-dashboard');
-//    Route::apiResource('/admin', AdminController::class)->only(['store', 'update', 'destroy']);
-//    Route::get('/admin-car-insurance', [IzigizController::class, 'index'])->name('admin-car-insure');
-//
-//});
 
 /*
 |--------------------------------------------------------------------------
