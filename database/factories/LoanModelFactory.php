@@ -2,7 +2,7 @@
 
 namespace Database\Factories;
 
-use App\Models\LoanModel;
+use App\Models\Loan as LoanModel;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
