@@ -9,7 +9,8 @@ use App\Http\Controllers\MedicalController;
 use App\Http\Controllers\LifeController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\KaruCrmController;
-use App\Http\Controllers\IzigizController;
+use App\Http\Controllers\CarInsuranceController;
+use App\Http\Controllers\CarTrackerController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\AdminAuthController;
@@ -31,11 +32,11 @@ Route::get('/contact', [SearchADealConroller::class, 'contact'])->name('contact'
 Route::post('/contact', [ContactController::class, 'send'])->name('contact.send');
 
 // GET handlers replaced with Izigiz — forms on other pages (car-insurance.blade.php, car-insure.blade.php,
-// car-insurance-success.blade.php, car-track-success.blade.php, cicslhcf.blade.php, carTractUpsell.blade.php)
+// car-insurance-success.blade.php, car-track-success.blade.php, cicslhcf.blade.php, car-track-upsell-page.blade.php)
 // still POST via car.insure.submit → CarInsureController, which must remain untouched.
-Route::get('/car-insurance', [IzigizController::class, 'showCarInsurance'])->name('car-insurance');
-Route::get('/car-insure', [IzigizController::class, 'showCarInsureLanding'])->name('car-insure');
-Route::post('/car-insurance', [IzigizController::class, 'store'])->name('car.insure.submit');
+Route::get('/car-insurance', [CarInsuranceController::class, 'showCarInsurance'])->name('car-insurance');
+Route::get('/car-insure', [CarInsuranceController::class, 'showCarInsureLanding'])->name('car-insure');
+Route::post('/car-insurance', [CarInsuranceController::class, 'store'])->name('car.insurance.submit');
 // POST /car-insure intentionally omitted — showCarInsureLanding() posts to car.insure.submit above.
 
 Route::get('/motor-warrenty', [MotorController::class, 'index'])->name('motor');
@@ -46,9 +47,9 @@ Route::post('/debt-white-list', [DebtController::class, 'store'])->name('debt.su
 
 // GET handler replaced with Izigiz — forms on other pages (tracker1, carInsure, car-track-up, carTractUpsell)
 // still POST via tracker.submit → TrackerController, which must remain untouched.
-Route::get('/car-tracker', [IzigizController::class, 'showCarTracker'])->name('tracker');
+Route::get('/car-tracker', [CarTrackerController::class, 'showCarTracker'])->name('tracker');
 Route::view('/car-tracker-elite', 'tracker1')->name('tracker1');
-Route::post('/car-tracker', [IzigizController::class, 'store'])->name('tracker.submit');
+Route::post('/car-tracker', [CarTrackerController::class, 'store'])->name('tracker.submit');
 
 // =====================================================================================================================
 // PERSONAL LOANS
@@ -60,8 +61,10 @@ Route::post('/loans', [LoanController::class, 'store'])->name('loan.submit');
 // =====================================================================================================================
 // Upsell pages — GET only, no form submission
 // =====================================================================================================================
-Route::view('/car-insurance-elite', 'carInsure')->name('car.insure.elite'); // Upsell
-Route::view('/car-tracker-upsell', 'carTractUpsell')->name('car.tract.upsell'); // Upsell
+Route::view('/car-insurance-upsell-page', 'car-insurance-upsell-page')->name('car.insure.elite'); // Upsell
+Route::view('/car-track-upsell-page', 'car-track-upsell-page')->name('car.tract.upsell'); // Upsell
+Route::view('/car-insurance-elite', 'car-insurance-upsell-page')->name('car.insure.elite.legacy'); // Legacy alias
+Route::view('/car-tracker-upsell', 'car-track-upsell-page')->name('car.tract.upsell.legacy'); // Legacy alias
 
 Route::get('/life-insurance', [LifeController::class, 'index'])->name('life');
 Route::post('/life-insurance', [LifeController::class, 'store'])->name('life.submit');
@@ -98,8 +101,8 @@ Route::get('/car-track-thank-you', function () {
 |--------------------------------------------------------------------------
 |   /tracker/digital  → VT0001  (alias for /car-tracker, kept for backward compat)
 */
-Route::get('/tracker/digital', [IzigizController::class, 'showDigital'])->name('izigiz.digital.show');
-Route::post('/tracker/digital', [IzigizController::class, 'store'])->name('izigiz.digital');
+Route::get('/tracker/digital', [CarTrackerController::class, 'showDigital'])->name('izigiz.digital.show');
+Route::post('/tracker/digital', [CarTrackerController::class, 'store'])->name('izigiz.digital');
 
 // ---------------------------------------------------------------------------
 // Admin — authentication (public, rate-limited)
@@ -119,7 +122,8 @@ Route::middleware('auth:admin')->group(function () {
     Route::get('/dashboard', DashboardController::class)->name('admin-dashboard');
     Route::get('/admin', [AdminController::class, 'index'])->name('admin.index');
     Route::apiResource('/admin', AdminController::class)->except('show', 'index');
-    Route::get('/admin-car-insurance', [IzigizController::class, 'index'])->name('admin-car-insure');
+    Route::get('/admin-car-insurance', [CarInsuranceController::class, 'index'])->name('admin-car-insure');
+    Route::get('/admin-car-tracker', [CarTrackerController::class, 'index'])->name('admin-car-tracker');
     Route::get('/admin-loans', [LoanController::class, 'index'])->name('admin-loan'); // Legacy routes
     Route::get('/admin-dashcams', [KaruCrmController::class, 'getAllDashcam'])->name('admin-dashcams');
 
@@ -131,8 +135,8 @@ Route::middleware('auth:admin')->group(function () {
 |--------------------------------------------------------------------------
 |   /insurance/hip  → HIP0001  (alias for /car-insurance, kept for backward compat)
 */
-Route::get('/insurance/hip', [IzigizController::class, 'showCarInsurance'])->name('izigiz.car_insurance_hip.show');
-Route::post('/insurance/hip', [IzigizController::class, 'store'])->name('izigiz.car_insurance_hip');
+Route::get('/insurance/hip', [CarInsuranceController::class, 'showCarInsurance'])->name('izigiz.car_insurance_hip.show');
+Route::post('/insurance/hip', [CarInsuranceController::class, 'store'])->name('izigiz.car_insurance_hip');
 
 // Cookies
 /**

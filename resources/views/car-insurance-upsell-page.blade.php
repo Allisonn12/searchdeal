@@ -508,7 +508,7 @@
   <div class="container">
 
     <div class="hero-badge">
-      🛡️ One Final Step: Complete Your Vehicle Protection
+      One Final Step: Complete Your Vehicle Protection
     </div>
 
     <h1>

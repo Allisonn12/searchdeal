@@ -4,7 +4,8 @@ namespace App\Services;
 
 use App\Models\CarInsureModel;
 use App\Models\DebtModel;
-use App\Models\IzigizLead;
+use App\Models\CarInsuranceLead;
+use App\Models\CarTrackerLead;
 use App\Models\KaruCrmLead;
 use App\Models\LifeModel;
 use App\Models\LoanModel;
@@ -21,9 +22,10 @@ class DashboardService
    * Add new models here — nothing else needs to change.
    */
   private array $models = [
-    'Car Insurance' => CarInsureModel::class,
+    'Car Insurance Site' => CarInsureModel::class,
     'Debt'          => DebtModel::class,
-    'Izigiz'        => IzigizLead::class,
+    'Car Insurance Leads' => CarInsuranceLead::class,
+    'Car Tracker Leads'   => CarTrackerLead::class,
     'Karu CRM'      => KaruCrmLead::class,
     'Life'          => LifeModel::class,
     'Loans'         => LoanModel::class,
@@ -151,4 +153,3 @@ class DashboardService
       ->sum($callback);
   }
 }
-

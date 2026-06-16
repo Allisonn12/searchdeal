@@ -106,7 +106,7 @@
                     <div class="col-lg-12 wow fadeIn hlabi-form" id="form" data-wow-delay="0.5s">
                         <div class="bg-light rounded p-5">
                             <h4 class="mb-4">Request A Quote</h4>
-                            <form action="{{ route('car.insure.submit') }}" method="post">
+                            <form action="{{ route('car.insurance.submit') }}" method="post">
                                 @csrf
                                 <input type="hidden" name="form_source" value="car_insure_success">
 

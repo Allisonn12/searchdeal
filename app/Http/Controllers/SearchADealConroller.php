@@ -21,7 +21,7 @@ class SearchADealConroller extends Controller
     public function success(){
         return view('success');
     }
-    
+
     public function cicslhcf(){
         return view('cicslhcf');
     }
@@ -32,9 +32,9 @@ class SearchADealConroller extends Controller
 
 
     public function carTrackerup(){
-        return view('car-track-up');
+        return view('car-track-upsell-page');
     }
-    
+
     public function carTrackerSuccess(){
         return view('car-track-success');
     }
