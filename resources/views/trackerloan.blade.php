@@ -1,6 +1,15 @@
 @include('partials.tailwind_header', ['title' => 'Compare Personal Loans in Minutes | SearchADeal']);
 
 {{-- Flash messages --}}
+@if($errors->any())
+  <div class="alert alert-danger" role="alert">
+    <ul class="mb-0 list-disc pl-5 space-y-1">
+      @foreach ($errors->all() as $error)
+        <li>{{ $error }}</li>
+      @endforeach
+    </ul>
+  </div>
+@endif
 @if(session('success'))
   <div class="alert alert-success" role="alert">{{ session('success') }}</div>
 @endif
@@ -356,7 +365,7 @@
         <p class="font-body text-[14px] text-muted mb-8">One application. Multiple lenders. You decide what works.</p>
 
         <div class="space-y-4 max-w-md mx-auto">
-          {{-- Targets LoanController@store — all fields match the controller's $request->all() usage --}}
+          {{-- Targets LoanController@store — field values align with loan validation rules --}}
           <form action="{{ route('loan.submit') }}" method="post" class="space-y-4">
             @csrf
             <input type="hidden" name="form_source" value="personal_loans_landing" />
@@ -366,6 +375,7 @@
               class="w-full p-4 border border-border rounded-[3px] font-body text-[14px]"
               placeholder="First Name"
               name="firstname"
+              value="{{ old('firstname') }}"
               required
             />
             <input
@@ -373,6 +383,7 @@
               class="w-full p-4 border border-border rounded-[3px] font-body text-[14px]"
               placeholder="Last Name"
               name="lastname"
+              value="{{ old('lastname') }}"
               required
             />
             <input
@@ -380,6 +391,7 @@
               class="w-full p-4 border border-border rounded-[3px] font-body text-[14px]"
               placeholder="Email Address"
               name="email"
+              value="{{ old('email') }}"
               required
             />
             <input
@@ -387,6 +399,7 @@
               class="w-full p-4 border border-border rounded-[3px] font-body text-[14px]"
               placeholder="Phone Number"
               name="phone1"
+              value="{{ old('phone1') }}"
               required
             />
 
@@ -395,6 +408,7 @@
               class="w-full p-4 border border-border rounded-[3px] font-body text-[14px]"
               placeholder="13 Digit ID Number *"
               name="idnumber"
+              value="{{ old('idnumber') }}"
               required
             />
 
@@ -405,11 +419,11 @@
               class="w-full p-4 border border-border rounded-[3px] font-body text-[14px] bg-white"
               aria-label="Title"
             >
-              <option value="" disabled selected>Title</option>
-              <option value="Mr">Mr</option>
-              <option value="Ms">Ms</option>
-              <option value="Mrs">Mrs</option>
-              <option value="Dr">Dr</option>
+              <option value="" disabled @selected(! old('title'))>Title</option>
+              <option value="mr" @selected(old('title') === 'mr')>Mr</option>
+              <option value="ms" @selected(old('title') === 'ms')>Ms</option>
+              <option value="mrs" @selected(old('title') === 'mrs')>Mrs</option>
+              <option value="dr" @selected(old('title') === 'dr')>Dr</option>
             </select>
 
             {{-- Debt review status --}}
@@ -419,9 +433,9 @@
               class="w-full p-4 border border-border rounded-[3px] font-body text-[14px] bg-white"
               aria-label="Under debt review?"
             >
-              <option value="" disabled selected>Are you currently under Debt Review?</option>
-              <option value="false">No</option>
-              <option value="true">Yes</option>
+              <option value="" disabled @selected(! old('underdebtreview'))>Are you currently under Debt Review?</option>
+              <option value="no" @selected(old('underdebtreview') === 'no')>No</option>
+              <option value="yes" @selected(old('underdebtreview') === 'yes')>Yes</option>
             </select>
 
             {{-- Loan amount slider — visual range matches loans.blade.php UX --}}
@@ -436,11 +450,11 @@
                 step="500"
                 id="loanamount"
                 name="loanamount"
-                value="10000"
+                value="{{ old('loanamount', 1000) }}"
                 class="w-full accent-amber-500"
                 oninput="document.getElementById('loanOutput').textContent = 'R\u00a0' + Number(this.value).toLocaleString('en-ZA')"
               />
-              <output id="loanOutput" class="font-body text-[14px] text-accent font-bold block mt-1">R&nbsp;10,000</output>
+              <output id="loanOutput" class="font-body text-[14px] text-accent font-bold block mt-1">R&nbsp;{{ number_format((float) old('loanamount', 1000), 0, '.', ',') }}</output>
             </div>
 
             {{-- Terms checkbox --}}
@@ -451,6 +465,7 @@
                 name="acceptterms"
                 value="true"
                 required
+                @checked(old('acceptterms'))
                 class="bg-gray-50 border-gray-300 focus:ring-3 focus:ring-blue-300 h-4 w-4 rounded mt-1"
               />
               <label for="loan-terms" class="text-sm font-medium text-gray-900">

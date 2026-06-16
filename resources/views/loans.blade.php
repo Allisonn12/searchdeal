@@ -101,8 +101,19 @@
 </div>
 <!-- Spinner End -->
 
-@include('partials.flash')
-
+{{--@include('partials.flash')--}}
+@if ($errors->any())
+    <div class="form-errors">
+        <ul>
+            @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    </div>
+@endif
+@if (session('error'))
+    <p class="form-error">{{ session('error') }}</p>
+@endif
 <!-- Page Header Start -->
 <div
         class="container-fluid page-header py-5 mb-5 wow fadeIn"
@@ -333,6 +344,7 @@
                             id="gname"
                             placeholder="First Name"
                             name="firstname"
+                            value="{{ old('firstname') }}"
                             required
                     />
 
@@ -347,6 +359,7 @@
                             id="gname"
                             placeholder="Last Name"
                             name="lastname"
+                            value="{{ old('lastname') }}"
                             required
                     />
 
@@ -362,6 +375,7 @@
                             id="phone_number"
                             placeholder="Phone Number, format: 0xx-xxx-xxxx"
                             name="phone1"
+                            value="{{ old('phone1') }}"
                             required
                     />
                     <label for="cname">Phone Number *</label>
@@ -377,6 +391,7 @@
                             placeholder="Gurdian Email"
                             required
                             name="email"
+                            value="{{ old('email') }}"
                     />
                     <label for="gmail">Your Email </label>
                   </div>
@@ -384,20 +399,21 @@
                 <div class="col-sm-6">
                   <div class="form-floating">
                     <select name="title" required class="form-select" id="cage">
-                      <option selected></option>
-                      <option value="Mr">Mr</option>
-                      <option value="Mr">Ms</option>
-                      <option value="Mrs">Mrs</option>
+                      <option value="" @selected(! old('title'))></option>
+                      <option value="mr" @selected(old('title') === 'mr')>Mr</option>
+                      <option value="ms" @selected(old('title') === 'ms')>Ms</option>
+                      <option value="mrs" @selected(old('title') === 'mrs')>Mrs</option>
+                      <option value="dr" @selected(old('title') === 'dr')>Dr</option>
                     </select>
                     <label for="cage">Title *</label>
                   </div>
                 </div>
                 <div class="col-sm-6">
                   <div class="form-floating">
-                    <select name="underdebtreview" class="form-select" id="cage">
-                      <option selected></option>
-                      <option value="true">Yes</option>
-                      <option value="false">No</option>
+                    <select name="underdebtreview" class="form-select" id="cage" required>
+                      <option value="" @selected(! old('underdebtreview'))></option>
+                      <option value="true" @selected(old('underdebtreview') === 'true')>Yes</option>
+                      <option value="false" @selected(old('underdebtreview') === 'false')>No</option>
 
                     </select>
                     <label for="cage">Are you currently under Debt Review?</label>
@@ -413,6 +429,7 @@
                             placeholder="ID Number"
                             required
                             name="idnumber"
+                            value="{{ old('idnumber') }}"
                     />
                     <label for="gmail">13 Digit ID Number * </label>
                   </div>
@@ -427,16 +444,17 @@
                           step="500"
                           id="loanamount"
                           name="loanamount"
-                          value="1000"
+                          value="{{ old('loanamount', 1000) }}"
                           oninput="loanOutput.value = 'R ' + Number(this.value).toLocaleString()"
                   >
-                  <output id="loanOutput" class="form-text d-block mt-1">R 1 000.00</output>
+                  <output id="loanOutput" class="form-text d-block mt-1">R {{ number_format((float) old('loanamount', 1000), 0, '.', ' ') }}</output>
                 </div>
 
 
                 <div class="col-sm-12">
                   <input id="checkbox-1" required name="acceptterms" value="true"
                          aria-describedby="checkbox-1" type="checkbox"
+                         @checked(old('acceptterms'))
                          class="bg-gray-50 border-gray-300 focus:ring-3 focus:ring-blue-300 h-4 w-4 rounded">
                   <label for="checkbox-1" class="text-sm ml-3 font-medium text-gray-900">I agree to the <a
                             href="{{ route('terms') }}" class="text-blue-600 hover:underline">terms and conditions</a></label>
