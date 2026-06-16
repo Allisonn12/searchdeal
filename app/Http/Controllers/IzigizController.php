@@ -56,7 +56,7 @@ class IzigizController extends Controller
     public function showCarInsurance()
     {
         return view('car-insurance', [
-            'formRoute'       => 'car.insure.submit',
+            'formRoute'       => 'car.insurance.submit',
             'campaignName'    => 'Car Insurance',
             'campaignTagline' => 'South Africa\'s Independent Car Insurance Comparison — Find Your Best Rate Today.',
         ]);
@@ -69,7 +69,7 @@ class IzigizController extends Controller
     public function showCarInsureLanding()
     {
         return view('car-insurance', [
-            'formRoute'       => 'car.insure.submit',
+            'formRoute'       => 'car.insurance.submit',
             'campaignName'    => 'Car Insurance',
             'campaignTagline' => 'Compare Top South African Car Insurance Providers — No Pressure, No Spam.',
         ]);

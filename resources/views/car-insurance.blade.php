@@ -1,15 +1,5 @@
 @include('partials.tailwind_header')
 
-<!-- Mobile menu -->
-<div id="mobile-menu" class="md:hidden hidden fixed top-[58px] inset-x-0 z-40 bg-white border-b border-border shadow-sm">
-  <div class="px-4 py-3 flex flex-col gap-3 font-heading text-[12px] uppercase">
-    <a href="{{ route('index') }}" class="py-2">Home</a>
-    <a href="{{ route('car-insurance') }}" class="py-2">Car Insurance</a>
-    <a href="{{ route('tracker') }}" class="py-2">Car Trackers</a>
-    <a href="{{ route('loans') }}" class="py-2">Personal Loans</a>
-  </div>
-</div>
-
 <main class="flex-grow pt-[58px]">
 
   {{-- ===================== HERO SECTION ===================== --}}
@@ -442,7 +432,7 @@
           Free to use. 127 seconds average completion time. Zero obligation.
         </p>
 
-        <form action="{{ route('car.insure.submit') }}" method="POST" class="space-y-6 max-w-md mx-auto text-left">
+        <form action="{{ route('car.insurance.submit') }}" method="POST" class="space-y-6 max-w-md mx-auto text-left">
           @csrf
           <input type="hidden" name="form_source" value="car_insure_landing">
 
