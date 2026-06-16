@@ -16,7 +16,7 @@ class KaruCrmLeadFactory extends Factory
   public function definition(): array
   {
     return [
-      'external_source_id'       => fake()->uuid(),
+      'external_source_id' => fake()->uuid(),
       'name'        => fake()->lastName(),
       'phone'          => $this->saPhoneNumber(),
       'email'           => fake()->unique()->safeEmail(),
